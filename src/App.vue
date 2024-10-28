@@ -1,31 +1,34 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <Navbar
+    :pages="pages"
+    :activePage="activePage"
+    @page-change="setActivePage"
+  />
+  <router-view />
+
+  <!-- <footer>
+    <p>&copy; 2024 Universal Studios. All rights reserved.</p>
+    <p>Some imagery shown throughout our website does not represent current operational and safety guidelines.</p>
+  </footer> -->
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-}
+<script>
+import Navbar from "./components/NavbarMenu.vue";
 
-nav {
-  padding: 30px;
+export default {
+  name: "App",
+  components: {
+    Navbar,
+  },
+  data() {
+    return {
+      activePage: 0,
+      pages: [
+        //{ link: { text: "Home", url: "/" } }
+      ],
+    };
+  },
+};
+</script>
 
-  a {
-    font-weight: bold;
-    color: #41a0ff;
-
-    &:hover {
-      color: #e2ba1d;
-      text-decoration: underline;
-    }
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+<style lang="scss"></style>
