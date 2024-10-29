@@ -29,6 +29,11 @@ export default {
 </script>
 
 <style lang="scss">
+* {
+  color: black;
+  z-index: 1;
+}
+
 .background-image {
   position: relative;
   height: 100%;
@@ -47,7 +52,6 @@ export default {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  opacity: 0.5;
   z-index: -1;
 }
 </style>

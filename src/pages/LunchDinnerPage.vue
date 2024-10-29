@@ -104,7 +104,7 @@
       </div>
     </div>
 
-    <div class="side-items row">
+    <div class="beverages-items row">
       <h3 class="fw-bold text-center">Beverages</h3>
       <p class="p-5">Butterbeer™ is suitable for those with gluten, soy, egg, wheat, and nut allergies. The topping does contain trace amounts of dairy, so it is unsuitable for vegans or anyone with a dairy allergy. Please ensure to select the Non-Dairy option when selecting your cold or frozen Butterbeer™. Hot Butterbeer™ will remain unsuitable for vegans or anyone with a dairy allergy.</p>
       <div class="col text-center">
@@ -184,23 +184,22 @@
         <p>Fire Whisky, Fire and Strongbow Cocktail</p>
       </div>
     </div>
-  </div>
 
-
-  <div class="allergies d-flex px-3 pt-5">
-    <p class="px-2"><span class="fw-bolder">GS</span> - Gluten Sensitive</p>
-    <p class="px-2"><span class="fw-bolder">DS</span> - Dairy Sensitive</p>
-    <p class="px-2"><span class="fw-bolder">ES</span> - Egg Sensitive</p>
-    <p class="px-2"><span class="fw-bolder">PS</span> - Peanut Sensitive</p>
-    <p class="px-2"><span class="fw-bolder">TNS</span> - Tree Nut Sensitive</p>
-    <p><span class="fw-bolder">FS</span> - Fish Sensitive</p>
+    <div class="allergies d-flex px-3 pt-5">
+      <p class="px-2"><span class="fw-bolder">GS</span> - Gluten Sensitive</p>
+      <p class="px-2"><span class="fw-bolder">DS</span> - Dairy Sensitive</p>
+      <p class="px-2"><span class="fw-bolder">ES</span> - Egg Sensitive</p>
+      <p class="px-2"><span class="fw-bolder">PS</span> - Peanut Sensitive</p>
+      <p class="px-2"><span class="fw-bolder">TNS</span> - Tree Nut Sensitive</p>
+      <p><span class="fw-bolder">FS</span> - Fish Sensitive</p>
+    </div>
+    <div class="allergies d-flex px-3">
+      <p class="px-2"><span class="fw-bolder">SFS</span> - Shellfish Sensitive</p>
+      <p class="px-2"><span class="fw-bolder">SES</span> - Sesame Sensitive</p>
+      <p class="px-2"><span class="fw-bolder">SS</span> - Soy Protein Sensitive</p>
+    </div>
+    <p class="px-4">Menu items and pricing are subject to change without notice</p>
   </div>
-  <div class="allergies d-flex px-3">
-    <p class="px-2"><span class="fw-bolder">SFS</span> - Shellfish Sensitive</p>
-    <p class="px-2"><span class="fw-bolder">SES</span> - Sesame Sensitive</p>
-    <p class="px-2"><span class="fw-bolder">SS</span> - Soy Protein Sensitive</p>
-  </div>
-  <p class="px-4">Menu items and pricing are subject to change without notice</p>
 
   <div class="">
     <router-link to="/">
@@ -229,5 +228,11 @@ export default class HomeView extends Vue {}
   background: linear-gradient(to right, #3555a3 0, #1c3385 100%);
   font-weight: 900;
   padding: 0.5rem;
+}
+
+.menu-items {
+  background-color: white;
+  opacity: 0.6;
+  z-index: -1;
 }
 </style>

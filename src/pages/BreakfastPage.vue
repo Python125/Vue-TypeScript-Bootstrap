@@ -25,49 +25,49 @@
       <p class="fw-bold py-2">Kid's Breakfast - $13.49</p>
       <p>Choose traditional, pancake or American</p>
     </div>
-  </div>
 
-  <div class="side-items row">
-    <h3 class="fw-bold text-center">Sides</h3>
-    <div class="col text-center">
-      <p class="fw-bold">Bacon - $2.49</p>
-      <p class="fw-bold">English Bacon - $5.49</p>
-      <p class="fw-bold">Roasted Potatoes - $4.99</p>
+    <div class="side-items row">
+      <h3 class="fw-bold text-center">Sides</h3>
+      <div class="col text-center">
+        <p class="fw-bold">Bacon - $2.49</p>
+        <p class="fw-bold">English Bacon - $5.49</p>
+        <p class="fw-bold">Roasted Potatoes - $4.99</p>
+      </div>
+      <div class="col text-center">
+        <p class="fw-bold">Blood Sausage - $5.49</p>
+        <p class="fw-bold">Scrambled Eggs - $2.99</p>
+      </div>
     </div>
-    <div class="col text-center">
-      <p class="fw-bold">Blood Sausage - $5.49</p>
-      <p class="fw-bold">Scrambled Eggs - $2.99</p>
-    </div>
-  </div>
 
-  <div class="side-items row">
-    <h3 class="fw-bold text-center">Beverages</h3>
-    <div class="col text-center">
-      <p class="fw-bold">Pumpkin Juice™ - $5.49</p>
-      <p class="fw-bold">Fresh Brewed Coffee - $3.79</p>
-      <p class="fw-bold">Apple Juice - $3.49</p>
+    <div class="beverages-items row">
+      <h3 class="fw-bold text-center">Beverages</h3>
+      <div class="col text-center">
+        <p class="fw-bold">Pumpkin Juice™ - $5.49</p>
+        <p class="fw-bold">Fresh Brewed Coffee - $3.79</p>
+        <p class="fw-bold">Apple Juice - $3.49</p>
+      </div>
+      <div class="col text-center">
+        <p class="fw-bold">Hot Tea - $3.79</p>
+        <p class="fw-bold">Milk - $2.99</p>
+        <p class="fw-bold">Orange Juice - $3.49</p>
+      </div>
     </div>
-    <div class="col text-center">
-      <p class="fw-bold">Hot Tea - $3.79</p>
-      <p class="fw-bold">Milk - $2.99</p>
-      <p class="fw-bold">Orange Juice - $3.49</p>
-    </div>
-  </div>
 
-  <div class="allergies d-flex px-3 pt-5">
-    <p class="px-2"><span class="fw-bolder">GS</span> - Gluten Sensitive</p>
-    <p class="px-2"><span class="fw-bolder">DS</span> - Dairy Sensitive</p>
-    <p class="px-2"><span class="fw-bolder">ES</span> - Egg Sensitive</p>
-    <p class="px-2"><span class="fw-bolder">PS</span> - Peanut Sensitive</p>
-    <p class="px-2"><span class="fw-bolder">TNS</span> - Tree Nut Sensitive</p>
-    <p><span class="fw-bolder">FS</span> - Fish Sensitive</p>
+    <div class="allergies d-flex px-3 pt-5">
+      <p class="px-2"><span class="fw-bolder">GS</span> - Gluten Sensitive</p>
+      <p class="px-2"><span class="fw-bolder">DS</span> - Dairy Sensitive</p>
+      <p class="px-2"><span class="fw-bolder">ES</span> - Egg Sensitive</p>
+      <p class="px-2"><span class="fw-bolder">PS</span> - Peanut Sensitive</p>
+      <p class="px-2"><span class="fw-bolder">TNS</span> - Tree Nut Sensitive</p>
+      <p><span class="fw-bolder">FS</span> - Fish Sensitive</p>
+    </div>
+    <div class="allergies d-flex px-3">
+      <p class="px-2"><span class="fw-bolder">SFS</span> - Shellfish Sensitive</p>
+      <p class="px-2"><span class="fw-bolder">SES</span> - Sesame Sensitive</p>
+      <p class="px-2"><span class="fw-bolder">SS</span> - Soy Protein Sensitive</p>
+    </div>
+    <p class="px-4">Menu items and pricing are subject to change without notice</p>
   </div>
-  <div class="allergies d-flex px-3">
-    <p class="px-2"><span class="fw-bolder">SFS</span> - Shellfish Sensitive</p>
-    <p class="px-2"><span class="fw-bolder">SES</span> - Sesame Sensitive</p>
-    <p class="px-2"><span class="fw-bolder">SS</span> - Soy Protein Sensitive</p>
-  </div>
-  <p class="px-4">Menu items and pricing are subject to change without notice</p>
 
   <div class="">
     <router-link to="/">
@@ -96,5 +96,11 @@ export default class HomeView extends Vue {}
   background: linear-gradient(to right, #3555a3 0, #1c3385 100%);
   font-weight: 900;
   padding: 0.5rem;
+}
+
+.menu-items {
+  background-color: white;
+  opacity: 0.6;
+  z-index: -1;
 }
 </style>
