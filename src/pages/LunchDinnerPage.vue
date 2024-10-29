@@ -110,6 +110,7 @@
       <div class="col text-center">
         <p class="fw-bold">Butterbeer™ Souvenirs</p>
         <p>A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
+        <!-- <img :src="butterbeer" alt="Butterbeer"> -->
         <p class="fw-bold">Butterbeer™ - $8.99</p>
         <p>A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
         <p class="fw-bold">Frozen Butterbeer™ - $8.99</p>
@@ -209,12 +210,18 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
+// import { Options, Vue } from "vue-class-component";
 
-@Options({
-  components: {},
-})
-export default class HomeView extends Vue {}
+// @Options({
+//   components: {},
+// })
+export default /* class HomeView extends Vue */ {
+  data() {
+    return {
+      //butterbeer: require("@/assets/lunchAndDinner/"),
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>

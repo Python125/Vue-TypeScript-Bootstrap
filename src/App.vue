@@ -7,7 +7,7 @@
     /> -->
     <router-view />
 
-    <!-- <footer>
+<!-- <footer>
   <p>&copy; 2024 Universal Studios. All rights reserved.</p>
   <p>Some imagery shown throughout our website does not represent current operational and safety guidelines.</p>
 </footer> -->
