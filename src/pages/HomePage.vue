@@ -1,6 +1,18 @@
 <template>
   <div class="home">
-    <h1>Leaky Cauldron is great</h1>
+    <h1>Leaky Cauldron</h1>
+  </div>
+
+  <div class="">
+    <router-link to="/breakfast">
+      <button class="">Breakfast Menu</button>
+    </router-link>
+  </div>
+
+  <div class="mt-42rem -ml-12.7rem">
+    <router-link to="/lunch">
+      <button class="">Lunch/Dinner Menu</button>
+    </router-link>
   </div>
 </template>
 
@@ -10,7 +22,7 @@
 // @Options({
 //   components: {},
 // })
-export default /* class HomePage extends Vue */ {}
+export default /* class HomePage extends Vue */ {};
 </script>
 
 <style lang="scss" scoped></style>
