@@ -10,17 +10,38 @@
 
     <div class="col text-center">
       <p class="fw-bold">Traditional Breakfast (FS, PS, SS, TNS) - $18.99</p>
-      <p>Fresh scrambled eggs, sausage links, black pudding, English bacon, baked beans, grilled tomato, sautéed mushrooms and breakfast potatoes</p>
-      <p class="fw-bold py-2">Pancake Breakfast (FS, PS, SES, SS, TNS) - $18.99</p>
-      <p>Three fluffy buttermilk pancakes, crisp bacon and link sausage with butter croissant</p>
-      <p class="fw-bold py-2">Egg, Leek, & Mushroom Pasty (FS, PS, SES, TNS) - $18.99</p>
-      <p>Pastry wrapped scrambled eggs, mushrooms and leeks served with breakfast potatoes and fresh fruit</p>
+      <p>
+        Fresh scrambled eggs, sausage links, black pudding, English bacon, baked
+        beans, grilled tomato, sautéed mushrooms and breakfast potatoes
+      </p>
+      <p class="fw-bold py-2">
+        Pancake Breakfast (FS, PS, SES, SS, TNS) - $18.99
+      </p>
+      <p>
+        Three fluffy buttermilk pancakes, crisp bacon and link sausage with
+        butter croissant
+      </p>
+      <p class="fw-bold py-2">
+        Egg, Leek, & Mushroom Pasty (FS, PS, SES, TNS) - $18.99
+      </p>
+      <p>
+        Pastry wrapped scrambled eggs, mushrooms and leeks served with breakfast
+        potatoes and fresh fruit
+      </p>
     </div>
     <div class="col text-center">
       <p class="fw-bold">American Breakfast (FS, PS, SES, SS, TNS) - $18.99</p>
-      <p>Fresh scrambled eggs, breakfast potatoes, crisp bacon, and link sausage with butter croissant</p>
-      <p class="fw-bold py-2">Apple Oatmeal Flan with Yogurt & Fruit (FS, GS, PS, SES, SS) - $18.99</p>
-      <p>Freshly baked flan of apples and oatmeal served with yogurt and fresh seasonal fruit</p>
+      <p>
+        Fresh scrambled eggs, breakfast potatoes, crisp bacon, and link sausage
+        with butter croissant
+      </p>
+      <p class="fw-bold py-2">
+        Apple Oatmeal Flan with Yogurt & Fruit (FS, GS, PS, SES, SS) - $18.99
+      </p>
+      <p>
+        Freshly baked flan of apples and oatmeal served with yogurt and fresh
+        seasonal fruit
+      </p>
       <p class="fw-bold py-2">Kid's Breakfast - $13.49</p>
       <p>Choose traditional, pancake or American</p>
     </div>
@@ -52,6 +73,21 @@
       <p class="fw-bold">Orange Juice - $3.49</p>
     </div>
   </div>
+
+  <div class="allergies d-flex px-3 pt-5">
+    <p class="px-2"><span class="fw-bolder">GS</span> - Gluten Sensitive</p>
+    <p class="px-2"><span class="fw-bolder">DS</span> - Dairy Sensitive</p>
+    <p class="px-2"><span class="fw-bolder">ES</span> - Egg Sensitive</p>
+    <p class="px-2"><span class="fw-bolder">PS</span> - Peanut Sensitive</p>
+    <p class="px-2"><span class="fw-bolder">TNS</span> - Tree Nut Sensitive</p>
+    <p class=""><span class="fw-bolder">FS</span> - Fish Sensitive</p>
+  </div>
+  <div class="allergies d-flex px-3">
+    <p class="px-2"><span class="fw-bolder">SFS</span> - Shellfish Sensitive</p>
+    <p class="px-2"><span class="fw-bolder">SES</span> - Sesame Sensitive</p>
+    <p class="px-2"><span class="fw-bolder">SS</span> - Soy Protein Sensitive</p>
+  </div>
+  <p class="px-4">Menu items and pricing are subject to change without notice</p>
 
   <div class="">
     <router-link to="/">
