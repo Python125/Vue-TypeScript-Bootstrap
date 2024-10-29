@@ -1,5 +1,5 @@
 <template>
-  <h1 class="restaurant text-white bg-primary fw-bolder text-center">
+  <h1 class="restaurant text-white text-center">
     Leaky Cauldron™
   </h1>
   <h2 class="menu-title fw-bold ms-5">Breakfast Menu</h2>
@@ -85,13 +85,16 @@ import { Options, Vue } from "vue-class-component";
 export default class HomeView extends Vue {}
 </script>
 
-<!-- <style lang="scss" scoped>
+<style lang="scss" scoped>
 * {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .restaurant {
   background: linear-gradient(to right, #3555a3 0, #1c3385 100%);
   font-weight: 900;
+  padding: 0.5rem;
 }
-</style> -->
+</style>

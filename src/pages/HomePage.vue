@@ -1,7 +1,5 @@
 <template>
-  <div class="home">
-    <h1>Leaky Cauldron</h1>
-  </div>
+  <h1>Leaky Cauldron</h1>
 
   <div class="">
     <router-link to="/breakfast">

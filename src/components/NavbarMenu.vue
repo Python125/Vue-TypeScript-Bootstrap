@@ -1,5 +1,5 @@
 <template>
-  <nav class="utility navbar navbar-default">
+  <nav class="utility navbar bg-primary navbar-default">
 
     <div class="dropdown">
       <button class="btn dropdown-toggle"><span class="caret"></span></button>
