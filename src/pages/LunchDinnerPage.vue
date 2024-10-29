@@ -17,7 +17,7 @@ import { Options, Vue } from "vue-class-component";
 export default class HomeView extends Vue {}
 </script>
 
-<style lang="scss" scoped>
+<!-- <style lang="scss" scoped>
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -26,4 +26,4 @@ export default class HomeView extends Vue {}
   background: linear-gradient(to right, #3555a3 0, #1c3385 100%);
   font-weight: 900;
 }
-</style>
+</style> -->
