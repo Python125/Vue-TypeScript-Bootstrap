@@ -15,19 +15,22 @@
 
   <div class="breakfast-link">
     <router-link to="/breakfast">
-      <button class="">Breakfast Menu</button>
+      <img :src="breakfast" alt="English Breakfast" class="breakfast-image"/>
+      <!-- <button class="">Breakfast Menu</button> -->
     </router-link>
   </div>
 
   <div class="lunch-link">
     <router-link to="/lunch">
-      <button class="">Lunch and Dinner Menu</button>
+      <img :src="lunch" alt="Fish and Chips" class="lunch-image"/>
+      <!-- <button class="">Lunch and Dinner Menu</button> -->
     </router-link>
   </div>
 
   <div class="drinks-link">
     <router-link to="/drinks">
-      <button class="">Drinks Menu</button>
+      <img :src="drinks" alt="Butterbeer" class="drink-image"/>
+      <!-- <button class="">Drinks Menu</button> -->
     </router-link>
   </div>  
 </template>
@@ -42,9 +45,12 @@ export default /* class HomePage extends Vue */ {
   data() {
     return {
       leakyCauldronLogo: require("@/assets/leaky-logo.png"),
+      breakfast: require("@/assets/images/english-breakfast.png"),
+      lunch: require("@/assets/images/fish-and-chips.png"),
+      drinks: require("@/assets/images/butterbeer.png"),
     };
   },
 };
 </script>
 
-<!-- <style lang="scss" scoped></style> -->
+<style lang="scss" scoped></style>
