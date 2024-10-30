@@ -1,4 +1,7 @@
 <template>
+  <h1 class="restaurant text-white text-center">
+    Leaky Cauldron™
+  </h1>
   <h2 class="menu-title fw-bold ms-5">Breakfast Menu</h2>
   <h3 class="ms-5 fw-bold py-3">Allergen Note</h3>
   <p class="ms-5">Please inform a manager or Chef's Assistant prior to ordering if someone in your party requires special dietary accommodations</p>
@@ -87,6 +90,12 @@ export default /* class HomeView extends Vue */ {}
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.restaurant {
+  background: linear-gradient(to right, #3555a3 0, #1c3385 100%);
+  font-weight: 900;
+  padding: 0.5rem;
 }
 
 .menu-items {

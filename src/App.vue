@@ -5,7 +5,6 @@
       :activePage="activePage"
       @page-change="setActivePage"
     /> -->
-    <h1 class="restaurant text-white text-center">Leaky Cauldron™</h1>
     <router-view />
     
 <!-- <footer>
@@ -32,12 +31,6 @@ export default {
 <style lang="scss">
 * {
   z-index: 1;
-}
-
-.restaurant {
-  background: linear-gradient(to right, #3555a3 0, #1c3385 100%);
-  font-weight: 900;
-  padding: 0.5rem;
 }
 
 .background-image {
