@@ -16,21 +16,21 @@
   <div class="breakfast-link">
     <router-link to="/breakfast">
       <img :src="breakfast" alt="English Breakfast" class="breakfast-image"/>
-      <!-- <button class="">Breakfast Menu</button> -->
+      <!-- <button class="breakfast-btn">Breakfast Menu</button> -->
     </router-link>
   </div>
 
   <div class="lunch-link">
     <router-link to="/lunch">
       <img :src="lunch" alt="Fish and Chips" class="lunch-image"/>
-      <!-- <button class="">Lunch and Dinner Menu</button> -->
+      <!-- <button class="lunch-btn">Lunch and Dinner Menu</button> -->
     </router-link>
   </div>
 
   <div class="drinks-link">
     <router-link to="/drinks">
       <img :src="drinks" alt="Butterbeer" class="drink-image"/>
-      <!-- <button class="">Drinks Menu</button> -->
+      <!-- <button class="drink-btn">Drinks Menu</button> -->
     </router-link>
   </div>  
 </template>
