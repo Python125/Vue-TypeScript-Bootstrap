@@ -21,23 +21,29 @@
   <div class="image-links">
     <div class="breakfast">
       <img :src="breakfast" alt="English Breakfast" class="breakfast-image" />
-      <router-link to="/breakfast">
-        <a class="breakfast-link">Breakfast Menu</a>
-      </router-link>
+      <div>
+        <router-link to="/breakfast">
+          <a class="breakfast-link">Breakfast Menu</a>
+        </router-link>
+      </div>
     </div>
 
     <div class="lunch">
       <img :src="lunch" alt="Fish and Chips" class="lunch-image" />
-      <router-link to="/lunch">
-        <a class="lunch-link">Lunch and Dinner Menu</a>
-      </router-link>
+      <div>
+        <router-link to="/lunch">
+          <a class="lunch-link">Lunch and Dinner Menu</a>
+        </router-link>
+      </div>
     </div>
 
     <div class="drinks">
       <img :src="drinks" alt="Butterbeer" class="drink-image" />
-      <router-link to="/drinks">
-        <a class="drink-link">Drinks Menu</a>
-      </router-link>
+      <div>
+        <router-link to="/drinks">
+          <a class="drink-link">Drinks Menu</a>
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -72,8 +78,13 @@ a {
 .image-links {
   display: flex;
   justify-content: space-around;
+  text-align: center;
   align-items: center;
   margin-top: 5rem;
+}
+
+.breakfast {
+  background-color: aqua;
 }
 
 .breakfast-image {
@@ -82,7 +93,6 @@ a {
 
 .breakfast-link {
   font-size: 2rem;
-  text-align: center;
 }
 
 .lunch-image {
