@@ -1,6 +1,11 @@
 <template>
   <div class="text-center">
-    <img :src="leakyCauldronLogo" alt="Leaky Cauldron" class="rounded-3 mt-3" id="logo-image" />
+    <img
+      :src="leakyCauldronLogo"
+      alt="Leaky Cauldron"
+      class="rounded-3 mt-3"
+      id="logo-image"
+    />
   </div>
   <div class="intro-section text-white">
     <h1 class="fw-bold text-center">Fill up on Traditional British Food.</h1>
@@ -13,26 +18,28 @@
     </p>
   </div>
 
-  <div class="breakfast-link">
-    <router-link to="/breakfast">
-      <img :src="breakfast" alt="English Breakfast" class="breakfast-image"/>
-      <!-- <button class="breakfast-btn">Breakfast Menu</button> -->
-    </router-link>
-  </div>
+  <div class="image-links">
+    <div class="breakfast">
+      <img :src="breakfast" alt="English Breakfast" class="breakfast-image" />
+      <router-link to="/breakfast">
+        <a class="breakfast-link">Breakfast Menu</a>
+      </router-link>
+    </div>
 
-  <div class="lunch-link">
-    <router-link to="/lunch">
-      <img :src="lunch" alt="Fish and Chips" class="lunch-image"/>
-      <!-- <button class="lunch-btn">Lunch and Dinner Menu</button> -->
-    </router-link>
-  </div>
+    <div class="lunch">
+      <img :src="lunch" alt="Fish and Chips" class="lunch-image" />
+      <router-link to="/lunch">
+        <a class="lunch-link">Lunch and Dinner Menu</a>
+      </router-link>
+    </div>
 
-  <div class="drinks-link">
-    <router-link to="/drinks">
-      <img :src="drinks" alt="Butterbeer" class="drink-image"/>
-      <!-- <button class="drink-btn">Drinks Menu</button> -->
-    </router-link>
-  </div>  
+    <div class="drinks">
+      <img :src="drinks" alt="Butterbeer" class="drink-image" />
+      <router-link to="/drinks">
+        <a class="drink-link">Drinks Menu</a>
+      </router-link>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -53,4 +60,36 @@ export default /* class HomePage extends Vue */ {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.image-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.breakfast-image {
+  width: 400px;
+}
+
+.breakfast-link {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.lunch-image {
+  width: 400px;
+}
+
+.drink-image {
+  width: 400px;
+}
+</style>
