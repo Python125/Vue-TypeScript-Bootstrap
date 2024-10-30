@@ -7,7 +7,7 @@
     </router-link>
   </div>
 
-  <div class="mt-42rem -ml-12.7rem">
+  <div class="">
     <router-link to="/lunch">
       <button class="">Lunch/Dinner Menu</button>
     </router-link>
@@ -20,7 +20,13 @@
 // @Options({
 //   components: {},
 // })
-export default /* class HomePage extends Vue */ {};
+export default /* class HomePage extends Vue */ {
+  data() {
+    return {
+      leakyCauldronLogo: require("@/assets/leaky-logo.png"),
+    };
+  }
+};
 </script>
 
 <!-- <style lang="scss" scoped></style> -->

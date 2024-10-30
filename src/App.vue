@@ -5,8 +5,9 @@
       :activePage="activePage"
       @page-change="setActivePage"
     /> -->
+    <h1 class="restaurant text-white text-center">Leaky Cauldron™</h1>
     <router-view />
-
+    
 <!-- <footer>
   <p>&copy; 2024 Universal Studios. All rights reserved.</p>
   <p>Some imagery shown throughout our website does not represent current operational and safety guidelines.</p>
@@ -32,6 +33,12 @@ export default {
 * {
   color: black;
   z-index: 1;
+}
+
+.restaurant {
+  background: linear-gradient(to right, #3555a3 0, #1c3385 100%);
+  font-weight: 900;
+  padding: 0.5rem;
 }
 
 .background-image {
