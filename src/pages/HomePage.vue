@@ -37,7 +37,7 @@
       </div>
     </div>
 
-    <div class="drinks">
+    <div class="drink">
       <img :src="drinks" alt="Butterbeer" class="drink-image" />
       <div>
         <router-link to="/drinks">
@@ -85,6 +85,7 @@ a {
 
 .breakfast {
   background-color: aqua;
+  border: 6px black solid;
 }
 
 .breakfast-image {
@@ -92,14 +93,35 @@ a {
 }
 
 .breakfast-link {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.lunch {
+  background-color: aqua;
+  border: 6px black solid;
 }
 
 .lunch-image {
   width: 400px;
 }
 
+.lunch-link {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.drink {
+  background-color: aqua;
+  border: 6px black solid;
+}
+
 .drink-image {
   width: 400px;
+}
+
+.drink-link {
+  font-size: 1.5rem;
+  color: white;
 }
 </style>
