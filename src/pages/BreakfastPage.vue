@@ -3,7 +3,7 @@
   <h3 class="ms-5 fw-bold py-3">Allergen Note</h3>
   <p class="ms-5">Please inform a manager or Chef's Assistant prior to ordering if someone in your party requires special dietary accommodations</p>
 
-  <div class="menu-items row py-5">
+  <div class="menu-items text-white row py-5">
     <h3 class="fw-bold text-center">Breakfast - served until 10:30 am daily</h3>
     <p class="fw-light text-center">Includes small beverage</p>
     <div class="col text-center">
@@ -90,7 +90,7 @@ export default /* class HomeView extends Vue */ {}
 }
 
 .menu-items {
-  background-color: white;
+  background-color: black;
   opacity: 0.6;
   z-index: -1;
 }

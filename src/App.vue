@@ -31,7 +31,6 @@ export default {
 
 <style lang="scss">
 * {
-  color: black;
   z-index: 1;
 }
 

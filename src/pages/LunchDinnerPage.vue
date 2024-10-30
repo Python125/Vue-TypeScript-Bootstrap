@@ -6,7 +6,7 @@
     your party requires special dietary accommodations
   </p>
 
-  <div class="menu-items row py-5">
+  <div class="menu-items text-white row py-5">
     <h3 class="fw-bold text-center">Entrées</h3>
 
     <div class="col text-center">
@@ -231,7 +231,7 @@ export default /* class HomeView extends Vue */ {
 }
 
 .menu-items {
-  background-color: white;
+  background-color: black;
   opacity: 0.6;
   z-index: -1;
 }
