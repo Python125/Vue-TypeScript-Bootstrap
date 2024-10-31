@@ -23,7 +23,7 @@
       <img :src="breakfast" alt="English Breakfast" class="breakfast-image" />
       <div>
         <router-link to="/breakfast">
-          <a class="breakfast-link">Breakfast Menu</a>
+          <a class="breakfast-link">Early Elixirs</a>
         </router-link>
       </div>
     </div>
@@ -32,7 +32,7 @@
       <img :src="lunch" alt="Fish and Chips" class="lunch-image" />
       <div>
         <router-link to="/lunch">
-          <a class="lunch-link">Lunch and Dinner Menu</a>
+          <a class="lunch-link">Great Eats</a>
         </router-link>
       </div>
     </div>
@@ -41,7 +41,7 @@
       <img :src="drinks" alt="Butterbeer" class="drink-image" />
       <div>
         <router-link to="/drinks">
-          <a class="drink-link">Drinks Menu</a>
+          <a class="drink-link">Butterbeer & Beyond</a>
         </router-link>
       </div>
     </div>
@@ -84,7 +84,7 @@ a {
 }
 
 .breakfast {
-  background-color: aqua;
+  background-color: rgb(91, 49, 18);
   border: 6px black solid;
 }
 
@@ -94,11 +94,11 @@ a {
 
 .breakfast-link {
   font-size: 1.5rem;
-  color: white;
+  color: orange;
 }
 
 .lunch {
-  background-color: aqua;
+  background-color: rgb(91, 49, 18);
   border: 6px black solid;
 }
 
@@ -108,11 +108,11 @@ a {
 
 .lunch-link {
   font-size: 1.5rem;
-  color: white;
+  color: orange;
 }
 
 .drink {
-  background-color: aqua;
+  background-color: rgb(91, 49, 18);
   border: 6px black solid;
 }
 
@@ -122,6 +122,6 @@ a {
 
 .drink-link {
   font-size: 1.5rem;
-  color: white;
+  color: orange;
 }
 </style>
