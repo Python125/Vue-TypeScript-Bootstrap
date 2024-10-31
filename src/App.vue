@@ -1,10 +1,10 @@
 <template>
   <div class="background-image">
-    <!-- <Navbar
+    <Navbar
       :pages="pages"
       :activePage="activePage"
       @page-change="setActivePage"
-    /> -->
+    />
     <router-view />
     
 <!-- <footer>
@@ -15,12 +15,12 @@
 </template>
 
 <script>
-//import Navbar from "./components/NavbarMenu.vue";
+import Navbar from "./components/NavbarMenu.vue";
 
 export default {
   name: "App",
   components: {
-    //Navbar,
+    Navbar,
   },
   data() {
     return {};
