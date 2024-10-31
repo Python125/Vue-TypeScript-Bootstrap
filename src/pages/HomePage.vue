@@ -84,7 +84,7 @@ a {
 }
 
 .breakfast {
-  background-color: rgb(91, 49, 18);
+  background-color: black;
   border: 6px black solid;
 }
 
@@ -94,11 +94,12 @@ a {
 
 .breakfast-link {
   font-size: 1.5rem;
-  color: orange;
+  color: white;
+  opacity: 0.6;
 }
 
 .lunch {
-  background-color: rgb(91, 49, 18);
+  background-color: black;
   border: 6px black solid;
 }
 
@@ -108,11 +109,12 @@ a {
 
 .lunch-link {
   font-size: 1.5rem;
-  color: orange;
+  color: white;
+  opacity: 0.6;
 }
 
 .drink {
-  background-color: rgb(91, 49, 18);
+  background-color: black;
   border: 6px black solid;
 }
 
@@ -122,6 +124,7 @@ a {
 
 .drink-link {
   font-size: 1.5rem;
-  color: orange;
+  color: white;
+  opacity: 0.6;
 }
 </style>
