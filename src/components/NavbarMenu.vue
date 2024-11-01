@@ -154,6 +154,10 @@ export default defineComponent({
 .location-symbol {
   margin-top: 0.8rem;
   margin-left: 37.5rem;
+
+  @media only screen and (max-width: 1920px) {
+    margin-left: 17rem;
+  }
 }
 
 .btn {
