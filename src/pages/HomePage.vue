@@ -1,15 +1,10 @@
 <template>
   <div class="text-center">
-    <img
-      :src="leakyCauldronLogo"
-      alt="Leaky Cauldron"
-      class="rounded-3 mt-3"
-      id="logo-image"
-    />
+    <img :src="leakyCauldronLogo" alt="Leaky Cauldron" class="rounded-3 mt-3" />
   </div>
   <div class="intro-section text-white">
     <h1 class="fw-bold text-center">Fill up on Traditional British Food.</h1>
-    <p class="text-center h4 px-5 fw-normal">
+    <p class="intro-summary text-center h4 fw-normal">
       The Leaky Cauldron™ is a small, grubby-looking pub and inn. Once inside,
       you'll find yourself under a cathedral ceiling with views towards the
       guest rooms in the inn. The delicious traditional British fare served here
@@ -75,9 +70,20 @@ a {
   }
 }
 
+.intro-section {
+  background-color: #0a0a0a;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.intro-summary {
+  padding-left: 40rem;
+  padding-right: 40rem;
+}
+
 .image-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-align: center;
   align-items: center;
   margin-top: 5rem;
