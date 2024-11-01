@@ -176,15 +176,15 @@ export default defineComponent({
 }
 
 .help {
-  margin-left: 33rem;
   margin-top: 0.1rem;
+  margin-left: 33rem;
 }
 
 .dropdown-link {
   font-size: 14px;
   text-decoration: none;
-  margin-left: 2rem;
   margin-top: 0.65rem;
+  margin-left: 2rem;
 
   &:hover {
     text-decoration: underline;
