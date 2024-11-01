@@ -111,14 +111,21 @@ export default defineComponent({
     
     const toggleLocationDropdown = () => {
       isLocationDropdownOpen.value = !isLocationDropdownOpen.value;
+      isHelpDropdownOpen.value = false;
+      isLanguageDropdownOpen.value = false;
+
     };
 
     const toggleHelpDropdown = () => {
       isHelpDropdownOpen.value = !isHelpDropdownOpen.value;
+      isLocationDropdownOpen.value = false;
+      isLanguageDropdownOpen.value = false;
     }
 
     const toggleLanguageDropdown = () => {
       isLanguageDropdownOpen.value = !isLanguageDropdownOpen.value;
+      isLocationDropdownOpen.value = false;
+      isHelpDropdownOpen.value = false;
     }
 
     return {
