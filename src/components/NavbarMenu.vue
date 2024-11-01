@@ -73,7 +73,6 @@ export default defineComponent({
   setup() {
     const isLocationDropdownOpen = ref(false);
     const isHelpDropdownOpen = ref(false);
-
     const isLanguageDropdownOpen = ref(false);
 
     const locations = ref<string[]>([
@@ -83,7 +82,6 @@ export default defineComponent({
       "Universal Beijing Resort",
       "Universal Studios Singapore",
     ]);
-
 
     const helpItems = ref<string[]>([
       "Contact Us",
@@ -99,6 +97,7 @@ export default defineComponent({
       "Español",
       "Portuguese",
     ])
+    
     const toggleLocationDropdown = () => {
       isLocationDropdownOpen.value = !isLocationDropdownOpen.value;
     };
