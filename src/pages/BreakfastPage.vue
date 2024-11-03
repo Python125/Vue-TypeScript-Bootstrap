@@ -39,20 +39,6 @@
       </div>
     </div>
 
-    <div class="beverages-items row">
-      <h3 class="fw-bold text-center">Beverages</h3>
-      <div class="col text-center">
-        <p class="fw-bold">Pumpkin Juice™ - $5.49</p>
-        <p class="fw-bold">Fresh Brewed Coffee - $3.79</p>
-        <p class="fw-bold">Apple Juice - $3.49</p>
-      </div>
-      <div class="col text-center">
-        <p class="fw-bold">Hot Tea - $3.79</p>
-        <p class="fw-bold">Milk - $2.99</p>
-        <p class="fw-bold">Orange Juice - $3.49</p>
-      </div>
-    </div>
-
     <div class="allergies d-flex px-3 pt-5">
       <p class="px-2"><span class="fw-bolder">GS</span> - Gluten Sensitive</p>
       <p class="px-2"><span class="fw-bolder">DS</span> - Dairy Sensitive</p>
@@ -87,7 +73,6 @@ export default /* class HomeView extends Vue */ {}
 
 <style lang="scss" scoped>
 * {
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }

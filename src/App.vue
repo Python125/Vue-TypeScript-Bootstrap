@@ -30,7 +30,8 @@ export default {
 
 <style lang="scss">
 * {
-  z-index: 1;
+  font-family: Helvetica, Arial, sans-serif;
+  // z-index: 1;
 }
 
 .background-image {
