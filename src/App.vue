@@ -30,7 +30,6 @@ export default {
 
 <style lang="scss">
 // * {
-//   font-family: Helvetica, Arial, sans-serif;
 //   z-index: 1;
 // }
 
