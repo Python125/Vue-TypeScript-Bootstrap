@@ -1,5 +1,5 @@
 <template>
-  <nav class="top-menu text-white">
+  <div class="top-menu text-white">
     <div class="d-flex">
       <svg class="location-symbol" id="gds-svg-389" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false"><g transform="translate(2.000000, 2.000000)"><path fill="#ffffff" d="M10.2342823,11.2534599 C8.2334915,11.2534599 6.58857256,9.77461447 6.39086595,7.88453934 C6.37504943,7.75800712 6.37504943,7.62356663 6.37504943,7.4970344 C6.37504943,5.4250692 8.09905101,3.7485172 10.2421906,3.7485172 C12.3774219,3.7485172 14.1093318,5.4250692 14.1093318,7.4970344 C14.1093318,8.27204429 13.8641756,8.99960459 13.4450376,9.60063266 C12.7491103,10.5970739 11.570779,11.2534599 10.2342823,11.2534599 Z M10.2421906,0 C5.97172796,0 2.5,3.36101226 2.5,7.4970344 C2.5,9.83788059 3.67042309,12.605773 5.96381969,15.7216291 C7.62455516,17.9675761 9.26156584,19.5650455 9.32483195,19.6362198 C9.5778964,19.8734678 9.9100435,20 10.2421906,20 C10.5664294,20 10.8985765,19.881376 11.151641,19.6362198 C11.2228153,19.5650455 12.859826,17.9675761 14.5126532,15.7216291 C16.8139581,12.605773 17.9764729,9.83788059 17.9764729,7.4970344 C17.9764729,3.36101226 14.504745,0 10.2421906,0 Z"></path></g></svg>
       <div class="dropdown me-3 mt-1">
@@ -61,9 +61,7 @@
         <svg class="nav-icon mt-2 me-3 mb-2 ms-2" id="gds-svg-208" fill="rgb(34, 34, 34)" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false"><path fill="#ffffff" fill-rule="evenodd" clip-rule="evenodd" d="M6.15 2.818A1 1 0 0 0 5.168 2H3a1 1 0 0 0-1 1l.003.075A1 1 0 0 0 3 4h1.335l2.253 12.182a1 1 0 0 0 .984.818h12.832a1 1 0 0 0 1-1l-.003-.075a1 1 0 0 0-.997-.925H8.403l-.185-1h12.186L22 6H6.739L6.15 2.818ZM9.51 22c1.106 0 2.003-.873 2.003-1.95 0-1.076-.897-1.948-2.003-1.948s-2.003.872-2.003 1.949c0 1.076.897 1.949 2.003 1.949Zm11.017-1.95c0 1.077-.897 1.95-2.003 1.95s-2.003-.873-2.003-1.95c0-1.076.897-1.948 2.003-1.948s2.003.872 2.003 1.949Z"></path></svg>
       </a>
     </div>
-
     <hr>
-
     <div class="d-flex">
       <div>
         <a href="/" class="universal-link">
@@ -82,7 +80,8 @@
       <a href="#" class="middlebar-links fw-bold text-white text-decoration-none mt-4 me-5">Passholders</a>
       <button class="browse-btn bg-white text-center">Browse All Products</button>
     </div>
-  </nav>
+  </div>
+  <!-- <div class="bottom-bar d-flex bg-white">WORK ON THIS TOMORROW</div> -->
 </template>
 
 <script lang="ts">
@@ -140,9 +139,11 @@ export default defineComponent({
       isLocationDropdownOpen,
       isHelpDropdownOpen,
       isLanguageDropdownOpen,
+
       locations,
       helpItems,
       languageOptions,
+
       toggleLocationDropdown,
       toggleHelpDropdown,
       toggleLanguageDropdown,
@@ -176,6 +177,7 @@ export default defineComponent({
 }
 
 .dropdown-item {
+  padding: 1rem 2rem;
   color: black;
   text-decoration: none;
 
