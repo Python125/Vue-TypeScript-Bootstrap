@@ -81,7 +81,16 @@
       <button class="browse-btn bg-white text-center">Browse All Products</button>
     </div>
   </div>
-  <div class="d-flex bg-white">Hello</div>
+  <div class="d-flex bg-white">
+
+    <!-- <a class="quickbar-btn"><img :src="ticketBlue" alt="Ticket">Park Tickets</a>
+    <a class="quickbar-btn"><img :src="expressBlue" alt="Express">Express Passes</a>
+    <a class="quickbar-btn"><img :src="dealBlue" alt="Deals">Deals & Specials</a>
+    <a class="quickbar-btn"><img :src="hotelsBlue" alt="Hotels">Hotels</a>
+    <a class="quickbar-btn"><img :src="annualBlue" alt="Annual">Annual Passes</a>
+    <a class="quickbar-btn"><img :src="vacationBlue" alt="Vacation">Vacation Packages</a>
+    <a class="quickbar-btn"><img class="w-25" :src="merchandiseBlue" alt="Merchandise">Merchandise</a> -->
+  </div>
 </template>
 
 <script lang="ts">
@@ -89,6 +98,24 @@ import { defineComponent, ref } from "vue";
 
 export default defineComponent({
   name: "NavbarMenu",
+  data() {
+    return {
+      ticketBlue: require("@/assets/images/tickets-blue.png"),
+      // ticketWhite: require("@/assets/images/tickets-white.png"),
+      expressBlue: require("@/assets/images/express-pass-blue.png"),
+      // expressWhite: require("@/assets/images/express-pass-white.png"),
+      dealBlue: require("@/assets/images/deal-blue.png"),
+      // dealWhite: require("@/assets/images/deal-white.png"),
+      hotelsBlue: require("@/assets/images/hotels-blue.png"),
+      // hotelsWhite: require("@/assets/images/hotels-white.png"),
+      annualBlue: require("@/assets/images/annual-icon-blue.png"),
+      // annualWhite: require("@/assets/images/annual-icon-white.png"),
+      vacationBlue: require("@/assets/images/vacation-blue.png"),
+      // vacationWhite: require("@/assets/images/vacation-white.png"),
+      merchandiseBlue: require("@/assets/images/merchandise-blue.png"),
+      // merchandiseWhite: require("@/assets/images/merchandise-white.png"),
+    }
+  },
   setup() {
     const isLocationDropdownOpen = ref(false);
     const isHelpDropdownOpen = ref(false);
@@ -245,5 +272,15 @@ hr {
   border-radius: 30px;
   font-weight: 600;
   font-size: 14px;
+}
+
+.quickbar-btn {
+  background-color: transparent;
+  border: none;
+  margin-left: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
 }
 </style>
