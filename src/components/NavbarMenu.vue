@@ -82,14 +82,13 @@
     </div>
   </div>
   <div class="d-flex bg-white">
-
-    <!-- <a class="quickbar-btn"><img :src="ticketBlue" alt="Ticket">Park Tickets</a>
-    <a class="quickbar-btn"><img :src="expressBlue" alt="Express">Express Passes</a>
-    <a class="quickbar-btn"><img :src="dealBlue" alt="Deals">Deals & Specials</a>
-    <a class="quickbar-btn"><img :src="hotelsBlue" alt="Hotels">Hotels</a>
-    <a class="quickbar-btn"><img :src="annualBlue" alt="Annual">Annual Passes</a>
-    <a class="quickbar-btn"><img :src="vacationBlue" alt="Vacation">Vacation Packages</a>
-    <a class="quickbar-btn"><img class="w-25" :src="merchandiseBlue" alt="Merchandise">Merchandise</a> -->
+    <button class="quickbar-btn"><a href="#"><img :src="ticketBlue" alt="Ticket">Park Tickets</a></button>
+    <button class="quickbar-btn"><a href="#"><img :src="expressBlue" alt="Express">Express Passes</a></button>
+    <button class="quickbar-btn"><a href="#"><img :src="dealBlue" alt="Deals">Deals & Specials</a></button>
+    <button class="quickbar-btn"><a href="#"><img :src="hotelsBlue" alt="Hotels">Hotels</a></button>
+    <button class="quickbar-btn"><a href="#"><img :src="annualBlue" alt="Annual">Annual Passes</a></button>
+    <button class="quickbar-btn"><a href="#"><img :src="vacationBlue" alt="Vacation">Vacation Packages</a></button>
+    <button class="quickbar-btn"><a href="#"><img class="w-25" :src="merchandiseBlue" alt="Merchandise">Merchandise</a></button>
   </div>
 </template>
 
@@ -277,7 +276,6 @@ hr {
 .quickbar-btn {
   background-color: transparent;
   border: none;
-  margin-left: 10rem;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
