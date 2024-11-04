@@ -82,13 +82,13 @@
     </div>
   </div>
   <div class="d-flex bg-white">
-    <button class="quickbar-btn"><a href="#"><img :src="ticketBlue" alt="Ticket">Park Tickets</a></button>
-    <button class="quickbar-btn"><a href="#"><img :src="expressBlue" alt="Express">Express Passes</a></button>
-    <button class="quickbar-btn"><a href="#"><img :src="dealBlue" alt="Deals">Deals & Specials</a></button>
-    <button class="quickbar-btn"><a href="#"><img :src="hotelsBlue" alt="Hotels">Hotels</a></button>
-    <button class="quickbar-btn"><a href="#"><img :src="annualBlue" alt="Annual">Annual Passes</a></button>
-    <button class="quickbar-btn"><a href="#"><img :src="vacationBlue" alt="Vacation">Vacation Packages</a></button>
-    <button class="quickbar-btn"><a href="#"><img class="w-25" :src="merchandiseBlue" alt="Merchandise">Merchandise</a></button>
+    <button class="ticket-btn"><a href="#"><img class="ticket-image" :src="ticketBlue" alt="Ticket">Park Tickets</a></button>
+    <button class="express-btn"><a href="#"><img class="express-image" :src="expressBlue" alt="Express">Express Passes</a></button>
+    <button class="deals-btn"><a href="#"><img class="deals-image" :src="dealsBlue" alt="Deals">Deals & Specials</a></button>
+    <button class="hotels-btn"><a href="#"><img class="hotels-image" :src="hotelsBlue" alt="Hotels">Hotels</a></button>
+    <button class="annual-btn"><a href="#"><img class="annual-image" :src="annualBlue" alt="Annual">Annual Passes</a></button>
+    <button class="vacation-btn"><a href="#"><img class="vacation-image" :src="vacationBlue" alt="Vacation">Vacation Packages</a></button>
+    <button class="merchandise-btn"><a href="#"><img class="merchandise-image" :src="merchandiseBlue" alt="Merchandise">Merchandise</a></button>
   </div>
 </template>
 
@@ -103,8 +103,8 @@ export default defineComponent({
       // ticketWhite: require("@/assets/images/tickets-white.png"),
       expressBlue: require("@/assets/images/express-pass-blue.png"),
       // expressWhite: require("@/assets/images/express-pass-white.png"),
-      dealBlue: require("@/assets/images/deal-blue.png"),
-      // dealWhite: require("@/assets/images/deal-white.png"),
+      dealsBlue: require("@/assets/images/deals-blue.png"),
+      // dealsWhite: require("@/assets/images/deals-white.png"),
       hotelsBlue: require("@/assets/images/hotels-blue.png"),
       // hotelsWhite: require("@/assets/images/hotels-white.png"),
       annualBlue: require("@/assets/images/annual-icon-blue.png"),
@@ -273,12 +273,60 @@ hr {
   font-size: 14px;
 }
 
-.quickbar-btn {
+.ticket-btn {
   background-color: transparent;
   border: none;
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  align-items: center;
+  // text-align: center;
+  // align-items: center;
 }
+
+.ticket-image {}
+
+.express-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.express-image {}
+
+.deals-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.deals-image {}
+
+.hotels-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.hotels-image {}
+
+.annual-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.annual-image {}
+
+.vacation-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.vacation-image {}
+
+.merchandise-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.merchandise-image {
+  width: 20px;
+}
+
+// .quickbar-btn {
+//   justify-content: space-evenly;
+// }
 </style>
