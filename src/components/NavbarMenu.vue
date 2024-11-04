@@ -217,7 +217,7 @@ export default defineComponent({
 }
 
 hr {
-  opacity: 0.1;
+  opacity: 0.07;
   margin: 1rem 0rem 0.5rem 0rem;
   padding: 0;
 }
