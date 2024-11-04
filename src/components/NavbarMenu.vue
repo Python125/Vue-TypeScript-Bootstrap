@@ -223,6 +223,10 @@ hr {
 .universal-image {
   width: 95px;
   margin-left: 36rem;
+
+  @media only screen and (max-width: 1920px) {
+    margin-left: 16rem;
+  }
 }
 
 .middlebar-links {
@@ -234,9 +238,10 @@ hr {
 .browse-btn {
   border: none;
   color: #0368d9;
-  padding: 5px 20px;
-  margin: 0.4rem 7rem;
+  padding: 1rem 1.5rem;
+  margin: 0.6rem 6.6rem;
   border-radius: 30px;
   font-weight: 500;
+  font-size: 14px;
 }
 </style>
