@@ -29,10 +29,10 @@ export default {
 </script>
 
 <style lang="scss">
-* {
-  font-family: Helvetica, Arial, sans-serif;
-  // z-index: 1;
-}
+// * {
+//   font-family: Helvetica, Arial, sans-serif;
+//   z-index: 1;
+// }
 
 .background-image {
   position: relative;
