@@ -274,7 +274,7 @@ hr {
     background-size: 22px;
     background-image: url(/src/assets/images/tickets-blue.png);
     background-position: 15px center;
-    padding-left: 60px;
+    padding-left: 50px;
 
     &:hover {
       background-image: url(/src/assets/images/tickets-white.png);
@@ -285,7 +285,7 @@ hr {
     background-size: 40px;
     background-image: url(/src/assets/images/express-pass-blue.png);
     background-position: 15px center;
-    padding-left: 60px;
+    padding-left: 65px;
     
     &:hover {
       background-image: url(/src/assets/images/express-pass-white.png);
@@ -294,8 +294,8 @@ hr {
 
   &.deals-btn {
     background-image: url(/src/assets/images/deals-blue.png);
-    background-position: 15px center;
-    padding-left: 60px;
+    background-position: 40px center;
+    padding: 1rem 5rem 1rem 5rem;
 
     &:hover {
       background-image: url(/src/assets/images/deals-white.png);
@@ -306,7 +306,8 @@ hr {
     background-size: 25px;
     background-image: url(/src/assets/images/hotels-blue.png);
     background-position: 15px center;
-    padding-left: 60px;
+    padding: 1rem 4rem;
+    // padding-left: 60px;
 
     &:hover {
       background-image: url(/src/assets/images/hotels-white.png);
