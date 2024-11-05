@@ -82,13 +82,13 @@
     </div>
   </div>
   <div class="d-flex bg-white">
-    <button class="ticket-btn"><a class="text-decoration-none" href="#"><img class="ticket-image" :src="ticketBlue" alt="Ticket">Park Tickets</a></button>
-    <button class="express-btn"><a class="text-decoration-none" href="#"><img class="express-image" :src="expressBlue" alt="Express">Express Passes</a></button>
-    <button class="deals-btn"><a class="text-decoration-none" href="#"><img class="deals-image" :src="dealsBlue" alt="Deals">Deals & Specials</a></button>
-    <button class="hotels-btn"><a class="text-decoration-none" href="#"><img class="hotels-image" :src="hotelsBlue" alt="Hotels">Hotels</a></button>
-    <button class="annual-btn"><a class="text-decoration-none" href="#"><img class="annual-image" :src="annualBlue" alt="Annual">Annual Passes</a></button>
-    <button class="vacation-btn"><a class="text-decoration-none" href="#"><img class="vacation-image" :src="vacationBlue" alt="Vacation">Vacation Packages</a></button>
-    <button class="merchandise-btn"><a class="text-decoration-none" href="#"><img class="merchandise-image" :src="merchandiseBlue" alt="Merchandise">Merchandise</a></button>
+    <a class="btn-link ticket-btn text-decoration-none" href="#">Park Tickets</a>
+    <a class="btn-link express-btn text-decoration-none" href="#">Express Passes</a>
+    <a class="btn-link deals-btn text-decoration-none" href="#">Deals & Specials</a>
+    <a class="btn-link hotels-btn text-decoration-none" href="#">Hotels</a>
+    <a class="btn-link annual-btn text-decoration-none" href="#">Annual Passes</a>
+    <a class="btn-link vacation-btn text-decoration-none" href="#">Vacation Packages</a>
+    <a class="btn-link merchandise-btn text-decoration-none" href="#">Merchandise</a>
   </div>
 </template>
 
@@ -273,56 +273,66 @@ hr {
   font-size: 14px;
 }
 
-.ticket-btn {
+.btn-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
   background-color: transparent;
   border: none;
-  // text-align: center;
-  // align-items: center;
+  color: inherit;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: #162b75;
+    color: white;
+  }
+
+  &.ticket-btn {
+    &:hover .btn-image {
+      content: url(/src/assets/images/tickets-white.png);
+    }
+  }
+
+  &.express-btn {
+    &:hover .btn-image {
+      content: url(/src/assets/images/express-pass-white.png);
+    }
+  }
+
+  &.deals-btn {
+    &:hover .btn-image {
+      content: url(/src/assets/images/deals-white.png);
+    }
+  }
+
+  &.hotels-btn {
+    &:hover .btn-image {
+      content: url(/src/assets/images/hotels-white.png);
+    }
+  }
+
+  &.annual-btn {
+    &:hover .btn-image {
+      content: url(/src/assets/images/annual-icon-white.png);
+    }
+  }
+
+  &.vacation-btn {
+    &:hover .btn-image {
+      content: url(/src/assets/images/vacation-white.png);
+    }
+  }
+
+  &.merchandise-btn {
+    &:hover .btn-image {
+      content: url(/src/assets/images/merchandise-white.png);
+    }
+  }
 }
 
-.ticket-image {}
-
-.express-btn {
-  background-color: transparent;
-  border: none;
-}
-
-.express-image {}
-
-.deals-btn {
-  background-color: transparent;
-  border: none;
-}
-
-.deals-image {}
-
-.hotels-btn {
-  background-color: transparent;
-  border: none;
-}
-
-.hotels-image {}
-
-.annual-btn {
-  background-color: transparent;
-  border: none;
-}
-
-.annual-image {}
-
-.vacation-btn {
-  background-color: transparent;
-  border: none;
-}
-
-.vacation-image {}
-
-.merchandise-btn {
-  background-color: transparent;
-  border: none;
-}
-
-.merchandise-image {
-  width: 20px;
-}
+// .ticket-link {
+//   &:hover {
+//     color: white;
+//   }
+// }
 </style>
