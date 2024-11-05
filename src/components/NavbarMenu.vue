@@ -325,8 +325,4 @@ hr {
 .merchandise-image {
   width: 20px;
 }
-
-// .quickbar-btn {
-//   justify-content: space-evenly;
-// }
 </style>
