@@ -258,12 +258,11 @@ hr {
 .btn-link {
   display: inline-flex;
   align-items: center;
-  padding: 10px 20px;
+  padding: 1rem;
+  margin: auto;
   color: inherit;
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: left center;
-  padding-left: 40px;
   transition: background-color 0.1s ease, color 0.1s ease;
 
   &:hover {
@@ -274,6 +273,8 @@ hr {
   &.ticket-btn {
     background-size: 22px;
     background-image: url(/src/assets/images/tickets-blue.png);
+    background-position: 15px center;
+    padding-left: 60px;
 
     &:hover {
       background-image: url(/src/assets/images/tickets-white.png);
@@ -283,7 +284,9 @@ hr {
   &.express-btn {
     background-size: 40px;
     background-image: url(/src/assets/images/express-pass-blue.png);
-  
+    background-position: 15px center;
+    padding-left: 60px;
+    
     &:hover {
       background-image: url(/src/assets/images/express-pass-white.png);
     }
@@ -291,6 +294,8 @@ hr {
 
   &.deals-btn {
     background-image: url(/src/assets/images/deals-blue.png);
+    background-position: 15px center;
+    padding-left: 60px;
 
     &:hover {
       background-image: url(/src/assets/images/deals-white.png);
@@ -300,6 +305,8 @@ hr {
   &.hotels-btn {
     background-size: 25px;
     background-image: url(/src/assets/images/hotels-blue.png);
+    background-position: 15px center;
+    padding-left: 60px;
 
     &:hover {
       background-image: url(/src/assets/images/hotels-white.png);
@@ -309,6 +316,8 @@ hr {
   &.annual-btn {
     background-size: 30px;
     background-image: url(/src/assets/images/annual-icon-blue.png);
+    background-position: 15px center;
+    padding-left: 60px;
 
     &:hover {
       background-image: url(/src/assets/images/annual-icon-white.png);
@@ -318,6 +327,8 @@ hr {
   &.vacation-btn {
     background-size: 35px;
     background-image: url(/src/assets/images/vacation-blue.png);
+    background-position: 15px center;
+    padding-left: 60px;
 
     &:hover {
       background-image: url(/src/assets/images/vacation-white.png);
@@ -327,6 +338,8 @@ hr {
   &.merchandise-btn {
     background-size: 30px;
     background-image: url(/src/assets/images/merchandise-blue.png);
+    background-position: 15px center;
+    padding-left: 60px;
 
     &:hover {
       background-image: url(/src/assets/images/merchandise-white.png);
