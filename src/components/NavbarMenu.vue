@@ -97,24 +97,6 @@ import { defineComponent, ref } from "vue";
 
 export default defineComponent({
   name: "NavbarMenu",
-  data() {
-    return {
-      ticketBlue: require("@/assets/images/tickets-blue.png"),
-      // ticketWhite: require("@/assets/images/tickets-white.png"),
-      expressBlue: require("@/assets/images/express-pass-blue.png"),
-      // expressWhite: require("@/assets/images/express-pass-white.png"),
-      dealsBlue: require("@/assets/images/deals-blue.png"),
-      // dealsWhite: require("@/assets/images/deals-white.png"),
-      hotelsBlue: require("@/assets/images/hotels-blue.png"),
-      // hotelsWhite: require("@/assets/images/hotels-white.png"),
-      annualBlue: require("@/assets/images/annual-icon-blue.png"),
-      // annualWhite: require("@/assets/images/annual-icon-white.png"),
-      vacationBlue: require("@/assets/images/vacation-blue.png"),
-      // vacationWhite: require("@/assets/images/vacation-white.png"),
-      merchandiseBlue: require("@/assets/images/merchandise-blue.png"),
-      // merchandiseWhite: require("@/assets/images/merchandise-white.png"),
-    }
-  },
   setup() {
     const isLocationDropdownOpen = ref(false);
     const isHelpDropdownOpen = ref(false);
@@ -277,10 +259,12 @@ hr {
   display: inline-flex;
   align-items: center;
   padding: 10px 20px;
-  background-color: transparent;
-  border: none;
   color: inherit;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+  transition: background-color 0.1s ease, color 0.1s ease;
 
   &:hover {
     background-color: #162b75;
@@ -288,51 +272,65 @@ hr {
   }
 
   &.ticket-btn {
-    &:hover .btn-image {
-      content: url(/src/assets/images/tickets-white.png);
+    background-size: 22px;
+    background-image: url(/src/assets/images/tickets-blue.png);
+
+    &:hover {
+      background-image: url(/src/assets/images/tickets-white.png);
     }
   }
 
   &.express-btn {
-    &:hover .btn-image {
-      content: url(/src/assets/images/express-pass-white.png);
+    background-size: 40px;
+    background-image: url(/src/assets/images/express-pass-blue.png);
+  
+    &:hover {
+      background-image: url(/src/assets/images/express-pass-white.png);
     }
   }
 
   &.deals-btn {
-    &:hover .btn-image {
-      content: url(/src/assets/images/deals-white.png);
+    background-image: url(/src/assets/images/deals-blue.png);
+
+    &:hover {
+      background-image: url(/src/assets/images/deals-white.png);
     }
   }
 
   &.hotels-btn {
-    &:hover .btn-image {
-      content: url(/src/assets/images/hotels-white.png);
+    background-size: 25px;
+    background-image: url(/src/assets/images/hotels-blue.png);
+
+    &:hover {
+      background-image: url(/src/assets/images/hotels-white.png);
     }
   }
 
   &.annual-btn {
-    &:hover .btn-image {
-      content: url(/src/assets/images/annual-icon-white.png);
+    background-size: 30px;
+    background-image: url(/src/assets/images/annual-icon-blue.png);
+
+    &:hover {
+      background-image: url(/src/assets/images/annual-icon-white.png);
     }
   }
 
   &.vacation-btn {
-    &:hover .btn-image {
-      content: url(/src/assets/images/vacation-white.png);
+    background-size: 35px;
+    background-image: url(/src/assets/images/vacation-blue.png);
+
+    &:hover {
+      background-image: url(/src/assets/images/vacation-white.png);
     }
   }
 
   &.merchandise-btn {
-    &:hover .btn-image {
-      content: url(/src/assets/images/merchandise-white.png);
+    background-size: 30px;
+    background-image: url(/src/assets/images/merchandise-blue.png);
+
+    &:hover {
+      background-image: url(/src/assets/images/merchandise-white.png);
     }
   }
 }
-
-// .ticket-link {
-//   &:hover {
-//     color: white;
-//   }
-// }
 </style>
