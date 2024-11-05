@@ -82,13 +82,13 @@
     </div>
   </div>
   <div class="d-flex bg-white">
-    <button class="ticket-btn"><a href="#"><img class="ticket-image" :src="ticketBlue" alt="Ticket">Park Tickets</a></button>
-    <button class="express-btn"><a href="#"><img class="express-image" :src="expressBlue" alt="Express">Express Passes</a></button>
-    <button class="deals-btn"><a href="#"><img class="deals-image" :src="dealsBlue" alt="Deals">Deals & Specials</a></button>
-    <button class="hotels-btn"><a href="#"><img class="hotels-image" :src="hotelsBlue" alt="Hotels">Hotels</a></button>
-    <button class="annual-btn"><a href="#"><img class="annual-image" :src="annualBlue" alt="Annual">Annual Passes</a></button>
-    <button class="vacation-btn"><a href="#"><img class="vacation-image" :src="vacationBlue" alt="Vacation">Vacation Packages</a></button>
-    <button class="merchandise-btn"><a href="#"><img class="merchandise-image" :src="merchandiseBlue" alt="Merchandise">Merchandise</a></button>
+    <button class="ticket-btn"><a class="text-decoration-none" href="#"><img class="ticket-image" :src="ticketBlue" alt="Ticket">Park Tickets</a></button>
+    <button class="express-btn"><a class="text-decoration-none" href="#"><img class="express-image" :src="expressBlue" alt="Express">Express Passes</a></button>
+    <button class="deals-btn"><a class="text-decoration-none" href="#"><img class="deals-image" :src="dealsBlue" alt="Deals">Deals & Specials</a></button>
+    <button class="hotels-btn"><a class="text-decoration-none" href="#"><img class="hotels-image" :src="hotelsBlue" alt="Hotels">Hotels</a></button>
+    <button class="annual-btn"><a class="text-decoration-none" href="#"><img class="annual-image" :src="annualBlue" alt="Annual">Annual Passes</a></button>
+    <button class="vacation-btn"><a class="text-decoration-none" href="#"><img class="vacation-image" :src="vacationBlue" alt="Vacation">Vacation Packages</a></button>
+    <button class="merchandise-btn"><a class="text-decoration-none" href="#"><img class="merchandise-image" :src="merchandiseBlue" alt="Merchandise">Merchandise</a></button>
   </div>
 </template>
 
