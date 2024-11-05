@@ -77,7 +77,7 @@
       <a href="/" class="middlebar-links fw-bold text-white text-decoration-none mt-4 me-5">Tickets & Passes</a>
       <a href="/" class="middlebar-links fw-bold text-white text-decoration-none mt-4 me-5">Explore Parks</a>
       <a href="/" class="middlebar-links fw-bold text-white text-decoration-none mt-4 me-5">Plan Your Trip</a>
-      <a href="#" class="middlebar-links fw-bold text-white text-decoration-none mt-4 me-5">Passholders</a>
+      <a href="/" class="middlebar-links fw-bold text-white text-decoration-none mt-4 me-5">Passholders</a>
       <button class="browse-btn bg-white text-center">Browse All Products</button>
     </div>
   </div>
