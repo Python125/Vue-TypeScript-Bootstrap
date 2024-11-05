@@ -2,11 +2,10 @@
   <h1 class="restaurant text-white text-center">
     Leaky Cauldron™
   </h1>
-  <h2 class="menu-title fw-bold ms-5">Lunch and Dinner Menu</h2>
-  <h3 class="ms-5 fw-bold py-3">Allergen Note</h3>
-  <p class="ms-5 h4">Please inform a manager or Chef's Assistant prior to ordering if someone in your party requires special dietary accommodations</p>
-
   <div class="menu-items text-white row py-5">
+    <h2 class="menu-title fw-bold text-center">Lunch and Dinner Menu</h2>
+    <p class="p-5 h4 text-center">Allergen Note: Please inform a manager or Chef's Assistant prior to ordering if someone in your party requires special dietary accommodations</p>
+    
     <h3 class="fw-bold text-center">Entrées</h3>
 
     <div class="col text-center">

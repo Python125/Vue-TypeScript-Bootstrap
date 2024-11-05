@@ -2,13 +2,12 @@
   <h1 class="restaurant text-white text-center">
     Leaky Cauldron™
   </h1>
-  <h2 class="menu-title fw-bold ms-5">Breakfast Menu</h2>
-  <h3 class="ms-5 fw-bold py-3">Allergen Note</h3>
-  <p class="ms-5 h4">Please inform a manager or Chef's Assistant prior to ordering if someone in your party requires special dietary accommodations</p>
 
   <div class="menu-items text-white row py-5">
     <h3 class="fw-bold text-center">Breakfast - served until 10:30 am daily</h3>
-    <p class="fw-light text-center">Includes small beverage</p>
+    <p class="p-5 h4 text-center">Allergen Note: Please inform a manager or Chef's Assistant prior to ordering if someone in your party requires special dietary accommodations</p>
+
+    <p class="fw-light text-center p-5">Includes small beverage</p>
     <div class="col text-center">
       <p class="fw-bold">Traditional Breakfast (FS, PS, SS, TNS) - $18.99</p>
       <p>Fresh scrambled eggs, sausage links, black pudding, English bacon, baked beans, grilled tomato, sautéed mushrooms and breakfast potatoes</p>
@@ -84,8 +83,9 @@ export default /* class HomeView extends Vue */ {}
 }
 
 .menu-items {
+  // margin-top: 12rem;
   background-color: #0a0a0a;
-  opacity: 0.6;
+  opacity: 0.7;
   z-index: -1;
 }
 </style>

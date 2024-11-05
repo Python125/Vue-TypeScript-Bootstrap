@@ -285,6 +285,10 @@ hr {
     &:hover {
       background-image: url(/src/assets/images/tickets-white.png);
     }
+
+    @media only screen and (max-width: 1920px) {
+      margin-left: 20rem;
+    }
   }
 
   &.express-btn {

@@ -72,7 +72,7 @@ a {
 
 .intro-section {
   background-color: #0a0a0a;
-  opacity: 0.7;
+  opacity: 0.8;
   z-index: -1;
 }
 
