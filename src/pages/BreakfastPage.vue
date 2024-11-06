@@ -3,11 +3,11 @@
     Leaky Cauldron™
   </h1>
 
-  <h3 class="breakfast-title fw-bold text-center text-white">Breakfast - served until 10:30 am daily</h3>
+  <h3 class="breakfast-title fw-bold text-center text-white mt-5">Breakfast - served until 10:30 am daily</h3>
   <p class="mt-3 h4 text-center text-white"><b><u>Allergen Note:</u></b> Please inform a manager or Chef's Assistant prior to ordering if someone in your party requires special dietary accommodations</p>
   <p class="fw-light text-center text-white p-3">Includes small beverage</p>
 
-  <div class="menu-row">
+  <div class="menu-row1">
     <div class="menu-items1 text-white row py-5">
       <div class="col text-center">
         <p><b>Traditional Breakfast (FS, PS, SS, TNS) - $18.99</b> - Fresh scrambled eggs, sausage links, black pudding, English bacon, baked beans, grilled tomato, sautéed mushrooms and breakfast potatoes</p>
@@ -24,7 +24,11 @@
     </div>
   </div>
 
-  <div class="menu-row">
+  <div class="sides-title text-center my-4">
+    <h3 class="fw-bold text-white">Sides</h3>
+  </div>
+
+  <div class="menu-row2">
     <div class="menu-items3 text-white row py-5">
       <div class="sides col text-center">
         <p class="fw-bold py-1">Bacon - $2.49</p>
@@ -40,10 +44,8 @@
     </div>
   </div>
 
-  <!-- <h3 class="fw-bold text-center text-white">Sides</h3> -->
-
-  <!-- <div class="ms-5">
-    <div class="d-flex px-3 pt-5 mt-5">
+  <div class="ms-5 mt-3 text-white">
+    <div class="d-flex px-3">
       <p class="px-2"><span class="fw-bolder">GS</span> - Gluten Sensitive</p>
       <p class="px-2"><span class="fw-bolder">DS</span> - Dairy Sensitive</p>
       <p class="px-2"><span class="fw-bolder">ES</span> - Egg Sensitive</p>
@@ -58,11 +60,11 @@
     </div>
   </div>
 
-  <p class="px-4 py-3 ms-5">
+  <p class="px-4 py-3 ms-5 text-white">
     Menu items and pricing are subject to change without notice
-  </p> -->
+  </p>
 
-  <div class="">
+  <div>
     <router-link to="/">
       <button>Back to home</button>
     </router-link>
@@ -91,13 +93,19 @@ export default /* class HomeView extends Vue */ {};
 }
 
 .breakfast-title {
-  margin-top: 8rem;
+  margin-top: 1rem;
 }
 
-.menu-row {
+.menu-row1 {
   display: flex;
   justify-content: space-between;
   margin-top: -10rem;
+}
+
+.menu-row2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -2rem;
 }
 
 .menu-items1, .menu-items2 {
