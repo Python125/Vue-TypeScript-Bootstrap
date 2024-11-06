@@ -5,7 +5,7 @@
 
   <div class="menu-items text-white row py-5">
     <h3 class="fw-bold text-center">Breakfast - served until 10:30 am daily</h3>
-    <p class="p-5 h4 text-center">Allergen Note: Please inform a manager or Chef's Assistant prior to ordering if someone in your party requires special dietary accommodations</p>
+    <p class="mt-3 h4 text-center"><b><u>Allergen Note:</u></b> Please inform a manager or Chef's Assistant prior to ordering if someone in your party requires special dietary accommodations</p>
 
     <p class="fw-light text-center p-5">Includes small beverage</p>
     <div class="col text-center">
@@ -83,7 +83,7 @@ export default /* class HomeView extends Vue */ {}
 }
 
 .menu-items {
-  // margin-top: 12rem;
+  margin-top: 5rem;
   background-color: #0a0a0a;
   opacity: 0.7;
   z-index: -1;

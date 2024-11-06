@@ -153,6 +153,7 @@ export default /* class HomeView extends Vue */ {
 }
 
 .menu-items {
+  margin-top: 2rem;
   background-color: #0a0a0a;
   opacity: 0.6;
   z-index: -1;
