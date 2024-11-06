@@ -114,12 +114,4 @@ export default /* class HomeView extends Vue */ {};
   opacity: 0.7;
   z-index: -1;
 }
-
-// .menu-items1 {
-//   margin-left: 20rem;
-// }
-
-// .menu-items2 {
-//   margin-right: 20rem;
-// }
 </style>
