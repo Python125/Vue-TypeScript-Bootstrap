@@ -3,7 +3,7 @@
     Leaky Cauldron™
   </h1>
 
-  <h3 class="fw-bold text-center text-white mt-3">Breakfast - served until 10:30 am daily</h3>
+  <h3 class="breakfast-title fw-bold text-center text-white">Breakfast - served until 10:30 am daily</h3>
   <p class="mt-3 h4 text-center text-white"><b><u>Allergen Note:</u></b> Please inform a manager or Chef's Assistant prior to ordering if someone in your party requires special dietary accommodations</p>
   <p class="fw-light text-center text-white p-3">Includes small beverage</p>
 
@@ -90,10 +90,14 @@ export default /* class HomeView extends Vue */ {};
   padding: 0.5rem;
 }
 
+.breakfast-title {
+  margin-top: 8rem;
+}
+
 .menu-row {
   display: flex;
   justify-content: space-between;
-  margin-top: -5rem;
+  margin-top: -10rem;
 }
 
 .menu-items1, .menu-items2 {
