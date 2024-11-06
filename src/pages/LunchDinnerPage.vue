@@ -43,7 +43,7 @@
     </div>
 
     <div class="side-items row">
-      <h1 class="fw-bold text-center">Sides</h1>
+      <h2 class="fw-bold text-center">Sides</h2>
       <div class="col text-center">
         <p class="fw-bold">Chips (DS, ES, FS, GS, PS, SES, SFS, SS, TNS, VG) - $4.99</p>
         <p class="fw-bold">Mashed Potatoes with Gravy (ES, FS, PS, SES, SFS, TNS) - $3.99</p>
@@ -56,7 +56,7 @@
     </div>
 
     <div class="sandwich-items row">
-      <h1 class="fw-bold text-center">Sandwiches</h1>
+      <h2 class="fw-bold text-center">Sandwiches</h2>
       <p class="text-center">Served with chips</p>
       <p class="text-center">Gluten-free buns are available upon request.</p>
       <p></p>
@@ -72,7 +72,7 @@
     </div>
 
     <div class="kid-items row">
-      <h1 class="fw-bold text-center">Kids' Entrées - For children 9 and under</h1>
+      <h2 class="fw-bold text-center">Kids' Entrées - For children 9 and under</h2>
       <div class="col text-center">
         <p class="fw-bold">Macaroni Cheese (ES, FS, PS, SES, SFS, SS, TNS, V) - $8.29</p>
         <p>served with grapes and applesauce</p>
@@ -87,7 +87,7 @@
     </div>
 
     <div class="dessert-items row">
-      <h1 class="fw-bold text-center">Desserts</h1>
+      <h2 class="fw-bold text-center">Desserts</h2>
       <p class="text-center">All bakery items are made in a facility where cross-contamination with gluten, soy, peanuts, and tree nuts is possible</p>
       <div class="col text-center">
         <p class="fw-bold">Sticky Toffee Pudding (FS, PS, SES, SFS, SS, V) - $7.99</p>
