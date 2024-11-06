@@ -1,6 +1,6 @@
 <template>
   <div class="text-center">
-    <img :src="leakyCauldronLogo" alt="Leaky Cauldron" class="rounded-3 mt-3" />
+    <img :src="leakyCauldronLogo" alt="Leaky Cauldron" class="m-4 rounded" />
   </div>
   <div class="intro-section text-white">
     <h1 class="fw-bold text-center">Fill up on Traditional British Food.</h1>
