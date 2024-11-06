@@ -4,8 +4,8 @@
   </h1>
 
   <h3 class="fw-bold text-center text-white mt-3">Breakfast - served until 10:30 am daily</h3>
-  <!-- <p class="mt-3 h4 text-center text-white"><b><u>Allergen Note:</u></b> Please inform a manager or Chef's Assistant prior to ordering if someone in your party requires special dietary accommodations</p>
-  <p class="fw-light text-center text-white p-3">Includes small beverage</p> -->
+  <p class="mt-3 h4 text-center text-white"><b><u>Allergen Note:</u></b> Please inform a manager or Chef's Assistant prior to ordering if someone in your party requires special dietary accommodations</p>
+  <p class="fw-light text-center text-white p-3">Includes small beverage</p>
 
   <div class="menu-row">
     <div class="menu-items1 text-white row py-5">
@@ -93,12 +93,22 @@ export default /* class HomeView extends Vue */ {};
 .menu-row {
   display: flex;
   justify-content: space-between;
-  margin: -5rem 0;
+  margin-top: -5rem;
 }
 
-.menu-items1, .menu-items2,.menu-items3, .menu-items4 {
+.menu-items1, .menu-items2 {
   width: 40%;
   margin: 10rem;
+  padding: 4rem;
+  background-color: #0a0a0a;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.menu-items3, .menu-items4 {
+  width: 40%;
+  margin: 10rem;
+  margin-top: 1rem;
   padding: 5rem;
   background-color: #0a0a0a;
   opacity: 0.7;
@@ -110,7 +120,6 @@ export default /* class HomeView extends Vue */ {};
 // }
 
 // .menu-items2 {
-//   margin-top: 2rem;
 //   margin-right: 20rem;
 // }
 </style>
