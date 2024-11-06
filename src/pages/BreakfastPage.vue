@@ -17,27 +17,28 @@
 
   <div class="menu-items2 text-white row py-5">
     <div class="col text-center">
-        <p><b>American Breakfast (FS, PS, SES, SS, TNS) - $18.99</b> - Fresh scrambled eggs, breakfast potatoes, crisp bacon, and link sausage with butter croissant</p>
-        <p class="py-2"><b>Apple Oatmeal Flan with Yogurt & Fruit (FS, GS, PS, SES, SS) - $18.99</b> - Freshly baked flan of apples and oatmeal served with yogurt and fresh seasonal fruit</p>
-        <p class="py-2"><b>Kid's Breakfast - $13.49</b> - Choose traditional, pancake or American</p>
-      </div>
+      <p><b>American Breakfast (FS, PS, SES, SS, TNS) - $18.99</b> - Fresh scrambled eggs, breakfast potatoes, crisp bacon, and link sausage with butter croissant</p>
+      <p class="py-2"><b>Apple Oatmeal Flan with Yogurt & Fruit (FS, GS, PS, SES, SS) - $18.99</b> - Freshly baked flan of apples and oatmeal served with yogurt and fresh seasonal fruit</p>
+      <p class="py-2"><b>Kid's Breakfast - $13.49</b> - Choose traditional, pancake or American</p>
+    </div>
   </div>
 
-  <h3 class="fw-bold text-center text-white">Sides</h3>
   <div class="menu-items3 text-white row py-5">
-    <div class="col text-center">
-        <p class="fw-bold py-1">Bacon - $2.49</p>
-        <p class="fw-bold py-1">English Bacon - $5.49</p>
-        <p class="fw-bold py-1">Roasted Potatoes - $4.99</p>
-      </div>
+    <div class="sides col text-center">
+      <p class="fw-bold py-1">Bacon - $2.49</p>
+      <p class="fw-bold py-1">English Bacon - $5.49</p>
+      <p class="fw-bold py-1">Roasted Potatoes - $4.99</p>
+    </div>
+  </div>
+  
+  <div class="menu-items4 text-white row py-5">
+    <div class="sides col text-center">
+      <p class="fw-bold py-1">Blood Sausage - $5.49</p>
+      <p class="fw-bold py-1">Scrambled Eggs - $2.99</p>
+    </div>
   </div>
 
-  <div class="menu-items4 text-white row py-5">
-    <div class="col text-center">
-        <p class="fw-bold py-1">Blood Sausage - $5.49</p>
-        <p class="fw-bold py-1">Scrambled Eggs - $2.99</p>
-      </div>
-  </div>
+  <!-- <h3 class="fw-bold text-center text-white">Sides</h3> -->
 
   <!-- <div class="ms-5">
     <div class="d-flex px-3 pt-5 mt-5">
@@ -88,32 +89,44 @@ export default /* class HomeView extends Vue */ {};
 }
 
 .menu-items1 {
+  width: 50rem;
+  float: left;
   padding: 10rem;
   margin-top: 2rem;
+  margin-left: 20rem;
   background-color: #0a0a0a;
   opacity: 0.7;
   z-index: -1;
 }
 
 .menu-items2 {
+  width: 50rem;
+  float: right;
   padding: 10rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
+  margin-right: 20rem;
   background-color: #0a0a0a;
   opacity: 0.7;
   z-index: -1;
 }
 
 .menu-items3 {
-  padding: 10rem;
-  margin-top: 5rem;
+  width: 50rem;
+  float: left;
+  padding: 5rem;
+  margin-top: 2rem;
+  margin-left: 40rem;
   background-color: #0a0a0a;
   opacity: 0.7;
   z-index: -1;
 }
 
 .menu-items4 {
+  width: 50rem;
+  float: right;
   padding: 10rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
+  margin-right: 20rem;
   background-color: #0a0a0a;
   opacity: 0.7;
   z-index: -1;
