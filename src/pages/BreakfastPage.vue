@@ -105,7 +105,7 @@ export default /* class HomeView extends Vue */ {};
   margin: 10rem;
   padding: 4rem;
   background-color: #0a0a0a;
-  opacity: 0.7;
+  opacity: 0.8;
   z-index: -1;
 }
 
@@ -115,7 +115,7 @@ export default /* class HomeView extends Vue */ {};
   margin-top: 1rem;
   padding: 5rem;
   background-color: #0a0a0a;
-  opacity: 0.7;
+  opacity: 0.8;
   z-index: -1;
 }
 </style>
