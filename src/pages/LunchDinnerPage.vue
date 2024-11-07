@@ -87,6 +87,25 @@
     </div>
   </div>
 
+  <div class="allergies ms-5 text-white">
+    <div class="d-flex px-3">
+      <p class="px-2"><span class="fw-bolder">GS</span> - Gluten Sensitive</p>
+      <p class="px-2"><span class="fw-bolder">DS</span> - Dairy Sensitive</p>
+      <p class="px-2"><span class="fw-bolder">ES</span> - Egg Sensitive</p>
+      <p class="px-2"><span class="fw-bolder">PS</span> - Peanut Sensitive</p>
+      <p class="px-2"><span class="fw-bolder">TNS</span> - Tree Nut Sensitive</p>
+      <p><span class="fw-bolder">FS</span> - Fish Sensitive</p>
+    </div>
+    <div class="d-flex px-3">
+      <p class="px-2"><span class="fw-bolder">SFS</span> - Shellfish Sensitive</p>
+      <p class="px-2"><span class="fw-bolder">SES</span> - Sesame Sensitive</p>
+      <p class="px-2"><span class="fw-bolder">SS</span> - Soy Protein Sensitive</p>
+    </div>
+  </div>
+  <p class="note px-4 py-3 ms-5 text-white">
+    Menu items and pricing are subject to change without notice
+  </p>
+
   <div class="">
     <router-link to="/">
       <button>Back to home</button>
@@ -152,5 +171,15 @@ export default /* class HomeView extends Vue */ {
   background-color: #0a0a0a;
   opacity: 0.8;
   z-index: -1;
+}
+
+.allergies {
+  margin-top: -2rem;
+  float: right;
+}
+
+.note {
+  margin-top: -2rem;
+  float: right;
 }
 </style>

@@ -45,7 +45,7 @@
     </div> -->
   </div>
 
-  <div class="ms-5 text-white">
+  <div class="allergies ms-5 text-white">
     <div class="d-flex px-3">
       <p class="px-2"><span class="fw-bolder">GS</span> - Gluten Sensitive</p>
       <p class="px-2"><span class="fw-bolder">DS</span> - Dairy Sensitive</p>
@@ -61,7 +61,7 @@
     </div>
   </div>
 
-  <p class="px-4 py-3 ms-5 text-white">
+  <p class="note px-4 py-3 ms-5 text-white">
     Menu items and pricing are subject to change without notice
   </p>
 
@@ -122,5 +122,15 @@ export default /* class HomeView extends Vue */ {};
   background-color: #0a0a0a;
   opacity: 0.8;
   z-index: -1;
+}
+
+.allergies {
+  margin-top: -2rem;
+  float: right;
+}
+
+.note {
+  margin-top: -2rem;
+  float: right;
 }
 </style>
