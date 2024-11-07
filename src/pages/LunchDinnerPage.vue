@@ -1,9 +1,10 @@
 <template>
   <h1 class="restaurant text-white text-center">Leaky Cauldron™</h1>
-  <!-- <h2 class="menu-title fw-bold text-center">Lunch and Dinner Menu</h2>
-  <p class="p-5 h4 text-center">Allergen Note: Please inform a manager or Chef's Assistant prior to ordering if someone in your party requires special dietary accommodations</p> -->
 
-  <h3 class="fw-bold text-center">Entrées</h3>
+  <h2 class="fw-bold text-white text-center">Lunch and Dinner Menu</h2>
+  <p class="p-3 h4 text-white text-center">Allergen Note: Please inform a manager or Chef's Assistant prior to ordering if someone in your party requires special dietary accommodations</p>
+
+  <h3 class="fw-bold text-center text-white mt-2">Entrées</h3>
   <div class="menu-row1">
     <div class="menu-items1 text-white row py-4">
       <div class="col text-center">
@@ -27,28 +28,8 @@
     </div>
   </div>
 
-  <!-- <div class="menu-row2"></div> -->
-
-
-<!--
-    <div class="allergies d-flex px-3 pt-5">
-      <p class="px-2"><span class="fw-bolder">GS</span> - Gluten Sensitive</p>
-      <p class="px-2"><span class="fw-bolder">DS</span> - Dairy Sensitive</p>
-      <p class="px-2"><span class="fw-bolder">ES</span> - Egg Sensitive</p>
-      <p class="px-2"><span class="fw-bolder">PS</span> - Peanut Sensitive</p>
-      <p class="px-2"><span class="fw-bolder">TNS</span> - Tree Nut Sensitive</p>
-      <p><span class="fw-bolder">FS</span> - Fish Sensitive</p>
-    </div>
-    <div class="allergies d-flex px-3">
-      <p class="px-2"><span class="fw-bolder">SFS</span> - Shellfish Sensitive</p>
-      <p class="px-2"><span class="fw-bolder">SES</span> - Sesame Sensitive</p>
-      <p class="px-2"><span class="fw-bolder">SS</span> - Soy Protein Sensitive</p>
-    </div>
-    <p class="px-4">Menu items and pricing are subject to change without notice</p> 
-  -->
-
-<!--
-    <div class="side-items row">
+  <div class="menu-row2">
+    <div class="menu-items3 text-white row py-4">
       <h2 class="fw-bold text-center">Sides</h2>
       <div class="col text-center">
         <p>Chips (DS, ES, FS, GS, PS, SES, SFS, SS, TNS, VG) - $4.99</p>
@@ -60,22 +41,22 @@
         <p>Add Banger (1 each) (DS, ES, FS, PS, SES, SFS, TNS) - $5.49</p>
       </div>
     </div>
-    <div class="sandwich-items row">
+
+    <div class="menu-items4 text-white row py-4">
       <h2 class="fw-bold text-center">Sandwiches</h2>
       <p class="text-center">Served with chips</p>
       <p class="text-center">Gluten-free buns are available upon request.</p>
-      <p></p>
       <div class="col text-center">
-        <p>Banger (DS, FS, PS, SES, SFS, SS, TNS) - $14.99</p>
-        <p>Roasted English sausage, mustard aioli, roasted tomatoes, sautéed cabbage and onions on a crusted baguette</p>
-        <p>(Request no mustard aioli for egg-sensitive options.)</p>
+        <p><b>Banger (DS, FS, PS, SES, SFS, SS, TNS) - $14.99</b> - Roasted English sausage, mustard aioli, roasted tomatoes, sautéed cabbage and onions on a crusted baguette (Request no mustard aioli for egg-sensitive options.)</p>
       </div>
       <div class="col text-center">
-        <p>Specialty Chicken (FS, PS, SES, SFS, SS, TNS) - $15.99</p>
-        <p>Grilled chicken breast, apple butter mayo, Colby cheese, smoky apple bacon, roasted tomatoes on a housemade specialty bun</p>
+        <p><b>Specialty Chicken (FS, PS, SES, SFS, SS, TNS) - $15.99</b> - Grilled chicken breast, apple butter mayo, Colby cheese, smoky apple bacon, roasted tomatoes on a housemade specialty bun</p>
       </div>
     </div>
-    <div class="kid-items row">
+  </div>
+
+  <div class="menu-row3">
+    <div class="menu-items5 text-white row py-4">
       <h2 class="fw-bold text-center">Kids' Entrées - For children 9 and under</h2>
       <div class="col text-center">
         <p>Macaroni Cheese (ES, FS, PS, SES, SFS, SS, TNS, V) - $8.29</p>
@@ -89,7 +70,7 @@
         <p>(Request no tartar sauce for egg-sensitive options.)</p>
       </div>
     </div>
-    <div class="dessert-items row">
+    <div class="menu-items6 text-white row py-4">
       <h2 class="fw-bold text-center">Desserts</h2>
       <p class="text-center">All bakery items are made in a facility where cross-contamination with gluten, soy, peanuts, and tree nuts is possible</p>
       <div class="col text-center">
@@ -103,9 +84,8 @@
         <p>Cup of Ice Cream (ES, FS, GS, SES, SFS, SS, TNS, V) - $6.49</p>
         <p>Strawberry and Peanut Butter, Vanilla or Chocolate</p>
       </div>
-    </div> 
-  -->
-
+    </div>
+  </div>
 
   <div class="">
     <router-link to="/">
@@ -153,10 +133,21 @@ export default /* class HomeView extends Vue */ {
   margin-top: -2rem;
 }
 
-.menu-items1, .menu-items2 {
+.menu-row3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -2rem;
+}
+
+.menu-items1,
+.menu-items2,
+.menu-items3,
+.menu-items4,
+.menu-items5,
+.menu-items6 {
   width: 40%;
   margin: 10rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding: 4rem;
   background-color: #0a0a0a;
   opacity: 0.8;
