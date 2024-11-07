@@ -10,43 +10,36 @@
         Butterbeer™. Hot Butterbeer™ will remain unsuitable for vegans or anyone
         with a dairy allergy.
       </p>
+
       <div class="col text-center">
         <!-- <img :src="butterbeer" alt="Butterbeer"> -->
-        <p class="fw-bold">Butterbeer™ - $8.99</p>
-        <p>A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
-        <p class="fw-bold">Frozen Butterbeer™ - $8.99</p>
-        <p>A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
-        <p class="fw-bold">Hot Butterbeer™ - $8.99</p>
-        <p>A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
-        <p class="fw-bold">Butterbeer™ Souvenirs</p>
-        <p>A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
-        <p class="fw-bold">Stainless Steel Butterbeer™ Souvenirs</p>
-        <p>A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
-        <p class="fw-bold">Frozen Butterbeer™ Souvenirs</p>
-        <p>A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
-        <p class="fw-bold">Pumpkin Juice™ - $5.49</p>
-        <p class="fw-bold">Tongue Tying Lemon Squash - $6.49</p>
-        <p>Sweet and tart lemon flavored beverage served with squashed lemon</p>
-        <p class="fw-bold">Fishy Green Ale - $6.49</p>
-        <p>Smooth and creamy with notes of mint and cinnamon and popping blueberry fish eggs</p>
+        <p><b>Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
+        <p><b>Frozen Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
+        <p><b>Hot Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
+        <p><b>Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
+        <p><b>Stainless Steel Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
+        <p><b>Frozen Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
       </div>
 
       <div class="col text-center">
-        <p class="fw-bold">Fountain Beverages - $4.49</p>
-        <p>Iced Tea, Lemonade, Cider</p>
+        <p class="fw-bold">Pumpkin Juice™ - $5.49</p>
+        <p><b>Tongue Tying Lemon Squash - $6.49</b> - Sweet and tart lemon flavored beverage served with squashed lemon</p>
+        <p><b>Fishy Green Ale - $6.49</b> - Smooth and creamy with notes of mint and cinnamon and popping blueberry fish eggs</p>
+
+        <p><b>Fountain Beverages - $4.49</b> - Iced Tea, Lemonade, Cider</p>
         <p class="fw-bold">2% Milk - $2.99</p>
-        <p class="fw-bold">Juice - $3.49</p>
-        <p>orange, apple</p>
+        <p><b></b>Juice - $3.49</p>
+        <p></p>
         <p class="fw-bold">Gillywater - $6.00</p>
-        <p class="fw-bold">Otter's Fizzy Orange Juice - $6.49</p>
-        <p>Effervescent fresh orange beverage with notes of vanilla and cinnamon</p>
-        <p class="fw-bold">Peachtree Fizzing Tea - $6.49</p>
+        <p><b>Otter's Fizzy Orange Juice - $6.49</b> - Effervescent fresh orange beverage with notes of vanilla and cinnamon</p>
+        <p>Peachtree Fizzing Tea - $6.49</p>
         <p>Fizzy but smooth with flavors of fresh peach nectar and ginger</p>
-        <p class="fw-bold">Hot Beverages - $3.79</p>
+        <p>Hot Beverages - $3.79</p>
         <p>Coffee, Decaf, Hot Tea</p>
         <p class="fw-bold">Chocolate Milk - $2.99</p>
         <p class="fw-bold">Courtesy Cup of Water - $0</p>
       </div>
+
       <div class="specialty-beer-items row">
         <h3 class="fw-bold text-center">Specialty Draught Beer</h3>
         <div class="col text-center">
@@ -87,6 +80,7 @@
           <p>Fire Whisky, Fire and Strongbow Cocktail</p>
         </div>
       </div>
+
     </div>
   </div>
 
