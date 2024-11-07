@@ -3,7 +3,7 @@
     Leaky Cauldron™
   </h1>
 
-  <h3 class="breakfast-title fw-bold text-center text-white mt-5">Breakfast - served until 10:30 am daily</h3>
+  <h3 class="fw-bold text-center text-white mt-5">Breakfast - served until 10:30 am daily</h3>
   <p class="mt-3 h4 text-center text-white"><b><u>Allergen Note:</u></b> Please inform a manager or Chef's Assistant prior to ordering if someone in your party requires special dietary accommodations</p>
   <p class="fw-light text-center text-white p-3">Includes small beverage</p>
 
@@ -24,10 +24,7 @@
     </div>
   </div>
 
-  <div class="sides-title text-center my-4">
-    <h3 class="fw-bold text-white">Sides</h3>
-  </div>
-
+  <h3 class="fw-bold text-white text-center mb-4">Sides</h3>
   <div class="menu-row2">
     <div class="menu-items3 text-white row py-5">
       <div class="sides col text-center">
@@ -35,16 +32,20 @@
         <p class="fw-bold py-1">English Bacon - $5.49</p>
         <p class="fw-bold py-1">Roasted Potatoes - $4.99</p>
       </div>
-    </div>
-    <div class="menu-items4 text-white row py-5">
       <div class="sides col text-center">
         <p class="fw-bold py-1">Blood Sausage - $5.49</p>
         <p class="fw-bold py-1">Scrambled Eggs - $2.99</p>
       </div>
     </div>
+    <!-- <div class="menu-items4 text-white row py-5">
+      <div class="sides col text-center">
+        <p class="fw-bold py-1">Blood Sausage - $5.49</p>
+        <p class="fw-bold py-1">Scrambled Eggs - $2.99</p>
+      </div>
+    </div> -->
   </div>
 
-  <div class="ms-5 mt-3 text-white">
+  <div class="ms-5 text-white">
     <div class="d-flex px-3">
       <p class="px-2"><span class="fw-bolder">GS</span> - Gluten Sensitive</p>
       <p class="px-2"><span class="fw-bolder">DS</span> - Dairy Sensitive</p>
@@ -92,14 +93,10 @@ export default /* class HomeView extends Vue */ {};
   padding: 0.5rem;
 }
 
-.breakfast-title {
-  margin-top: 1rem;
-}
-
 .menu-row1 {
   display: flex;
   justify-content: space-between;
-  margin-top: -10rem;
+  margin-top: -2rem;
 }
 
 .menu-row2 {
@@ -118,7 +115,7 @@ export default /* class HomeView extends Vue */ {};
 }
 
 .menu-items3, .menu-items4 {
-  width: 40%;
+  width: 100%;
   margin: 10rem;
   margin-top: 1rem;
   padding: 5rem;
