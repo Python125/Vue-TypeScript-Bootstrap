@@ -121,9 +121,7 @@
 // })
 export default /* class HomeView extends Vue */ {
   data() {
-    return {
-      //butterbeer: require("@/assets/lunchAndDinner/"),
-    };
+    return {};
   },
 };
 </script>

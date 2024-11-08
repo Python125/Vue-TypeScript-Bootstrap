@@ -13,8 +13,11 @@
         with a dairy allergy.
       </p>
       <div class="col text-center mt-3">
-        <p class="py-1"><b>Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
+        
+        <p class="py-1"><b>Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch <img :src="butterbeer" alt="Butterbeer" class="butterbeer-image" /></p>
+        <!-- <img :src="frozenButterbeer" alt="Frozen Butterbeer" class="butterbeer-image" /> -->
         <p class="py-1"><b>Frozen Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
+        <!-- <img :src="hotButterbeer" alt="Hot Butterbeer" class="butterbeer-image" /> -->
         <p class="py-1"><b>Hot Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
         <p class="py-1"><b>Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
         <p class="py-1"><b>Stainless Steel Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
@@ -81,7 +84,11 @@
 // })
 export default /* class HomePage extends Vue */ {
   data() {
-    return {};
+    return {
+      butterbeer: require("@/assets/images/butterbeer.png"),
+      frozenButterbeer: require("@/assets/images/frozen-butterbeer.png"),
+      hotButterbeer: require("@/assets/images/hot-butterbeer.png"),
+    };
   },
 };
 </script>
@@ -147,5 +154,11 @@ export default /* class HomePage extends Vue */ {
   background-color: #0a0a0a;
   opacity: 0.8;
   z-index: -1;
+}
+
+// Images
+.butterbeer-image {
+  width: 300px;
+  margin-left: 1%;
 }
 </style>
