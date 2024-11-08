@@ -142,7 +142,7 @@ export default /* class HomePage extends Vue */ {
 
 .menu-items4 {
   width: 100%;
-  margin: 2rem, 10rem;
+  margin: 10rem;
   padding: 1rem;
   background-color: #0a0a0a;
   opacity: 0.8;
