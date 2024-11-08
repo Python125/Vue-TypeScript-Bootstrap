@@ -1,8 +1,10 @@
 <template>
   <h1 class="restaurant text-white text-center">Leaky Cauldron™</h1>
-  <div class="menu-items text-white row py-5">
-    <div class="beverages-items row">
-      <p class="butterbeer-note text-center">
+
+  <div class="menu-row1">
+    <div class="menu-items1 text-white row py-3">
+      <h3 class="text-center mb-3">Butterbeer™</h3>
+      <p class="butterbeer-note fw-bold text-center">
         Butterbeer™ is suitable for those with gluten, soy, egg, wheat, and nut
         allergies. The topping does contain trace amounts of dairy, so it is
         unsuitable for vegans or anyone with a dairy allergy. Please ensure to
@@ -10,74 +12,56 @@
         Butterbeer™. Hot Butterbeer™ will remain unsuitable for vegans or anyone
         with a dairy allergy.
       </p>
+      <div class="col text-center mt-3">
+        <p class="py-1"><b>Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
+        <p class="py-1"><b>Frozen Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
+        <p class="py-1"><b>Hot Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
+        <p class="py-1"><b>Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
+        <p class="py-1"><b>Stainless Steel Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
+        <p class="py-1"><b>Frozen Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
+      </div>
+    </div>
+  </div>
 
+  <div class="menu-row2">
+    <div class="menu-items2 text-white row py-4">
       <div class="col text-center">
-        <!-- <img :src="butterbeer" alt="Butterbeer"> -->
-        <p><b>Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
-        <p><b>Frozen Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
-        <p><b>Hot Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
-        <p><b>Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
-        <p><b>Stainless Steel Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
-        <p><b>Frozen Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
+        <h3 class="text-center fw-bold mb-3">Wizards' Refreshments</h3>
+        <p class="fw-bold py-1">Pumpkin Juice™ - $5.49</p>
+        <p class="py-1"><b>Tongue Tying Lemon Squash - $6.49</b> - Sweet and tart lemon flavored beverage served with squashed lemon</p>
+        <p class="py-1"><b>Fishy Green Ale - $6.49</b> - Smooth and creamy with notes of mint and cinnamon and popping blueberry fish eggs</p>
+        <p class="py-1"><b>Fountain Beverages - $4.49</b> - Iced Tea, Lemonade, Cider</p>
+        <p class="fw-bold py-1">2% Milk - $2.99</p>
+        <p class="py-1"><b>Juice - $3.49</b> - Orange, Apple</p>
       </div>
-
+    </div>
+    <div class="menu-items3 text-white row py-4">
       <div class="col text-center">
-        <p class="fw-bold">Pumpkin Juice™ - $5.49</p>
-        <p><b>Hot Beverages - $3.79</b> - Coffee, Decaf, Hot Tea</p>
-        <p><b>Juice - $3.49</b> - Orange, Apple</p>
-        <p class="fw-bold">2% Milk - $2.99</p>
-
-        <p><b>Tongue Tying Lemon Squash - $6.49</b> - Sweet and tart lemon flavored beverage served with squashed lemon</p>
-        <p><b>Fishy Green Ale - $6.49</b> - Smooth and creamy with notes of mint and cinnamon and popping blueberry fish eggs</p>
-
-        <p><b>Fountain Beverages - $4.49</b> - Iced Tea, Lemonade, Cider</p>
-        <p class="fw-bold">Gillywater - $6.00</p>
-        <p><b>Otter's Fizzy Orange Juice - $6.49</b> - Effervescent fresh orange beverage with notes of vanilla and cinnamon</p>
-        <p><b>Peachtree Fizzing Tea - $6.49</b> - Fizzy but smooth with flavors of fresh peach nectar and ginger</p>
-        <p class="fw-bold">Chocolate Milk - $2.99</p>
-        <p class="fw-bold">Courtesy Cup of Water - $0</p>
+        <h3 class="text-center fw-bold mb-3">Wizards' Refreshments</h3>
+        <p class="fw-bold py-1">Gillywater - $6.00</p>
+        <p class="py-1"><b>Otter's Fizzy Orange Juice - $6.49</b> - Effervescent fresh orange beverage with notes of vanilla and cinnamon</p>
+        <p class="py-1"><b>Peachtree Fizzing Tea - $6.49</b> - Fizzy but smooth with flavors of fresh peach nectar and ginger</p>
+        <p class="py-1"><b>Hot Beverages - $3.79</b> - Coffee, Decaf, Hot Tea</p>
+        <p class="fw-bold py-1">Chocolate Milk - $2.99</p>
+        <p class="fw-bold py-1">Courtesy Cup of Water - $0</p>
       </div>
+    </div>
+  </div>
 
-      <div class="specialty-beer-items row">
-        <h3 class="fw-bold text-center">Specialty Draught Beer</h3>
+  <div class="menu-row3">
+    <div class="menu-items4 text-white row py-4">
+      <h3 class="fw-bold text-center">Cauldron Brews: Ale, Wine, & Wizard's Fire</h3>
         <div class="col text-center">
-          <p class="fw-bold">Dragon's Scale - $13.00</p>
-          <p>unique lager with a light crisp, malty finish</p>
-          <p class="fw-bold">Daisyroot Ale - $13.00</p>
-          <p>refreshing traditional English Mild with a light malty flavor profile and a clean finish</p>
+          <p class="py-1"><b>Dragon's Scale - $13.00</b> - Unique lager with a light crisp, malty finish</p>
+          <p class="py-1"><b>Daisyroot Ale - $13.00</b> - Refreshing traditional English Mild with a light malty flavor profile and a clean finish</p>
+          <p class="py-1"><b>Wizard's Brew - $13.00</b> - Full bodied, sweet stout with a smooth, light sweetness and clean, dry finish</p>
+          <p class="py-1"><b>Dark Forest Ale - $13.00</b> - Traditional brown ale with roasty caramel/toffee notes and warming finish</p>
         </div>
         <div class="col text-center">
-          <p class="fw-bold">Wizard's Brew - $13.00</p>
-          <p>full bodied, sweet stout with a smooth, light sweetness and clean, dry finish</p>
-          <p class="fw-bold">Dark Forest Ale - $13.00</p>
-          <p>traditional brown ale with roasty caramel/toffee notes and warming finish</p>
+          <p><b>Draught Beer - $11.25</b> - Heineken, Stella Artois, Strongbow, Yuengling</p>
+          <p class="py-1"><b>Wine by the Glass - $11.00</b> - Chardonnay & Cabernet Sauvignon</p>
+          <p class="py-1"><b>Fire Whisky - $12.50</b> - Fire Whisky, Fire and Strongbow Cocktail</p>
         </div>
-      </div>
-
-      <div class="draught-beer-item row">
-        <h3 class="fw-bold text-center">Draught Beer</h3>
-        <div class="col text-start">
-          <p class="fw-bold">Draught Beer - $11.25</p>
-          <p>Heineken, Stella Artois, Strongbow, Yuengling</p>
-        </div>
-      </div>
-
-      <div class="wine-items row">
-        <h3 class="fw-bold text-center">Wine by the Glass</h3>
-        <div class="col text-start">
-          <p class="fw-bold py-3">Wine by the Glass - $11.00</p>
-          <p>Chardonnay</p>
-          <p>Cabernet Sauvignon</p>
-        </div>
-      </div>
-
-      <div class="whisky-item row">
-        <h3 class="fw-bold text-center py-3">Whisky</h3>
-        <div class="col text-start">
-          <p class="fw-bold">Fire Whisky - $12.50</p>
-          <p>Fire Whisky, Fire and Strongbow Cocktail</p>
-        </div>
-      </div>
 
     </div>
   </div>
@@ -114,14 +98,54 @@ export default /* class HomePage extends Vue */ {
   padding: 0.5rem;
 }
 
-.menu-items {
+.butterbeer-note {
+  padding-right: 20rem;
+  padding-left: 20rem;
+}
+
+.menu-row1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -2rem;
+}
+
+.menu-row2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -5rem;
+}
+
+.menu-row3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -5rem;
+}
+
+.menu-items1 {
+  width: 100%;
+  margin: 8rem;
+  margin-top: 3.5rem;
+  padding: 4rem;
   background-color: #0a0a0a;
-  opacity: 0.6;
+  opacity: 0.8;
   z-index: -1;
 }
 
-.butterbeer-note {
-  padding-right: 55rem;
-  padding-left: 55rem;
+.menu-items2, .menu-items3 {
+  width: 40%;
+  margin: 8rem;
+  margin-top: 1rem;
+  background-color: #0a0a0a;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.menu-items4 {
+  width: 100%;
+  margin: 2rem, 10rem;
+  padding: 1rem;
+  background-color: #0a0a0a;
+  opacity: 0.8;
+  z-index: -1;
 }
 </style>
