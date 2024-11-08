@@ -23,19 +23,17 @@
 
       <div class="col text-center">
         <p class="fw-bold">Pumpkin Juice™ - $5.49</p>
+        <p><b>Hot Beverages - $3.79</b> - Coffee, Decaf, Hot Tea</p>
+        <p><b>Juice - $3.49</b> - Orange, Apple</p>
+        <p class="fw-bold">2% Milk - $2.99</p>
+
         <p><b>Tongue Tying Lemon Squash - $6.49</b> - Sweet and tart lemon flavored beverage served with squashed lemon</p>
         <p><b>Fishy Green Ale - $6.49</b> - Smooth and creamy with notes of mint and cinnamon and popping blueberry fish eggs</p>
 
         <p><b>Fountain Beverages - $4.49</b> - Iced Tea, Lemonade, Cider</p>
-        <p class="fw-bold">2% Milk - $2.99</p>
-        <p><b></b>Juice - $3.49</p>
-        <p></p>
         <p class="fw-bold">Gillywater - $6.00</p>
         <p><b>Otter's Fizzy Orange Juice - $6.49</b> - Effervescent fresh orange beverage with notes of vanilla and cinnamon</p>
-        <p>Peachtree Fizzing Tea - $6.49</p>
-        <p>Fizzy but smooth with flavors of fresh peach nectar and ginger</p>
-        <p>Hot Beverages - $3.79</p>
-        <p>Coffee, Decaf, Hot Tea</p>
+        <p><b>Peachtree Fizzing Tea - $6.49</b> - Fizzy but smooth with flavors of fresh peach nectar and ginger</p>
         <p class="fw-bold">Chocolate Milk - $2.99</p>
         <p class="fw-bold">Courtesy Cup of Water - $0</p>
       </div>
