@@ -69,12 +69,20 @@
   <div class="menu-row2">
     <div class="menu-items3 text-white row py-5">
       <div class="sides col text-center">
+        <img class="w-25" :src="americanBacon" alt="Bacon" />
         <p class="fw-bold py-1">Bacon - $2.49</p>
+
+        <img class="w-25" :src="englishBacon" alt="English Bacon" />
         <p class="fw-bold py-1">English Bacon - $5.49</p>
+        
+        <img class="w-25" :src="roastedPotatoes" alt="Roasted Potatoes" />
         <p class="fw-bold py-1">Roasted Potatoes - $4.99</p>
       </div>
       <div class="sides col text-center">
+        <img class="w-25" :src="bloodSausage" alt="Blood Sausage" />
         <p class="fw-bold py-1">Blood Sausage - $5.49</p>
+        
+        <img class="w-25" :src="scrambledEggs" alt="Scrambled Eggs" />
         <p class="fw-bold py-1">Scrambled Eggs - $2.99</p>
       </div>
     </div>
@@ -133,6 +141,11 @@ export default /* class HomeView extends Vue */ {
       eggLeekMushroom: require("@/assets/images/egg-leek-mushroom-pasty.png"),
       americanBreakfast: require("@/assets/images/american-breakfast.png"),
       appleOatmealFlan: require("@/assets/images/apple-oatmeal-flan.png"),
+      americanBacon: require("@/assets/images/bacon.png"),
+      englishBacon: require("@/assets/images/english-bacon.png"),
+      roastedPotatoes: require("@/assets/images/roasted-potatoes.png"),
+      bloodSausage: require("@/assets/images/blood-sausage.png"),
+      scrambledEggs: require("@/assets/images/scrambled-eggs.png"),
     };
   },
 };
