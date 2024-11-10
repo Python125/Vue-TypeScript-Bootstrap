@@ -13,11 +13,22 @@
   <div class="menu-row1">
     <div class="menu-items1 text-white row py-4">
       <div class="col text-center">
+        <img class="w-25" :src="beefLambGuinnessStew" alt="Beef Lamb Guinness Stew" />
         <p><b>Beef, Lamb & Guinness Stew (DS, ES, FS, PS, SES, SFS, SS, TNS) - $17.99</b> - Served in a warm, crusty bread bowl</p>
+        
+        <img class="w-25" :src="cottagePie" alt="Cottage Pie" />
         <p class="py-2"><b>Cottage Pie (ES, FS, PS, SES, SFS, TNS) - $17.99</b> - Savory combination of beef and chunky vegetables in a potato crust served with a garden salad</p>
+        
+        <img class="w-25" :src="bangersAndMash" alt="Bangers & Mash" />
         <p class="py-2"><b>Bangers & Mash (ES, FS, PS, SES, SFS, TNS) - $16.99</b> - Roasted English sausage, creamy mashed potatoes, roasted tomatoes, sautéed onions and cabbage, minted peas & onion gravy (Request no sauce for soy protein-sensitive options.)</p>
+        
+        <img class="w-25" :src="miniPieCombo" alt="Mini Pie Combination" />
         <p class="py-2"><b>Mini Pie Combination (ES, PS, SES, TNS) - $18.99</b> - Mini cottage pie and mini fisherman's pie served with garden salad</p>
+        
+        <img class="w-25" :src="veganCurry" alt="Vegan Curry" />
         <p class="py-2"><b>Vegan Curry (DS, ES, FS, PS, SFS, VG) - $17.99</b> - Plant based Chick`n and potato curry with pita and served with garden salad</p>
+        
+        <img class="w-25" :src="shepherdsPie" alt="Shepherd's Pasty Pie" />
         <p class="py-2"><b>Shepherd's Pasty Pie (DS, ES, FS, SES, SFS, VG) - $17.99</b> - Meatless beef crumbles and vegetable stew hand pie; served with creamy stone ground mustard dipping sauce, apple beet salad, and chips</p>
       </div>
     </div>
@@ -33,7 +44,7 @@
     </div>
   </div>
 
-  <div class="menu-row2">
+  <!-- <div class="menu-row2">
     <div class="menu-items3 text-white row py-4">
       <h2 class="fw-bold text-center">Sides</h2>
       <div class="col text-center">
@@ -58,9 +69,9 @@
         <p><b>Specialty Chicken (FS, PS, SES, SFS, SS, TNS) - $15.99</b> - Grilled chicken breast, apple butter mayo, Colby cheese, smoky apple bacon, roasted tomatoes on a housemade specialty bun</p>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="menu-row3">
+  <!-- <div class="menu-row3">
     <div class="menu-items5 text-white row py-4">
       <h2 class="fw-bold text-center">Kids' Entrées - For children 9 and under</h2>
       <div class="col text-center">
@@ -90,7 +101,7 @@
         <p>Strawberry and Peanut Butter, Vanilla or Chocolate</p>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="allergies ms-5 text-white">
     <div class="d-flex px-3">
@@ -126,7 +137,15 @@
 // })
 export default /* class HomeView extends Vue */ {
   data() {
-    return {};
+    return {
+      beefLambGuinnessStew: require("@/assets/images/beef-lamb-guinness-stew.png"),
+      cottagePie: require("@/assets/images/cottage-pie.png"),
+      bangersAndMash: require("@/assets/images/bangers-and-mash.png"),
+      miniPieCombo: require("@/assets/images/mini-pie-combo.png"),
+      veganCurry: require("@/assets/images/vegan-curry.png"),
+      shepherdsPie: require("@/assets/images/shepherds-pasty-pie.png"),
+
+    };
   },
 };
 </script>
