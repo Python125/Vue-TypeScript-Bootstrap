@@ -53,13 +53,12 @@
     <div class="menu-items3 text-white row py-4">
       <h2 class="fw-bold text-center">Sides</h2>
       <div class="col text-center">
-        <p>Chips (DS, ES, FS, GS, PS, SES, SFS, SS, TNS, VG) - $4.99</p>
-        <p>Mashed Potatoes with Gravy (ES, FS, PS, SES, SFS, TNS) - $3.99</p>
-        <p>Side Garden Salad (DS, ES, FS, GS, PS, SES, SFS, SS, TNS, VG) - $6.99</p>
-
+        <p class="fw-bold">Chips (DS, ES, FS, GS, PS, SES, SFS, SS, TNS, VG) - $4.99</p>
+        <p class="fw-bold">Mashed Potatoes with Gravy (ES, FS, PS, SES, SFS, TNS) - $3.99</p>
+        <p class="fw-bold">Side Garden Salad (DS, ES, FS, GS, PS, SES, SFS, SS, TNS, VG) - $6.99</p>
         <img :src="scotchEgg" alt="Scotch Egg">
-        <p>Scotch Egg (PS, SFS, TNS) - $5.49</p>
-        <p>Add Banger (1 each) (DS, ES, FS, PS, SES, SFS, TNS) - $5.49</p>
+        <p><b>Scotch Egg (PS, SFS, TNS) - $5.49</b> - Hard-boiled egg wrapped in pork sausage, dusted with bread crumbs and fried</p>
+        <p class="fw-bold">Add Banger (1 each) (DS, ES, FS, PS, SES, SFS, TNS) - $5.49</p>
       </div>
     </div>
 
@@ -76,37 +75,42 @@
     </div>
   </div>
 
-  <!-- <div class="menu-row3">
+  <div class="menu-row3">
     <div class="menu-items5 text-white row py-4">
       <h2 class="fw-bold text-center">Kids' Entrées - For children 9 and under</h2>
       <div class="col text-center">
-        <p>Macaroni Cheese (ES, FS, PS, SES, SFS, SS, TNS, V) - $8.29</p>
-        <p>served with grapes and applesauce</p>
-        <p>Mini Pie (ES, FS, PS, SES, SFS, TNS) - $8.29</p>
-        <p>served with grapes and applesauce</p>
-      </div>
-      <div class="col text-center">
-        <p>Fish & Chips (PS, SFS, TNS) - $8.29</p>
-        <p>served with chips and tartar sauce</p>
-        <p>(Request no tartar sauce for egg-sensitive options.)</p>
+        <img class="w-25" :src="kidsMacCheese" alt="Kids Macaroni Cheese">
+        <p><b>Macaroni Cheese (ES, FS, PS, SES, SFS, SS, TNS, V) - $8.29</b> - Served with grapes and applesauce</p>
+        <img class="w-25" :src="kidsPie" alt="Kids Mini Pie">
+        <p><b>Mini Pie (ES, FS, PS, SES, SFS, TNS) - $8.29</b> - Served with grapes and applesauce</p>
+        <img class="w-25" :src="kidsFishChips" alt="Kids Fish & Chips">
+        <p><b>Fish & Chips (PS, SFS, TNS) - $8.29</b> - Served with chips and tartar sauce (Request no tartar sauce for egg-sensitive options.)</p>
       </div>
     </div>
     <div class="menu-items6 text-white row py-4">
       <h2 class="fw-bold text-center">Desserts</h2>
       <p class="text-center">All bakery items are made in a facility where cross-contamination with gluten, soy, peanuts, and tree nuts is possible</p>
       <div class="col text-center">
-        <p>Sticky Toffee Pudding (FS, PS, SES, SFS, SS, V) - $7.99</p>
-        <p>Butterbeer™ Potted Cream (ES, FS, GS, PS, SES, SFS, SS, TNS, V) - $6.49</p>
-        <p>Butterbeer™ Ice Cream (ES, FS, GS, PS, SES, SFS, SS, TNS, V) - $6.49</p>
-      </div>
-      <div class="col text-center">
-        <p>Cranachan (ES, FS, PS, SES, SFS, SS, TNS, V) - $6.99</p>
-        <p>Chocolate Potted Cream (FS, GS, PS, SES, SFS, SS, TNS, V) - $5.29</p>
-        <p>Cup of Ice Cream (ES, FS, GS, SES, SFS, SS, TNS, V) - $6.49</p>
-        <p>Strawberry and Peanut Butter, Vanilla or Chocolate</p>
+        <img class="w-25" :src="stickyToffeePudding" alt="Sticky Toffee Pudding">
+        <p class="fw-bold">Sticky Toffee Pudding (FS, PS, SES, SFS, SS, V) - $7.99</p>
+
+        <img class="w-25" :src="butterbeerPottedCream" alt="Butterbeer™ Potted Cream">
+        <p class="fw-bold">Butterbeer™ Potted Cream (ES, FS, GS, PS, SES, SFS, SS, TNS, V) - $6.49</p>
+
+        <img class="w-25" src="" alt="Butterbeer™ Ice Cream">
+        <p class="fw-bold">Butterbeer™ Ice Cream (ES, FS, GS, PS, SES, SFS, SS, TNS, V) - $6.49</p>
+
+        <img class="w-25" src="" alt="Cranachan">
+        <p class="fw-bold">Cranachan (ES, FS, PS, SES, SFS, SS, TNS, V) - $6.99</p>
+
+        <img class="w-25" src="" alt="Chocolate Potted Cream">
+        <p class="fw-bold">Chocolate Potted Cream (FS, GS, PS, SES, SFS, SS, TNS, V) - $5.29</p>
+
+        <img class="w-25" src="" alt="Cup of Ice Cream">
+        <p><b>Cup of Ice Cream (ES, FS, GS, SES, SFS, SS, TNS, V) - $6.49</b> - Strawberry and Peanut Butter, Vanilla or Chocolate</p>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <div class="allergies ms-5 text-white">
     <div class="d-flex px-3">
@@ -163,6 +167,15 @@ export default /* class HomeView extends Vue */ {
 
       bangerSandwich: require("@/assets/images/banger-sandwich.png"),
       specialtyChicken: require("@/assets/images/specialty-chicken.png"),
+      kidsMacCheese: require("@/assets/images/kids-mac-and-cheese.png"),
+      kidsPie: require("@/assets/images/kids-mini-pie.png"),
+      kidsFishChips: require("@/assets/images/kids-fish-and-chips.png"),
+
+      stickyToffeePudding: require("@/assets/images/sticky-toffee-pudding.png"),
+      butterbeerPottedCream: require("@/assets/images/butterbeer-potted-cream.png"),
+      // butterbeerIceCream: require("@/assets/images/butterbeer-ice-cream.png"),
+      // cranachan: require("@/assets/images/cranachan.png"),
+      // chocolatePottedCream: require("@/assets/images/chocolate-potted-cream.png"),
     };
   },
 };

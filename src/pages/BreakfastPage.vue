@@ -88,12 +88,6 @@
         <p class="fw-bold py-1">Scrambled Eggs - $2.99</p>
       </div>
     </div>
-    <!-- <div class="menu-items4 text-white row py-5">
-      <div class="sides col text-center">
-        <p class="fw-bold py-1">Blood Sausage - $5.49</p>
-        <p class="fw-bold py-1">Scrambled Eggs - $2.99</p>
-      </div>
-    </div> -->
   </div>
 
   <div class="allergies ms-5 text-white">
