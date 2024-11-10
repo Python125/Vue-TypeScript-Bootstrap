@@ -49,15 +49,15 @@
     </div>
   </div>
 
-  <!-- <div class="menu-row2">
+  <div class="menu-row2">
     <div class="menu-items3 text-white row py-4">
       <h2 class="fw-bold text-center">Sides</h2>
       <div class="col text-center">
         <p>Chips (DS, ES, FS, GS, PS, SES, SFS, SS, TNS, VG) - $4.99</p>
         <p>Mashed Potatoes with Gravy (ES, FS, PS, SES, SFS, TNS) - $3.99</p>
         <p>Side Garden Salad (DS, ES, FS, GS, PS, SES, SFS, SS, TNS, VG) - $6.99</p>
-      </div>
-      <div class="col text-center">
+
+        <img :src="scotchEgg" alt="Scotch Egg">
         <p>Scotch Egg (PS, SFS, TNS) - $5.49</p>
         <p>Add Banger (1 each) (DS, ES, FS, PS, SES, SFS, TNS) - $5.49</p>
       </div>
@@ -68,13 +68,13 @@
       <p class="text-center">Served with chips</p>
       <p class="text-center">Gluten-free buns are available upon request.</p>
       <div class="col text-center">
+        <img class="w-25" :src="bangerSandwich" alt="Banger Sandwich">
         <p><b>Banger (DS, FS, PS, SES, SFS, SS, TNS) - $14.99</b> - Roasted English sausage, mustard aioli, roasted tomatoes, sautéed cabbage and onions on a crusted baguette (Request no mustard aioli for egg-sensitive options.)</p>
-      </div>
-      <div class="col text-center">
+        <img class="w-25" :src="specialtyChicken" alt="Specialty Chicken">
         <p><b>Specialty Chicken (FS, PS, SES, SFS, SS, TNS) - $15.99</b> - Grilled chicken breast, apple butter mayo, Colby cheese, smoky apple bacon, roasted tomatoes on a housemade specialty bun</p>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <!-- <div class="menu-row3">
     <div class="menu-items5 text-white row py-4">
@@ -149,13 +149,20 @@ export default /* class HomeView extends Vue */ {
       miniPieCombo: require("@/assets/images/mini-pie-combo.png"),
       veganCurry: require("@/assets/images/vegan-curry.png"),
       shepherdsPie: require("@/assets/images/shepherds-pasty-pie.png"),
-      
       huntersChicken: require("@/assets/images/hunters-chicken.png"),
       fishAndChips: require("@/assets/images/fish-and-chips.png"),
       fishermanPie: require("@/assets/images/fishermans-pie.png"),
       scotchEggs: require("@/assets/images/scotch-eggs.png"),
       soupAndSalad: require("@/assets/images/soup-and-salad.png"),
       ploughmansPlatter: require("@/assets/images/ploughmans-platter.png"),
+
+      //chips: require("@/assets/images/chips.png"),
+
+      scotchEgg: require("@/assets/images/scotch-egg.png"),
+      //banger: require("@/assets/images/banger-side.png"),
+
+      bangerSandwich: require("@/assets/images/banger-sandwich.png"),
+      specialtyChicken: require("@/assets/images/specialty-chicken.png"),
     };
   },
 };
