@@ -50,32 +50,6 @@
   </div>
 
   <div class="menu-row2">
-    <div class="menu-items3 text-white row py-4">
-      <h2 class="fw-bold text-center">Sides</h2>
-      <div class="col text-center">
-        <p class="fw-bold">Chips (DS, ES, FS, GS, PS, SES, SFS, SS, TNS, VG) - $4.99</p>
-        <p class="fw-bold">Mashed Potatoes with Gravy (ES, FS, PS, SES, SFS, TNS) - $3.99</p>
-        <p class="fw-bold">Side Garden Salad (DS, ES, FS, GS, PS, SES, SFS, SS, TNS, VG) - $6.99</p>
-        <img :src="scotchEgg" alt="Scotch Egg">
-        <p><b>Scotch Egg (PS, SFS, TNS) - $5.49</b> - Hard-boiled egg wrapped in pork sausage, dusted with bread crumbs and fried</p>
-        <p class="fw-bold">Add Banger (1 each) (DS, ES, FS, PS, SES, SFS, TNS) - $5.49</p>
-      </div>
-    </div>
-
-    <div class="menu-items4 text-white row py-4">
-      <h2 class="fw-bold text-center">Sandwiches</h2>
-      <p class="text-center">Served with chips</p>
-      <p class="text-center">Gluten-free buns are available upon request.</p>
-      <div class="col text-center">
-        <img class="w-25" :src="bangerSandwich" alt="Banger Sandwich">
-        <p><b>Banger (DS, FS, PS, SES, SFS, SS, TNS) - $14.99</b> - Roasted English sausage, mustard aioli, roasted tomatoes, sautéed cabbage and onions on a crusted baguette (Request no mustard aioli for egg-sensitive options.)</p>
-        <img class="w-25" :src="specialtyChicken" alt="Specialty Chicken">
-        <p><b>Specialty Chicken (FS, PS, SES, SFS, SS, TNS) - $15.99</b> - Grilled chicken breast, apple butter mayo, Colby cheese, smoky apple bacon, roasted tomatoes on a housemade specialty bun</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="menu-row3">
     <div class="menu-items5 text-white row py-4">
       <h2 class="fw-bold text-center">Kids' Entrées - For children 9 and under</h2>
       <div class="col text-center">
@@ -87,26 +61,54 @@
         <p><b>Fish & Chips (PS, SFS, TNS) - $8.29</b> - Served with chips and tartar sauce (Request no tartar sauce for egg-sensitive options.)</p>
       </div>
     </div>
+    <div class="menu-items4 text-white row py-4">
+      <h2 class="fw-bold text-center py-1">Sandwiches</h2>
+      <p class="text-center mb-5">Served with chips</p>
+      <p class="text-center mb-5">Gluten-free buns are available upon request.</p>
+      <div class="col text-center">
+        <img class="w-25" :src="bangerSandwich" alt="Banger Sandwich">
+        <p><b>Banger (DS, FS, PS, SES, SFS, SS, TNS) - $14.99</b> - Roasted English sausage, mustard aioli, roasted tomatoes, sautéed cabbage and onions on a crusted baguette (Request no mustard aioli for egg-sensitive options.)</p>
+        <img class="w-25" :src="specialtyChicken" alt="Specialty Chicken">
+        <p><b>Specialty Chicken (FS, PS, SES, SFS, SS, TNS) - $15.99</b> - Grilled chicken breast, apple butter mayo, Colby cheese, smoky apple bacon, roasted tomatoes on a housemade specialty bun</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-row3">
+    <div class="menu-items3 text-white row py-4">
+      <h2 class="fw-bold text-center">Sides</h2>
+      <div class="col text-center">
+        <img class="w-25" src="" alt="Chips">
+        <p class="fw-bold">Chips (DS, ES, FS, GS, PS, SES, SFS, SS, TNS, VG) - $4.99</p>
+
+        <img class="w-25" :src="mashPotatoesGravy" alt="Mashed Potatoes with Gravy">
+        <p class="fw-bold">Mashed Potatoes with Gravy (ES, FS, PS, SES, SFS, TNS) - $3.99</p>
+
+        <img class="w-25" src="" alt="Side Garden Salad">
+        <p class="fw-bold">Side Garden Salad (DS, ES, FS, GS, PS, SES, SFS, SS, TNS, VG) - $6.99</p>
+
+        <img class="w-25" :src="scotchEgg" alt="Scotch Egg">
+        <p><b>Scotch Egg (PS, SFS, TNS) - $5.49</b> - Hard-boiled egg wrapped in pork sausage, dusted with bread crumbs and fried</p>
+
+        <img class="w-25" src="" alt="">
+        <p class="fw-bold">Add Banger (1 each) (DS, ES, FS, PS, SES, SFS, TNS) - $5.49</p>
+      </div>
+    </div>
     <div class="menu-items6 text-white row py-4">
       <h2 class="fw-bold text-center">Desserts</h2>
       <p class="text-center">All bakery items are made in a facility where cross-contamination with gluten, soy, peanuts, and tree nuts is possible</p>
       <div class="col text-center">
         <img class="w-25" :src="stickyToffeePudding" alt="Sticky Toffee Pudding">
         <p class="fw-bold">Sticky Toffee Pudding (FS, PS, SES, SFS, SS, V) - $7.99</p>
-
         <img class="w-25" :src="butterbeerPottedCream" alt="Butterbeer™ Potted Cream">
         <p class="fw-bold">Butterbeer™ Potted Cream (ES, FS, GS, PS, SES, SFS, SS, TNS, V) - $6.49</p>
-
-        <img class="w-25" src="" alt="Butterbeer™ Ice Cream">
+        <img class="w-25" :src="butterbeerIceCreamCone" alt="Butterbeer™ Ice Cream">
         <p class="fw-bold">Butterbeer™ Ice Cream (ES, FS, GS, PS, SES, SFS, SS, TNS, V) - $6.49</p>
-
-        <img class="w-25" src="" alt="Cranachan">
+        <img class="w-25" :src="cranachan" alt="Cranachan">
         <p class="fw-bold">Cranachan (ES, FS, PS, SES, SFS, SS, TNS, V) - $6.99</p>
-
-        <img class="w-25" src="" alt="Chocolate Potted Cream">
+        <img class="w-25" :src="chocolatePottedCream" alt="Chocolate Potted Cream">
         <p class="fw-bold">Chocolate Potted Cream (FS, GS, PS, SES, SFS, SS, TNS, V) - $5.29</p>
-
-        <img class="w-25" src="" alt="Cup of Ice Cream">
+        <img class="w-25" :src="butterbeerIceCreamCup" alt="Cup of Ice Cream">
         <p><b>Cup of Ice Cream (ES, FS, GS, SES, SFS, SS, TNS, V) - $6.49</b> - Strawberry and Peanut Butter, Vanilla or Chocolate</p>
       </div>
     </div>
@@ -159,23 +161,23 @@ export default /* class HomeView extends Vue */ {
       scotchEggs: require("@/assets/images/scotch-eggs.png"),
       soupAndSalad: require("@/assets/images/soup-and-salad.png"),
       ploughmansPlatter: require("@/assets/images/ploughmans-platter.png"),
-
-      //chips: require("@/assets/images/chips.png"),
-
+  // Sides
+      // chips: require("@/assets/images/"),
+      mashPotatoesGravy: require("@/assets/images/mashed-potatoes-and-gravy.png"),
+      // sideGardenSalad require("@/assets/images/"),
       scotchEgg: require("@/assets/images/scotch-egg.png"),
       //banger: require("@/assets/images/banger-side.png"),
-
       bangerSandwich: require("@/assets/images/banger-sandwich.png"),
       specialtyChicken: require("@/assets/images/specialty-chicken.png"),
       kidsMacCheese: require("@/assets/images/kids-mac-and-cheese.png"),
       kidsPie: require("@/assets/images/kids-mini-pie.png"),
       kidsFishChips: require("@/assets/images/kids-fish-and-chips.png"),
-
       stickyToffeePudding: require("@/assets/images/sticky-toffee-pudding.png"),
       butterbeerPottedCream: require("@/assets/images/butterbeer-potted-cream.png"),
-      // butterbeerIceCream: require("@/assets/images/butterbeer-ice-cream.png"),
-      // cranachan: require("@/assets/images/cranachan.png"),
-      // chocolatePottedCream: require("@/assets/images/chocolate-potted-cream.png"),
+      butterbeerIceCreamCone: require("@/assets/images/butterbeer-ice-cream-cone.png"),
+      cranachan: require("@/assets/images/cranachan.png"),
+      chocolatePottedCream: require("@/assets/images/chocolate-potted-cream.png"),
+      butterbeerIceCreamCup: require("@/assets/images/butterbeer-ice-cream-cup.png"),
     };
   },
 };
