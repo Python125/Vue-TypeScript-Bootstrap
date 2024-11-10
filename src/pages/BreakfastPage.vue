@@ -14,17 +14,22 @@
   <div class="menu-row1">
     <div class="menu-items1 text-white row py-5">
       <div class="col text-center">
+
+        <img class="w-25" :src="traditionalBreakfast" alt="Traditional Breakfast" />
         <p>
           <b>Traditional Breakfast (FS, PS, SS, TNS) - $18.99</b> - Fresh
           scrambled eggs, sausage links, black pudding, English bacon, baked
           beans, grilled tomato, sautéed mushrooms and breakfast potatoes
-          <img :src="traditionalBreakfast" alt="Traditional Breakfast">
         </p>
+        
+        <img class="w-25" :src="pancakeBreakfast" alt="Pancake Breakfast" />
         <p class="py-2">
           <b>Pancake Breakfast (FS, PS, SES, SS, TNS) - $18.99</b> - Three
           fluffy buttermilk pancakes, crisp bacon and link sausage with butter
           croissant
         </p>
+
+        <img class="w-25" :src="eggLeekMushroom" alt="Egg, Leek, & Mushroom Pasty" />
         <p class="py-2">
           <b>Egg, Leek, & Mushroom Pasty (FS, PS, SES, TNS) - $18.99</b> -
           Pastry wrapped scrambled eggs, mushrooms and leeks served with
@@ -34,11 +39,15 @@
     </div>
     <div class="menu-items2 text-white row py-5">
       <div class="col text-center">
+
+        <img class="w-25" :src="americanBreakfast" alt="American Breakfast">
         <p>
           <b>American Breakfast (FS, PS, SES, SS, TNS) - $18.99</b> - Fresh
           scrambled eggs, breakfast potatoes, crisp bacon, and link sausage with
           butter croissant
         </p>
+
+        <img class="w-25" src="appleOatmealFlan" alt="Apple Oatmeal Flan">
         <p class="py-2">
           <b
             >Apple Oatmeal Flan with Yogurt & Fruit (FS, GS, PS, SES, SS) -
@@ -119,6 +128,10 @@ export default /* class HomeView extends Vue */ {
   data() {
     return {
       traditionalBreakfast: require("@/assets/images/traditional-breakfast.png"),
+      pancakeBreakfast: require("@/assets/images/pancake-breakfast.png"),
+      eggLeekMushroom: require("@/assets/images/egg-leek-mushroom-pasty.png"),
+      americanBreakfast: require("@/assets/images/american-breakfast.png"),
+      appleOatmealFlan: require("@/assets/images/apple-oatmeal-flan.png"),
     };
   },
 };
