@@ -3,7 +3,7 @@
 
   <div class="menu-row1">
     <div class="menu-items1 text-white row py-3">
-      <h3 class="text-center mb-3">Butterbeer™</h3>
+      <h3 class="fw-bold text-center mb-3">Butterbeer™</h3>
       <p class="butterbeer-note fw-bold text-center">
         Butterbeer™ is suitable for those with gluten, soy, egg, wheat, and nut
         allergies. The topping does contain trace amounts of dairy, so it is
@@ -13,15 +13,16 @@
         with a dairy allergy.
       </p>
       <div class="col text-center mt-3">
-        
-        <p class="py-1"><b>Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch <img :src="butterbeer" alt="Butterbeer" class="butterbeer-image" /></p>
-        <!-- <img :src="frozenButterbeer" alt="Frozen Butterbeer" class="butterbeer-image" /> -->
+        <img class="butterbeer-image" :src="butterbeer" alt="Butterbeer" />
+        <p class="py-1"><b>Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
+        <img class="butterbeer-image" :src="frozenButterbeer" alt="Frozen Butterbeer" />
         <p class="py-1"><b>Frozen Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
-        <!-- <img :src="hotButterbeer" alt="Hot Butterbeer" class="butterbeer-image" /> -->
+        <img class="butterbeer-image" :src="hotButterbeer" alt="Hot Butterbeer" />
         <p class="py-1"><b>Hot Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
-        <p class="py-1"><b>Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
+
+        <!-- <p class="py-1"><b>Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
         <p class="py-1"><b>Stainless Steel Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
-        <p class="py-1"><b>Frozen Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
+        <p class="py-1"><b>Frozen Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p> -->
       </div>
     </div>
   </div>
@@ -159,6 +160,5 @@ export default /* class HomePage extends Vue */ {
 // Images
 .butterbeer-image {
   width: 300px;
-  margin-left: 1%;
 }
 </style>

@@ -81,7 +81,7 @@
         <img class="w-25" src="" alt="Chips">
         <p class="fw-bold">Chips (DS, ES, FS, GS, PS, SES, SFS, SS, TNS, VG) - $4.99</p>
 
-        <img class="w-25" :src="mashPotatoesGravy" alt="Mashed Potatoes with Gravy">
+        <img class="w-25" src="" alt="Mashed Potatoes with Gravy">
         <p class="fw-bold">Mashed Potatoes with Gravy (ES, FS, PS, SES, SFS, TNS) - $3.99</p>
 
         <img class="w-25" src="" alt="Side Garden Salad">
@@ -163,10 +163,11 @@ export default /* class HomeView extends Vue */ {
       ploughmansPlatter: require("@/assets/images/ploughmans-platter.png"),
   // Sides
       // chips: require("@/assets/images/"),
-      mashPotatoesGravy: require("@/assets/images/mashed-potatoes-and-gravy.png"),
+      // mashPotatoesGravy: require("@/assets/images/"),
       // sideGardenSalad require("@/assets/images/"),
       scotchEgg: require("@/assets/images/scotch-egg.png"),
       //banger: require("@/assets/images/banger-side.png"),
+
       bangerSandwich: require("@/assets/images/banger-sandwich.png"),
       specialtyChicken: require("@/assets/images/specialty-chicken.png"),
       kidsMacCheese: require("@/assets/images/kids-mac-and-cheese.png"),
