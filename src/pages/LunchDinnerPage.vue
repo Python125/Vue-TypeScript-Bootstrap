@@ -1,8 +1,13 @@
 <template>
   <h1 class="restaurant text-white text-center">Leaky Cauldron™</h1>
 
-  <h2 class="fw-bold text-white text-center">Lunch and Dinner Menu</h2>
-  <p class="p-3 h4 text-white text-center">Allergen Note: Please inform a manager or Chef's Assistant prior to ordering if someone in your party requires special dietary accommodations</p>
+  <div class="lunch-intro">
+    <h2 class="fw-bold text-white text-center">Lunch and Dinner Menu</h2>
+    <p class="p-3 h4 text-white text-center">
+      Allergen Note: Please inform a manager or Chef's Assistant prior to
+      ordering if someone in your party requires special dietary accommodations
+    </p>
+  </div>
 
   <h3 class="fw-bold text-center text-white mt-2">Entrées</h3>
   <div class="menu-row1">
@@ -136,6 +141,16 @@ export default /* class HomeView extends Vue */ {
   background: linear-gradient(to right, #3555a3 0, #1c3385 100%);
   font-weight: 900;
   padding: 0.5rem;
+}
+
+.lunch-intro {
+  background-color: #0a0a0a;
+  opacity: 0.8;
+  width: 40%;
+  margin-top: 1rem;
+  margin-left: 47.7rem;
+  padding: 1rem;
+  z-index: -1;
 }
 
 .menu-row1 {

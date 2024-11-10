@@ -170,7 +170,7 @@ export default /* class HomeView extends Vue */ {
   opacity: 0.8;
   width: 40%;
   margin-top: 1rem;
-  margin-left: 45rem;
+  margin-left: 47.7rem;
   padding: 1rem;
   z-index: -1;
 }
