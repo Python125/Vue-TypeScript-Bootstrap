@@ -1,15 +1,17 @@
 <template>
   <h1 class="restaurant text-white text-center">Leaky Cauldron™</h1>
 
-  <h3 class="fw-bold text-center text-white mt-5">
+  <div class="breakfast-intro">
+    <h3 class="fw-bold text-center text-white">
     Breakfast - served until 10:30 am daily
-  </h3>
-  <p class="mt-3 h4 text-center text-white">
-    <b><u>Allergen Note:</u></b> Please inform a manager or Chef's Assistant
-    prior to ordering if someone in your party requires special dietary
-    accommodations
-  </p>
-  <p class="fw-light text-center text-white p-3">Includes small beverage</p>
+    </h3>
+    <p class="mt-3 h4 text-center text-white">
+      <b><u>Allergen Note:</u></b> Please inform a manager or Chef's Assistant
+      prior to ordering if someone in your party requires special dietary
+      accommodations
+    </p>
+    <p class="fw-light text-center text-white p-3">Includes small beverage</p>
+  </div>
 
   <div class="menu-row1">
     <div class="menu-items1 text-white row py-5">
@@ -65,9 +67,9 @@
     </div>
   </div>
 
-  <h3 class="fw-bold text-white text-center mb-4">Sides</h3>
   <div class="menu-row2">
     <div class="menu-items3 text-white row py-5">
+      <h3 class="fw-bold text-white text-center mb-4">Sides</h3>
       <div class="sides col text-center">
         <img class="w-25" :src="americanBacon" alt="Bacon" />
         <p class="fw-bold py-1">Bacon - $2.49</p>
@@ -161,6 +163,16 @@ export default /* class HomeView extends Vue */ {
   background: linear-gradient(to right, #3555a3 0, #1c3385 100%);
   font-weight: 900;
   padding: 0.5rem;
+}
+
+.breakfast-intro {
+  background-color: #0a0a0a;
+  opacity: 0.8;
+  width: 40%;
+  margin-top: 1rem;
+  margin-left: 45rem;
+  padding: 1rem;
+  z-index: -1;
 }
 
 .menu-row1 {
