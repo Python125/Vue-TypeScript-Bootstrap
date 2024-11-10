@@ -15,30 +15,35 @@
       <div class="col text-center">
         <img class="w-25" :src="beefLambGuinnessStew" alt="Beef Lamb Guinness Stew" />
         <p><b>Beef, Lamb & Guinness Stew (DS, ES, FS, PS, SES, SFS, SS, TNS) - $17.99</b> - Served in a warm, crusty bread bowl</p>
-        
         <img class="w-25" :src="cottagePie" alt="Cottage Pie" />
         <p class="py-2"><b>Cottage Pie (ES, FS, PS, SES, SFS, TNS) - $17.99</b> - Savory combination of beef and chunky vegetables in a potato crust served with a garden salad</p>
-        
         <img class="w-25" :src="bangersAndMash" alt="Bangers & Mash" />
         <p class="py-2"><b>Bangers & Mash (ES, FS, PS, SES, SFS, TNS) - $16.99</b> - Roasted English sausage, creamy mashed potatoes, roasted tomatoes, sautéed onions and cabbage, minted peas & onion gravy (Request no sauce for soy protein-sensitive options.)</p>
-        
         <img class="w-25" :src="miniPieCombo" alt="Mini Pie Combination" />
         <p class="py-2"><b>Mini Pie Combination (ES, PS, SES, TNS) - $18.99</b> - Mini cottage pie and mini fisherman's pie served with garden salad</p>
-        
         <img class="w-25" :src="veganCurry" alt="Vegan Curry" />
-        <p class="py-2"><b>Vegan Curry (DS, ES, FS, PS, SFS, VG) - $17.99</b> - Plant based Chick`n and potato curry with pita and served with garden salad</p>
-        
+        <p class="py-2"><b>Vegan Curry (DS, ES, FS, PS, SFS, VG) - $17.99</b> - Plant based Chick`n and potato curry with pita and served with garden salad</p>        
         <img class="w-25" :src="shepherdsPie" alt="Shepherd's Pasty Pie" />
         <p class="py-2"><b>Shepherd's Pasty Pie (DS, ES, FS, SES, SFS, VG) - $17.99</b> - Meatless beef crumbles and vegetable stew hand pie; served with creamy stone ground mustard dipping sauce, apple beet salad, and chips</p>
       </div>
     </div>
     <div class="menu-items2 text-white row py-4">
       <div class="col text-center">
+        <img class="w-25" :src="huntersChicken" alt="Hunter's Chicken" />
         <p><b>Hunter's Chicken (ES, FS, PS, SES, SFS, TNS) - $16.99</b> - Bacon wrapped chicken breast with BBQ gravy, Monterey & Cheddar cheese blend, English minted peas, pea tendrils and chips</p>
+        <img class="w-25" :src="fishAndChips" alt="Fish and Chips" />
         <p class="py-2"><b>Fish & Chips (PS, SFS, TNS) - $17.99</b> - Fresh north Atlantic cod battered and fried with chips and tartar sauce (Request no tartar sauce for egg-sensitive options.)</p>
+
+        <img class="w-25" :src="fishermanPie" alt="Fisherman's Pie" />
         <p class="py-2"><b>Fisherman's Pie (ES, GS, PS, SES, SS, TNS) - $18.99</b> - Salmon, shrimp and cod baked together under a potato crust served with garden salad</p>
+        
+        <img class="w-25" :src="scotchEggs" alt="Scotch Eggs" />
         <p class="py-2"><b>Scotch Eggs (PS, SFS, TNS) - $13.99</b> - Hard-boiled eggs wrapped in pork sausage, dusted with bread crumbs and fried. Served warm with apple beet salad and mustard sauce</p>
+        
+        <img class="w-25" :src="soupAndSalad" alt="Soup & Salad" />
         <p class="py-2"><b>Soup & Salad (ES, FS, PS, SES, SFS, TNS) - $12.99</b> - Split Pea & Ham soup served with side garden salad</p>
+        
+        <img class="w-25" :src="ploughmansPlatter" alt="Ploughman's" />
         <p class="py-2"><b>Ploughman's (PS, SFS, TNS) - $23.99 (Serves 2)</b> - A feast of English cheese, crusty bread, field green salad, roasted tomatoes, cornichon pickles, apple beet salad, Branston pickle & scotch eggs (Request no scotch egg for egg-sensitive options, or request no scotch egg sauce for fish-sensitive options.)</p>
       </div>
     </div>
@@ -144,7 +149,13 @@ export default /* class HomeView extends Vue */ {
       miniPieCombo: require("@/assets/images/mini-pie-combo.png"),
       veganCurry: require("@/assets/images/vegan-curry.png"),
       shepherdsPie: require("@/assets/images/shepherds-pasty-pie.png"),
-
+      
+      huntersChicken: require("@/assets/images/hunters-chicken.png"),
+      fishAndChips: require("@/assets/images/fish-and-chips.png"),
+      fishermanPie: require("@/assets/images/fishermans-pie.png"),
+      scotchEggs: require("@/assets/images/scotch-eggs.png"),
+      soupAndSalad: require("@/assets/images/soup-and-salad.png"),
+      ploughmansPlatter: require("@/assets/images/ploughmans-platter.png"),
     };
   },
 };
