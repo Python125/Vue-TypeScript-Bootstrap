@@ -47,7 +47,7 @@
           butter croissant
         </p>
 
-        <img class="w-25" src="appleOatmealFlan" alt="Apple Oatmeal Flan">
+        <img class="w-25" :src="appleOatmealFlan" alt="Apple Oatmeal Flan">
         <p class="py-2">
           <b
             >Apple Oatmeal Flan with Yogurt & Fruit (FS, GS, PS, SES, SS) -
@@ -56,10 +56,11 @@
           - Freshly baked flan of apples and oatmeal served with yogurt and
           fresh seasonal fruit
         </p>
-        <p class="py-2">
-          <b>Kid's Breakfast - $13.49</b> - Choose traditional, pancake or
-          American
-        </p>
+
+        <img class="w-25" :src="traditionalBreakfast" alt="Traditional Breakfast" />
+        <img class="w-25" :src="pancakeBreakfast" alt="Pancake Breakfast" />
+        <img class="w-25" :src="americanBreakfast" alt="American Breakfast">
+        <p class="py-2"><b>Kid's Breakfast - $13.49</b> - Choose traditional, pancake or American</p>
       </div>
     </div>
   </div>
