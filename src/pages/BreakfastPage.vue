@@ -187,18 +187,17 @@ export default /* class HomeView extends Vue */ {
   margin: 10rem;
   padding: 4rem;
   background-color: #0a0a0a;
-  opacity: 0.8;
+  opacity: 0.9;
   z-index: -1;
 }
 
-.menu-items3,
-.menu-items4 {
+.menu-items3 {
   width: 100%;
   margin: 10rem;
   margin-top: 1rem;
   padding: 5rem;
   background-color: #0a0a0a;
-  opacity: 0.8;
+  opacity: 0.9;
   z-index: -1;
 }
 
