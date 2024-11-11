@@ -59,9 +59,9 @@
           fresh seasonal fruit
         </p>
 
-        <img class="w-25" :src="traditionalBreakfast" alt="Traditional Breakfast" />
-        <img class="w-25" :src="pancakeBreakfast" alt="Pancake Breakfast" />
-        <img class="w-25" :src="americanBreakfast" alt="American Breakfast">
+        <img style="width: 215px;" :src="traditionalBreakfast" alt="Traditional Breakfast" />
+        <img style="width: 150px;" :src="pancakeBreakfast" alt="Pancake Breakfast" />
+        <img style="width: 200px;" :src="americanBreakfast" alt="American Breakfast">
         <p class="py-2"><b>Kid's Breakfast - $13.49</b> - Choose traditional, pancake or American</p>
       </div>
     </div>
