@@ -31,48 +31,45 @@
     <div class="menu-items2 text-white row py-4">
       <div class="col text-center">
         <h3 class="text-center fw-bold mb-3">Wizards' Refreshments</h3>
-        <img class="w-25" :src="pumpkinJuice" alt="Pumpkin Juice">
-        <p class="fw-bold py-1">Pumpkin Juice™ - $5.49</p>
+        <img class="w-25 py-2" :src="pumpkinJuice" alt="Pumpkin Juice">
+        <p class="fw-bold py-2">Pumpkin Juice™ - $5.49</p>
         <img class="w-25" :src="tongueTyingLemonSquash" alt="Tongue Tying Lemon Squash">
-        <p class="py-1"><b>Tongue Tying Lemon Squash - $6.49</b> - Sweet and tart lemon flavored beverage served with squashed lemon</p>
-        <img class="w-25" :src="fishyGreenAle" alt="Fishy Green Ale">
+        <p class="py-2"><b>Tongue Tying Lemon Squash - $6.49</b> - Sweet and tart lemon flavored beverage served with squashed lemon</p>
+        <img class="w-25 py-2" :src="fishyGreenAle" alt="Fishy Green Ale">
         <p class="py-1"><b>Fishy Green Ale - $6.49</b> - Smooth and creamy with notes of mint and cinnamon and popping blueberry fish eggs</p>
 
-        <img class="w-25" :src="icedTea" alt="Iced Tea">
-        <img style="width: 181px;" :src="lemonade" alt="Lemonade">
+        <img class="w-25 py-2" :src="icedTea" alt="Iced Tea">
+        <img style="width: 181px;" class="py-2" :src="lemonade" alt="Lemonade">
         <img class="w-25" :src="cider" alt="Cider">
         <p class="py-1"><b>Fountain Beverages - $4.49</b> - Iced Tea, Lemonade, Cider</p>
 
-        <img class="w-25" :src="milk" alt="Milk">
-        <p class="fw-bold py-1">2% Milk - $2.99</p>
+        <!-- <img class="w-25" src="milk" alt="Milk">
+        <p class="fw-bold py-1">2% Milk - $2.99</p> -->
 
-        <img class="w-25" :src="orangeJuice" alt="Orange">
-        <img class="w-25" :src="appleJuice" alt="Apple">
-        <p class="py-1"><b>Juice - $3.49</b> - Orange, Apple</p>
+        <!-- <img class="w-25" src="orangeJuice" alt="Orange">
+        <img class="w-25" src="appleJuice" alt="Apple">
+        <p class="py-1"><b>Juice - $3.49</b> - Orange, Apple</p> -->
       </div>
     </div>
     <div class="menu-items3 text-white row py-4">
       <div class="col text-center">
         <h3 class="text-center fw-bold mb-3">Wizards' Refreshments</h3>
+        <img class="w-25 py-2" :src="gillywater" alt="Gillywater">
+        <p class="fw-bold py-2">Gillywater - $6.00</p>
+        <img class="w-25 py-2" :src="otterSquashFizzyOrangeJuice" alt="Otter's Fizzy Orange Juice">
+        <p class="py-2"><b>Otter's Fizzy Orange Juice - $6.49</b> - Effervescent fresh orange beverage with notes of vanilla and cinnamon</p>
+        <img class="w-25 py-2" :src="peachtreeFizzingTea" alt="Peachtree Fizzing Tea">
+        <p class="py-2"><b>Peachtree Fizzing Tea - $6.49</b> - Fizzy but smooth with flavors of fresh peach nectar and ginger</p>
 
-        <img class="w-25" src="" alt="Gillywater">
-        <p class="fw-bold py-1">Gillywater - $6.00</p>
-
-        <img class="w-25" src="" alt="Otter's Fizzy Orange Juice">
-        <p class="py-1"><b>Otter's Fizzy Orange Juice - $6.49</b> - Effervescent fresh orange beverage with notes of vanilla and cinnamon</p>
-
-        <img class="w-25" src="" alt="Peachtree Fizzing Tea">
-        <p class="py-1"><b>Peachtree Fizzing Tea - $6.49</b> - Fizzy but smooth with flavors of fresh peach nectar and ginger</p>
-
-        <img class="w-25" src="" alt="Coffee">
+        <!-- <img class="w-25" src="" alt="Coffee">
         <img class="w-25" src="" alt="Decaf">
         <img class="w-25" src="" alt="Hot Tea">
-        <p class="py-1"><b>Hot Beverages - $3.79</b> - Coffee, Decaf, Hot Tea</p>
+        <p class="py-1"><b>Hot Beverages - $3.79</b> - Coffee, Decaf, Hot Tea</p> -->
 
-        <img class="w-25" src="" alt="Chocolate Milk">
-        <p class="fw-bold py-1">Chocolate Milk - $2.99</p>
+        <!-- <img class="w-25" src="" alt="Chocolate Milk">
+        <p class="fw-bold py-1">Chocolate Milk - $2.99</p> -->
 
-        <img class="w-25" src="" alt="Water">
+        <img class="w-25" :src="cupOfWater" alt="Water">
         <p class="fw-bold py-1">Courtesy Cup of Water - $0</p>
       </div>
     </div>
@@ -122,13 +119,15 @@ export default /* class HomePage extends Vue */ {
       icedTea: require("@/assets/images/iced-tea.png"),
       lemonade: require("@/assets/images/lemonade.png"),
       cider: require("@/assets/images/cider.png"),
-      milk: require("@/assets/images/milk.png"),
-      orangeJuice: require("@/assets/images/orange-juice.png"),
-      appleJuice: require("@/assets/images/apple-juice.png"),
+      // milk: require("@/assets/images/milk.png"),
+      // orangeJuice: require("@/assets/images/orange-juice.png"),
+      // appleJuice: require("@/assets/images/apple-juice.png"),
 
 
-      // gillywater: require("@/assets/images/gillywater.png"),
+      gillywater: require("@/assets/images/gillywater.png"),
       otterSquashFizzyOrangeJuice: require("@/assets/images/otters-fizzy-orange-juice.png"),
+      peachtreeFizzingTea: require("@/assets/images/peachtree-fizzing-tea.png"),
+      cupOfWater: require("@/assets/images/water-cup.png"),
     };
   },
 };
