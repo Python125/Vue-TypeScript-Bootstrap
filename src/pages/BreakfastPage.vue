@@ -18,7 +18,7 @@
       <div class="col text-center">
 
         <img class="w-25" :src="traditionalBreakfast" alt="Traditional Breakfast" />
-        <p>
+        <p class="py-2">
           <b>Traditional Breakfast (FS, PS, SS, TNS) - $18.99</b> - Fresh
           scrambled eggs, sausage links, black pudding, English bacon, baked
           beans, grilled tomato, sautéed mushrooms and breakfast potatoes
@@ -42,8 +42,8 @@
     <div class="menu-items2 text-white row py-5">
       <div class="col text-center">
 
-        <img class="w-25" :src="americanBreakfast" alt="American Breakfast">
-        <p>
+        <img class="w-25 mt-5" :src="americanBreakfast" alt="American Breakfast">
+        <p class="py-2">
           <b>American Breakfast (FS, PS, SES, SS, TNS) - $18.99</b> - Fresh
           scrambled eggs, breakfast potatoes, crisp bacon, and link sausage with
           butter croissant
