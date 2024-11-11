@@ -79,17 +79,19 @@
     <div class="menu-items4 text-white row py-4">
       <h3 class="fw-bold text-center">Cauldron Brews: Ale, Wine, & Wizard's Fire</h3>
         <div class="col text-center">
+          <img style="width: 300px;" :src="dragonScale" alt="Dragon's Scale">
           <p class="py-1"><b>Dragon's Scale - $13.00</b> - Unique lager with a light crisp, malty finish</p>
+          <img style="width: 300px;" :src="daisyrootAle" alt="Daisyroot Ale">
           <p class="py-1"><b>Daisyroot Ale - $13.00</b> - Refreshing traditional English Mild with a light malty flavor profile and a clean finish</p>
+          <img style="width: 300px;" :src="wizardsBrew" alt="Wizard's Brew">
           <p class="py-1"><b>Wizard's Brew - $13.00</b> - Full bodied, sweet stout with a smooth, light sweetness and clean, dry finish</p>
+          <img style="width: 300px;" :src="darkForestAle" alt="Dark Forest Ale">
           <p class="py-1"><b>Dark Forest Ale - $13.00</b> - Traditional brown ale with roasty caramel/toffee notes and warming finish</p>
-        </div>
-        <div class="col text-center">
-          <p><b>Draught Beer - $11.25</b> - Heineken, Stella Artois, Strongbow, Yuengling</p>
-          <p class="py-1"><b>Wine by the Glass - $11.00</b> - Chardonnay & Cabernet Sauvignon</p>
+          <!-- <p><b>Draught Beer - $11.25</b> - Heineken, Stella Artois, Strongbow, Yuengling</p>
+          <p class="py-1"><b>Wine by the Glass - $11.00</b> - Chardonnay & Cabernet Sauvignon</p> -->
+          <img style="width: 300px;" :src="fireWhisky" alt="Fire Whisky">
           <p class="py-1"><b>Fire Whisky - $12.50</b> - Fire Whisky, Fire and Strongbow Cocktail</p>
         </div>
-
     </div>
   </div>
 
@@ -119,15 +121,21 @@ export default /* class HomePage extends Vue */ {
       icedTea: require("@/assets/images/iced-tea.png"),
       lemonade: require("@/assets/images/lemonade.png"),
       cider: require("@/assets/images/cider.png"),
+
       // milk: require("@/assets/images/milk.png"),
       // orangeJuice: require("@/assets/images/orange-juice.png"),
       // appleJuice: require("@/assets/images/apple-juice.png"),
-
 
       gillywater: require("@/assets/images/gillywater.png"),
       otterSquashFizzyOrangeJuice: require("@/assets/images/otters-fizzy-orange-juice.png"),
       peachtreeFizzingTea: require("@/assets/images/peachtree-fizzing-tea.png"),
       cupOfWater: require("@/assets/images/water-cup.png"),
+
+      dragonScale: require("@/assets/images/dragon-scale.png"),
+      daisyrootAle: require("@/assets/images/daisyroot-ale.png"),
+      wizardsBrew: require("@/assets/images/wizards-brew.png"),
+      darkForestAle: require("@/assets/images/dark-forest-ale.png"),
+      fireWhisky: require("@/assets/images/fire-whisky.png"),
     };
   },
 };
