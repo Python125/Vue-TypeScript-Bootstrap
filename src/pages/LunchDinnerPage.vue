@@ -63,13 +63,13 @@
     </div>
     <div class="menu-items4 text-white row py-4">
       <h2 class="fw-bold text-center py-1">Sandwiches</h2>
-      <p class="text-center mb-5">Served with chips</p>
-      <p class="text-center mb-5">Gluten-free buns are available upon request.</p>
+      <p class="text-center">Served with chips</p>
+      <p class="text-center py-2">Gluten-free buns are available upon request.</p>
       <div class="col text-center">
         <img class="w-25" :src="bangerSandwich" alt="Banger Sandwich">
-        <p><b>Banger (DS, FS, PS, SES, SFS, SS, TNS) - $14.99</b> - Roasted English sausage, mustard aioli, roasted tomatoes, sautéed cabbage and onions on a crusted baguette (Request no mustard aioli for egg-sensitive options.)</p>
+        <p class="mb-5"><b>Banger (DS, FS, PS, SES, SFS, SS, TNS) - $14.99</b> - Roasted English sausage, mustard aioli, roasted tomatoes, sautéed cabbage and onions on a crusted baguette (Request no mustard aioli for egg-sensitive options.)</p>
         <img class="w-25" :src="specialtyChicken" alt="Specialty Chicken">
-        <p><b>Specialty Chicken (FS, PS, SES, SFS, SS, TNS) - $15.99</b> - Grilled chicken breast, apple butter mayo, Colby cheese, smoky apple bacon, roasted tomatoes on a housemade specialty bun</p>
+        <p class="mb-5"><b>Specialty Chicken (FS, PS, SES, SFS, SS, TNS) - $15.99</b> - Grilled chicken breast, apple butter mayo, Colby cheese, smoky apple bacon, roasted tomatoes on a housemade specialty bun</p>
       </div>
     </div>
   </div>
@@ -87,10 +87,10 @@
         <img class="w-25" src="" alt="Side Garden Salad">
         <p class="fw-bold">Side Garden Salad (DS, ES, FS, GS, PS, SES, SFS, SS, TNS, VG) - $6.99</p>
 
-        <img class="w-25" :src="scotchEgg" alt="Scotch Egg">
+        <img class="w-25" :src="scotchEggSide" alt="Side of scotch eggs">
         <p><b>Scotch Egg (PS, SFS, TNS) - $5.49</b> - Hard-boiled egg wrapped in pork sausage, dusted with bread crumbs and fried</p>
 
-        <img class="w-25" src="" alt="">
+        <img class="w-25" :src="bangerSide" alt="Sanger Side">
         <p class="fw-bold">Add Banger (1 each) (DS, ES, FS, PS, SES, SFS, TNS) - $5.49</p>
       </div>
     </div>
@@ -165,8 +165,8 @@ export default /* class HomeView extends Vue */ {
       // chips: require("@/assets/images/"),
       // mashPotatoesGravy: require("@/assets/images/"),
       // sideGardenSalad require("@/assets/images/"),
-      scotchEgg: require("@/assets/images/scotch-egg.png"),
-      banger: require("@/assets/images/banger-side.png"),
+      scotchEggSide: require("@/assets/images/scotch-egg.png"),
+      bangerSide: require("@/assets/images/banger-side.png"),
 
       bangerSandwich: require("@/assets/images/banger-sandwich.png"),
       specialtyChicken: require("@/assets/images/specialty-chicken.png"),
