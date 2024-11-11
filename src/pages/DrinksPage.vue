@@ -42,13 +42,6 @@
         <img style="width: 181px;" class="py-2" :src="lemonade" alt="Lemonade">
         <img class="w-25" :src="cider" alt="Cider">
         <p class="py-1"><b>Fountain Beverages - $4.49</b> - Iced Tea, Lemonade, Cider</p>
-
-        <!-- <img class="w-25" src="milk" alt="Milk">
-        <p class="fw-bold py-1">2% Milk - $2.99</p> -->
-
-        <!-- <img class="w-25" src="orangeJuice" alt="Orange">
-        <img class="w-25" src="appleJuice" alt="Apple">
-        <p class="py-1"><b>Juice - $3.49</b> - Orange, Apple</p> -->
       </div>
     </div>
     <div class="menu-items3 text-white row py-4">
@@ -60,17 +53,6 @@
         <p class="py-2"><b>Otter's Fizzy Orange Juice - $6.49</b> - Effervescent fresh orange beverage with notes of vanilla and cinnamon</p>
         <img class="w-25 py-2" :src="peachtreeFizzingTea" alt="Peachtree Fizzing Tea">
         <p class="py-2"><b>Peachtree Fizzing Tea - $6.49</b> - Fizzy but smooth with flavors of fresh peach nectar and ginger</p>
-
-        <!-- <img class="w-25" src="" alt="Coffee">
-        <img class="w-25" src="" alt="Decaf">
-        <img class="w-25" src="" alt="Hot Tea">
-        <p class="py-1"><b>Hot Beverages - $3.79</b> - Coffee, Decaf, Hot Tea</p> -->
-
-        <!-- <img class="w-25" src="" alt="Chocolate Milk">
-        <p class="fw-bold py-1">Chocolate Milk - $2.99</p> -->
-
-        <img class="w-25" :src="cupOfWater" alt="Water">
-        <p class="fw-bold py-1">Courtesy Cup of Water - $0</p>
       </div>
     </div>
   </div>
@@ -79,18 +61,47 @@
     <div class="menu-items4 text-white row py-4">
       <h3 class="fw-bold text-center">Cauldron Brews: Ale, Wine, & Wizard's Fire</h3>
         <div class="col text-center">
-          <img style="width: 300px;" :src="dragonScale" alt="Dragon's Scale">
+          <img class="w-25 py-1" :src="dragonScale" alt="Dragon's Scale">
           <p class="py-1"><b>Dragon's Scale - $13.00</b> - Unique lager with a light crisp, malty finish</p>
-          <img style="width: 300px;" :src="daisyrootAle" alt="Daisyroot Ale">
+          <img class="w-25" :src="daisyrootAle" alt="Daisyroot Ale">
           <p class="py-1"><b>Daisyroot Ale - $13.00</b> - Refreshing traditional English Mild with a light malty flavor profile and a clean finish</p>
-          <img style="width: 300px;" :src="wizardsBrew" alt="Wizard's Brew">
+          <img class="w-25" :src="wizardsBrew" alt="Wizard's Brew">
           <p class="py-1"><b>Wizard's Brew - $13.00</b> - Full bodied, sweet stout with a smooth, light sweetness and clean, dry finish</p>
-          <img style="width: 300px;" :src="darkForestAle" alt="Dark Forest Ale">
+          <img class="w-25" :src="darkForestAle" alt="Dark Forest Ale">
           <p class="py-1"><b>Dark Forest Ale - $13.00</b> - Traditional brown ale with roasty caramel/toffee notes and warming finish</p>
-          <!-- <p><b>Draught Beer - $11.25</b> - Heineken, Stella Artois, Strongbow, Yuengling</p>
-          <p class="py-1"><b>Wine by the Glass - $11.00</b> - Chardonnay & Cabernet Sauvignon</p> -->
-          <img style="width: 300px;" :src="fireWhisky" alt="Fire Whisky">
+          <img class="w-25" :src="fireWhisky" alt="Fire Whisky">
           <p class="py-1"><b>Fire Whisky - $12.50</b> - Fire Whisky, Fire and Strongbow Cocktail</p>
+        </div>
+    </div>
+    <div class="menu-items5 text-white row py-4">
+      <h3 class="fw-bold text-center py-2">Muggle Bevergages</h3>
+        <div class="col text-center">
+          <img class="w-25" :src="milk" alt="Milk">
+          <p class="fw-bold py-1">2% Milk - $2.99</p>
+
+          <img class="w-25" :src="orangeJuice" alt="Orange Juice">
+          <img class="w-25" :src="appleJuice" alt="Apple Juice">
+          <p class="py-1"><b>Juice - $3.49</b> - Orange, Apple</p>
+
+          <img class="w-25" :src="coffeeCaffeine" alt="Caffeine Coffee">
+          <img class="w-25" :src="decafCoffee" alt="Decaf Coffee">
+          <img class="w-25" :src="hotTea" alt="Hot Tea">
+          <p class="py-1"><b>Hot Beverages - $3.79</b> - Coffee, Decaf, Hot Tea</p>
+
+          <img class="w-25 py-1" :src="chocolateMilk" alt="Chocolate Milk">
+          <p class="fw-bold py-1">Chocolate Milk - $2.99</p>
+
+          <img style="width: 110px;" class="py-1" :src="heineken" alt="Heineken">
+          <img style="width: 116.4px;" class="py-1" :src="stellaArtois" alt="Stella Artois">
+          <img style="width: 117.2px;" class="py-1" :src="strongbow" alt="Strongbow">
+          <img style="width: 111.9px;" class="py-1" :src="yuengling" alt="Yuengling">
+          <p><b>Draught Beer - $11.25</b> - Heineken, Stella Artois, Strongbow, Yuengling</p>
+
+          <img style="width: 181px;" :src="chardonnay" alt="Chardonnay">
+          <img style="width: 175.5px;" :src="cabernetSauvignon" alt="Cabernet Sauvignon">
+          <p class="py-1"><b>Wine by the Glass - $11.00</b> - Chardonnay & Cabernet Sauvignon</p>
+          <img class="w-25" :src="cupOfWater" alt="Cup of water">
+          <p class="fw-bold py-1">Courtesy Cup of Water - $0</p>
         </div>
     </div>
   </div>
@@ -114,28 +125,34 @@ export default /* class HomePage extends Vue */ {
       butterbeer: require("@/assets/images/butterbeer.png"),
       frozenButterbeer: require("@/assets/images/frozen-butterbeer.png"),
       hotButterbeer: require("@/assets/images/hot-butterbeer.png"),
-
       pumpkinJuice: require("@/assets/images/pumpkin-juice.png"),
       tongueTyingLemonSquash: require("@/assets/images/tongue-tying-lemon-squash.png"),
       fishyGreenAle: require("@/assets/images/fishy-green-ale.jpg"),
       icedTea: require("@/assets/images/iced-tea.png"),
       lemonade: require("@/assets/images/lemonade.png"),
       cider: require("@/assets/images/cider.png"),
-
-      // milk: require("@/assets/images/milk.png"),
-      // orangeJuice: require("@/assets/images/orange-juice.png"),
-      // appleJuice: require("@/assets/images/apple-juice.png"),
-
       gillywater: require("@/assets/images/gillywater.png"),
       otterSquashFizzyOrangeJuice: require("@/assets/images/otters-fizzy-orange-juice.png"),
       peachtreeFizzingTea: require("@/assets/images/peachtree-fizzing-tea.png"),
-      cupOfWater: require("@/assets/images/water-cup.png"),
-
       dragonScale: require("@/assets/images/dragon-scale.png"),
       daisyrootAle: require("@/assets/images/daisyroot-ale.png"),
       wizardsBrew: require("@/assets/images/wizards-brew.png"),
       darkForestAle: require("@/assets/images/dark-forest-ale.png"),
       fireWhisky: require("@/assets/images/fire-whisky.png"),
+      milk: require("@/assets/images/milk.png"),
+      orangeJuice: require("@/assets/images/orange-juice.png"),
+      appleJuice: require("@/assets/images/apple-juice.png"),
+      coffeeCaffeine: require("@/assets/images/coffee.png"),
+      decafCoffee: require("@/assets/images/decaf-coffee.png"),
+      hotTea: require("@/assets/images/hot-tea.png"),
+      chocolateMilk: require("@/assets/images/chocolate-milk.png"),
+      heineken: require("@/assets/images/heineken.png"),
+      stellaArtois: require("@/assets/images/stella-artois.png"),
+      strongbow: require("@/assets/images/strongbow.png"),
+      yuengling: require("@/assets/images/yuengling-lager.png"),
+      chardonnay: require("@/assets/images/chardonnay.png"),
+      cabernetSauvignon: require("@/assets/images/cabernet-sauvignon.png"),
+      cupOfWater: require("@/assets/images/water-cup.png"),
     };
   },
 };
@@ -182,7 +199,7 @@ export default /* class HomePage extends Vue */ {
   margin-top: 3.5rem;
   padding: 4rem;
   background-color: #0a0a0a;
-  opacity: 0.8;
+  opacity: 0.9;
   z-index: -1;
 }
 
@@ -191,20 +208,30 @@ export default /* class HomePage extends Vue */ {
   margin: 8rem;
   margin-top: 1rem;
   background-color: #0a0a0a;
-  opacity: 0.8;
+  opacity: 0.9;
   z-index: -1;
 }
 
-.menu-items4 {
-  width: 100%;
+.menu-items4, .menu-items5 {
+  width: 50%;
   margin: 10rem;
   padding: 1rem;
   background-color: #0a0a0a;
-  opacity: 0.8;
+  opacity: 0.9;
   z-index: -1;
 }
 
-// Images
+// .menu-items5 {
+//   width: 50%;
+//   height: 50%;
+//   margin: 10rem;
+//   margin-top: 10rem;
+//   padding: 1rem;
+//   background-color: #0a0a0a;
+//   opacity: 0.9;
+//   z-index: -1;
+// }
+
 .butterbeer-image {
   width: 300px;
 }
