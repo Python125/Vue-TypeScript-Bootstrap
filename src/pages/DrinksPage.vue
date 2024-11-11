@@ -20,9 +20,9 @@
         <img class="butterbeer-image" :src="hotButterbeer" alt="Hot Butterbeer" />
         <p class="py-1"><b>Hot Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
 
-        <!-- <p class="py-1"><b>Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
+        <p class="py-1"><b>Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
         <p class="py-1"><b>Stainless Steel Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
-        <p class="py-1"><b>Frozen Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p> -->
+        <p class="py-1"><b>Frozen Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
       </div>
     </div>
   </div>
@@ -39,7 +39,7 @@
         <p class="py-1"><b>Fishy Green Ale - $6.49</b> - Smooth and creamy with notes of mint and cinnamon and popping blueberry fish eggs</p>
 
         <img class="w-25" :src="icedTea" alt="Iced Tea">
-        <img class="w-25" :src="lemonade" alt="Lemonade">
+        <img style="width: 181px;" :src="lemonade" alt="Lemonade">
         <img class="w-25" :src="cider" alt="Cider">
         <p class="py-1"><b>Fountain Beverages - $4.49</b> - Iced Tea, Lemonade, Cider</p>
 
