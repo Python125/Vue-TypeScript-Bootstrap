@@ -78,25 +78,20 @@
         <div class="col text-center">
           <img class="w-25" :src="milk" alt="Milk">
           <p class="fw-bold py-1">2% Milk - $2.99</p>
-
           <img class="w-25" :src="orangeJuice" alt="Orange Juice">
           <img class="w-25" :src="appleJuice" alt="Apple Juice">
           <p class="py-1"><b>Juice - $3.49</b> - Orange, Apple</p>
-
           <img class="w-25" :src="coffeeCaffeine" alt="Caffeine Coffee">
           <img class="w-25" :src="decafCoffee" alt="Decaf Coffee">
           <img class="w-25" :src="hotTea" alt="Hot Tea">
           <p class="py-1"><b>Hot Beverages - $3.79</b> - Coffee, Decaf, Hot Tea</p>
-
           <img class="w-25 py-1" :src="chocolateMilk" alt="Chocolate Milk">
           <p class="fw-bold py-1">Chocolate Milk - $2.99</p>
-
           <img style="width: 110px;" class="py-1" :src="heineken" alt="Heineken">
           <img style="width: 116.4px;" class="py-1" :src="stellaArtois" alt="Stella Artois">
           <img style="width: 117.2px;" class="py-1" :src="strongbow" alt="Strongbow">
           <img style="width: 111.9px;" class="py-1" :src="yuengling" alt="Yuengling">
           <p><b>Draught Beer - $11.25</b> - Heineken, Stella Artois, Strongbow, Yuengling</p>
-
           <img style="width: 181px;" :src="chardonnay" alt="Chardonnay">
           <img style="width: 175.5px;" :src="cabernetSauvignon" alt="Cabernet Sauvignon">
           <p class="py-1"><b>Wine by the Glass - $11.00</b> - Chardonnay & Cabernet Sauvignon</p>
@@ -197,7 +192,6 @@ export default /* class HomePage extends Vue */ {
   width: 100%;
   margin: 8rem;
   margin-top: 3.5rem;
-  padding: 4rem;
   background-color: #0a0a0a;
   opacity: 0.9;
   z-index: -1;
@@ -212,7 +206,16 @@ export default /* class HomePage extends Vue */ {
   z-index: -1;
 }
 
-.menu-items4, .menu-items5 {
+.menu-items4 {
+  width: 50%;
+  margin-top: 10rem;
+  margin: 10rem;
+  background-color: #0a0a0a;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.menu-items5 {
   width: 50%;
   margin: 10rem;
   padding: 1rem;
@@ -220,17 +223,6 @@ export default /* class HomePage extends Vue */ {
   opacity: 0.9;
   z-index: -1;
 }
-
-// .menu-items5 {
-//   width: 50%;
-//   height: 50%;
-//   margin: 10rem;
-//   margin-top: 10rem;
-//   padding: 1rem;
-//   background-color: #0a0a0a;
-//   opacity: 0.9;
-//   z-index: -1;
-// }
 
 .butterbeer-image {
   width: 300px;
