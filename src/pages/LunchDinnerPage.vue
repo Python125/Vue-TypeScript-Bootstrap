@@ -33,16 +33,12 @@
         <p><b>Hunter's Chicken (ES, FS, PS, SES, SFS, TNS) - $16.99</b> - Bacon wrapped chicken breast with BBQ gravy, Monterey & Cheddar cheese blend, English minted peas, pea tendrils and chips</p>
         <img class="w-25" :src="fishAndChips" alt="Fish and Chips" />
         <p class="py-2"><b>Fish & Chips (PS, SFS, TNS) - $17.99</b> - Fresh north Atlantic cod battered and fried with chips and tartar sauce (Request no tartar sauce for egg-sensitive options.)</p>
-
         <img class="w-25" :src="fishermanPie" alt="Fisherman's Pie" />
         <p class="py-2"><b>Fisherman's Pie (ES, GS, PS, SES, SS, TNS) - $18.99</b> - Salmon, shrimp and cod baked together under a potato crust served with garden salad</p>
-        
         <img class="w-25" :src="scotchEggs" alt="Scotch Eggs" />
         <p class="py-2"><b>Scotch Eggs (PS, SFS, TNS) - $13.99</b> - Hard-boiled eggs wrapped in pork sausage, dusted with bread crumbs and fried. Served warm with apple beet salad and mustard sauce</p>
-        
         <img class="w-25" :src="soupAndSalad" alt="Soup & Salad" />
         <p class="py-2"><b>Soup & Salad (ES, FS, PS, SES, SFS, TNS) - $12.99</b> - Split Pea & Ham soup served with side garden salad</p>
-        
         <img class="w-25" :src="ploughmansPlatter" alt="Ploughman's" />
         <p class="py-2"><b>Ploughman's (PS, SFS, TNS) - $23.99 (Serves 2)</b> - A feast of English cheese, crusty bread, field green salad, roasted tomatoes, cornichon pickles, apple beet salad, Branston pickle & scotch eggs (Request no scotch egg for egg-sensitive options, or request no scotch egg sauce for fish-sensitive options.)</p>
       </div>
@@ -50,7 +46,7 @@
   </div>
 
   <div class="menu-row2">
-    <div class="menu-items5 text-white row py-4">
+    <div class="menu-items3 text-white row py-4">
       <h2 class="fw-bold text-center">Kids' Entrées - For children 9 and under</h2>
       <div class="col text-center">
         <img class="w-25" :src="kidsMacCheese" alt="Kids Macaroni Cheese">
@@ -75,7 +71,7 @@
   </div>
 
   <div class="menu-row3">
-    <div class="menu-items3 text-white row py-4">
+    <div class="menu-items5 text-white row py-4">
       <h2 class="fw-bold text-center">Sides</h2>
       <div class="col text-center">
         <img class="w-25" src="" alt="Chips">
