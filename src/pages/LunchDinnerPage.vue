@@ -21,7 +21,7 @@
         <p class="py-2"><b>Bangers & Mash (ES, FS, PS, SES, SFS, TNS) - $16.99</b> - Roasted English sausage, creamy mashed potatoes, roasted tomatoes, sautéed onions and cabbage, minted peas & onion gravy (Request no sauce for soy protein-sensitive options.)</p>
         <img class="w-25" :src="miniPieCombo" alt="Mini Pie Combination" />
         <p class="py-2"><b>Mini Pie Combination (ES, PS, SES, TNS) - $18.99</b> - Mini cottage pie and mini fisherman's pie served with garden salad</p>
-        <!-- <img class="w-25" :src="veganCurry" alt="Vegan Curry" /> -->
+        <img class="w-25" :src="veganCurry" alt="Vegan Curry" />
         <p class="py-2"><b>Vegan Curry (DS, ES, FS, PS, SFS, VG) - $17.99</b> - Plant based Chick`n and potato curry with pita and served with garden salad</p>        
         <img class="w-25" :src="shepherdsPie" alt="Shepherd's Pasty Pie" />
         <p class="py-2"><b>Shepherd's Pasty Pie (DS, ES, FS, SES, SFS, VG) - $17.99</b> - Meatless beef crumbles and vegetable stew hand pie; served with creamy stone ground mustard dipping sauce, apple beet salad, and chips</p>
@@ -161,18 +161,18 @@ export default /* class HomeView extends Vue */ {
       scotchEggs: require("@/assets/images/scotch-eggs.png"),
       soupAndSalad: require("@/assets/images/soup-and-salad.png"),
       ploughmansPlatter: require("@/assets/images/ploughmans-platter.png"),
+      kidsMacCheese: require("@/assets/images/kids-mac-and-cheese.png"),
+      kidsPie: require("@/assets/images/kids-mini-pie.png"),
+      kidsFishChips: require("@/assets/images/kids-fish-and-chips.png"),
+      bangerSandwich: require("@/assets/images/banger-sandwich.png"),
+      specialtyChicken: require("@/assets/images/specialty-chicken.png"),
+
   // Sides
       // chips: require("@/assets/images/"),
       // mashPotatoesGravy: require("@/assets/images/"),
       // sideGardenSalad require("@/assets/images/"),
       scotchEggSide: require("@/assets/images/scotch-egg.png"),
       bangerSide: require("@/assets/images/banger-side.png"),
-
-      bangerSandwich: require("@/assets/images/banger-sandwich.png"),
-      specialtyChicken: require("@/assets/images/specialty-chicken.png"),
-      kidsMacCheese: require("@/assets/images/kids-mac-and-cheese.png"),
-      kidsPie: require("@/assets/images/kids-mini-pie.png"),
-      kidsFishChips: require("@/assets/images/kids-fish-and-chips.png"),
       stickyToffeePudding: require("@/assets/images/sticky-toffee-pudding.png"),
       butterbeerPottedCream: require("@/assets/images/butterbeer-potted-cream.png"),
       butterbeerIceCreamCone: require("@/assets/images/butterbeer-ice-cream-cone.png"),
