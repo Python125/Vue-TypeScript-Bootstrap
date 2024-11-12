@@ -9,7 +9,7 @@
     </p>
   </div>
 
-  <h3 class="fw-bold text-center text-white mt-2">Entrées</h3>
+  <h3 class="fw-bold text-center text-white mt-5">Entrées</h3>
   <div class="menu-row1">
     <div class="menu-items1 text-white row py-4">
       <div class="col text-center">
