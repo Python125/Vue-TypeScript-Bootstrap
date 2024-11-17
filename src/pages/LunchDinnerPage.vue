@@ -74,13 +74,13 @@
     <div class="menu-items5 text-white row py-4">
       <h2 class="fw-bold text-center">Sides</h2>
       <div class="col text-center">
-        <img class="w-25" src="" alt="Chips">
+        <img class="w-25" :src="chips" alt="Chips">
         <p class="fw-bold">Chips (DS, ES, FS, GS, PS, SES, SFS, SS, TNS, VG) - $4.99</p>
 
-        <img class="w-25" src="" alt="Mashed Potatoes with Gravy">
+        <img class="w-25" :src="mashPotatoesGravy" alt="Mashed Potatoes with Gravy">
         <p class="fw-bold">Mashed Potatoes with Gravy (ES, FS, PS, SES, SFS, TNS) - $3.99</p>
 
-        <img class="w-25" src="" alt="Side Garden Salad">
+        <img class="w-25" :src="sideGardenSalad" alt="Side Garden Salad">
         <p class="fw-bold">Side Garden Salad (DS, ES, FS, GS, PS, SES, SFS, SS, TNS, VG) - $6.99</p>
 
         <img class="w-25" :src="scotchEggSide" alt="Side of scotch eggs">
@@ -162,11 +162,9 @@ export default /* class HomeView extends Vue */ {
       kidsFishChips: require("@/assets/images/kids-fish-and-chips.png"),
       bangerSandwich: require("@/assets/images/banger-sandwich.png"),
       specialtyChicken: require("@/assets/images/specialty-chicken.png"),
-
-  // Sides
-      // chips: require("@/assets/images/"),
-      // mashPotatoesGravy: require("@/assets/images/"),
-      // sideGardenSalad require("@/assets/images/"),
+      chips: require("@/assets/images/chips.png"),
+      mashPotatoesGravy: require("@/assets/images/mashed-potatoes-side.png"),
+      sideGardenSalad: require("@/assets/images/side-salad.png"),
       scotchEggSide: require("@/assets/images/scotch-egg.png"),
       bangerSide: require("@/assets/images/banger-side.png"),
       stickyToffeePudding: require("@/assets/images/sticky-toffee-pudding.png"),
