@@ -198,6 +198,10 @@ export default /* class HomeView extends Vue */ {
   margin-left: 47.7rem;
   padding: 1rem;
   z-index: -1;
+
+  @media only screen and (max-width: 1920px) {
+    margin-left: 35rem;
+  }
 }
 
 .menu-row1 {

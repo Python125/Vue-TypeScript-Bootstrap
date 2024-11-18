@@ -3,7 +3,7 @@
 
   <div class="breakfast-intro">
     <h3 class="fw-bold text-center text-white">
-    Breakfast - served until 10:30 am daily
+      Breakfast - served until 10:30 am daily
     </h3>
     <p class="mt-3 h4 text-center text-white">
       <b><u>Allergen Note:</u></b> Please inform a manager or Chef's Assistant
@@ -16,14 +16,17 @@
   <div class="menu-row1">
     <div class="menu-items1 text-white row py-5">
       <div class="col text-center">
-
-        <img class="w-25" :src="traditionalBreakfast" alt="Traditional Breakfast" />
+        <img
+          class="w-25"
+          :src="traditionalBreakfast"
+          alt="Traditional Breakfast"
+        />
         <p class="py-2">
           <b>Traditional Breakfast (FS, PS, SS, TNS) - $18.99</b> - Fresh
           scrambled eggs, sausage links, black pudding, English bacon, baked
           beans, grilled tomato, sautéed mushrooms and breakfast potatoes
         </p>
-        
+
         <img class="w-25" :src="pancakeBreakfast" alt="Pancake Breakfast" />
         <p class="py-2">
           <b>Pancake Breakfast (FS, PS, SES, SS, TNS) - $18.99</b> - Three
@@ -31,7 +34,11 @@
           croissant
         </p>
 
-        <img class="w-25" :src="eggLeekMushroom" alt="Egg, Leek, & Mushroom Pasty" />
+        <img
+          class="w-25"
+          :src="eggLeekMushroom"
+          alt="Egg, Leek, & Mushroom Pasty"
+        />
         <p class="py-2">
           <b>Egg, Leek, & Mushroom Pasty (FS, PS, SES, TNS) - $18.99</b> -
           Pastry wrapped scrambled eggs, mushrooms and leeks served with
@@ -41,15 +48,18 @@
     </div>
     <div class="menu-items2 text-white row py-5">
       <div class="col text-center">
-
-        <img class="w-25 mt-5" :src="americanBreakfast" alt="American Breakfast">
+        <img
+          class="w-25 mt-5"
+          :src="americanBreakfast"
+          alt="American Breakfast"
+        />
         <p class="py-2">
           <b>American Breakfast (FS, PS, SES, SS, TNS) - $18.99</b> - Fresh
           scrambled eggs, breakfast potatoes, crisp bacon, and link sausage with
           butter croissant
         </p>
 
-        <img class="w-25" :src="appleOatmealFlan" alt="Apple Oatmeal Flan">
+        <img class="w-25" :src="appleOatmealFlan" alt="Apple Oatmeal Flan" />
         <p class="py-2">
           <b
             >Apple Oatmeal Flan with Yogurt & Fruit (FS, GS, PS, SES, SS) -
@@ -59,10 +69,25 @@
           fresh seasonal fruit
         </p>
 
-        <img style="width: 215px;" :src="traditionalBreakfast" alt="Traditional Breakfast" />
-        <img style="width: 150px;" :src="pancakeBreakfast" alt="Pancake Breakfast" />
-        <img style="width: 200px;" :src="americanBreakfast" alt="American Breakfast">
-        <p class="py-2"><b>Kid's Breakfast - $13.49</b> - Choose traditional, pancake or American</p>
+        <img
+          style="width: 215px"
+          :src="traditionalBreakfast"
+          alt="Traditional Breakfast"
+        />
+        <img
+          style="width: 150px"
+          :src="pancakeBreakfast"
+          alt="Pancake Breakfast"
+        />
+        <img
+          style="width: 200px"
+          :src="americanBreakfast"
+          alt="American Breakfast"
+        />
+        <p class="py-2">
+          <b>Kid's Breakfast - $13.49</b> - Choose traditional, pancake or
+          American
+        </p>
       </div>
     </div>
   </div>
@@ -76,14 +101,14 @@
 
         <img class="w-25" :src="englishBacon" alt="English Bacon" />
         <p class="fw-bold py-1">English Bacon - $5.49</p>
-        
+
         <img class="w-25" :src="roastedPotatoes" alt="Roasted Potatoes" />
         <p class="fw-bold py-1">Roasted Potatoes - $4.99</p>
       </div>
       <div class="sides col text-center">
         <img class="w-25" :src="bloodSausage" alt="Blood Sausage" />
         <p class="fw-bold py-1">Blood Sausage - $5.49</p>
-        
+
         <img class="w-25" :src="scrambledEggs" alt="Scrambled Eggs" />
         <p class="fw-bold py-1">Scrambled Eggs - $2.99</p>
       </div>
@@ -167,6 +192,10 @@ export default /* class HomeView extends Vue */ {
   margin-left: 47.7rem;
   padding: 1rem;
   z-index: -1;
+
+  @media only screen and (max-width: 1920px) {
+    margin-left: 35rem;
+  }
 }
 
 .menu-row1 {
