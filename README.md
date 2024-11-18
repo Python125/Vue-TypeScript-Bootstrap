@@ -1,5 +1,3 @@
-![Home image]("leaky-cauldron.png")
-
 # Technologies Used
 - Vue.js: To structure the application and handle component-based interactivity.
 - Bootstrap: For the responsive layout and pre-designed UI components.
