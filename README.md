@@ -1,4 +1,4 @@
-![Uploading leaky-cauldron.png…]()
+![Home image]("leaky-cauldron.png")
 
 # Technologies Used
 - Vue.js: To structure the application and handle component-based interactivity.
