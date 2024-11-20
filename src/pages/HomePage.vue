@@ -268,6 +268,7 @@ export default /* class HomePage extends Vue */ {
   padding-left: 8px;
   padding: 8px;
   width: 41.6666666667%;
+  margin-top: 70px;
   margin-left: 8.3333333333%;
 }
 
