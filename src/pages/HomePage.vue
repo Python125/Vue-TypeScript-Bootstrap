@@ -1,9 +1,5 @@
 <template>
-  <div class="text-center">
-    <img :src="leakyCauldronLogo" alt="Leaky Cauldron" class="m-4 rounded" />
-  </div>
-
-  <div>
+  <div class="layout-container d-flex">
     <aside class="side-section">
       <div>
         <img class="universal-logo" :src="universalLogo" alt="Universal logo" />
@@ -11,23 +7,17 @@
       <div class="text-white"><h3 class="location-title">Location</h3></div>
       <div class="universal-link text-white fw-light">
         The Wizarding World of Harry Potter™ - Diagon Alley™ in
-        <a
-          class="universal-title fw-bold"
-          href="https://www.universalorlando.com/web/en/us/theme-parks/universal-studios-florida"
+        <a class="universal-title fw-bold" href="/"
           >Universal Studios Florida</a
         >
       </div>
-      <a
-        href="https://www.universalorlando.com/web/en/us/plan-your-visit/resort-maps/interactive-map.html?attraction_experience=dining&attraction_location=usf&attraction_interest=&mapFilters=uor.venues;uor.usf,uor.venues;uor.ioa,uor.venues;uor.vb,uor.place_types;ride"
-        ><span class="map-link">Explore Interactive Map</span></a
-      >
+      <a href="/"><span class="map-link">Explore Interactive Map</span></a>
       <div>
         <h3 class="park-title text-white fw-bold h6 mt-4">Park Hours</h3>
-        <div class="park-hours text-white fw-light h6">Open Today | 9 am-7 pm</div>
-        <a
-          href="https://www.universalorlando.com/web/en/us/plan-your-visit/hours-information/park-hours#universal-studios-florida"
-          ><span class="park-link">All Park Hours</span></a
-        >
+        <div class="park-hours text-white fw-light h6">
+          Open Today | 9 am-7 pm
+        </div>
+        <a href="/"><span class="park-link">All Park Hours</span></a>
       </div>
     </aside>
     <div class="info-section text-white">
@@ -97,10 +87,16 @@ export default /* class HomePage extends Vue */ {
 </script>
 
 <style lang="scss" scoped>
+.layout-container {
+  margin-top: 66px;
+  margin-right: auto;
+  margin-bottom: -350px;
+  margin-left: auto;
+  max-width: 1440px;
+  width: 95.8333333333%;
+}
+
 .side-section {
-  // margin-left: 25%;
-  // margin-right: 25%;
-  // margin-bottom: 1%;
   margin-left: 16.6666666667%;
   padding-left: 8px;
   padding-right: 8px;
@@ -110,11 +106,8 @@ export default /* class HomePage extends Vue */ {
 .universal-logo {
   border-radius: 50%;
   width: 184px;
-  margin-top: -96px;
+  margin-top: 66px;
   overflow: hidden;
-  // position: relative;
-  // display: inline-block;
-  // vertical-align: middle;
 }
 
 .location-title {
@@ -155,7 +148,6 @@ export default /* class HomePage extends Vue */ {
   align-items: center;
   display: inline-flex;
   cursor: pointer;
-  // margin-bottom: 24px;
 }
 
 .park-title {
@@ -188,7 +180,6 @@ export default /* class HomePage extends Vue */ {
   align-items: center;
   display: inline-flex;
   cursor: pointer;
-  // margin-bottom: 24px;
 }
 
 .info-section {
@@ -211,10 +202,11 @@ export default /* class HomePage extends Vue */ {
 
 .intro-summary {
   background-color: #0a0a0a;
-  padding-left: 40rem;
-  padding-right: 40rem;
   opacity: 0.8;
+  padding-left: 40rem;
+  padding-right: 39rem;
   z-index: -1;
+  margin-top: 15%;
 }
 
 .image-links {
