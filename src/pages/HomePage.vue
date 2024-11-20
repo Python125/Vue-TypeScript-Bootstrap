@@ -3,28 +3,24 @@
     <img :src="leakyCauldronLogo" alt="Leaky Cauldron" class="m-4 rounded" />
   </div>
 
-  <div class="side-section">
-    <aside>
+  <div>
+    <aside class="side-section">
       <div>
         <img class="universal-logo" :src="universalLogo" alt="Universal logo" />
       </div>
-      <div class="text-white fw-bold h5">Location</div>
+      <div class="text-white"><h3 class="location-title">Location</h3></div>
       <div class="universal-link text-white fw-light">
-        The Wizarding World of Harry Potter™ <br />
-        - Diagon Alley™ in
+        The Wizarding World of Harry Potter™ - Diagon Alley™ in
         <a
           class="universal-title fw-bold"
           href="https://www.universalorlando.com/web/en/us/theme-parks/universal-studios-florida"
-          >Universal Studios <br />
-          Florida</a
+          >Universal Studios Florida</a
         >
       </div>
-      <div class="mt-3">
-        <a
-          href="https://www.universalorlando.com/web/en/us/plan-your-visit/resort-maps/interactive-map.html?attraction_experience=dining&attraction_location=usf&attraction_interest=&mapFilters=uor.venues;uor.usf,uor.venues;uor.ioa,uor.venues;uor.vb,uor.place_types;ride"
-          ><span class="map-link">Explore Interactive Map</span></a
-        >
-      </div>
+      <a
+        href="https://www.universalorlando.com/web/en/us/plan-your-visit/resort-maps/interactive-map.html?attraction_experience=dining&attraction_location=usf&attraction_interest=&mapFilters=uor.venues;uor.usf,uor.venues;uor.ioa,uor.venues;uor.vb,uor.place_types;ride"
+        ><span class="map-link">Explore Interactive Map</span></a
+      >
       <div>
         <h3 class="text-white fw-bold h6 mt-4">Park Hours</h3>
         <div class="text-white fw-light h6">Open Today | 9 am-7 pm</div>
@@ -34,8 +30,10 @@
         >
       </div>
     </aside>
-
-    <div class="info-section"></div>
+    <div class="info-section text-white">
+      <div class="dining-label">Dining</div>
+      <div><h1 class="dining-title">Leaky Cauldron™</h1></div>
+    </div>
   </div>
 
   <div class="intro-summary text-white">
@@ -100,23 +98,40 @@ export default /* class HomePage extends Vue */ {
 
 <style lang="scss" scoped>
 .side-section {
-  margin-left: 25%;
-  margin-right: 20%;
-  margin-bottom: 1%;
-  // background-color: #0a0a0a;
-  // opacity: 0.8;
-  padding: 1rem;
+  // margin-left: 25%;
+  // margin-right: 25%;
+  // margin-bottom: 1%;
+  margin-left: 16.6666666667%;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 16.6666666667%;
 }
 
 .universal-logo {
   border-radius: 50%;
   width: 184px;
-  margin-top: -6px;
+  margin-top: -96px;
+  overflow: hidden;
+  // position: relative;
+  // display: inline-block;
+  // vertical-align: middle;
 }
 
-// .universal-link {
-//   font-size: 1rem;
-// }
+.location-title {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.0125rem;
+  line-height: 1.25rem;
+  font-style: normal;
+}
+
+.universal-link {
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.0125rem;
+  line-height: 1.25rem;
+  font-style: normal;
+}
 
 .universal-title {
   color: #0368d9;
@@ -127,11 +142,41 @@ export default /* class HomePage extends Vue */ {
 }
 
 .map-link {
-  font-weight: 500;
+  text-align: left;
+  min-height: 1.25rem;
+  padding: 0.25rem 0;
+  color: #0368d9;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.0125rem;
+  line-height: 2rem;
+  text-shadow: none;
+  align-items: center;
+  display: inline-flex;
+  // margin-bottom: 24px;
+  cursor: pointer;
 }
 
 .park-hours {
   font-weight: 500;
+}
+
+.info-section {
+  box-sizing: border-box;
+  padding-left: 8px;
+  padding: 8px;
+  width: 41.6666666667%;
+  margin-left: 8.3333333333%;
+}
+
+.dining-label {
+  margin-bottom: 24px;
+  margin-top: 64px;
+}
+
+.dining-title {
+  font-size: 2rem;
+  font-weight: 900;
 }
 
 .intro-summary {
