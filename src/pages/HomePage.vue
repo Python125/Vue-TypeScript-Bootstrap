@@ -3,30 +3,30 @@
     <img :src="leakyCauldronLogo" alt="Leaky Cauldron" class="m-4 rounded" />
   </div>
 
-  <div>
+  <div class="side-section">
     <aside>
       <div>
         <img class="universal-logo" :src="universalLogo" alt="Universal logo" />
       </div>
-      <div class="text-white fw-bold h6">Location</div>
-      <div class="text-white fw-light h6">
-        The Wizarding World of Harry Potter™ - Diagon Alley™ in
+      <div class="text-white fw-bold h5">Location</div>
+      <div class="universal-link text-white fw-light">
+        The Wizarding World of Harry Potter™ <br />
+        - Diagon Alley™ in
         <a
-          class="universal-link fw-bold"
+          class="universal-title fw-bold"
           href="https://www.universalorlando.com/web/en/us/theme-parks/universal-studios-florida"
-          >Universal Studios Florida</a
+          >Universal Studios <br />
+          Florida</a
+        >
+      </div>
+      <div class="mt-3">
+        <a
+          href="https://www.universalorlando.com/web/en/us/plan-your-visit/resort-maps/interactive-map.html?attraction_experience=dining&attraction_location=usf&attraction_interest=&mapFilters=uor.venues;uor.usf,uor.venues;uor.ioa,uor.venues;uor.vb,uor.place_types;ride"
+          ><span class="map-link">Explore Interactive Map</span></a
         >
       </div>
       <div>
-        <button class="map-btn text-white">
-          <a
-            href="https://www.universalorlando.com/web/en/us/plan-your-visit/resort-maps/interactive-map.html?attraction_experience=dining&attraction_location=usf&attraction_interest=&mapFilters=uor.venues;uor.usf,uor.venues;uor.ioa,uor.venues;uor.vb,uor.place_types;ride"
-            >Explore Interactive Map</a
-          >
-        </button>
-      </div>
-      <div>
-        <h3 class="text-white fw-bold h6">Park Hours</h3>
+        <h3 class="text-white fw-bold h6 mt-4">Park Hours</h3>
         <div class="text-white fw-light h6">Open Today | 9 am-7 pm</div>
         <a
           href="https://www.universalorlando.com/web/en/us/plan-your-visit/hours-information/park-hours#universal-studios-florida"
@@ -34,6 +34,8 @@
         >
       </div>
     </aside>
+
+    <div class="info-section"></div>
   </div>
 
   <div class="intro-summary text-white">
@@ -97,13 +99,26 @@ export default /* class HomePage extends Vue */ {
 </script>
 
 <style lang="scss" scoped>
+.side-section {
+  margin-left: 25%;
+  margin-right: 20%;
+  margin-bottom: 1%;
+  // background-color: #0a0a0a;
+  // opacity: 0.8;
+  padding: 1rem;
+}
+
 .universal-logo {
   border-radius: 50%;
   width: 184px;
-  margin-top: -96px;
+  margin-top: -6px;
 }
 
-.universal-link {
+// .universal-link {
+//   font-size: 1rem;
+// }
+
+.universal-title {
   color: #0368d9;
 
   &:hover {
@@ -111,10 +126,7 @@ export default /* class HomePage extends Vue */ {
   }
 }
 
-.map-btn {
-  background: inherit;
-  border: none;
-  margin-bottom: 24px;
+.map-link {
   font-weight: 500;
 }
 
