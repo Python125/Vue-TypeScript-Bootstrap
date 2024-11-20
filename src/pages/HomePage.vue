@@ -2,9 +2,43 @@
   <div class="text-center">
     <img :src="leakyCauldronLogo" alt="Leaky Cauldron" class="m-4 rounded" />
   </div>
-  <div class="intro-section text-white">
+
+  <div>
+    <aside>
+      <div>
+        <img class="universal-logo" :src="universalLogo" alt="Universal logo" />
+      </div>
+      <div class="text-white fw-bold h6">Location</div>
+      <div class="text-white fw-light h6">
+        The Wizarding World of Harry Potter™ - Diagon Alley™ in
+        <a
+          class="universal-link fw-bold"
+          href="https://www.universalorlando.com/web/en/us/theme-parks/universal-studios-florida"
+          >Universal Studios Florida</a
+        >
+      </div>
+      <div>
+        <button class="map-btn text-white">
+          <a
+            href="https://www.universalorlando.com/web/en/us/plan-your-visit/resort-maps/interactive-map.html?attraction_experience=dining&attraction_location=usf&attraction_interest=&mapFilters=uor.venues;uor.usf,uor.venues;uor.ioa,uor.venues;uor.vb,uor.place_types;ride"
+            >Explore Interactive Map</a
+          >
+        </button>
+      </div>
+      <div>
+        <h3 class="text-white fw-bold h6">Park Hours</h3>
+        <div class="text-white fw-light h6">Open Today | 9 am-7 pm</div>
+        <a
+          href="https://www.universalorlando.com/web/en/us/plan-your-visit/hours-information/park-hours#universal-studios-florida"
+          ><span class="park-hours">All Park Hours</span></a
+        >
+      </div>
+    </aside>
+  </div>
+
+  <div class="intro-summary text-white">
     <h1 class="fw-bold text-center">Fill up on Traditional British Food.</h1>
-    <p class="intro-summary text-center h4 fw-normal">
+    <p class="text-center h4 fw-normal">
       The Leaky Cauldron™ is a small, grubby-looking pub and inn. Once inside,
       you'll find yourself under a cathedral ceiling with views towards the
       guest rooms in the inn. The delicious traditional British fare served here
@@ -53,6 +87,7 @@ export default /* class HomePage extends Vue */ {
   data() {
     return {
       leakyCauldronLogo: require("@/assets/leaky-logo.png"),
+      universalLogo: require("@/assets/harry-potter-diagon-alley-logo.png"),
       breakfast: require("@/assets/images/english-breakfast.png"),
       lunch: require("@/assets/images/fish-and-chips.png"),
       drinks: require("@/assets/images/butterbeer.png"),
@@ -62,23 +97,37 @@ export default /* class HomePage extends Vue */ {
 </script>
 
 <style lang="scss" scoped>
-a {
-  text-decoration: none;
+.universal-logo {
+  border-radius: 50%;
+  width: 184px;
+  margin-top: -96px;
+}
+
+.universal-link {
+  color: #0368d9;
 
   &:hover {
     text-decoration: underline;
   }
 }
 
-.intro-section {
-  background-color: #0a0a0a;
-  opacity: 0.8;
-  z-index: -1;
+.map-btn {
+  background: inherit;
+  border: none;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.park-hours {
+  font-weight: 500;
 }
 
 .intro-summary {
+  background-color: #0a0a0a;
   padding-left: 40rem;
   padding-right: 40rem;
+  opacity: 0.8;
+  z-index: -1;
 }
 
 .image-links {
@@ -101,7 +150,7 @@ a {
 .breakfast-link {
   font-size: 1.5rem;
   color: white;
-  opacity: 0.6;
+  // opacity: 0.6;
 }
 
 .lunch {
@@ -116,7 +165,7 @@ a {
 .lunch-link {
   font-size: 1.5rem;
   color: white;
-  opacity: 0.6;
+  // opacity: 0.6;
 }
 
 .drink {
@@ -131,6 +180,14 @@ a {
 .drink-link {
   font-size: 1.5rem;
   color: white;
-  opacity: 0.6;
+  // opacity: 0.6;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 </style>

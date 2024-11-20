@@ -7,10 +7,7 @@
     />
     <router-view />
     
-<!-- <footer>
-  <p>&copy; 2024 Universal Studios. All rights reserved.</p>
-  <p>Some imagery shown throughout our website does not represent current operational and safety guidelines.</p>
-</footer> -->
+<!-- <footer></footer> -->
   </div>
 </template>
 
@@ -29,10 +26,6 @@ export default {
 </script>
 
 <style lang="scss">
-// * {
-//   z-index: 1;
-// }
-
 .background-image {
   position: relative;
   height: 100%;
