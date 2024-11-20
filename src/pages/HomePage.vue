@@ -22,11 +22,11 @@
         ><span class="map-link">Explore Interactive Map</span></a
       >
       <div>
-        <h3 class="text-white fw-bold h6 mt-4">Park Hours</h3>
-        <div class="text-white fw-light h6">Open Today | 9 am-7 pm</div>
+        <h3 class="park-title text-white fw-bold h6 mt-4">Park Hours</h3>
+        <div class="park-hours text-white fw-light h6">Open Today | 9 am-7 pm</div>
         <a
           href="https://www.universalorlando.com/web/en/us/plan-your-visit/hours-information/park-hours#universal-studios-florida"
-          ><span class="park-hours">All Park Hours</span></a
+          ><span class="park-link">All Park Hours</span></a
         >
       </div>
     </aside>
@@ -148,17 +148,47 @@ export default /* class HomePage extends Vue */ {
   color: #0368d9;
   font-size: 0.875rem;
   font-weight: 600;
+  font-style: normal;
   letter-spacing: 0.0125rem;
   line-height: 2rem;
   text-shadow: none;
   align-items: center;
   display: inline-flex;
-  // margin-bottom: 24px;
   cursor: pointer;
+  // margin-bottom: 24px;
+}
+
+.park-title {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.0125rem;
+  line-height: 1.25rem;
+  font-style: normal;
 }
 
 .park-hours {
-  font-weight: 500;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.0125rem;
+  line-height: 1.25rem;
+  font-style: normal;
+}
+
+.park-link {
+  text-align: left;
+  min-height: 1.25rem;
+  padding: 0.25rem 0;
+  color: #0368d9;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.0125rem;
+  line-height: 2rem;
+  text-shadow: none;
+  align-items: center;
+  display: inline-flex;
+  cursor: pointer;
+  // margin-bottom: 24px;
 }
 
 .info-section {
