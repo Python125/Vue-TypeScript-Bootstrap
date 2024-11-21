@@ -1,5 +1,5 @@
 <template>
-  <div class="layout-container d-flex">
+  <div class="layout-container">
     <aside class="side-section">
       <div>
         <img class="universal-logo" :src="universalLogo" alt="Universal logo" />
@@ -26,7 +26,6 @@
       <div>
         <h1 class="leaky-title">Leaky Cauldron™</h1>
       </div>
-
       <ul class="dining-features">
         <li class="type">
           <div class="icon">
@@ -44,8 +43,8 @@
           <div class="text">
             <div class="title">Menus</div>
             <div class="description">
-              <a class="description-link" href="/">Breakfast, </a>
-              <a class="description-link" href="/">Lunch & Dinner</a>
+              <a class="description-link fw-bold" href="/">Breakfast, </a>
+              <a class="description-link fw-bold" href="/">Lunch & Dinner</a>
             </div>
           </div>
         </li>
@@ -64,13 +63,12 @@
           <div class="text">
             <div class="title">Dietary Needs</div>
             <div class="description">
-              <a class="description-link" href="/">Dietary Accommodations</a>
+              <a class="description-link fw-bold" href="/">Dietary Accommodations</a>
             </div>
           </div>
         </li>
         <li class="type">
           <div class="icon">
-            <!-- LEAVE the svg of Alcoholic Beverages Available ALONE FOR NOW -->
             <svg id="gds-svg-383" fill="rgb(34, 34, 34)" stroke="none" width="27" height="27" viewBox="0 0 24 24" version="1.1" focusable="false" class="adult-beverage"><g stroke="none" stroke-width="1" fill-rule="evenodd"><g transform="translate(2.000000, 3.000000)"><g><path d="M5.64888889,16.8910256 L1.79111111,16.8910256 C1.79111111,16.8910256 0.757777776,16.8910256 0.757777776,15.8400285 C0.757777776,15.8400285 0.757777776,15.2394587 1.51555556,14.8641025 L2.75555555,14.338604 C2.75555555,14.338604 3.37555556,14.1133903 3.23777778,13.662963 L3.23777778,9.15868945 C3.23777778,9.15868945 0.826666668,8.48304845 0.275555555,6.3059829 C0.275555555,6.3059829 -0.344444444,4.27905983 1.44666667,0 L5.51111111,0" stroke="#333333" stroke-width="1.86" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.51333334,16.8910256 L7.37111112,16.8910256 C7.37111112,16.8910256 8.40444444,16.8910256 8.40444444,15.8400285 C8.40444444,15.8400285 8.40444444,15.2394587 7.64666664,14.8641025 L6.40666668,14.338604 C6.40666668,14.338604 5.78666666,14.1133903 5.92444444,13.662963 L5.92444444,9.15868945 C5.92444444,9.15868945 8.33555556,8.48304845 8.88666666,6.3059829 C8.88666666,6.3059829 9.50666664,4.27905983 7.71555558,0 L3.58222222,0" stroke="#333333" stroke-width="1.86" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6.8888889,2.47735043 C6.8888889,2.47735043 7.44,4.50427351 7.30222224,5.78048433 L7.29438816,5.78051814 C7.18883664,6.78832545 6.02980722,7.58219373 4.61555555,7.58219373 C3.13175053,7.58219373 1.92888889,6.70831992 1.92888889,5.63034188 L1.92864445,5.63215812 L1.86,5.63034188 C1.86,5.63034188 1.85831814,5.60651556 1.85758233,5.55800381 L1.85732164,5.48788571 C1.85952908,5.14589788 1.91166667,4.17818287 2.34222222,2.47735043 L6.8888889,2.47735043 Z" fill="#FFFFFF" fill-rule="nonzero"></path></g><g transform="translate(6.000000, 1.000000)" stroke="#333333"><path d="M2.29629629,6.28930041 L10.1037037,6.28930041 L10.1037037,15.18107 C10.1037037,15.18107 10.1037037,16.3377229 8.87901233,16.4100137 L3.67407407,16.4100137 C3.67407407,16.4100137 2.37283951,16.4100137 2.29629629,15.18107 L2.29629629,6.28930041 Z" stroke-width="1.78" fill="#FFFFFF" fill-rule="nonzero"></path><path d="M10.1037037,7.73511661 L12.3234568,7.73511661 C12.3234568,7.73511661 13.6246913,7.66282581 13.7777778,8.89176953 L13.7777778,13.0846365 C13.7777778,13.0846365 13.854321,14.4581619 12.3234568,14.4581619 L10.1037037,14.4581619" stroke-width="1.78"></path><line x1="6.2" y1="11.5665295" x2="6.2" y2="14.4581619" stroke-width="1.53" stroke-linecap="round" stroke-linejoin="round"></line><line x1="4.36296296" y1="11.5665295" x2="4.36296296" y2="14.4581619" stroke-width="1.53" stroke-linecap="round" stroke-linejoin="round"></line><line x1="8.03703707" y1="11.5665295" x2="8.03703707" y2="14.4581619" stroke-width="1.53" stroke-linecap="round" stroke-linejoin="round"></line><path d="M9.95061727,2.74705075 C10.1037037,1.01207133 8.95555553,0.289163237 7.7308642,0.289163237 C7.1524173,0.289163237 6.61857649,0.499803155 6.2136153,0.852861575 C5.86836345,1.15386344 5.61678783,1.55838229 5.51111111,2.02414266 C5.20493827,1.87956105 4.89876543,1.80727023 4.59259259,1.80727023 C3.75061729,1.80727023 2.98518519,2.3133059 2.60246913,2.96392318 C2.37283951,2.96392318 2.21975309,2.89163237 1.99012346,2.89163237 C1.14814815,2.89163237 0.306172839,3.39766804 0.306172839,4.33744856 L0.306172839,7.22908094 C0.306172839,8.16886147 1.07160494,8.89176953 2.06666667,8.89176953 C2.83209877,8.89176953 3.52098765,8.38573387 3.75061729,7.66282581 C3.82716049,7.51824414 3.82716049,7.37366254 3.82716049,7.22908094 L3.82716049,6.2170096 L10.0271605,6.2170096 C11.0987654,6.2170096 11.9407407,5.4218107 11.9407407,4.40973937 C11.9407407,3.39766804 11.3283951,2.74705075 9.95061727,2.74705075 Z" stroke-width="1.78" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path></g></g></g></svg>
           </div>
           <div class="text">
@@ -87,7 +85,7 @@
           <div class="text">
             <div class="title">Hours</div>
             <div class="description">
-              <a class="description-link" href="/" aria-label="Download the mobile app to check hours">Download Mobile App</a>
+              <a class="description-link fw-bold" href="/" aria-label="Download the mobile app to check hours">Download Mobile App</a>
             </div>
           </div>
         </li>
@@ -98,12 +96,11 @@
           <div class="text">
             <div class="title">Phone Number</div>
             <div class="description">
-              <a class="description-link" href="/">(407) 224-4233</a>
+              <a class="description-link fw-bold" href="/">(407) 224-4233</a>
             </div>
           </div>
         </li>
       </ul>
-
     </div>
   </div>
 
@@ -119,32 +116,32 @@
   </div>
 
   <div class="image-links">
-    <div class="breakfast">
+    <!-- <div class="breakfast">
       <img :src="breakfast" alt="English Breakfast" class="breakfast-image" />
       <div>
         <router-link to="/breakfast">
           <a class="breakfast-link">Early Elixirs</a>
         </router-link>
       </div>
-    </div>
+    </div> -->
 
-    <div class="lunch">
+    <!-- <div class="lunch">
       <img :src="lunch" alt="Fish and Chips" class="lunch-image" />
       <div>
         <router-link to="/lunch">
           <a class="lunch-link">Great Eats</a>
         </router-link>
       </div>
-    </div>
+    </div> -->
 
-    <div class="drink">
+    <!-- <div class="drink">
       <img :src="drinks" alt="Butterbeer" class="drink-image" />
       <div>
         <router-link to="/drinks">
           <a class="drink-link">Butterbeer & Beyond</a>
         </router-link>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -175,10 +172,6 @@ export default /* class HomePage extends Vue */ {
   margin-left: auto;
   max-width: 1440px;
   width: 95.8333333333%;
-
-  @media only screen and (max-width: 430px) {
-    width: 50%;
-  }
 }
 
 .side-section {
@@ -187,8 +180,10 @@ export default /* class HomePage extends Vue */ {
   padding-right: 8px;
   width: 16.6666666667%;
 
-  // @media only screen and (max-width: 1920px) {
-  // }
+  @media only screen and (max-width: 430px) {
+    width: 60%;
+    margin-left: 18%;
+  }
 }
 
 .universal-logo {
@@ -198,8 +193,11 @@ export default /* class HomePage extends Vue */ {
   margin-left: -15%;
   overflow: hidden;
 
-  // @media only screen and (max-width: 1920px) {
-  // }
+  @media only screen and (max-width: 430px) {
+    width: 150px;
+    margin-top: -3.5rem;
+    margin-left: 2rem;
+  }
 }
 
 .location-title {
@@ -208,25 +206,30 @@ export default /* class HomePage extends Vue */ {
   letter-spacing: 0.0125rem;
   line-height: 1.25rem;
   font-style: normal;
-  margin-top: 15%;
+  margin-top: 2rem;
 
-  // @media only screen and (max-width: 1920px) {
-  // }
+  @media only screen and (max-width: 430px) {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-left: -4rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .universal-link {
   font-size: 1rem;
-  font-weight: 400;
   letter-spacing: 0.0125rem;
   line-height: 1.55rem;
   font-style: normal;
 
-  // @media only screen and (max-width: 1920px) {
-  // }
+  @media only screen and (max-width: 430px) {
+    margin-left: -4rem;
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
 }
 
 .universal-title {
-  // color: #0368d9;
   color: #f08400;
   font-weight: 700;
 
@@ -239,7 +242,6 @@ export default /* class HomePage extends Vue */ {
   text-align: left;
   min-height: 1.25rem;
   padding: 0.25rem 0;
-  // color: #0368d9;
   color: #f08400;
   font-size: 1rem;
   font-weight: 600;
@@ -250,6 +252,12 @@ export default /* class HomePage extends Vue */ {
   align-items: center;
   display: inline-flex;
   cursor: pointer;
+
+  @media only screen and (max-width: 430px) {
+    font-size: 0.7rem;
+    margin-left: -4rem;
+    line-height: 0.5rem;
+  }
 }
 
 .park-title {
@@ -258,6 +266,11 @@ export default /* class HomePage extends Vue */ {
   letter-spacing: 0.0125rem;
   line-height: 1.25rem;
   font-style: normal;
+
+  @media only screen and (max-width: 430px) {
+    font-size: 1rem;
+    margin-left: -4rem;
+  }
 }
 
 .park-hours {
@@ -266,13 +279,18 @@ export default /* class HomePage extends Vue */ {
   letter-spacing: 0.0125rem;
   line-height: 1.25rem;
   font-style: normal;
+
+  @media only screen and (max-width: 430px) {
+    font-size: 0.7rem;
+    margin-left: -4rem;
+    line-height: 0.5rem;
+  }
 }
 
 .park-link {
   text-align: left;
   min-height: 1.25rem;
   padding: 0.25rem 0;
-  // color: #0368d9;
   color: #f08400;
   font-size: 1rem;
   font-style: normal;
@@ -283,6 +301,12 @@ export default /* class HomePage extends Vue */ {
   align-items: center;
   display: inline-flex;
   cursor: pointer;
+
+  @media only screen and (max-width: 430px) {
+    margin-left: -4rem;
+    font-size: 0.7rem;
+    line-height: 0.5rem;
+  }
 }
 
 .dining-section {
@@ -290,8 +314,13 @@ export default /* class HomePage extends Vue */ {
   padding-left: 8px;
   padding: 8px;
   width: 41.6666666667%;
-  margin-top: 80px;
-  margin-left: 22.5%;
+  margin-top: -25rem;
+  margin-left: 30%;
+
+  @media only screen and (max-width: 430px) {
+    margin-top: -3.5rem;
+    margin-left: 5%;
+  }
 }
 
 .dining-label {
@@ -310,6 +339,11 @@ export default /* class HomePage extends Vue */ {
   justify-content: center;
   min-height: 24px;
   padding: 8px 14px;
+
+  @media only screen and (max-width: 430px) {
+    font-size: 0.7rem;
+    margin-left: -0.7rem;
+  }
 }
 
 .leaky-title {
@@ -319,6 +353,12 @@ export default /* class HomePage extends Vue */ {
   line-height: 2.125rem;
   font-style: normal;
   margin-bottom: 16px;
+
+  @media only screen and (max-width: 430px) {
+    font-size: 1.1rem;
+    margin-left: -0.7rem;
+    line-height: 0.5rem;
+  }
 }
 
 .dining-features {
@@ -333,14 +373,29 @@ export default /* class HomePage extends Vue */ {
   flex-wrap: wrap;
   list-style-position: outside;
   line-height: 1.6;
+
+  @media only screen and (max-width: 430px) {
+    margin-left: -1rem;
+    display: block;
+  }
+}
+
+svg {
+  @media only screen and (max-width: 430px) {
+    width: 20px;
+  }
 }
 
 .type {
   box-sizing: border-box;
   padding-left: 8px;
-  // padding-right: 8px;
+  padding-right: 8px;
   display: flex;
   width: 50%;
+
+  @media only screen and (max-width: 430px) {
+    width: 181%;
+  }
 }
 
 .icon {
@@ -360,6 +415,10 @@ export default /* class HomePage extends Vue */ {
   font-weight: 700;
   letter-spacing: 0.0125rem;
   line-height: 1.125rem;
+
+  @media only screen and (max-width: 430px) {
+    font-size: 14px;
+  }
 }
 
 .description {
@@ -368,6 +427,10 @@ export default /* class HomePage extends Vue */ {
   letter-spacing: 0.0125rem;
   line-height: 1.25rem;
   margin: 6px 0 0;
+
+  @media only screen and (max-width: 430px) {
+    font-size: 12px;
+  }
 }
 
 .description-link {
@@ -382,6 +445,11 @@ export default /* class HomePage extends Vue */ {
   padding-right: 35rem;
   z-index: -1;
   margin-top: 17%;
+
+  @media only screen and (max-width: 430px) {
+    margin-top: 85%;
+    padding: 1rem;
+}
 }
 
 .cauldron-heading {
@@ -390,6 +458,11 @@ export default /* class HomePage extends Vue */ {
   font-weight: 900;
   letter-spacing: 0.0125rem;
   line-height: 2.125rem;
+
+  @media only screen and (max-width: 430px) {
+    margin-right: 2.5rem;
+    font-size: 80%;
+  }
 }
 
 .cauldron-paragraph {
@@ -398,6 +471,11 @@ export default /* class HomePage extends Vue */ {
   font-weight: 400;
   letter-spacing: 0.0225rem;
   line-height: 2.3rem;
+
+  @media only screen and (max-width: 430px) {
+    margin-right: 2.5rem;
+    font-size: 60%;
+  }
 }
 
 .image-links {

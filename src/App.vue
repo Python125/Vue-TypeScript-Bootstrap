@@ -12,12 +12,12 @@
 </template>
 
 <script>
-// import Navbar from "./components/NavbarMenu.vue";
+import Navbar from "./components/NavbarMenu.vue";
 
 export default {
   name: "App",
   components: {
-   // Navbar,
+    Navbar,
   },
   data() {
     return {};
@@ -51,6 +51,7 @@ export default {
 
   @media only screen and (max-width: 430px) {
     background-image: url("@/assets/leaky-cauldron-mobile2.png");
+    // background-size: 150px;
   }
 }
 </style>

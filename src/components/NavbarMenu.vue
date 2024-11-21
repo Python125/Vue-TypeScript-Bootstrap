@@ -362,5 +362,9 @@ hr {
       background-image: url(/src/assets/images/merchandise-white.png);
     }
   }
+
+  @media only screen and (max-width: 430px) {
+    display: none;
+  }
 }
 </style>
