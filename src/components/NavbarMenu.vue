@@ -231,7 +231,7 @@ hr {
 }
 
 .universal-image {
-  width: 95px;
+  width: 110px;
   margin-left: 36rem;
 
   @media only screen and (max-width: 1920px) {

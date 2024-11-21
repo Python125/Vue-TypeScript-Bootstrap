@@ -177,7 +177,6 @@ export default /* class HomePage extends Vue */ {
   width: 95.8333333333%;
 
   // @media only screen and (max-width: 1920px) {
-  //   margin-top: 10rem;
   // }
 }
 
@@ -186,13 +185,20 @@ export default /* class HomePage extends Vue */ {
   padding-left: 8px;
   padding-right: 8px;
   width: 16.6666666667%;
+
+  // @media only screen and (max-width: 1920px) {
+  // }
 }
 
 .universal-logo {
   border-radius: 50%;
-  width: 184px;
-  margin-top: 66px;
+  width: 225px;
+  margin-top: 10%;
+  margin-left: -15%;
   overflow: hidden;
+
+  // @media only screen and (max-width: 1920px) {
+  // }
 }
 
 .location-title {
@@ -201,6 +207,9 @@ export default /* class HomePage extends Vue */ {
   letter-spacing: 0.0125rem;
   line-height: 1.25rem;
   font-style: normal;
+  margin-top: 15%;
+  // @media only screen and (max-width: 1920px) {
+  // }
 }
 
 .universal-link {
@@ -209,6 +218,9 @@ export default /* class HomePage extends Vue */ {
   letter-spacing: 0.0125rem;
   line-height: 1.55rem;
   font-style: normal;
+
+  // @media only screen and (max-width: 1920px) {
+  // }
 }
 
 .universal-title {
@@ -276,8 +288,8 @@ export default /* class HomePage extends Vue */ {
   padding-left: 8px;
   padding: 8px;
   width: 41.6666666667%;
-  margin-top: 70px;
-  margin-left: 24.5%;
+  margin-top: 80px;
+  margin-left: 22.5%;
 }
 
 .dining-label {
@@ -367,7 +379,7 @@ export default /* class HomePage extends Vue */ {
   padding-left: 35rem;
   padding-right: 35rem;
   z-index: -1;
-  margin-top: 14%;
+  margin-top: 17%;
 }
 
 .cauldron-heading {
