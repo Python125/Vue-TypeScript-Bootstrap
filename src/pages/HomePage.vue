@@ -117,32 +117,32 @@
 
   <div class="image-links">
     
-    <div class="breakfast">
-      <img :src="breakfast" alt="English Breakfast" class="breakfast-image" />
+    <div class="food">
+      <img :src="breakfast" alt="English Breakfast" class="food-image" />
       <div>
         <router-link to="/breakfast">
-          <a class="breakfast-link">Early Elixirs</a>
+          <a class="food-link">Early Elixirs</a>
         </router-link>
       </div>
     </div>
 
-    <!-- <div class="lunch">
-      <img :src="lunch" alt="Fish and Chips" class="lunch-image" />
+    <div class="food">
+      <img :src="lunch" alt="Fish and Chips" class="food-image" />
       <div>
         <router-link to="/lunch">
-          <a class="lunch-link">Great Eats</a>
+          <a class="food-link">Great Eats</a>
         </router-link>
       </div>
-    </div> -->
+    </div>
 
-    <!-- <div class="drink">
-      <img :src="drinks" alt="Butterbeer" class="drink-image" />
+    <div class="food">
+      <img :src="drinks" alt="Butterbeer" class="food-image" />
       <div>
         <router-link to="/drinks">
-          <a class="drink-link">Butterbeer & Beyond</a>
+          <a class="food-link">Butterbeer & Beyond</a>
         </router-link>
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -486,48 +486,35 @@ svg {
   text-align: center;
   align-items: center;
   margin-top: 5rem;
+
+  @media only screen and (max-width: 430px) {
+    display: block;
+    width: 220px;
+    margin-top: 0%;
+    margin-left: 20%;
+  }
 }
 
-.breakfast {
+.food {
   background-color: black;
   border: 6px black solid;
 }
 
-.breakfast-image {
+.food-image {
   width: 400px;
+
+  @media only screen and (max-width: 430px) {
+    width: 200px;
+  }
 }
 
-.breakfast-link {
+.food-link {
   font-size: 1.5rem;
   color: white;
-}
 
-.lunch {
-  background-color: black;
-  border: 6px black solid;
-}
-
-.lunch-image {
-  width: 400px;
-}
-
-.lunch-link {
-  font-size: 1.5rem;
-  color: white;
-}
-
-.drink {
-  background-color: black;
-  border: 6px black solid;
-}
-
-.drink-image {
-  width: 400px;
-}
-
-.drink-link {
-  font-size: 1.5rem;
-  color: white;
+  @media only screen and (max-width: 430px) {
+    font-size: 0.8rem;
+  }
 }
 
 a {
