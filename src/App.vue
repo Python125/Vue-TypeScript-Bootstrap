@@ -31,6 +31,9 @@ export default {
   height: 100%;
   width: 100%;
   z-index: 0;
+
+  // @media only screen and (max-width: 430px) {
+  // }
 }
 
 .background-image::before {
@@ -45,5 +48,9 @@ export default {
   background-position: center;
   min-height: 100vh;
   z-index: -1;
+
+
+  // @media only screen and (max-width: 430px) {
+  // }
 }
 </style>

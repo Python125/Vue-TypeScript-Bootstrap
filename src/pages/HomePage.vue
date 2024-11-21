@@ -176,8 +176,9 @@ export default /* class HomePage extends Vue */ {
   max-width: 1440px;
   width: 95.8333333333%;
 
-  // @media only screen and (max-width: 1920px) {
-  // }
+  @media only screen and (max-width: 430px) {
+    width: 50%;
+  }
 }
 
 .side-section {
@@ -208,6 +209,7 @@ export default /* class HomePage extends Vue */ {
   line-height: 1.25rem;
   font-style: normal;
   margin-top: 15%;
+
   // @media only screen and (max-width: 1920px) {
   // }
 }
