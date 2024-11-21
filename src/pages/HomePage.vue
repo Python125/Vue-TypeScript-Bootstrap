@@ -44,8 +44,8 @@
           <div class="text">
             <div class="title">Menus</div>
             <div class="description">
-              <a href="/">Breakfast, </a>
-              <a href="/">Lunch & Dinner</a>
+              <a class="description-link" href="/">Breakfast, </a>
+              <a class="description-link" href="/">Lunch & Dinner</a>
             </div>
           </div>
         </li>
@@ -64,7 +64,7 @@
           <div class="text">
             <div class="title">Dietary Needs</div>
             <div class="description">
-              <a href="/">Dietary Accommodations</a>
+              <a class="description-link" href="/">Dietary Accommodations</a>
             </div>
           </div>
         </li>
@@ -76,7 +76,7 @@
           <div class="text">
             <div class="title">Alcoholic Beverages Available</div>
             <div class="description">
-              <div class="title">21+ With Valid Photo ID</div>
+              <div class="description">21+ With Valid Photo ID</div>
             </div>
           </div>
         </li>
@@ -87,7 +87,7 @@
           <div class="text">
             <div class="title">Hours</div>
             <div class="description">
-              <a href="/" aria-label="Download the mobile app to check hours">Download Mobile App</a>
+              <a class="description-link" href="/" aria-label="Download the mobile app to check hours">Download Mobile App</a>
             </div>
           </div>
         </li>
@@ -98,7 +98,7 @@
           <div class="text">
             <div class="title">Phone Number</div>
             <div class="description">
-              <a href="/">(407) 224-4233</a>
+              <a class="description-link" href="/">(407) 224-4233</a>
             </div>
           </div>
         </li>
@@ -203,12 +203,13 @@ export default /* class HomePage extends Vue */ {
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.0125rem;
-  line-height: 1.25rem;
+  line-height: 1.55rem;
   font-style: normal;
 }
 
 .universal-title {
-  color: #0368d9;
+  // color: #0368d9;
+  color: #f08400;
   font-weight: 700;
 
   &:hover {
@@ -220,7 +221,8 @@ export default /* class HomePage extends Vue */ {
   text-align: left;
   min-height: 1.25rem;
   padding: 0.25rem 0;
-  color: #0368d9;
+  // color: #0368d9;
+  color: #f08400;
   font-size: 1rem;
   font-weight: 600;
   font-style: normal;
@@ -252,7 +254,8 @@ export default /* class HomePage extends Vue */ {
   text-align: left;
   min-height: 1.25rem;
   padding: 0.25rem 0;
-  color: #0368d9;
+  // color: #0368d9;
+  color: #f08400;
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
@@ -334,19 +337,23 @@ export default /* class HomePage extends Vue */ {
 }
 
 .title {
-  margin-top: 2px;
-  font-size: 0.875rem;
-  font-weight: 600;
+  margin-top: 5px;
+  font-size: 1rem;
+  font-weight: 700;
   letter-spacing: 0.0125rem;
   line-height: 1.125rem;
 }
 
 .description {
-  font-size: 0.75rem;
-  font-weight: 400;
+  font-size: 0.9rem;
+  // font-weight: 400;
   letter-spacing: 0.0125rem;
   line-height: 1.25rem;
   margin: 6px 0 0;
+}
+
+.description-link {
+  color: #f08400;
 }
 
 .intro-summary {
