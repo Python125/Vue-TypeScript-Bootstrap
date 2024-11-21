@@ -362,7 +362,7 @@ export default /* class HomePage extends Vue */ {
   padding-left: 40rem;
   padding-right: 39rem;
   z-index: -1;
-  margin-top: 15%;
+  margin-top: 14%;
 }
 
 .image-links {
