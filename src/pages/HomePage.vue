@@ -116,14 +116,15 @@
   </div>
 
   <div class="image-links">
-    <!-- <div class="breakfast">
+    
+    <div class="breakfast">
       <img :src="breakfast" alt="English Breakfast" class="breakfast-image" />
       <div>
         <router-link to="/breakfast">
           <a class="breakfast-link">Early Elixirs</a>
         </router-link>
       </div>
-    </div> -->
+    </div>
 
     <!-- <div class="lunch">
       <img :src="lunch" alt="Fish and Chips" class="lunch-image" />
@@ -448,7 +449,7 @@ svg {
 
   @media only screen and (max-width: 430px) {
     margin-top: 85%;
-    padding: 1rem;
+    padding: 0.1rem;
 }
 }
 
@@ -460,7 +461,7 @@ svg {
   line-height: 2.125rem;
 
   @media only screen and (max-width: 430px) {
-    margin-right: 2.5rem;
+    margin-right: 2.3rem;
     font-size: 80%;
   }
 }
@@ -474,7 +475,7 @@ svg {
 
   @media only screen and (max-width: 430px) {
     margin-right: 2.5rem;
-    font-size: 60%;
+    font-size: 70%;
   }
 }
 
