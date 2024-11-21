@@ -21,6 +21,7 @@
       </div>
     </aside>
 
+
     <div class="dining-section text-white">
       <div class="dining-label">DINING</div>
       <div>
