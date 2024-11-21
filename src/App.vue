@@ -6,18 +6,18 @@
       @page-change="setActivePage"
     />
     <router-view />
-    
-<!-- <footer></footer> -->
+
+    <!-- <footer></footer> -->
   </div>
 </template>
 
 <script>
-import Navbar from "./components/NavbarMenu.vue";
+// import Navbar from "./components/NavbarMenu.vue";
 
 export default {
   name: "App",
   components: {
-    Navbar,
+   // Navbar,
   },
   data() {
     return {};
@@ -43,14 +43,14 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("@/assets/leaky-cauldron.png");
+  background-image: url("@/assets/leaky-cauldron-web.png");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
   z-index: -1;
 
-
-  // @media only screen and (max-width: 430px) {
-  // }
+  @media only screen and (max-width: 430px) {
+    background-image: url("@/assets/leaky-cauldron-mobile2.png");
+  }
 }
 </style>
