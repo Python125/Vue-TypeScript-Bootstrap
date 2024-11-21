@@ -474,7 +474,8 @@ svg {
   line-height: 2.3rem;
 
   @media only screen and (max-width: 430px) {
-    margin-right: 2.5rem;
+    margin-right: 2.2rem;
+    padding: 0.5rem;
     font-size: 70%;
   }
 }
