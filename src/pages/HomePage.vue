@@ -22,8 +22,8 @@
     </aside>
 
 
-    <div class="dining-section text-white">
-      <div class="dining-label">DINING</div>
+    <section class="dining-section text-white">
+      <div id="dining-label" class="dining-label">DINING</div>
       <div>
         <h1 class="leaky-title">Leaky Cauldron™</h1>
       </div>
@@ -102,7 +102,7 @@
           </div>
         </li>
       </ul>
-    </div>
+    </section>
   </div>
 
   <div class="intro-summary text-white">
@@ -168,70 +168,144 @@ export default /* class HomePage extends Vue */ {
 
 <style lang="scss" scoped>
 .layout-container {
-  margin-top: 66px;
-  margin-right: auto;
-  margin-bottom: -350px;
-  margin-left: auto;
-  max-width: 1440px;
-  width: 95.8333333333%;
-}
+  padding: 1rem; // Basic padding for all screen sizes
+  max-width: 1200px; // Limit container width on larger screens
+  margin: 0 auto; // Center container on larger screens
 
-.side-section {
-  margin-left: -10%;
-  padding-left: 8px;
-  padding-right: 8px;
-  width: 16.6666666667%;
+  .side-section {
+    // background-color: #333; // Example background color for the aside
+    border-radius: 8px; // Add slight rounding for better appearance
+    padding: 1rem;
 
-  @media only screen and (max-width: 430px) {
-    width: 60%;
-    margin-left: 18%;
+    .universal-logo {
+      max-width: 100px; // Limit logo size for small screens
+      @media (min-width: 768px) {
+        max-width: 150px; // Increase logo size on larger screens
+      }
+    }
+
+    .location-title,
+    .park-title {
+      font-size: 1rem;
+      @media (min-width: 768px) {
+        font-size: 1.25rem; // Larger text for tablets/desktops
+      }
+    }
+
+    .map-link,
+    .park-link {
+      font-size: 0.9rem;
+      color: #007bff; // Bootstrap link color
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .universal-link {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      @media (min-width: 768px) {
+        font-size: 1.1rem;
+      }
+    }
   }
 }
 
-.universal-logo {
-  border-radius: 50%;
-  width: 225px;
-  margin-top: 10%;
-  margin-left: -15%;
-  overflow: hidden;
+.dining-section {
+  box-sizing: border-box;
+  padding: 8px;
+  width: 100%; // Default to 100% width for mobile-first design
+  margin-top: 1rem;
 
-  @media only screen and (max-width: 430px) {
-    width: 150px;
-    margin-top: -3.5rem;
-    margin-left: 2rem;
+  @media (min-width: 768px) {
+    width: 50%; // Adjust width for medium and larger screens
+    margin-left: 30%;
+    margin-top: -25rem;
   }
 }
 
-.location-title {
-  font-size: 1.4rem;
+.dining-label {
+  margin: 16px 0;
+  font-size: 0.9rem; // Smaller font size for mobile
   font-weight: 700;
   letter-spacing: 0.0125rem;
-  line-height: 1.25rem;
-  font-style: normal;
-  margin-top: 2rem;
+  line-height: 1.125;
+  background-color: #f08400;
+  border-radius: 8px;
+  padding: 8px 14px;
+  display: inline-flex;
+  justify-content: center;
 
-  @media only screen and (max-width: 430px) {
+  @media (min-width: 768px) {
     font-size: 1rem;
-    margin-top: 1.5rem;
-    margin-left: -4rem;
-    margin-bottom: 0.5rem;
+    margin-top: 64px;
   }
 }
 
-.universal-link {
+.leaky-title {
+  font-size: 1.25rem; // Default for smaller screens
+  font-weight: 900;
+  margin-bottom: 1rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.8rem; // Adjust size for larger screens
+    line-height: 2.125rem;
+  }
+}
+
+.dining-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; // Replace row-gap and margin adjustments with gap
+  list-style: none;
+  padding: 0;
+
+  @media (max-width: 430px) {
+    flex-direction: column; // Stack items for smaller screens
+  }
+}
+
+.type {
+  display: flex;
+  align-items: flex-start;
+  width: 100%; // Default for mobile-first
+  padding: 8px;
+
+  @media (min-width: 768px) {
+    width: 50%; // Adjust for larger screens
+  }
+}
+
+.icon {
+  margin-right: 12px;
+  line-height: 0;
+  width: 24px;
+
+  @media (max-width: 430px) {
+    width: 20px; // Resize icon for smaller screens
+  }
+}
+
+.title {
   font-size: 1rem;
-  letter-spacing: 0.0125rem;
-  line-height: 1.55rem;
-  font-style: normal;
+  font-weight: 700;
+  line-height: 1.125;
 
-  @media only screen and (max-width: 430px) {
-    margin-left: -4rem;
-    font-size: 0.7rem;
-    line-height: 1rem;
+  @media (max-width: 430px) {
+    font-size: 0.9rem;
   }
 }
 
-.universal-title {
+.description {
+  font-size: 0.85rem; // Default for smaller screens
+  line-height: 1.25;
+
+  @media (min-width: 768px) {
+    font-size: 0.9rem;
+  }
+}
+
+.description-link {
   color: #f08400;
   font-weight: 700;
 
@@ -240,203 +314,14 @@ export default /* class HomePage extends Vue */ {
   }
 }
 
-.map-link {
-  text-align: left;
-  min-height: 1.25rem;
-  padding: 0.25rem 0;
-  color: #f08400;
-  font-size: 1rem;
-  font-weight: 600;
-  font-style: normal;
-  letter-spacing: 0.0125rem;
-  line-height: 2rem;
-  text-shadow: none;
-  align-items: center;
-  display: inline-flex;
-  cursor: pointer;
-
-  @media only screen and (max-width: 430px) {
-    font-size: 0.7rem;
-    margin-left: -4rem;
-    line-height: 0.5rem;
-  }
-}
-
-.park-title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  letter-spacing: 0.0125rem;
-  line-height: 1.25rem;
-  font-style: normal;
-
-  @media only screen and (max-width: 430px) {
-    font-size: 1rem;
-    margin-left: -4rem;
-  }
-}
-
-.park-hours {
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: 0.0125rem;
-  line-height: 1.25rem;
-  font-style: normal;
-
-  @media only screen and (max-width: 430px) {
-    font-size: 0.7rem;
-    margin-left: -4rem;
-    line-height: 0.5rem;
-  }
-}
-
-.park-link {
-  text-align: left;
-  min-height: 1.25rem;
-  padding: 0.25rem 0;
-  color: #f08400;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: 0.0125rem;
-  line-height: 2rem;
-  text-shadow: none;
-  align-items: center;
-  display: inline-flex;
-  cursor: pointer;
-
-  @media only screen and (max-width: 430px) {
-    margin-left: -4rem;
-    font-size: 0.7rem;
-    line-height: 0.5rem;
-  }
-}
-
-.dining-section {
-  box-sizing: border-box;
-  padding-left: 8px;
-  padding: 8px;
-  width: 41.6666666667%;
-  margin-top: -25rem;
-  margin-left: 30%;
-
-  @media only screen and (max-width: 430px) {
-    margin-top: -3.5rem;
-    margin-left: 5%;
-  }
-}
-
-.dining-label {
-  margin-top: 64px;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.0125rem;
-  line-height: 0.875;
-  font-style: normal;
-  margin-bottom: 16px;
-  align-items: center;
-  box-sizing: border-box;
-  background-color: #f08400;
-  border-radius: 8px;
-  display: inline-flex;
-  justify-content: center;
-  min-height: 24px;
-  padding: 8px 14px;
-
-  @media only screen and (max-width: 430px) {
-    font-size: 0.7rem;
-    margin-left: -0.7rem;
-  }
-}
-
-.leaky-title {
-  font-size: 1.80rem;
-  font-weight: 900;
-  letter-spacing: 0.0125rem;
-  line-height: 2.125rem;
-  font-style: normal;
-  margin-bottom: 16px;
-
-  @media only screen and (max-width: 430px) {
-    font-size: 1.1rem;
-    margin-left: -0.7rem;
-    line-height: 0.5rem;
-  }
-}
-
-.dining-features {
-  color: white;
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%;
-  row-gap: 16px;
-  list-style-type: none;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  list-style-position: outside;
-  line-height: 1.6;
-
-  @media only screen and (max-width: 430px) {
-    margin-left: -1rem;
-    display: block;
-  }
-}
-
 svg {
-  @media only screen and (max-width: 430px) {
-    width: 20px;
-  }
-}
-
-.type {
-  box-sizing: border-box;
-  padding-left: 8px;
-  padding-right: 8px;
-  display: flex;
-  width: 50%;
-
-  @media only screen and (max-width: 430px) {
-    width: 181%;
-  }
-}
-
-.icon {
-  display: block;
-  float: left;
-  margin-top: 1px;
-  margin-right: 12px;
-  margin-left: -30px;
-  position: relative;
   width: 24px;
-  line-height: 0;
-}
+  height: 24px;
 
-.title {
-  margin-top: 5px;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.0125rem;
-  line-height: 1.125rem;
-
-  @media only screen and (max-width: 430px) {
-    font-size: 14px;
+  @media (max-width: 430px) {
+    width: 20px;
+    height: 20px;
   }
-}
-
-.description {
-  font-size: 0.9rem;
-  // font-weight: 400;
-  letter-spacing: 0.0125rem;
-  line-height: 1.25rem;
-  margin: 6px 0 0;
-
-  @media only screen and (max-width: 430px) {
-    font-size: 12px;
-  }
-}
-
-.description-link {
-  color: #f08400;
 }
 
 .intro-summary {
