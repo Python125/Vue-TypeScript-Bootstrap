@@ -21,7 +21,7 @@
       </div>
     </aside>
 
-    <div class="info-section text-white">
+    <div class="dining-section text-white">
       <div class="dining-label">DINING</div>
       <div>
         <h1 class="leaky-title">Leaky Cauldron™</h1>
@@ -108,8 +108,8 @@
   </div>
 
   <div class="intro-summary text-white">
-    <h1 class="fw-bold text-center">Fill up on Traditional British Food.</h1>
-    <p class="text-center h4 fw-normal">
+    <h1 class="cauldron-heading text-center">Fill up on Traditional British Food.</h1>
+    <p class="cauldron-paragraph text-center">
       The Leaky Cauldron™ is a small, grubby-looking pub and inn. Once inside,
       you'll find yourself under a cathedral ceiling with views towards the
       guest rooms in the inn. The delicious traditional British fare served here
@@ -175,10 +175,14 @@ export default /* class HomePage extends Vue */ {
   margin-left: auto;
   max-width: 1440px;
   width: 95.8333333333%;
+
+  // @media only screen and (max-width: 1920px) {
+  //   margin-top: 10rem;
+  // }
 }
 
 .side-section {
-  margin-left: 16.6666666667%;
+  margin-left: -10%;
   padding-left: 8px;
   padding-right: 8px;
   width: 16.6666666667%;
@@ -267,13 +271,13 @@ export default /* class HomePage extends Vue */ {
   cursor: pointer;
 }
 
-.info-section {
+.dining-section {
   box-sizing: border-box;
   padding-left: 8px;
   padding: 8px;
   width: 41.6666666667%;
   margin-top: 70px;
-  margin-left: 8.3333333333%;
+  margin-left: 24.5%;
 }
 
 .dining-label {
@@ -359,10 +363,27 @@ export default /* class HomePage extends Vue */ {
 .intro-summary {
   background-color: #0a0a0a;
   opacity: 0.8;
-  padding-left: 40rem;
-  padding-right: 39rem;
+  padding: 2rem;
+  padding-left: 35rem;
+  padding-right: 35rem;
   z-index: -1;
   margin-top: 14%;
+}
+
+.cauldron-heading {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.0125rem;
+  line-height: 2.125rem;
+}
+
+.cauldron-paragraph {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.0225rem;
+  line-height: 2.3rem;
 }
 
 .image-links {
