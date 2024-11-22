@@ -32,8 +32,9 @@ export default {
   width: 100%;
   z-index: 0;
 
-  // @media only screen and (max-width: 430px) {
-  // }
+  @media only screen and (max-width: 430px) {
+    height: 50%;
+  }
 }
 
 .background-image::before {
@@ -46,12 +47,10 @@ export default {
   background-image: url("@/assets/leaky-cauldron-web.png");
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
   z-index: -1;
 
   @media only screen and (max-width: 430px) {
-    background-image: url("@/assets/leaky-cauldron-mobile2.png");
-    // background-size: 150px;
+    background-image: url("@/assets/leaky-cauldron-mobile.png");
   }
 }
 </style>
