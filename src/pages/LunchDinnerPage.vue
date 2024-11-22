@@ -22,7 +22,6 @@
     </div>
   </div>
 
-  <!-- Modal -->
   <div v-if="activeItem !== null" class="modal-overlay" @click="closeModal">
     <div class="modal-content" @click.stop>
       <div class="modal-header">
@@ -51,68 +50,141 @@ interface MenuItem {
 }
 
 export default defineComponent({
-  name: "BreakfastMenu",
+  name: "LunchAndDinnerMenu",
   setup() {
     const menuItems = ref<MenuItem[]>([
       {
-        name: "Traditional Breakfast",
+        name: "Beef, Lamb & Guinness Stew",
         description:
-          "Fresh scrambled eggs, sausage links, black pudding, English bacon, baked beans, grilled tomato, sautéed mushrooms and breakfast potatoes (FS, PS, SS, TNS) - $18.99",
-        image: require("@/assets/images/traditional-breakfast.png"),
+          "Served in a warm, crusty bread bowl (DS, ES, FS, PS, SES, SFS, SS, TNS) - $17.99",
+        image: require("@/assets/images/beef-lamb-guinness-stew.png"),
       },
       {
-        name: "Pancake Breakfast",
+        name: "Cottage Pie",
         description:
-          "Three fluffy buttermilk pancakes, crisp bacon and link sausage with butter croissant (FS, PS, SES, SS, TNS) - $18.99",
-        image: require("@/assets/images/pancake-breakfast.png"),
+          "Savory combination of beef and chunky vegetables in a potato crust served with a garden salad (ES, FS, PS, SES, SFS, TNS) - $17.99",
+        image: require("@/assets/images/cottage-pie.png"),
       },
       {
-        name: "Egg, Leek, & Mushroom Pasty",
+        name: "Bangers & Mash",
         description:
-          "Pastry wrapped scrambled eggs, mushrooms and leeks served with breakfast potatoes and fresh fruit (FS, PS, SES, TNS) - $18.99",
-        image: require("@/assets/images/egg-leek-mushroom-pasty.png"),
+          "Roasted English sausage, creamy mashed potatoes, roasted tomatoes, sautéed onions and cabbage, minted peas & onion gravy (Request no sauce for soy protein-sensitive options.) (ES, FS, PS, SES, SFS, TNS) - $16.99",
+        image: require("@/assets/images/bangers-and-mash.png"),
       },
       {
-        name: "American Breakfast",
+        name: "Mini Pie Combination",
         description:
-          "Fresh scrambled eggs, breakfast potatoes, crisp bacon, and link sausage with butter croissant - (FS, PS, SES, SS, TNS) - $18.99",
-        image: require("@/assets/images/american-breakfast.png"),
+          "Mini cottage pie and mini fisherman's pie served with garden salad (ES, PS, SES, TNS) - $18.99",
+        image: require("@/assets/images/mini-pie-combo.png"),
       },
       {
-        name: "Apple Oatmeal Flan with Yogurt & Fruit",
+        name: "Vegan Curry",
         description:
-          "Freshly baked flan of apples and oatmeal served with yogurt and fresh seasonal fruit (FS, GS, PS, SES, SS) - $18.99",
-        image: require("@/assets/images/apple-oatmeal-flan.png"),
+          "Plant based Chick`n and potato curry with pita and served with garden salad (DS, ES, FS, PS, SFS, VG) - $17.99",
+        image: require("@/assets/images/vegan-curry.png"),
       },
       {
-        name: "Kid's Breakfast",
-        description: "Choose traditional, pancake or American - $13.49",
-        image: require("@/assets/images/pancake-breakfast.png"),
+        name: "Shepherd's Pasty Pie",
+        description:
+          "Meatless beef crumbles and vegetable stew hand pie; served with creamy stone ground mustard dipping sauce, apple beet salad, and chips (DS, ES, FS, SES, SFS, VG) - $17.99",
+        image: require("@/assets/images/shepherds-pasty-pie.png"),
       },
       {
-        name: "Bacon",
-        description: "Crispy American-style bacon - $2.49",
-        image: require("@/assets/images/bacon.png"),
+        name: "Hunter's Chicken",
+        description:
+          "Bacon wrapped chicken breast with BBQ gravy, Monterey & Cheddar cheese blend, English minted peas, pea tendrils and chips (ES, FS, PS, SES, SFS, TNS) - $16.99",
+        image: require("@/assets/images/hunters-chicken.png"),
       },
       {
-        name: "English Bacon",
-        description: "Traditional English bacon - $5.49",
-        image: require("@/assets/images/english-bacon.png"),
+        name: "Fish & Chips",
+        description:
+          "Fresh north Atlantic cod battered and fried with chips and tartar sauce (Request no tartar sauce for egg-sensitive options.) (PS, SFS, TNS) - $17.99",
+        image: require("@/assets/images/fish-and-chips.png"),
       },
       {
-        name: "Roasted Potatoes",
-        description: "Perfectly roasted breakfast potatoes - $4.99",
-        image: require("@/assets/images/roasted-potatoes.png"),
+        name: "Fisherman's Pie",
+        description:
+          "Salmon, shrimp and cod baked together under a potato crust served with garden salad (ES, GS, PS, SES, SS, TNS) - $18.99",
+        image: require("@/assets/images/fishermans-pie.png"),
       },
       {
-        name: "Blood Sausage",
-        description: "Rich and flavorful blood sausage - $5.49",
-        image: require("@/assets/images/blood-sausage.png"),
+        name: "Scotch Eggs",
+        description:
+          "Hard-boiled eggs wrapped in pork sausage, dusted with bread crumbs and fried. Served warm with apple beet salad and mustard sauce (PS, SFS, TNS) - $13.99",
+        image: require("@/assets/images/scotch-eggs.png"),
       },
       {
-        name: "Scrambled Eggs",
-        description: "Fluffy scrambled eggs - $2.99",
-        image: require("@/assets/images/scrambled-eggs.png"),
+        name: "Soup & Salad",
+        description:
+          "Split Pea & Ham soup served with side garden salad (ES, FS, PS, SES, SFS, TNS) - $12.99",
+        image: require("@/assets/images/soup-and-salad.png"),
+      },
+      {
+        name: "Ploughman's",
+        description:
+          "A feast of English cheese, crusty bread, field green salad, roasted tomatoes, cornichon pickles, apple beet salad, Branston pickle & scotch eggs (Request no scotch egg for egg-sensitive options, or request no scotch egg sauce for fish-sensitive options.) (PS, SFS, TNS) - $23.99 (Serves 2)",
+        image: require("@/assets/images/ploughmans-platter.png"),
+      },
+
+      {
+        name: "Kid's Macaroni Cheese",
+        description:
+          "Served with grapes and applesauce (ES, FS, PS, SES, SFS, SS, TNS, V) - $8.29",
+        image: require("@/assets/images/kids-mac-and-cheese.png"),
+      },
+      {
+        name: "Kid's Mini Pie",
+        description:
+          "Served with grapes and applesauce (ES, FS, PS, SES, SFS, TNS) - $8.29",
+        image: require("@/assets/images/kids-mini-pie.png"),
+      },
+      {
+        name: "Kid's Fish & Chips",
+        description:
+          "Served with chips and tartar sauce (Request no tartar sauce for egg-sensitive options.) (PS, SFS, TNS) - $8.29",
+        image: require("@/assets/images/kids-fish-and-chips.png"),
+      },
+      {
+        name: "Banger Sandwich",
+        description:
+          "Roasted English sausage, mustard aioli, roasted tomatoes, sautéed cabbage and onions on a crusted baguette (Served with chips) (Gluten-free buns are available upon request.) (Request no mustard aioli for egg-sensitive options.) (DS, FS, PS, SES, SFS, SS, TNS) - $14.99",
+        image: require("@/assets/images/banger-sandwich.png"),
+      },
+      {
+        name: "Specialty Chicken",
+        description:
+          "Grilled chicken breast, apple butter mayo, Colby cheese, smoky apple bacon, roasted tomatoes on a housemade specialty bun (Served with chips) (Gluten-free buns are available upon request.) (FS, PS, SES, SFS, SS, TNS) - $15.99",
+        image: require("@/assets/images/specialty-chicken.png"),
+      },
+      {
+        name: "Side of Chips",
+        description:
+          "(DS, ES, FS, GS, PS, SES, SFS, SS, TNS, VG) - $4.99",
+        image: require("@/assets/images/chips.png"),
+      },
+      {
+        name: "Side of Mashed Potatoes with Gravy",
+        description:
+          "(ES, FS, PS, SES, SFS, TNS) - $3.99",
+        image: require("@/assets/images/mashed-potatoes-side.png"),
+      },
+      {
+        name: "Side Garden Salad",
+        description:
+          "(DS, ES, FS, GS, PS, SES, SFS, SS, TNS, VG) - $6.99",
+        image: require("@/assets/images/side-salad.png"),
+      },
+      {
+        name: "Scotch Egg (Side)",
+        description:
+          "Hard-boiled egg wrapped in pork sausage, dusted with bread crumbs and fried (PS, SFS, TNS) - $5.49",
+        image: require("@/assets/images/scotch-egg.png"),
+      },
+      {
+        name: "Banger (1 each)",
+        description:
+          "(DS, ES, FS, PS, SES, SFS, TNS) - $5.49",
+        image: require("@/assets/images/banger-side.png"),
       },
     ]);
 
