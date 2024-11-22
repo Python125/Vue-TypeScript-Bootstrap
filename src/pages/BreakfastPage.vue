@@ -18,14 +18,28 @@
         v-for="(item, index) in menuItems"
         :key="index"
         class="menu-card"
-        @click="toggleDescription(index)"
-        :aria-expanded="expandedIndex === index"
+        @click="openModal(index)"
       >
         <img :src="item.image" :alt="item.name" class="card-image" />
         <h3 class="card-title">{{ item.name }}</h3>
-        <p v-if="expandedIndex === index" class="card-description">
-          {{ item.description }}
-        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div v-if="activeItem !== null" class="modal-overlay" @click="closeModal">
+    <div class="modal-content" @click.stop>
+      <div class="modal-header">
+        <h3>{{ menuItems[activeItem].name }}</h3>
+        <button class="close-button" @click="closeModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img
+          :src="menuItems[activeItem].image"
+          :alt="menuItems[activeItem].name"
+          class="modal-image"
+        />
+        <p>{{ menuItems[activeItem].description }}</p>
       </div>
     </div>
   </div>
@@ -106,16 +120,21 @@ export default defineComponent({
       },
     ]);
 
-    const expandedIndex = ref<number | null>(null);
+    const activeItem = ref<number | null>(null);
 
-    const toggleDescription = (index: number): void => {
-      expandedIndex.value = expandedIndex.value === index ? null : index;
+    const openModal = (index: number): void => {
+      activeItem.value = index;
+    };
+
+    const closeModal = (): void => {
+      activeItem.value = null;
     };
 
     return {
       menuItems,
-      expandedIndex,
-      toggleDescription,
+      activeItem,
+      openModal,
+      closeModal,
     };
   },
 });
@@ -177,11 +196,55 @@ export default defineComponent({
       margin: 0.5rem 0;
       color: #333;
     }
+  }
+}
 
-    .card-description {
-      font-size: 0.9rem;
-      padding: 0.5rem;
-      color: #666;
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .close-button {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+
+  .modal-body {
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #333;
+      font-size: 1rem;
+      line-height: 1.5;
     }
   }
 }
