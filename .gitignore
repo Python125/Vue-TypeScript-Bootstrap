@@ -21,6 +21,3 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
-
-style.scss
-NavbarMenu2.vue
