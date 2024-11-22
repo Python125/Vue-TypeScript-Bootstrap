@@ -1,32 +1,34 @@
 <template>
   <div class="layout-container">
+    <div class="d-flex justify-content-center align-items-center text-white">
+      <div class="dining-label text-white">DINING</div>
+    </div>
+    <div>
+      <h1 class="leaky-title text-white text-center">Leaky Cauldron™</h1>
+    </div>
     <aside class="side-section">
-      <div>
+      <div class="d-flex justify-content-center align-items-center">
         <img class="universal-logo" :src="universalLogo" alt="Universal logo" />
       </div>
+
       <div class="text-white"><h3 class="location-title">Location</h3></div>
       <div class="universal-link text-white">
         The Wizarding World of Harry Potter™ - Diagon Alley™ in
-        <a class="universal-title" href="/"
+        <a class="universal-title fw-bold" href="/"
           >Universal Studios Florida</a
         >
       </div>
-      <a href="/"><span class="map-link">Explore Interactive Map</span></a>
+      <a href="/"><span class="map-link fw-bold">Explore Interactive Map</span></a>
       <div>
         <h3 class="park-title text-white fw-bold h6 mt-4">Park Hours</h3>
         <div class="park-hours text-white fw-light h6">
           Open Today | 9 am-7 pm
         </div>
-        <a href="/"><span class="park-link">All Park Hours</span></a>
+        <a href="/"><span class="park-link fw-bold">All Park Hours</span></a>
       </div>
     </aside>
 
-
     <section class="dining-section text-white">
-      <div id="dining-label" class="dining-label">DINING</div>
-      <div>
-        <h1 class="leaky-title">Leaky Cauldron™</h1>
-      </div>
       <ul class="dining-features">
         <li class="type">
           <div class="icon">
@@ -105,46 +107,47 @@
     </section>
   </div>
 
-  <div class="intro-summary text-white">
-    <h1 class="cauldron-heading text-center">Fill up on Traditional British Food.</h1>
-    <p class="cauldron-paragraph text-center">
-      The Leaky Cauldron™ is a small, grubby-looking pub and inn. Once inside,
-      you'll find yourself under a cathedral ceiling with views towards the
-      guest rooms in the inn. The delicious traditional British fare served here
-      includes Bangers and Mash, Fisherman's Pie, Vegan Chicken Curry and
-      Ploughman's Platter, plus a Kid's Menu offering Fish And Chips and more.
-    </p>
-  </div>
+  <section class="intro-summary text-white">
+    <div class="container">
+      <div class="text-center">
+        <h1 class="cauldron-heading">Fill up on Traditional British Food.</h1>
+        <p class="cauldron-paragraph">
+          The Leaky Cauldron™ is a small, grubby-looking pub and inn. Once inside,
+          you'll find yourself under a cathedral ceiling with views towards the
+          guest rooms in the inn. The delicious traditional British fare served here
+          includes Bangers and Mash, Fisherman's Pie, Vegan Chicken Curry and
+          Ploughman's Platter, plus a Kid's Menu offering Fish And Chips and more.
+        </p>
+      </div>
+    </div>
+  </section>
 
-  <div class="image-links">
-    
-    <div class="food">
-      <img :src="breakfast" alt="English Breakfast" class="food-image" />
-      <div>
+  <section class="image-links container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-4 food">
         <router-link to="/breakfast">
-          <a class="food-link">Early Elixirs</a>
+          <a class="food-link">
+            <img :src="breakfast" alt="English Breakfast" class="food-image img-fluid" />
+          </a>
         </router-link>
       </div>
-    </div>
 
-    <div class="food">
-      <img :src="lunch" alt="Fish and Chips" class="food-image" />
-      <div>
+      <div class="col-12 col-md-4 food">        
         <router-link to="/lunch">
-          <a class="food-link">Great Eats</a>
+          <img :src="lunch" alt="Fish and Chips" class="food-image img-fluid" />
         </router-link>
       </div>
-    </div>
 
-    <div class="food">
-      <img :src="drinks" alt="Butterbeer" class="food-image" />
-      <div>
+      <div class="col-12 col-md-4 food">
         <router-link to="/drinks">
-          <a class="food-link">Butterbeer & Beyond</a>
+          <a class="food-link">
+            <img :src="drinks" alt="Butterbeer" class="food-image img-fluid" />
+          </a>
         </router-link>
       </div>
+
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">
@@ -170,14 +173,13 @@ export default /* class HomePage extends Vue */ {
 .layout-container {
   padding: 1rem; // Basic padding for all screen sizes
   max-width: 1200px; // Limit container width on larger screens
-  margin: 0 auto; // Center container on larger screens
 
   .side-section {
-    // background-color: #333; // Example background color for the aside
     border-radius: 8px; // Add slight rounding for better appearance
     padding: 1rem;
 
     .universal-logo {
+      border-radius: 50%;
       max-width: 100px; // Limit logo size for small screens
       @media (min-width: 768px) {
         max-width: 150px; // Increase logo size on larger screens
@@ -194,8 +196,9 @@ export default /* class HomePage extends Vue */ {
 
     .map-link,
     .park-link {
+      text-decoration: none;
       font-size: 0.9rem;
-      color: #007bff; // Bootstrap link color
+      color: #f08400;
       &:hover {
         text-decoration: underline;
       }
@@ -208,25 +211,23 @@ export default /* class HomePage extends Vue */ {
         font-size: 1.1rem;
       }
     }
+
+    .universal-title {
+      color: #f08400;
+    }
   }
 }
 
-.dining-section {
-  box-sizing: border-box;
-  padding: 8px;
-  width: 100%; // Default to 100% width for mobile-first design
-  margin-top: 1rem;
-
-  @media (min-width: 768px) {
-    width: 50%; // Adjust width for medium and larger screens
-    margin-left: 30%;
-    margin-top: -25rem;
+a {
+  text-decoration: none; // No underline by default
+  &:hover {
+    text-decoration: underline; // Underline on hover
   }
 }
 
 .dining-label {
   margin: 16px 0;
-  font-size: 0.9rem; // Smaller font size for mobile
+  font-size: 0.8rem; // Smaller font size for mobile
   font-weight: 700;
   letter-spacing: 0.0125rem;
   line-height: 1.125;
@@ -243,13 +244,26 @@ export default /* class HomePage extends Vue */ {
 }
 
 .leaky-title {
-  font-size: 1.25rem; // Default for smaller screens
+  font-size: 1.5rem; // Default for smaller screens
   font-weight: 900;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 
   @media (min-width: 768px) {
     font-size: 1.8rem; // Adjust size for larger screens
     line-height: 2.125rem;
+  }
+}
+
+.dining-section {
+  box-sizing: border-box;
+  padding: 8px;
+  width: 100%; // Default to 100% width for mobile-first design
+  margin-top: 1rem;
+
+  @media (min-width: 768px) {
+    width: 50%; // Adjust width for medium and larger screens
+    margin-left: 30%;
+    margin-top: -25rem;
   }
 }
 
@@ -306,6 +320,7 @@ export default /* class HomePage extends Vue */ {
 }
 
 .description-link {
+  text-decoration: none;
   color: #f08400;
   font-weight: 700;
 
@@ -325,89 +340,72 @@ svg {
 }
 
 .intro-summary {
-  background-color: #0a0a0a;
-  opacity: 0.8;
-  padding: 2rem;
-  padding-left: 35rem;
-  padding-right: 35rem;
-  z-index: -1;
-  margin-top: 17%;
+  background-color: rgba(10, 10, 10, 0.8);
+  padding: 2rem 1rem;
+  margin-top: 5rem;
 
-  @media only screen and (max-width: 430px) {
-    margin-top: 85%;
-    padding: 0.1rem;
-}
+  @media (min-width: 768px) {
+    padding: 3rem 5rem;
+    margin-top: 10rem;
+  }
 }
 
 .cauldron-heading {
-  font-size: 2rem;
-  font-style: normal;
+  font-size: 1.5rem;
   font-weight: 900;
-  letter-spacing: 0.0125rem;
-  line-height: 2.125rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
 
-  @media only screen and (max-width: 430px) {
-    margin-right: 2.3rem;
-    font-size: 80%;
+  @media (min-width: 768px) {
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 }
 
 .cauldron-paragraph {
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0.0225rem;
-  line-height: 2.3rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0 auto;
+  max-width: 700px;
 
-  @media only screen and (max-width: 430px) {
-    margin-right: 2.2rem;
-    padding: 0.5rem;
-    font-size: 70%;
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+    line-height: 2rem;
   }
 }
 
 .image-links {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  align-items: center;
-  margin-top: 5rem;
+  margin-top: 3rem;
 
-  @media only screen and (max-width: 430px) {
-    display: block;
-    width: 220px;
-    margin-top: 0%;
-    margin-left: 20%;
-  }
-}
+  .food {
+    text-align: center;
+    margin-bottom: 2rem;
 
-.food {
-  background-color: black;
-  border: 6px black solid;
-}
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
 
-.food-image {
-  width: 400px;
+    .food-image {
+      border-radius: 8px;
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 1rem;
+    }
 
-  @media only screen and (max-width: 430px) {
-    width: 200px;
-  }
-}
+    .food-link {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #f08400;
+      text-decoration: none;
 
-.food-link {
-  font-size: 1.5rem;
-  color: white;
+      &:hover {
+        text-decoration: underline;
+      }
 
-  @media only screen and (max-width: 430px) {
-    font-size: 0.8rem;
-  }
-}
-
-a {
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
+      @media (min-width: 768px) {
+        font-size: 1.25rem;
+      }
+    }
   }
 }
 </style>
