@@ -33,13 +33,14 @@
         <h3 class="text-center fw-bold mb-3">Wizards' Refreshments</h3>
         <img class="w-25 py-2" :src="pumpkinJuice" alt="Pumpkin Juice">
         <p class="fw-bold py-2">Pumpkin Juice™ - $5.49</p>
+        
         <img class="w-25" :src="tongueTyingLemonSquash" alt="Tongue Tying Lemon Squash">
         <p class="py-2"><b>Tongue Tying Lemon Squash - $6.49</b> - Sweet and tart lemon flavored beverage served with squashed lemon</p>
-        <img class="w-25 py-2" :src="fishyGreenAle" alt="Fishy Green Ale">
+       <img class="w-25 py-2" :src="fishyGreenAle" alt="Fishy Green Ale">
         <p class="py-1"><b>Fishy Green Ale - $6.49</b> - Smooth and creamy with notes of mint and cinnamon and popping blueberry fish eggs</p>
-
         <img class="w-25 py-2" :src="icedTea" alt="Iced Tea">
         <img style="width: 181px;" class="py-2" :src="lemonade" alt="Lemonade">
+        
         <img class="w-25" :src="cider" alt="Cider">
         <p class="py-1"><b>Fountain Beverages - $4.49</b> - Iced Tea, Lemonade, Cider</p>
       </div>
@@ -122,7 +123,7 @@ export default /* class HomePage extends Vue */ {
       hotButterbeer: require("@/assets/images/hot-butterbeer.png"),
       pumpkinJuice: require("@/assets/images/pumpkin-juice.png"),
       tongueTyingLemonSquash: require("@/assets/images/tongue-tying-lemon-squash.png"),
-      fishyGreenAle: require("@/assets/images/fishy-green-ale.jpg"),
+      fishyGreenAle: require("@/assets/images/fishy-green-ale.png"),
       icedTea: require("@/assets/images/iced-tea.png"),
       lemonade: require("@/assets/images/lemonade.png"),
       cider: require("@/assets/images/cider.png"),

@@ -1,230 +1,375 @@
 <template>
   <h1 class="restaurant text-white text-center">Leaky Cauldron™</h1>
+  <div class="p-3">
+    <h2 class="fw-bold text-white text-center">Beverage Menu</h2>
+    <!-- <p class="p-3 h4 text-white text-center">
+      Allergen Note: Please inform a manager or Chef's Assistant prior to
+      ordering if someone in your party requires special dietary accommodations
+    </p> -->
+  </div>
 
-  <div class="menu-row1">
-    <div class="menu-items1 text-white row py-3">
-      <h3 class="fw-bold text-center mb-3">Butterbeer™</h3>
-      <p class="butterbeer-note fw-bold text-center">
-        Butterbeer™ is suitable for those with gluten, soy, egg, wheat, and nut
-        allergies. The topping does contain trace amounts of dairy, so it is
-        unsuitable for vegans or anyone with a dairy allergy. Please ensure to
-        select the Non-Dairy option when selecting your cold or frozen
-        Butterbeer™. Hot Butterbeer™ will remain unsuitable for vegans or anyone
-        with a dairy allergy.
-      </p>
-      <div class="col text-center mt-3">
-        <img class="butterbeer-image" :src="butterbeer" alt="Butterbeer" />
-        <p class="py-1"><b>Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
-        <img class="butterbeer-image" :src="frozenButterbeer" alt="Frozen Butterbeer" />
-        <p class="py-1"><b>Frozen Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
-        <img class="butterbeer-image" :src="hotButterbeer" alt="Hot Butterbeer" />
-        <p class="py-1"><b>Hot Butterbeer™ - $8.99</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch</p>
-
-        <p class="py-1"><b>Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
-        <p class="py-1"><b>Stainless Steel Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
-        <p class="py-1"><b>Frozen Butterbeer™ Souvenirs</b> - A non-alcoholic sweet drink reminiscent of shortbread and butterscotch, served in a souvenir cup</p>
+  <div class="menu-slider">
+    <div class="slider-container">
+      <div
+        v-for="(item, index) in menuItems"
+        :key="index"
+        class="menu-card"
+        @click="openModal(index)"
+      >
+        <img :src="item.image" :alt="item.name" class="card-image" />
+        <h3 class="card-title">{{ item.name }}</h3>
       </div>
     </div>
   </div>
 
-  <div class="menu-row2">
-    <div class="menu-items2 text-white row py-4">
-      <div class="col text-center">
-        <h3 class="text-center fw-bold mb-3">Wizards' Refreshments</h3>
-        <img class="w-25 py-2" :src="pumpkinJuice" alt="Pumpkin Juice">
-        <p class="fw-bold py-2">Pumpkin Juice™ - $5.49</p>
-        <img class="w-25" :src="tongueTyingLemonSquash" alt="Tongue Tying Lemon Squash">
-        <p class="py-2"><b>Tongue Tying Lemon Squash - $6.49</b> - Sweet and tart lemon flavored beverage served with squashed lemon</p>
-        <img class="w-25 py-2" :src="fishyGreenAle" alt="Fishy Green Ale">
-        <p class="py-1"><b>Fishy Green Ale - $6.49</b> - Smooth and creamy with notes of mint and cinnamon and popping blueberry fish eggs</p>
-
-        <img class="w-25 py-2" :src="icedTea" alt="Iced Tea">
-        <img style="width: 181px;" class="py-2" :src="lemonade" alt="Lemonade">
-        <img class="w-25" :src="cider" alt="Cider">
-        <p class="py-1"><b>Fountain Beverages - $4.49</b> - Iced Tea, Lemonade, Cider</p>
+  <div v-if="activeItem !== null" class="modal-overlay" @click="closeModal">
+    <div class="modal-content" @click.stop>
+      <div class="modal-header">
+        <h3>{{ menuItems[activeItem].name }}</h3>
+        <button class="close-button" @click="closeModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img
+          :src="menuItems[activeItem].image"
+          :alt="menuItems[activeItem].name"
+          class="modal-image"
+        />
+        <p>{{ menuItems[activeItem].description }}</p>
       </div>
     </div>
-    <div class="menu-items3 text-white row py-4">
-      <div class="col text-center">
-        <h3 class="text-center fw-bold mb-3">Wizards' Refreshments</h3>
-        <img class="w-25 py-2" :src="gillywater" alt="Gillywater">
-        <p class="fw-bold py-2">Gillywater - $6.00</p>
-        <img class="w-25 py-2" :src="otterSquashFizzyOrangeJuice" alt="Otter's Fizzy Orange Juice">
-        <p class="py-2"><b>Otter's Fizzy Orange Juice - $6.49</b> - Effervescent fresh orange beverage with notes of vanilla and cinnamon</p>
-        <img class="w-25 py-2" :src="peachtreeFizzingTea" alt="Peachtree Fizzing Tea">
-        <p class="py-2"><b>Peachtree Fizzing Tea - $6.49</b> - Fizzy but smooth with flavors of fresh peach nectar and ginger</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="menu-row3">
-    <div class="menu-items4 text-white row py-4">
-      <h3 class="fw-bold text-center">Cauldron Brews: Ale, Wine, & Wizard's Fire</h3>
-        <div class="col text-center">
-          <img class="w-25 py-1" :src="dragonScale" alt="Dragon's Scale">
-          <p class="py-1"><b>Dragon's Scale - $13.00</b> - Unique lager with a light crisp, malty finish</p>
-          <img class="w-25" :src="daisyrootAle" alt="Daisyroot Ale">
-          <p class="py-1"><b>Daisyroot Ale - $13.00</b> - Refreshing traditional English Mild with a light malty flavor profile and a clean finish</p>
-          <img class="w-25" :src="wizardsBrew" alt="Wizard's Brew">
-          <p class="py-1"><b>Wizard's Brew - $13.00</b> - Full bodied, sweet stout with a smooth, light sweetness and clean, dry finish</p>
-          <img class="w-25" :src="darkForestAle" alt="Dark Forest Ale">
-          <p class="py-1"><b>Dark Forest Ale - $13.00</b> - Traditional brown ale with roasty caramel/toffee notes and warming finish</p>
-          <img class="w-25" :src="fireWhisky" alt="Fire Whisky">
-          <p class="py-1"><b>Fire Whisky - $12.50</b> - Fire Whisky, Fire and Strongbow Cocktail</p>
-        </div>
-    </div>
-    <div class="menu-items5 text-white row py-4">
-      <h3 class="fw-bold text-center py-2">Muggle Bevergages</h3>
-        <div class="col text-center">
-          <img class="w-25" :src="milk" alt="Milk">
-          <p class="fw-bold py-1">2% Milk - $2.99</p>
-          <img class="w-25" :src="orangeJuice" alt="Orange Juice">
-          <img class="w-25" :src="appleJuice" alt="Apple Juice">
-          <p class="py-1"><b>Juice - $3.49</b> - Orange, Apple</p>
-          <img class="w-25" :src="coffeeCaffeine" alt="Caffeine Coffee">
-          <img class="w-25" :src="decafCoffee" alt="Decaf Coffee">
-          <img class="w-25" :src="hotTea" alt="Hot Tea">
-          <p class="py-1"><b>Hot Beverages - $3.79</b> - Coffee, Decaf, Hot Tea</p>
-          <img class="w-25 py-1" :src="chocolateMilk" alt="Chocolate Milk">
-          <p class="fw-bold py-1">Chocolate Milk - $2.99</p>
-          <img style="width: 110px;" class="py-1" :src="heineken" alt="Heineken">
-          <img style="width: 116.4px;" class="py-1" :src="stellaArtois" alt="Stella Artois">
-          <img style="width: 117.2px;" class="py-1" :src="strongbow" alt="Strongbow">
-          <img style="width: 111.9px;" class="py-1" :src="yuengling" alt="Yuengling">
-          <p><b>Draught Beer - $11.25</b> - Heineken, Stella Artois, Strongbow, Yuengling</p>
-          <img style="width: 181px;" :src="chardonnay" alt="Chardonnay">
-          <img style="width: 175.5px;" :src="cabernetSauvignon" alt="Cabernet Sauvignon">
-          <p class="py-1"><b>Wine by the Glass - $11.00</b> - Chardonnay & Cabernet Sauvignon</p>
-          <img class="w-25" :src="cupOfWater" alt="Cup of water">
-          <p class="fw-bold py-1">Courtesy Cup of Water - $0</p>
-        </div>
-    </div>
-  </div>
-
-  <div class="">
-    <router-link to="/">
-      <button>Back to home</button>
-    </router-link>
   </div>
 </template>
 
 <script lang="ts">
-// import { Options, Vue } from "vue-class-component";
+import { defineComponent, ref } from "vue";
 
-// @Options({
-//   components: {},
-// })
-export default /* class HomePage extends Vue */ {
-  data() {
+interface MenuItem {
+  name: string;
+  description: string;
+  image: string;
+}
+
+export default defineComponent({
+  name: "LunchAndDinnerMenu",
+  setup() {
+    const menuItems = ref<MenuItem[]>([
+      {
+        name: "Butterbeer™",
+        description:
+          "A non-alcoholic sweet drink reminiscent of shortbread and butterscotch (can be served in a souvenir cup) - $8.99",
+        image: require("@/assets/images/butterbeer.png"),
+      },
+      {
+        name: "Frozen Butterbeer™",
+        description:
+          "A non-alcoholic sweet drink reminiscent of shortbread and butterscotch (can be served in a souvenir cup) - $8.99",
+        image: require("@/assets/images/frozen-butterbeer.png"),
+      },
+      {
+        name: "Hot Butterbeer™",
+        description:
+          "A non-alcoholic sweet drink reminiscent of shortbread and butterscotch - $8.99",
+        image: require("@/assets/images/hot-butterbeer.png"),
+      },
+      {
+        name: "Pumpkin Juice™",
+        description:
+          "Pumpkin Juice™ - $5.49", // COME BACK TO THIS LATER
+        image: require("@/assets/images/pumpkin-juice.png"),
+      },
+      {
+        name: "Tongue Tying Lemon Squash",
+        description:
+          "Sweet and tart lemon flavored beverage served with squashed lemon - $6.49",
+        image: require("@/assets/images/tongue-tying-lemon-squash.png"),
+      },
+      {
+        name: "Fishy Green Ale",
+        description:
+          "Smooth and creamy with notes of mint and cinnamon and popping blueberry fish eggs - $6.49",
+        image: require("@/assets/images/fishy-green-ale.png"),
+      },
+      {
+        name: "Iced Tea",
+        description:
+          "Fountain Beverages (Iced Tea) - $4.49", // COME BACK TO THIS LATER
+        image: require("@/assets/images/iced-tea.png"),
+      },
+      {
+        name: "Lemonade",
+        description:
+          "Fountain Beverages (Iced Tea) - $4.49", // COME BACK TO THIS LATER
+        image: require("@/assets/images/lemonade.png"),
+      },
+      {
+        name: "Cider",
+        description:
+          "Fountain Beverages (Iced Tea) - $4.49", // COME BACK TO THIS LATER
+        image: require("@/assets/images/cider.png"),
+      },
+      {
+        name: "Gillywater",
+        description:
+          "Gillywater - $6.00", // COME BACK TO THIS LATER
+        image: require("@/assets/images/gillywater.png"),
+      },
+      {
+        name: "Otter's Fizzy Orange Juice",
+        description:
+          "Effervescent fresh orange beverage with notes of vanilla and cinnamon - $6.49",
+        image: require("@/assets/images/otters-fizzy-orange-juice.png"),
+      },
+      {
+        name: "Peachtree Fizzing Tea",
+        description:
+          "Fizzy but smooth with flavors of fresh peach nectar and ginger - $6.49",
+        image: require("@/assets/images/peachtree-fizzing-tea.png"),
+      },
+      {
+        name: "Dragon's Scale",
+        description:
+          "Unique lager with a light crisp, malty finish - $13.00",
+        image: require("@/assets/images/dragon-scale.png"),
+      },
+      {
+        name: "Daisyroot Ale",
+        description:
+          "Refreshing traditional English Mild with a light malty flavor profile and a clean finish - $13.00",
+        image: require("@/assets/images/daisyroot-ale.png"),
+      },
+      {
+        name: "Wizard's Brew",
+        description:
+          "Full bodied, sweet stout with a smooth, light sweetness and clean, dry finish - $13.00",
+        image: require("@/assets/images/wizards-brew.png"),
+      },
+      {
+        name: "Dark Forest Ale",
+        description:
+          "Traditional brown ale with roasty caramel/toffee notes and warming finish - $13.00",
+        image: require("@/assets/images/dark-forest-ale.png"),
+      },
+      {
+        name: "Fire Whisky",
+        description:
+          "Fire Whisky, Fire and Strongbow Cocktail - $13.00",
+        image: require("@/assets/images/fire-whisky.png"),
+      },
+
+      {
+        name: "2% Milk",
+        description:
+          "2% Milk - $2.99",
+        image: require("@/assets/images/milk.png"),
+      },
+      {
+        name: "Orange Juice",
+        description:
+          "Orange Juice - $3.49",
+        image: require("@/assets/images/orange-juice.png"),
+      },
+      {
+        name: "Apple Juice",
+        description:
+          "Apple Juice - $3.49",
+        image: require("@/assets/images/apple-juice.png"),
+      },
+      {
+        name: "Coffee",
+        description:
+          "Hot Beverages (Coffee) - $3.79",
+        image: require("@/assets/images/coffee.png"),
+      },
+      {
+        name: "Decaf Coffee",
+        description:
+          "Hot Beverages (Decaf Coffee) - $3.79",
+        image: require("@/assets/images/decaf-coffee.png"),
+      },
+      {
+        name: "Hot Beverages (Hot Tea)",
+        description:
+          "Hot Tea (Hot Beverages) - $3.79",
+        image: require("@/assets/images/hot-tea.png"),
+      },
+
+      {
+        name: "Chocolate Milk",
+        description:
+          "Chocolate Milk - $2.99",
+        image: require("@/assets/images/chocolate-milk.png"),
+      },
+      {
+        name: "Draught Beer (Heineken)",
+        description:
+          "Draught Beer (Heineken) - $11.25",
+        image: require("@/assets/images/heineken.png"),
+      },
+      {
+        name: "Draught Beer (Stella Artois)",
+        description:
+          "Draught Beer (Stella Artois) - $11.25",
+        image: require("@/assets/images/stella-artois.png"),
+      },
+      {
+        name: "Draught Beer (Strongbow)",
+        description:
+          "Draught Beer (Strongbow) - $11.25",
+        image: require("@/assets/images/strongbow.png"),
+      },
+      {
+        name: "Draught Beer (Yuengling)",
+        description:
+          "Draught Beer (Yuengling) - $11.25",
+        image: require("@/assets/images/yuengling-lager.png"),
+      },
+
+      {
+        name: "Wine by the Glass (Chardonnay)",
+        description:
+          "Wine by the Glass (Chardonnay) - $11.00",
+        image: require("@/assets/images/chardonnay.png"),
+      },
+      {
+        name: "Wine by the Glass (Cabernet Sauvignon)",
+        description:
+          "Wine by the Glass (Cabernet Sauvignon) - $11.00",
+        image: require("@/assets/images/cabernet-sauvignon.png"),
+      },
+      {
+        name: "Courtesy Cup of Water",
+        description:
+          "Courtesy Cup of Water - $0",
+        image: require("@/assets/images/water-cup.png"),
+      },
+    ]);
+
+    const activeItem = ref<number | null>(null);
+
+    const openModal = (index: number): void => {
+      activeItem.value = index;
+    };
+
+    const closeModal = (): void => {
+      activeItem.value = null;
+    };
+
     return {
-      butterbeer: require("@/assets/images/butterbeer.png"),
-      frozenButterbeer: require("@/assets/images/frozen-butterbeer.png"),
-      hotButterbeer: require("@/assets/images/hot-butterbeer.png"),
-      pumpkinJuice: require("@/assets/images/pumpkin-juice.png"),
-      tongueTyingLemonSquash: require("@/assets/images/tongue-tying-lemon-squash.png"),
-      fishyGreenAle: require("@/assets/images/fishy-green-ale.jpg"),
-      icedTea: require("@/assets/images/iced-tea.png"),
-      lemonade: require("@/assets/images/lemonade.png"),
-      cider: require("@/assets/images/cider.png"),
-      gillywater: require("@/assets/images/gillywater.png"),
-      otterSquashFizzyOrangeJuice: require("@/assets/images/otters-fizzy-orange-juice.png"),
-      peachtreeFizzingTea: require("@/assets/images/peachtree-fizzing-tea.png"),
-      dragonScale: require("@/assets/images/dragon-scale.png"),
-      daisyrootAle: require("@/assets/images/daisyroot-ale.png"),
-      wizardsBrew: require("@/assets/images/wizards-brew.png"),
-      darkForestAle: require("@/assets/images/dark-forest-ale.png"),
-      fireWhisky: require("@/assets/images/fire-whisky.png"),
-      milk: require("@/assets/images/milk.png"),
-      orangeJuice: require("@/assets/images/orange-juice.png"),
-      appleJuice: require("@/assets/images/apple-juice.png"),
-      coffeeCaffeine: require("@/assets/images/coffee.png"),
-      decafCoffee: require("@/assets/images/decaf-coffee.png"),
-      hotTea: require("@/assets/images/hot-tea.png"),
-      chocolateMilk: require("@/assets/images/chocolate-milk.png"),
-      heineken: require("@/assets/images/heineken.png"),
-      stellaArtois: require("@/assets/images/stella-artois.png"),
-      strongbow: require("@/assets/images/strongbow.png"),
-      yuengling: require("@/assets/images/yuengling-lager.png"),
-      chardonnay: require("@/assets/images/chardonnay.png"),
-      cabernetSauvignon: require("@/assets/images/cabernet-sauvignon.png"),
-      cupOfWater: require("@/assets/images/water-cup.png"),
+      menuItems,
+      activeItem,
+      openModal,
+      closeModal,
     };
   },
-};
+});
 </script>
 
 <style lang="scss" scoped>
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .restaurant {
-  background: linear-gradient(to right, #3555a3 0, #1c3385 100%);
+  background: linear-gradient(to right, #3555a3, #1c3385);
   font-weight: 900;
-  padding: 0.5rem;
-}
-
-.butterbeer-note {
-  padding-right: 20rem;
-  padding-left: 20rem;
-}
-
-.menu-row1 {
-  display: flex;
-  justify-content: space-between;
-  margin-top: -2rem;
-}
-
-.menu-row2 {
-  display: flex;
-  justify-content: space-between;
-  margin-top: -5rem;
-}
-
-.menu-row3 {
-  display: flex;
-  justify-content: space-between;
-  margin-top: -5rem;
-}
-
-.menu-items1 {
-  width: 100%;
-  margin: 8rem;
-  margin-top: 3.5rem;
-  background-color: #0a0a0a;
-  opacity: 0.9;
-  z-index: -1;
-}
-
-.menu-items2, .menu-items3 {
-  width: 40%;
-  margin: 8rem;
-  margin-top: 1rem;
-  background-color: #0a0a0a;
-  opacity: 0.9;
-  z-index: -1;
-}
-
-.menu-items4 {
-  width: 50%;
-  margin-top: 10rem;
-  margin: 10rem;
-  background-color: #0a0a0a;
-  opacity: 0.9;
-  z-index: -1;
-}
-
-.menu-items5 {
-  width: 50%;
-  margin: 10rem;
   padding: 1rem;
-  background-color: #0a0a0a;
-  opacity: 0.9;
-  z-index: -1;
+  font-size: 1.5rem;
 }
 
-.butterbeer-image {
-  width: 300px;
+.menu-slider {
+  padding: 1rem;
+
+  .slider-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .menu-card {
+    flex: 0 0 auto;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .card-image {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 0.5rem 0;
+      color: #333;
+    }
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .close-button {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+
+  .modal-body {
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #333;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
 }
 </style>
