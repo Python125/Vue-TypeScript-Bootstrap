@@ -43,6 +43,21 @@
       </div>
     </div>
   </div>
+  <p class="note p-1 text-center text-white">Menu items and pricing are subject to change without notice</p>
+
+  <div class="sensitivity-info text-white">
+    <div class="info-row">
+      <p><span class="fw-bold">GS</span> - Gluten Sensitive</p>
+      <p><span class="fw-bold">DS</span> - Dairy Sensitive</p>
+      <p><span class="fw-bold">ES</span> - Egg Sensitive</p>
+      <p><span class="fw-bold">PS</span> - Peanut Sensitive</p>
+      <p><span class="fw-bold">TNS</span> - Tree Nut Sensitive</p>
+      <p><span class="fw-bold">FS</span> - Fish Sensitive</p>
+      <p><span class="fw-bold">SFS</span> - Shellfish Sensitive</p>
+      <p><span class="fw-bold">SES</span> - Sesame Sensitive</p>
+      <p><span class="fw-bold">SS</span> - Soy Protein Sensitive</p>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -245,6 +260,43 @@ export default defineComponent({
       color: #333;
       font-size: 1rem;
       line-height: 1.5;
+    }
+  }
+}
+
+.note {
+  font-size: 14px;
+}
+
+.sensitivity-info {
+  padding: 1rem;
+
+  .info-row {
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    min-width: unset;
+    padding: 0.5rem;
+
+    p {
+      flex: 1 1 auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .info-row {
+      flex-direction: row;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .info-row {
+      padding: 0.6rem;
+    }
+
+    p {
+      font-size: 1rem;
     }
   }
 }

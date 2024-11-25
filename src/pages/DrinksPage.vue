@@ -38,6 +38,20 @@
       </div>
     </div>
   </div>
+
+  <div class="sensitivity-info text-white">
+    <div class="info-row">
+      <p><span class="fw-bold">GS</span> - Gluten Sensitive</p>
+      <p><span class="fw-bold">DS</span> - Dairy Sensitive</p>
+      <p><span class="fw-bold">ES</span> - Egg Sensitive</p>
+      <p><span class="fw-bold">PS</span> - Peanut Sensitive</p>
+      <p><span class="fw-bold">TNS</span> - Tree Nut Sensitive</p>
+      <p><span class="fw-bold">FS</span> - Fish Sensitive</p>
+      <p><span class="fw-bold">SFS</span> - Shellfish Sensitive</p>
+      <p><span class="fw-bold">SES</span> - Sesame Sensitive</p>
+      <p><span class="fw-bold">SS</span> - Soy Protein Sensitive</p>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -73,8 +87,7 @@ export default defineComponent({
       },
       {
         name: "Pumpkin Juice™",
-        description:
-          "Pumpkin Juice™ - $5.49", // COME BACK TO THIS LATER
+        description: "Pumpkin Juice™ - $5.49", // COME BACK TO THIS LATER
         image: require("@/assets/images/pumpkin-juice.png"),
       },
       {
@@ -91,26 +104,22 @@ export default defineComponent({
       },
       {
         name: "Iced Tea",
-        description:
-          "Fountain Beverages (Iced Tea) - $4.49", // COME BACK TO THIS LATER
+        description: "Fountain Beverages (Iced Tea) - $4.49", // COME BACK TO THIS LATER
         image: require("@/assets/images/iced-tea.png"),
       },
       {
         name: "Lemonade",
-        description:
-          "Fountain Beverages (Iced Tea) - $4.49", // COME BACK TO THIS LATER
+        description: "Fountain Beverages (Iced Tea) - $4.49", // COME BACK TO THIS LATER
         image: require("@/assets/images/lemonade.png"),
       },
       {
         name: "Cider",
-        description:
-          "Fountain Beverages (Iced Tea) - $4.49", // COME BACK TO THIS LATER
+        description: "Fountain Beverages (Iced Tea) - $4.49", // COME BACK TO THIS LATER
         image: require("@/assets/images/cider.png"),
       },
       {
         name: "Gillywater",
-        description:
-          "Gillywater - $6.00", // COME BACK TO THIS LATER
+        description: "Gillywater - $6.00", // COME BACK TO THIS LATER
         image: require("@/assets/images/gillywater.png"),
       },
       {
@@ -127,8 +136,7 @@ export default defineComponent({
       },
       {
         name: "Dragon's Scale",
-        description:
-          "Unique lager with a light crisp, malty finish - $13.00",
+        description: "Unique lager with a light crisp, malty finish - $13.00",
         image: require("@/assets/images/dragon-scale.png"),
       },
       {
@@ -151,95 +159,80 @@ export default defineComponent({
       },
       {
         name: "Fire Whisky",
-        description:
-          "Fire Whisky, Fire and Strongbow Cocktail - $13.00",
+        description: "Fire Whisky, Fire and Strongbow Cocktail - $13.00",
         image: require("@/assets/images/fire-whisky.png"),
       },
 
       {
         name: "2% Milk",
-        description:
-          "2% Milk - $2.99",
+        description: "2% Milk - $2.99",
         image: require("@/assets/images/milk.png"),
       },
       {
         name: "Orange Juice",
-        description:
-          "Orange Juice - $3.49",
+        description: "Orange Juice - $3.49",
         image: require("@/assets/images/orange-juice.png"),
       },
       {
         name: "Apple Juice",
-        description:
-          "Apple Juice - $3.49",
+        description: "Apple Juice - $3.49",
         image: require("@/assets/images/apple-juice.png"),
       },
       {
         name: "Coffee",
-        description:
-          "Hot Beverages (Coffee) - $3.79",
+        description: "Hot Beverages (Coffee) - $3.79",
         image: require("@/assets/images/coffee.png"),
       },
       {
         name: "Decaf Coffee",
-        description:
-          "Hot Beverages (Decaf Coffee) - $3.79",
+        description: "Hot Beverages (Decaf Coffee) - $3.79",
         image: require("@/assets/images/decaf-coffee.png"),
       },
       {
         name: "Hot Beverages (Hot Tea)",
-        description:
-          "Hot Tea (Hot Beverages) - $3.79",
+        description: "Hot Tea (Hot Beverages) - $3.79",
         image: require("@/assets/images/hot-tea.png"),
       },
 
       {
         name: "Chocolate Milk",
-        description:
-          "Chocolate Milk - $2.99",
+        description: "Chocolate Milk - $2.99",
         image: require("@/assets/images/chocolate-milk.png"),
       },
       {
         name: "Draught Beer (Heineken)",
-        description:
-          "Draught Beer (Heineken) - $11.25",
+        description: "Draught Beer (Heineken) - $11.25",
         image: require("@/assets/images/heineken.png"),
       },
       {
         name: "Draught Beer (Stella Artois)",
-        description:
-          "Draught Beer (Stella Artois) - $11.25",
+        description: "Draught Beer (Stella Artois) - $11.25",
         image: require("@/assets/images/stella-artois.png"),
       },
       {
         name: "Draught Beer (Strongbow)",
-        description:
-          "Draught Beer (Strongbow) - $11.25",
+        description: "Draught Beer (Strongbow) - $11.25",
         image: require("@/assets/images/strongbow.png"),
       },
       {
         name: "Draught Beer (Yuengling)",
-        description:
-          "Draught Beer (Yuengling) - $11.25",
+        description: "Draught Beer (Yuengling) - $11.25",
         image: require("@/assets/images/yuengling-lager.png"),
       },
 
       {
         name: "Wine by the Glass (Chardonnay)",
-        description:
-          "Wine by the Glass (Chardonnay) - $11.00",
+        description: "Wine by the Glass (Chardonnay) - $11.00",
         image: require("@/assets/images/chardonnay.png"),
       },
       {
         name: "Wine by the Glass (Cabernet Sauvignon)",
-        description:
-          "Wine by the Glass (Cabernet Sauvignon) - $11.00",
+        description: "Wine by the Glass (Cabernet Sauvignon) - $11.00",
         image: require("@/assets/images/cabernet-sauvignon.png"),
       },
       {
         name: "Courtesy Cup of Water",
-        description:
-          "Courtesy Cup of Water - $0",
+        description: "Courtesy Cup of Water - $0",
         image: require("@/assets/images/water-cup.png"),
       },
     ]);
@@ -369,6 +362,43 @@ export default defineComponent({
       color: #333;
       font-size: 1rem;
       line-height: 1.5;
+    }
+  }
+}
+
+.note {
+  font-size: 14px;
+}
+
+.sensitivity-info {
+  padding: 1rem;
+
+  .info-row {
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    min-width: unset;
+    padding: 0.5rem;
+
+    p {
+      flex: 1 1 auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .info-row {
+      flex-direction: row;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .info-row {
+      padding: 0.6rem;
+    }
+
+    p {
+      font-size: 1rem;
     }
   }
 }

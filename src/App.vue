@@ -7,21 +7,39 @@
     />
     <router-view />
 
+    <div v-if="showBackButton" class="back-button-container">
+      <router-link to="/">
+        <button class="back-btn">Back</button>
+      </router-link>
+    </div>
+
     <!-- <footer></footer> -->
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import Navbar from "./components/NavbarMenu.vue";
+import { computed } from "vue";
+import { useRoute } from "vue-router";
 
 export default {
   name: "App",
   components: {
     Navbar,
   },
-  data() {
-    return {};
-  },
+  setup() {
+    const route = useRoute(); // useRoute is a SPECIFIC function in Vue.js that returns the current route location
+    
+    // This is where I define where the Back button should appear
+    const showBackButton = computed(() => {
+      const routesWithBackButton = ["/breakfast", "/lunch", "/drinks"];
+      return routesWithBackButton.includes(route.path);
+    })
+
+    return {
+      showBackButton,
+    };
+  },  
 };
 </script>
 
@@ -53,5 +71,25 @@ export default {
   // @media only screen and (max-width: 430px) {
   //   background-image: url("@/assets/leaky-cauldron-mobile.png");
   // }
+}
+
+.back-button-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.back-btn {
+  background-color: #007bff; // Check with Dad for this to get a second pair of eyes
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background-color: #0056b3;
+  }
 }
 </style>
