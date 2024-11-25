@@ -219,14 +219,34 @@ export default defineComponent({
 }
 
 .menu-slider {
+  position: relative;
   padding: 1rem;
 
   .slider-container {
     display: flex;
     gap: 1rem;
+    padding: 10px;
     overflow-x: auto;
-    padding: 1rem;
+    background-color: #333;
 
+    img {
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    &::-webkit-scrollbar {
+      height: 8px;
+      background: #444;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 10px;
+    }
+  }
+
+  @media (max-width: 1023px) {
     &::-webkit-scrollbar {
       display: none;
     }
@@ -309,43 +329,6 @@ export default defineComponent({
       color: #333;
       font-size: 1rem;
       line-height: 1.5;
-    }
-  }
-}
-
-.note {
-  font-size: 14px;
-}
-
-.sensitivity-info {
-  padding: 1rem;
-
-  .info-row {
-    font-size: 13px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    min-width: unset;
-    padding: 0.5rem;
-
-    p {
-      flex: 1 1 auto;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .info-row {
-      flex-direction: row;
-    }
-  }
-
-  @media (max-width: 430px) {
-    .info-row {
-      padding: 0.6rem;
-    }
-
-    p {
-      font-size: 1rem;
     }
   }
 }
