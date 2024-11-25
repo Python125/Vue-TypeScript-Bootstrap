@@ -7,7 +7,7 @@
     />
     <router-view />
 
-    <div v-if="showBackButton" class="back-button-container">
+    <div v-if="showBackButton">
       <router-link to="/">
         <button class="back-btn">Back</button>
       </router-link>
@@ -73,12 +73,6 @@ export default {
   // }
 }
 
-.back-button-container {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-}
-
 .back-btn {
   background-color: #007bff; // Check with Dad for this to get a second pair of eyes
   color: white;
@@ -87,9 +81,6 @@ export default {
   padding: 10px 20px;
   font-size: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-
-  &:hover {
-    background-color: #0056b3;
-  }
+  margin: 1.5rem;
 }
 </style>
