@@ -258,16 +258,43 @@ export default defineComponent({
 }
 
 .menu-slider {
+  position: relative;
   padding: 1rem;
 
   .slider-container {
     display: flex;
     gap: 1rem;
     overflow-x: auto;
-    padding: 1rem;
+    white-space: nowrap;
+    padding: 10px;
+    background-color: #333;
 
     &::-webkit-scrollbar {
-      display: none;
+      height: 8px; // Visible scrollbar for desktop
+      background: #444;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 10px;
+    }
+
+    img {
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .slider-container {
+      overflow-x: auto; // Horizontal scroll enabled for desktops/laptops
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .slider-container {
+      overflow-x: hidden; // Disable scrolling on smaller devices
     }
   }
 
