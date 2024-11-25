@@ -219,13 +219,13 @@ export default defineComponent({
 }
 
 .menu-slider {
-  position: relative;
   padding: 1rem;
 
   .slider-container {
     display: flex;
     gap: 1rem;
     overflow-x: auto;
+    white-space: nowrap;
     padding: 10px;
     background-color: #333;
 
