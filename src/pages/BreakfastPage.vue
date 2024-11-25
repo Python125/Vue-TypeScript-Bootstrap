@@ -155,6 +155,7 @@ export default defineComponent({
 }
 
 .menu-slider {
+  position: relative;
   padding: 1rem;
 
   .slider-container {
