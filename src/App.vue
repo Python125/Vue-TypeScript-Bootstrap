@@ -115,7 +115,7 @@ export default {
   font-size: 1rem;
 
   .swipe-icon {
-    animation: swipeBounce 1.5s infinite;
+    animation: swipeBounce 1.5s;
   }
 }
 
