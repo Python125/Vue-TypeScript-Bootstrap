@@ -113,6 +113,20 @@ export default {
 
 .menu-swipe {
   font-size: 1rem;
+
+  .swipe-icon {
+    animation: swipeBounce 1.5s infinite;
+  }
+}
+
+@keyframes swipeBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 .sensitivity-info {
