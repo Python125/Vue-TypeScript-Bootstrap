@@ -226,7 +226,6 @@ export default defineComponent({
     display: flex;
     gap: 1rem;
     overflow-x: auto;
-    white-space: nowrap;
     padding: 10px;
     background-color: #333;
 
