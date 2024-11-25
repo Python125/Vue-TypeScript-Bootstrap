@@ -163,6 +163,7 @@ export default defineComponent({
     gap: 1rem;
     overflow-x: auto;
     padding: 1rem;
+    white-space: nowrap;
 
     &::-webkit-scrollbar {
       display: none;
