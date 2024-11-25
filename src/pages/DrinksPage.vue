@@ -2,10 +2,10 @@
   <h1 class="restaurant text-white text-center">Leaky Cauldron™</h1>
   <div class="p-3">
     <h2 class="fw-bold text-white text-center">Beverage Menu</h2>
-    <!-- <p class="p-3 h4 text-white text-center">
+    <p class="p-3 h4 text-white text-center">
       Allergen Note: Please inform a manager or Chef's Assistant prior to
       ordering if someone in your party requires special dietary accommodations
-    </p> -->
+    </p>
   </div>
 
   <div class="menu-slider">
