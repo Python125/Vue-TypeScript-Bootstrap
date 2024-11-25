@@ -7,6 +7,23 @@
     />
     <router-view />
 
+    <div v-if="showAllergyInfo" class="sensitivity-info text-white">
+      <div class="info-row">
+        <p class="note text-center text-white">
+          Menu items and pricing are subject to change without notice
+        </p>
+        <p><span class="fw-bold">GS</span> - Gluten Sensitive</p>
+        <p><span class="fw-bold">DS</span> - Dairy Sensitive</p>
+        <p><span class="fw-bold">ES</span> - Egg Sensitive</p>
+        <p><span class="fw-bold">PS</span> - Peanut Sensitive</p>
+        <p><span class="fw-bold">TNS</span> - Tree Nut Sensitive</p>
+        <p><span class="fw-bold">FS</span> - Fish Sensitive</p>
+        <p><span class="fw-bold">SFS</span> - Shellfish Sensitive</p>
+        <p><span class="fw-bold">SES</span> - Sesame Sensitive</p>
+        <p><span class="fw-bold">SS</span> - Soy Protein Sensitive</p>
+      </div>
+    </div>
+
     <div v-if="showBackButton">
       <router-link to="/">
         <button class="back-btn">Back</button>
@@ -29,17 +46,24 @@ export default {
   },
   setup() {
     const route = useRoute(); // useRoute is a SPECIFIC function in Vue.js that returns the current route location
-    
+
+    // This is where I define where the allergy info should be
+    const showAllergyInfo = computed(() => {
+      const routesWithAllergyInfo = ["/breakfast", "/lunch", "/drinks"];
+      return routesWithAllergyInfo.includes(route.path);
+    });
+
     // This is where I define where the Back button should appear
     const showBackButton = computed(() => {
       const routesWithBackButton = ["/breakfast", "/lunch", "/drinks"];
       return routesWithBackButton.includes(route.path);
-    })
+    });
 
     return {
       showBackButton,
+      showAllergyInfo,
     };
-  },  
+  },
 };
 </script>
 
@@ -82,5 +106,43 @@ export default {
   font-size: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   margin: 1.5rem;
+}
+
+.note {
+  font-size: 14px;
+}
+
+.sensitivity-info {
+  padding: 1rem;
+  // text-align: center;
+
+  .info-row {
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    min-width: unset;
+    padding: 0.5rem;
+
+    p {
+      flex: 1 1 auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .info-row {
+      flex-direction: row;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .info-row {
+      padding: 0.6rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
 }
 </style>
