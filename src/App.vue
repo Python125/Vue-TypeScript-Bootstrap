@@ -9,7 +9,8 @@
 
     <div v-if="swipeMenu">
       <p class="menu-swipe text-center text-white">
-        Swipe the image slider above to explore the full menu.
+        <span class="swipe-icon">👆</span> Swipe the image slider above to
+        explore the full menu.
       </p>
     </div>
 
@@ -110,24 +111,26 @@ export default {
   // }
 }
 
-.back-btn {
-  background-color: #007bff; // Check with Dad for this to get a second pair of eyes
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  margin: 1.5rem;
+.menu-swipe {
+  font-size: 1rem;
+
+  .swipe-icon {
+    animation: swipeBounce 1.5s infinite;
+  }
 }
 
-.note {
-  font-size: 14px;
+@keyframes swipeBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 .sensitivity-info {
   padding: 1rem;
-  // text-align: center;
 
   .info-row {
     font-size: 13px;
@@ -157,5 +160,20 @@ export default {
       font-size: 1rem;
     }
   }
+}
+
+.note {
+  font-size: 14px;
+}
+
+.back-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin: 1.5rem;
 }
 </style>
