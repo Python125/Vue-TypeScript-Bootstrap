@@ -7,6 +7,12 @@
     />
     <router-view />
 
+    <div v-if="swipeMenu">
+      <p class="menu-swipe text-center text-white">
+        Swipe the image slider above to explore the full menu.
+      </p>
+    </div>
+
     <div v-if="showAllergyInfo" class="sensitivity-info text-white">
       <div class="info-row">
         <p class="note text-center text-white">
@@ -47,6 +53,12 @@ export default {
   setup() {
     const route = useRoute(); // useRoute is a SPECIFIC function in Vue.js that returns the current route location
 
+    // This is where I define where the slider instructions should be
+    const swipeMenu = computed(() => {
+      const routesWithswipeMenu = ["/breakfast", "/lunch", "/drinks"];
+      return routesWithswipeMenu.includes(route.path);
+    });
+
     // This is where I define where the allergy info should be
     const showAllergyInfo = computed(() => {
       const routesWithAllergyInfo = ["/breakfast", "/lunch", "/drinks"];
@@ -62,6 +74,7 @@ export default {
     return {
       showBackButton,
       showAllergyInfo,
+      swipeMenu,
     };
   },
 };
