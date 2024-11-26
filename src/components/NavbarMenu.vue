@@ -10,12 +10,7 @@
 
       <!-- Mobile Sidebar -->
       <div :class="['sidenav', { open: isSidebarOpen }]">
-        <svg id="gds-svg-159" fill="none" stroke="#0368d9" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false" class="closebtn">
-          <g>
-            <polyline points="3 3 12 11.974424 3 21"></polyline>
-            <polyline transform="translate(16.500000, 12.000000) rotate(180.000000) translate(-16.500000, -12.000000) " points="12 3 21 11.974424 12 21"></polyline>
-          </g>
-        </svg>
+        <a href="javascript:void(0)" class="closebtn" @click="closeNav">&times;</a>
         
         <a class="sidelink" href="#">
           <svg id="gds-svg-205" fill="#0368d9" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false">
@@ -189,7 +184,11 @@ export default defineComponent({
     position: absolute;
     top: 15px;
     right: 25px;
+    font-size: 36px;
+    font-weight: 100;
+    color: #0368d9;
     cursor: pointer;
+    z-index: 1200;
   }
 
   a {
