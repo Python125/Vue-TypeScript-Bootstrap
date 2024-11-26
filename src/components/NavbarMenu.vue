@@ -92,7 +92,7 @@ export default defineComponent({
   left: 0;
   width: 97%; /* Full-screen width for mobile */
   height: 100%;
-  background-color: #111;
+  background-color: white;
   z-index: 1100;
   overflow-y: auto; /* Enable scrolling for long content */
   transition: transform 0.3s ease-in-out;
@@ -107,7 +107,7 @@ export default defineComponent({
     top: 15px;
     right: 25px;
     font-size: 36px;
-    color: white;
+    color: #0368d9;
     cursor: pointer;
   }
 
