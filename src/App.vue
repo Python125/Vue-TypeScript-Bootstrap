@@ -78,6 +78,10 @@ export default {
 </script>
 
 <style lang="scss">
+* {
+  font-family: Arial, sans-serif;
+}
+
 .background-image {
   position: relative;
   height: 100%;
