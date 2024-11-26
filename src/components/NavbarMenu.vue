@@ -198,7 +198,6 @@ export default defineComponent({
     font-size: 16px;
     font-weight: 600;
     color: black;
-    font-weight: 500;
     transition: color 0.2s;
   }
 
