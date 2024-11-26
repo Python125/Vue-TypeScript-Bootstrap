@@ -79,7 +79,7 @@ export default {
 
 <style lang="scss">
 * {
-  font-family: Arial, sans-serif;
+  font-family: "Avenir Next", "Avenir Next W05", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
 .background-image {
