@@ -1,10 +1,6 @@
 <template>
   <div class="background-image">
-    <Navbar
-      :pages="pages"
-      :activePage="activePage"
-      @page-change="setActivePage"
-    />
+    <Navbar />
     <router-view />
 
     <div v-if="swipeMenu">
