@@ -10,23 +10,54 @@
 
       <!-- Mobile Sidebar -->
       <div :class="['sidenav', { open: isSidebarOpen }]">
-        <a href="javascript:void(0)" class="closebtn" @click="closeNav">&times;</a>
-        
-        <a class="sidelink" href="#">
+        <a href="javascript:void(0)" class="closebtn" @click="closeNav"
+          >&times;</a
+        >
+
+        <!-- <a class="sidelink" href="#">
           <svg id="gds-svg-205" fill="#0368d9" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M6 21.0008V19C6 15.6865 8.6865 13 12 13C15.3135 13 18 15.6865 18 19V21.0008C20.4289 19.1764 22 16.2718 22 13C22 7.477 17.523 3 12 3C6.477 3 2 7.477 2 13C2 16.2718 3.57108 19.1764 6 21.0008ZM15 9C15 10.657 13.657 12 12 12C10.343 12 9 10.657 9 9C9 7.343 10.343 6 12 6C13.657 6 15 7.343 15 9Z"></path>
           </svg> Account
           <svg id="gds-svg-670" fill="rgb(34, 34, 34)" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false" class="arrow-right">
             <path d="M9.70711 6.29289C9.31658 5.90237 8.68342 5.90237 8.29289 6.29289C7.90237 6.68342 7.90237 7.31658 8.29289 7.70711L12.585 12L8.29289 16.2929C7.93241 16.6534 7.90468 17.2206 8.2097 17.6129L8.29289 17.7071C8.68342 18.0976 9.31658 18.0976 9.70711 17.7071L14.7071 12.7071C15.0976 12.3166 15.0976 11.6834 14.7071 11.2929L9.70711 6.29289Z"></path>
           </svg>
-        </a>
-        <a href="#">
+        </a> -->
+
+        <!-- ORIGINAL WITHOUT SUBMENU -->
+        <!-- <a href="#">
           Things to Do
-          <svg id="gds-svg-670" fill="rgb(34, 34, 34)" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false" class="arrow-right">
+          <svg id="gds-svg-670" fill="rgb(34, 34, 34)" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false">
             <path d="M9.70711 6.29289C9.31658 5.90237 8.68342 5.90237 8.29289 6.29289C7.90237 6.68342 7.90237 7.31658 8.29289 7.70711L12.585 12L8.29289 16.2929C7.93241 16.6534 7.90468 17.2206 8.2097 17.6129L8.29289 17.7071C8.68342 18.0976 9.31658 18.0976 9.70711 17.7071L14.7071 12.7071C15.0976 12.3166 15.0976 11.6834 14.7071 11.2929L9.70711 6.29289Z"></path>
           </svg>
-        </a>
-        <a href="#">
+        </a> -->
+
+        <div v-if="!activeSubmenu">
+          <a href="#" @click.prevent="openSubmenu('thingsToDo')">
+            Things to Do
+            <svg id="gds-svg-670" fill="rgb(34, 34, 34)" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false">
+              <path d="M9.70711 6.29289C9.31658 5.90237 8.68342 5.90237 8.29289 6.29289C7.90237 6.68342 7.90237 7.31658 8.29289 7.70711L12.585 12L8.29289 16.2929C7.93241 16.6534 7.90468 17.2206 8.2097 17.6129L8.29289 17.7071C8.68342 18.0976 9.31658 18.0976 9.70711 17.7071L14.7071 12.7071C15.0976 12.3166 15.0976 11.6834 14.7071 11.2929L9.70711 6.29289Z"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Submenu -->
+        <div v-if="activeSubmenu === 'thingsToDo'" class="submenu">
+          <a href="#" class="back-btn" @click.prevent="closeSubmenu">
+            <svg fill="#0368d9" width="24" height="24" viewBox="0 0 24 24" focusable="false">
+              <path d="M15.7071 6.29289C15.3166 5.90237 14.6834 5.90237 14.2929 6.29289L9.29289 11.2929C8.90237 11.6834 8.90237 12.3166 9.29289 12.7071L14.2929 17.7071C14.6834 18.0976 15.3166 18.0976 15.7071 17.7071C16.0976 17.3166 16.0976 16.6834 15.7071 16.2929L11.4142 12L15.7071 7.70711C16.0976 7.31658 16.0976 6.68342 15.7071 6.29289Z"></path>
+            </svg>
+            Back
+          </a>
+
+          <a href="#" class="submenu-item">Rides</a>
+          <a href="#" class="submenu-item">Dining</a>
+          <a href="#" class="submenu-item">Shows</a>
+          <a href="#" class="submenu-item">Entertainment</a>
+          <a href="#" class="submenu-item">Events</a>
+          <a href="#" class="submenu-item">Shopping</a>
+        </div>
+
+        <!-- <a href="#">
           Hotels & Packages
           <svg id="gds-svg-670" fill="rgb(34, 34, 34)" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false" class="arrow-right">
             <path d="M9.70711 6.29289C9.31658 5.90237 8.68342 5.90237 8.29289 6.29289C7.90237 6.68342 7.90237 7.31658 8.29289 7.70711L12.585 12L8.29289 16.2929C7.93241 16.6534 7.90468 17.2206 8.2097 17.6129L8.29289 17.7071C8.68342 18.0976 9.31658 18.0976 9.70711 17.7071L14.7071 12.7071C15.0976 12.3166 15.0976 11.6834 14.7071 11.2929L9.70711 6.29289Z"></path>
@@ -92,30 +123,34 @@
           <svg id="gds-svg-670" fill="rgb(34, 34, 34)" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false" class="arrow-right">
             <path d="M9.70711 6.29289C9.31658 5.90237 8.68342 5.90237 8.29289 6.29289C7.90237 6.68342 7.90237 7.31658 8.29289 7.70711L12.585 12L8.29289 16.2929C7.93241 16.6534 7.90468 17.2206 8.2097 17.6129L8.29289 17.7071C8.68342 18.0976 9.31658 18.0976 9.70711 17.7071L14.7071 12.7071C15.0976 12.3166 15.0976 11.6834 14.7071 11.2929L9.70711 6.29289Z"></path>
           </svg>
-        </a>
+        </a> -->
       </div>
 
       <div class="logo-container">
         <a class="ms-5" href="/">
-          <img src="@/assets/universal-orlando-logo.png" alt="Universal Logo" width="100" />
+          <img
+            src="@/assets/universal-orlando-logo.png"
+            alt="Universal Logo"
+            width="100"
+          />
         </a>
       </div>
 
-      <div class="d-flex align-items-center gap-3">
-        <!-- Search Icon -->
-        <a href="/" class="nav-icon-link">
+      <!-- <div class="d-flex align-items-center gap-3"> -->
+      <!-- Search Icon -->
+      <!-- <a href="/" class="nav-icon-link">
           <svg class="nav-icon" fill="#ffffff" width="24" height="24" viewBox="0 0 24 24">
             <path d="M11.1 3a8.1 8.1 0 1 0 0 16.2 8.1 8.1 0 0 0 0-16.2zm0 14.4a6.3 6.3 0 1 1 0-12.6 6.3 6.3 0 0 1 0 12.6zM15.9 16.6l3.3 3.3a.9.9 0 0 0 1.2-1.3l-3.3-3.3z"></path>
           </svg>
-        </a>
+        </a> -->
 
-        <!-- Cart Icon -->
-        <a href="/" class="nav-icon-link">
+      <!-- Cart Icon -->
+      <!-- <a href="/" class="nav-icon-link">
           <svg class="nav-icon" fill="#ffffff" width="24" height="24" viewBox="0 0 24 24">
             <path d="M6.15 2.818A1 1 0 0 0 5.168 2H3a1 1 0 0 0-1 1l.003.075A1 1 0 0 0 3 4h1.335l2.253 12.182a1 1 0 0 0 .984.818h12.832a1 1 0 0 0 1-1l-.003-.075a1 1 0 0 0-.997-.925H8.403l-.185-1h12.186L22 6H6.739L6.15 2.818ZM9.51 22c1.106 0 2.003-.873 2.003-1.95 0-1.076-.897-1.948-2.003-1.948s-2.003.872-2.003 1.949c0 1.076.897 1.949 2.003 1.949Zm11.017-1.95c0 1.077-.897 1.95-2.003 1.95s-2.003-.873-2.003-1.95c0-1.076.897-1.948 2.003-1.948s2.003.872 2.003 1.949Z"></path>
           </svg>
         </a>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -127,19 +162,33 @@ export default defineComponent({
   name: "NavbarMenu",
   setup() {
     const isSidebarOpen = ref(false);
+    const activeSubmenu = ref<string | null>(null);
 
     const openNav = () => {
       isSidebarOpen.value = true;
+      activeSubmenu.value = null;
     };
 
     const closeNav = () => {
       isSidebarOpen.value = false;
+      activeSubmenu.value = null;
+    };
+
+    const openSubmenu = (submenu: string) => {
+      activeSubmenu.value = submenu;
+    };
+
+    const closeSubmenu = () => {
+      activeSubmenu.value = null;
     };
 
     return {
       isSidebarOpen,
       openNav,
       closeNav,
+      activeSubmenu,
+      openSubmenu,
+      closeSubmenu,
     };
   },
 });
@@ -203,6 +252,37 @@ export default defineComponent({
 
   .sidelink {
     margin-top: 5rem;
+  }
+
+
+  .submenu {
+    .back-btn {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      background-color: white;
+      box-shadow: none;
+      color: #0368d9;
+      margin-bottom: 20px;
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+
+    .submenu-item {
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      color: black;
+      transition: color 0.2s;
+
+      &:hover {
+        color: #0368d9;
+      }
+    }
   }
 }
 
