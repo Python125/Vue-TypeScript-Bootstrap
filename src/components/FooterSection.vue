@@ -206,91 +206,85 @@
         Download the app for exclusive deals and easy ordering.
       </p>
 
-      <div class="app-images d-flex gap-3 px-4">
+      <div class="app-images">
         <img class="app-image" :src="apple" alt="Apple App Store" />
         <img class="app-image" :src="google" alt="Google Play Store" />
       </div>
 
-      <p class="contact-info mt-3 text-white px-4">
+      <p class="contact-info text-white">
         Need to get in touch? <a href="#" class="contact-link">Contact us</a> or
         <a href="mailto:support@example.com" class="contact-link">email</a> our
         Guest Services Coordinator.
       </p>
     </div>
 
-    <div class="language text-white px-4">
-      <svg
-        id="gds-svg-394"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        version="1.1"
-        focusable="false"
+    <div class="language-container text-white px-4">
+      <div
+        class="language-selection d-flex align-items-center justify-content-between"
       >
-        <g>
-          <path
-            fill="#ffffff"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M11.6919 20.4717C11.5919 20.7112 11.55 20.9274 11.55 21.0816C11.55 21.6457 11.9765 22 12.6371 22C13.1978 22 13.5157 21.7453 13.7156 21.1435L14.5105 19.0287H19.0206L19.8154 21.1587C20.0087 21.7534 20.3342 22 20.9196 22C21.5479 22 22 21.6215 22 21.0816C22 20.9049 21.9572 20.7265 21.8563 20.4717L18.3428 11.6735C18.0411 10.9247 17.5566 10.6 16.7617 10.6C15.9745 10.6 15.49 10.9399 15.1968 11.6807L11.6919 20.4717ZM16.7779 12.6996L18.4932 17.4538H15.0216L16.7198 12.6996H16.7779Z"
-          ></path>
-          <path
-            fill="#ffffff"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M10.2368 6.14171C10.2245 6.22053 10.2121 6.29194 10.1998 6.35779C12.2374 6.78438 13.4 8.09107 13.4 9.97274C13.4 12.5314 12.0789 14.2498 9.33237 14.35H9.33142C8.79995 14.35 8.42602 14.0032 8.4042 13.5256C8.4042 13.0118 8.72592 12.6538 9.20519 12.6538C11.3339 12.6538 11.7002 10.7174 11.5712 9.92173C11.3975 8.85338 10.9458 8.1226 9.80405 7.88612C9.35989 9.34304 8.5978 10.7434 7.72942 11.6958C7.76928 11.7895 7.81199 11.8887 7.86324 11.9954C7.90784 12.0835 7.96289 12.23 7.96289 12.4025C7.96289 12.7187 7.78826 12.9914 7.48077 13.1509C7.30804 13.2251 7.17138 13.2575 7.04895 13.2575C6.76708 13.2575 6.51653 13.1138 6.37418 12.8717C5.63961 13.3642 4.93067 13.5951 4.16384 13.5951C2.86933 13.5951 2 12.6455 2 11.2331C2 9.49977 3.21384 7.86572 5.18027 6.9374C5.17742 6.82612 5.17742 6.71298 5.17742 6.59613C5.17742 6.19642 5.18596 5.79765 5.19451 5.40443C4.56528 5.41371 3.87343 5.42298 3.20719 5.42298C2.66434 5.40443 2.34545 5.08449 2.34545 4.56886C2.34545 4.0894 2.68332 3.75369 3.16733 3.75369H3.85824H3.86394C4.32043 3.75369 4.79116 3.75369 5.26853 3.7472C5.28561 3.3716 5.30934 3.02383 5.33971 2.72893C5.38526 2.29213 5.73072 2 6.1986 2H6.26409C6.77752 2.0408 7.07268 2.32459 7.07268 2.76324V2.82816C7.04421 3.11843 7.02143 3.40499 7.0034 3.68506C8.71928 3.61087 10.1495 3.48475 11.3681 3.30298L11.5133 3.29927C11.9555 3.29927 12.282 3.5849 12.3456 4.02634L12.3494 4.16452C12.3494 4.60595 12.0533 4.91756 11.575 4.97969C10.2539 5.15311 8.72023 5.27367 6.89046 5.34508C6.88192 5.691 6.87433 6.03227 6.87338 6.37726C7.38776 6.2734 7.93442 6.21404 8.5048 6.1992C8.52662 6.09348 8.5456 5.99703 8.55984 5.9145C8.63292 5.53334 8.93472 5.29871 9.3485 5.29871C9.39026 5.29871 9.47567 5.29871 9.57248 5.3321C9.93976 5.35621 10.2368 5.66132 10.2368 6.06288V6.14171ZM8.12233 7.73774C7.87747 8.46666 7.53392 9.17426 7.12488 9.78912C7.00909 9.20857 6.93601 8.57888 6.90849 7.93342C7.15145 7.86479 7.56239 7.77298 8.12233 7.73774ZM4.2967 11.8859C3.91613 11.8859 3.72253 11.6448 3.72253 11.1691C3.72253 10.2778 4.31379 9.3551 5.28656 8.69573C5.37198 9.63053 5.53806 10.5245 5.76109 11.2599C5.07398 11.8015 4.5539 11.8859 4.2967 11.8859Z"
-          ></path>
-        </g>
-      </svg>
-      <p class="">English (US)</p>
-      <svg
-        id="gds-svg-598"
-        width="16"
-        height="11"
-        viewBox="0 0 16 11"
-        version="1.1"
-        focusable="false"
-        class="arrow-down mt-1"
-      >
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g transform="translate(-1256.000000, -4877.000000)">
-            <g transform="translate(1254.000000, 4872.000000)">
-              <circle cx="10" cy="10" r="10"></circle>
-              <g
-                transform="translate(10.000000, 10.454545) rotate(90.000000) translate(-10.000000, -10.454545) translate(5.000000, 2.454545)"
-                fill="#0368D9"
-              >
-                <path
-                  fill="#ffffff"
-                  d="M0.191136012,15.0150334 C-0.0642242506,15.2408104 -0.0636359733,15.6063486 0.192449966,15.8314858 C0.448535906,16.056623 0.863144972,16.0561044 1.11850523,15.8303274 L10,7.97774631 L1.11718941,0.16851254 C0.861102437,-0.0566237496 0.446493373,-0.0561036216 0.191134145,0.169674278 C-0.0642250836,0.395452178 -0.0636351321,0.760990353 0.192451838,0.986126642 L8.14788573,7.98006649 L0.191136012,15.0150334 Z"
-                ></path>
+        <div class="language-text d-flex align-items-center gap-2">
+          <svg
+            id="gds-svg-394"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            version="1.1"
+            focusable="false"
+          >
+            <g>
+              <path
+                fill="#ffffff"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M11.6919 20.4717C11.5919 20.7112 11.55 20.9274 11.55 21.0816C11.55 21.6457 11.9765 22 12.6371 22C13.1978 22 13.5157 21.7453 13.7156 21.1435L14.5105 19.0287H19.0206L19.8154 21.1587C20.0087 21.7534 20.3342 22 20.9196 22C21.5479 22 22 21.6215 22 21.0816C22 20.9049 21.9572 20.7265 21.8563 20.4717L18.3428 11.6735C18.0411 10.9247 17.5566 10.6 16.7617 10.6C15.9745 10.6 15.49 10.9399 15.1968 11.6807L11.6919 20.4717ZM16.7779 12.6996L18.4932 17.4538H15.0216L16.7198 12.6996H16.7779Z"
+              ></path>
+              <path
+                fill="#ffffff"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.2368 6.14171C10.2245 6.22053 10.2121 6.29194 10.1998 6.35779C12.2374 6.78438 13.4 8.09107 13.4 9.97274C13.4 12.5314 12.0789 14.2498 9.33237 14.35H9.33142C8.79995 14.35 8.42602 14.0032 8.4042 13.5256C8.4042 13.0118 8.72592 12.6538 9.20519 12.6538C11.3339 12.6538 11.7002 10.7174 11.5712 9.92173C11.3975 8.85338 10.9458 8.1226 9.80405 7.88612C9.35989 9.34304 8.5978 10.7434 7.72942 11.6958C7.76928 11.7895 7.81199 11.8887 7.86324 11.9954C7.90784 12.0835 7.96289 12.23 7.96289 12.4025C7.96289 12.7187 7.78826 12.9914 7.48077 13.1509C7.30804 13.2251 7.17138 13.2575 7.04895 13.2575C6.76708 13.2575 6.51653 13.1138 6.37418 12.8717C5.63961 13.3642 4.93067 13.5951 4.16384 13.5951C2.86933 13.5951 2 12.6455 2 11.2331C2 9.49977 3.21384 7.86572 5.18027 6.9374C5.17742 6.82612 5.17742 6.71298 5.17742 6.59613C5.17742 6.19642 5.18596 5.79765 5.19451 5.40443C4.56528 5.41371 3.87343 5.42298 3.20719 5.42298C2.66434 5.40443 2.34545 5.08449 2.34545 4.56886C2.34545 4.0894 2.68332 3.75369 3.16733 3.75369H3.85824H3.86394C4.32043 3.75369 4.79116 3.75369 5.26853 3.7472C5.28561 3.3716 5.30934 3.02383 5.33971 2.72893C5.38526 2.29213 5.73072 2 6.1986 2H6.26409C6.77752 2.0408 7.07268 2.32459 7.07268 2.76324V2.82816C7.04421 3.11843 7.02143 3.40499 7.0034 3.68506C8.71928 3.61087 10.1495 3.48475 11.3681 3.30298L11.5133 3.29927C11.9555 3.29927 12.282 3.5849 12.3456 4.02634L12.3494 4.16452C12.3494 4.60595 12.0533 4.91756 11.575 4.97969C10.2539 5.15311 8.72023 5.27367 6.89046 5.34508C6.88192 5.691 6.87433 6.03227 6.87338 6.37726C7.38776 6.2734 7.93442 6.21404 8.5048 6.1992C8.52662 6.09348 8.5456 5.99703 8.55984 5.9145C8.63292 5.53334 8.93472 5.29871 9.3485 5.29871C9.39026 5.29871 9.47567 5.29871 9.57248 5.3321C9.93976 5.35621 10.2368 5.66132 10.2368 6.06288V6.14171ZM8.12233 7.73774C7.87747 8.46666 7.53392 9.17426 7.12488 9.78912C7.00909 9.20857 6.93601 8.57888 6.90849 7.93342C7.15145 7.86479 7.56239 7.77298 8.12233 7.73774ZM4.2967 11.8859C3.91613 11.8859 3.72253 11.6448 3.72253 11.1691C3.72253 10.2778 4.31379 9.3551 5.28656 8.69573C5.37198 9.63053 5.53806 10.5245 5.76109 11.2599C5.07398 11.8015 4.5539 11.8859 4.2967 11.8859Z"
+              ></path>
+            </g>
+          </svg>
+          <p class="language-label">English (US)</p>
+        </div>
+        <svg
+          id="gds-svg-598"
+          width="16"
+          height="11"
+          viewBox="0 0 16 11"
+          version="1.1"
+          focusable="false"
+          class="arrow-down mt-1"
+        >
+          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g transform="translate(-1256.000000, -4877.000000)">
+              <g transform="translate(1254.000000, 4872.000000)">
+                <circle cx="10" cy="10" r="10"></circle>
+                <g
+                  transform="translate(10.000000, 10.454545) rotate(90.000000) translate(-10.000000, -10.454545) translate(5.000000, 2.454545)"
+                  fill="#0368D9"
+                >
+                  <path
+                    fill="#ffffff"
+                    d="M0.191136012,15.0150334 C-0.0642242506,15.2408104 -0.0636359733,15.6063486 0.192449966,15.8314858 C0.448535906,16.056623 0.863144972,16.0561044 1.11850523,15.8303274 L10,7.97774631 L1.11718941,0.16851254 C0.861102437,-0.0566237496 0.446493373,-0.0561036216 0.191134145,0.169674278 C-0.0642250836,0.395452178 -0.0636351321,0.760990353 0.192451838,0.986126642 L8.14788573,7.98006649 L0.191136012,15.0150334 Z"
+                  ></path>
+                </g>
               </g>
             </g>
           </g>
-        </g>
-      </svg>
+        </svg>
+      </div>
+      <hr class="language-separator" />
     </div>
 
-    <hr class="border-separator" />
+    <div class="footer-links">
+      <a href="#" class="link-item">Copyright & Trademark</a>
+      <a href="#" class="link-item">Privacy Center</a>
+      <a href="#" class="link-item">Ad Choices</a>
+      <a href="#" class="link-item">Privacy Policy</a>
 
-    <div class="footer-info px-4">
-      <a class="info-btn text-white">
-        <p>Copyright & Trademark</p>
-      </a>
-
-      <a class="info-btn text-white">
-        <p>Privacy Center</p>
-      </a>
-
-      <a class="info-btn text-white">
-        <p>Ad Choices</p>
-      </a>
-
-      <a class="info-btn text-white">
-        <p>Privacy Policy</p>
-      </a>
-
-      <a class="info-btn d-flex text-white">
+      <a href="#" class="link-item d-flex">
         <svg
           id="gds-svg-408"
           fill="rgb(34, 34, 34)"
@@ -325,29 +319,19 @@
             ></path>
           </g>
         </svg>
-        <p>Your Privacy Choices</p>
+        <span class="ms-2">Your Privacy Choices</span>
       </a>
 
-      <a class="info-btn text-white">
-        <p>CA Notice</p>
-      </a>
-
-      <a class="info-btn text-white">
-        <p>Terms of Service</p>
-      </a>
-
-      <a class="info-btn text-white">
-        <p>Severe Weather Policy</p>
-      </a>
-
-      <a class="info-btn text-white">
-        <p>UPRV Terms of Service</p>
-      </a>
+      <a href="#" class="link-item">CA Notice</a>
+      <a href="#" class="link-item">Terms of Service</a>
+      <a href="#" class="link-item">Severe Weather Policy</a>
+      <a href="#" class="link-item">UPRV Terms of Service</a>
     </div>
 
-    <div class="copyright text-white px-4">
-      <p>
-        © 2024 Universal Studios. All rights reserved. <br />
+    <div class="copyright text-white px-2">
+      <p class="copyright-text">
+        © 2024 Universal Studios. All rights reserved.
+        <br />
         Some imagery shown throughout our website does not represent current
         operational and safety guidelines.
       </p>
@@ -380,19 +364,24 @@ export default defineComponent({
 .footer-container {
   display: flex;
   flex-direction: column;
-  height: auto;
+  align-items: center;
   background-color: #162b75;
+  padding: 1rem;
 
   .universal-logo {
-    margin-bottom: 8px;
+    width: 200px; // Increase width for a more prominent logo
   }
 
   .socialMedia {
-    gap: 1rem;
+    display: flex;
+    justify-content: center;
 
     .socialMedia-links {
       background: none;
       border: none;
+      padding: 0;
+      width: 48px; // Ensures touch-friendly tap area
+      height: 48px;
     }
   }
 }
@@ -402,43 +391,55 @@ export default defineComponent({
   width: 100%;
   flex-direction: column;
   background-color: #162b75;
-  padding: 1rem;
 
   .accordion-btn {
     display: flex;
+    justify-content: space-between; // Ensures space between text and arrow
     align-items: center;
     background: none;
     border: none;
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 1rem;
     font-weight: bold;
     color: white;
-    text-align: left;
+    gap: 0.5rem; // Small gap between title and arrow for balance
+    text-align: left; // Align text to the left
+
+    // Increase spacing between buttons
+    margin-bottom: 8px;
 
     &[aria-expanded="true"] .chevron {
       transform: rotate(180deg); // Rotate chevron when expanded
+      transition: transform 0.3s ease-in-out; // Smooth transition
     }
   }
 
   .accordion-title {
     font-size: 1rem;
   }
+
+  .chevron {
+    margin-left: auto;
+  }
 }
 
 .app-links {
+  margin-top: 1.5rem;
+
   .app-links-title {
-    font-size: 14px;
+    font-size: 0.9rem;
   }
 
-  .app-image {
-    width: 120px; // Ensure uniform size for images
-    height: auto; // Maintain aspect ratio
-    cursor: pointer; // Pointer cursor for clickable images
+  .app-images {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
   }
 
   .contact-info {
-    margin-top: 1rem;
     font-size: 13px;
+    font-weight: 400;
+    padding: 0.5rem;
 
     .contact-link {
       font-weight: bold;
@@ -448,30 +449,60 @@ export default defineComponent({
   }
 }
 
-.language {
-  font-weight: 600;
-  display: flex;
+.language-container {
   width: 100%;
-  gap: 0.5rem;
+  background-color: #162b75;
+
+  .language-selection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+
+    .language-text {
+      .language-label {
+        font-size: 0.9rem; // Mobile-first size
+        font-weight: 600;
+      }
+    }
+  }
+
+  .language-separator {
+    border: none;
+    border-top: 1px solid #ffffff;
+    opacity: 1;
+  }
 }
 
-.border-separator {
-  border: none;
-  border-top: 1px solid white;
-  margin: 1rem 0;
-  padding: 0;
-}
-
-.footer-info {
+.footer-links {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0.5rem;
+  font-weight: 600;
+  gap: 2.5rem;
+
+  .link-item {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.copyright {
+  padding: 1rem 0;
+  text-align: left;
   width: 100%;
 
-  .info-btn {
-    border: none;
-    background: none;
-    text-decoration: none;
-    text-align: left;
+  .copyright-text {
+    font-size: 0.775rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    margin: 0;
   }
 }
 </style>
