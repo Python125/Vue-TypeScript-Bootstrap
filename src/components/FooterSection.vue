@@ -90,7 +90,126 @@
       </button>
     </div>
 
-    <div class="collapsible-menu"></div>
+    <div class="accordion-menu">
+      <button class="accordion-btn" aria-expanded="false">
+        <div class="accordion-title">Destinations</div>
+        <span class="chevron">
+          <svg
+            id="gds-svg-264"
+            fill="#ffffff"
+            stroke="currentColor"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            version="1.1"
+            focusable="false"
+          >
+            <path
+              d="M3.397 9.527c.512.539 7.613 7.543 7.613 7.543.26.275.617.43.99.43.372 0 .729-.155.99-.43 0 0 7.1-7.004 7.615-7.543a1.565 1.565 0 0 1 0-2.08 1.331 1.331 0 0 1-.99-.447 1.33 1.33 0 0 0-.991.447l-6.623 6.57-6.622-6.57A1.331 1.331 0 0 1 4.389 7c-.377 0-.736.162-.992.447a1.56 1.56 0 0 1 0 2.08Z"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </span>
+      </button>
+
+      <button class="accordion-btn">
+        <div class="accordion-title">Tickets and Passes</div>
+        <span>
+          <svg
+            id="gds-svg-264"
+            fill="currentColor"
+            stroke="currentColor"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            version="1.1"
+            focusable="false"
+            class="chevron"
+          >
+            <path
+              d="M3.397 9.527c.512.539 7.613 7.543 7.613 7.543.26.275.617.43.99.43.372 0 .729-.155.99-.43 0 0 7.1-7.004 7.615-7.543a1.565 1.565 0 0 1 0-2.08 1.331 1.331 0 0 1-.99-.447 1.33 1.33 0 0 0-.991.447l-6.623 6.57-6.622-6.57A1.331 1.331 0 0 1 4.389 7c-.377 0-.736.162-.992.447a1.56 1.56 0 0 1 0 2.08Z"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </span>
+      </button>
+
+      <button class="accordion-btn">
+        <div class="accordion-title">Events and Experiences</div>
+        <span>
+          <svg
+            id="gds-svg-264"
+            fill="currentColor"
+            stroke="currentColor"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            version="1.1"
+            focusable="false"
+            class="chevron"
+          >
+            <path
+              d="M3.397 9.527c.512.539 7.613 7.543 7.613 7.543.26.275.617.43.99.43.372 0 .729-.155.99-.43 0 0 7.1-7.004 7.615-7.543a1.565 1.565 0 0 1 0-2.08 1.331 1.331 0 0 1-.99-.447 1.33 1.33 0 0 0-.991.447l-6.623 6.57-6.622-6.57A1.331 1.331 0 0 1 4.389 7c-.377 0-.736.162-.992.447a1.56 1.56 0 0 1 0 2.08Z"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </span>
+      </button>
+
+      <button class="accordion-btn">
+        <div class="accordion-title">Beyond the Parks</div>
+        <span>
+          <svg
+            id="gds-svg-264"
+            fill="currentColor"
+            stroke="currentColor"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            version="1.1"
+            focusable="false"
+            class="chevron"
+          >
+            <path
+              d="M3.397 9.527c.512.539 7.613 7.543 7.613 7.543.26.275.617.43.99.43.372 0 .729-.155.99-.43 0 0 7.1-7.004 7.615-7.543a1.565 1.565 0 0 1 0-2.08 1.331 1.331 0 0 1-.99-.447 1.33 1.33 0 0 0-.991.447l-6.623 6.57-6.622-6.57A1.331 1.331 0 0 1 4.389 7c-.377 0-.736.162-.992.447a1.56 1.56 0 0 1 0 2.08Z"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </span>
+      </button>
+
+      <button class="accordion-btn">
+        <div class="accordion-title">Help</div>
+        <span>
+          <svg
+            id="gds-svg-264"
+            fill="currentColor"
+            stroke="currentColor"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            version="1.1"
+            focusable="false"
+            class="chevron"
+          >
+            <path
+              d="M3.397 9.527c.512.539 7.613 7.543 7.613 7.543.26.275.617.43.99.43.372 0 .729-.155.99-.43 0 0 7.1-7.004 7.615-7.543a1.565 1.565 0 0 1 0-2.08 1.331 1.331 0 0 1-.99-.447 1.33 1.33 0 0 0-.991.447l-6.623 6.57-6.622-6.57A1.331 1.331 0 0 1 4.389 7c-.377 0-.736.162-.992.447a1.56 1.56 0 0 1 0 2.08Z"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </span>
+      </button>
+    </div>
+
+    <div class="app-links">
+      <p class="app-links-title fw-bold text-white text-center">
+        Download the app for exclusive deals and easy ordering.
+      </p>
+
+      <img src="" alt="Apple">
+      <img src="" alt="Google">
+
+    </div>
   </div>
 </template>
 
@@ -99,7 +218,14 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   setup() {
+    const toggleAccordion = (event: Event) => {
+      const button = event.currentTarget as HTMLElement;
+      const isExpanded = button.getAttribute("aria-expanded") === "true";
+      button.setAttribute("aria-expanded", String(!isExpanded));
+    };
+
     return {
+      toggleAccordion,
       universalLogo: require("@/assets/universal-orlando-logo.png"),
     };
   },
@@ -110,7 +236,7 @@ export default defineComponent({
 .footer-container {
   display: flex;
   flex-direction: column;
-  height: 200px;
+  height: 600px;
   background-color: #162b75;
 
   .universal-logo {
@@ -127,5 +253,37 @@ export default defineComponent({
   }
 }
 
+.accordion-menu {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #162b75; // Matches the dark blue background
+  padding: 1rem;
 
+  .accordion-btn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+
+    &[aria-expanded="true"] .chevron {
+      transform: rotate(180deg); // Rotate chevron when expanded
+    }
+  }
+
+  .accordion-title {
+    font-size: 1rem;
+  }
+}
+
+.app-links {
+  .app-links-title {
+    font-size: 14px;
+  }
+}
 </style>
