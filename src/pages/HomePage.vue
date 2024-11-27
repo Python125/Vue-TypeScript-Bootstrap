@@ -8,7 +8,7 @@
     </div>
     <aside class="side-section">
       <div class="d-flex justify-content-center align-items-center">
-        <img class="universal-logo" :src="universalLogo" alt="Universal logo" />
+        <img class="universal-logo" :src="harryPotterLogo" alt="Universal logo" />
       </div>
 
       <div class="text-white">
@@ -161,7 +161,7 @@ export default /* class HomePage extends Vue */ {
   data() {
     return {
       leakyCauldronLogo: require("@/assets/leaky-logo.png"),
-      universalLogo: require("@/assets/harry-potter-diagon-alley-logo.png"),
+      harryPotterLogo: require("@/assets/harry-potter-diagon-alley-logo.png"),
       breakfast: require("@/assets/images/english-breakfast.png"),
       lunch: require("@/assets/images/fish-and-chips.png"),
       drinks: require("@/assets/images/butterbeer.png"),

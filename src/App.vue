@@ -33,12 +33,13 @@
       </router-link>
     </div>
 
-    <!-- <footer></footer> -->
+    <FooterSection />
   </div>
 </template>
 
 <script lang="ts">
 import Navbar from "./components/NavbarMenu.vue";
+import FooterSection from "./components/FooterSection.vue";
 import { computed } from "vue";
 import { useRoute } from "vue-router";
 
@@ -46,6 +47,7 @@ export default {
   name: "App",
   components: {
     Navbar,
+    FooterSection,
   },
   setup() {
     const route = useRoute(); // useRoute is a SPECIFIC function in Vue.js that returns the current route location
@@ -79,7 +81,8 @@ export default {
 
 <style lang="scss">
 * {
-  font-family: "Avenir Next", "Avenir Next W05", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "Avenir Next", "Avenir Next W05", "Helvetica Neue", Helvetica,
+    Arial, sans-serif !important;
 }
 
 .background-image {
