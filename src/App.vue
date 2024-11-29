@@ -5,16 +5,13 @@
 
     <div v-if="swipeMenu">
       <p class="menu-swipe text-center text-white">
-        <span class="swipe-icon">👆</span> Swipe the image slider above to
-        explore the full menu.
+        <span class="swipe-icon">👆</span> Swipe the image slider above to explore the full menu.
       </p>
     </div>
 
     <div v-if="showAllergyInfo" class="sensitivity-info text-white">
       <div class="info-row">
-        <p class="note text-center text-white">
-          Menu items and pricing are subject to change without notice
-        </p>
+        <p class="note text-center text-white">Menu items and pricing are subject to change without notice</p>
         <p><span class="fw-bold">GS</span> - Gluten Sensitive</p>
         <p><span class="fw-bold">DS</span> - Dairy Sensitive</p>
         <p><span class="fw-bold">ES</span> - Egg Sensitive</p>
