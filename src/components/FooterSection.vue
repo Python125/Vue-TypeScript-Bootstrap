@@ -1,5 +1,8 @@
 <template>
   <div class="footer-container">
+
+    <div></div>
+
     <div class="logo-container">
       <a href="/">
         <img class="universal-logo mt-1" :src="universalLogo" alt="Universal Logo" />
@@ -164,10 +167,11 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .footer-container {
+  background-color: #162b75;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: #162b75;
   padding: 1rem;
 
   .universal-logo {
@@ -185,6 +189,12 @@ export default defineComponent({
       width: 48px;
       height: 48px;
     }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
+  .socialMedia {
+    flex-direction: row; /* Change to row for tablets */
   }
 }
 
