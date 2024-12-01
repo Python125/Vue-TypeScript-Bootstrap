@@ -105,10 +105,6 @@ export default {
   background-size: cover;
   background-position: center;
   z-index: -1;
-
-  // @media only screen and (max-width: 430px) {
-  //   background-image: url("@/assets/leaky-cauldron-mobile.png");
-  // }
 }
 
 .menu-swipe {

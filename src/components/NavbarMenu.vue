@@ -97,7 +97,7 @@
 
       <div class="logo-container">
         <a class="ms-5" href="/">
-          <img src="@/assets/universal-orlando-logo.png" alt="Universal Logo" width="100" />
+          <img src="@/assets/universal-orlando-logo.png" alt="Universal Logo" height="40px" />
         </a>
       </div>
 
@@ -168,7 +168,7 @@ export default defineComponent({
   position: fixed;
   top: 0;
   left: 0;
-  width: 97%; /* Full-screen width for mobile */
+  width: 97%; /* For mobile */
   height: 100%;
   background-color: white;
   z-index: 1100;
@@ -203,6 +203,13 @@ export default defineComponent({
 
   .sidelink {
     margin-top: 5rem;
+  }
+}
+
+/* Small and medium-sized tablets in portrait mode */
+@media (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
+  .sidenav {
+    width: 50%;
   }
 }
 
