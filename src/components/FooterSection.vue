@@ -1,12 +1,12 @@
 <template>
-  <div class="footer-container d-flex justify-content-center align-items-center">
+  <div class="footer-container">
     <div class="logo-container">
       <a href="/">
-        <img class="universal-logo mt-5" :src="universalLogo" alt="Universal Logo" />
+        <img class="universal-logo mt-1" :src="universalLogo" alt="Universal Logo" />
       </a>
     </div>
 
-    <div class="socialMedia d-flex">
+    <div class="socialMedia">
       <button class="socialMedia-links" aria-label="Facebook">
         <svg id="gds-svg-531" fill="#ffffff" stroke="none" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false" class="facebook">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9994 2.13373C17.5225 2.13373 22 6.60811 22 12.1276C22 17.1158 18.3429 21.2502 13.562 22L13.5618 15.0227L15.8782 15.023L15.8788 15.0157L15.8922 15.0164L16.3356 12.1276H13.562V10.2529C13.562 9.50228 13.9114 8.7697 15.0107 8.69793L15.1769 8.69291H16.4394L16.4388 8.69173L16.4528 8.69218V6.23276C16.4528 6.23276 16.3935 6.22265 16.289 6.20703C16.2057 6.19497 16.0921 6.17867 15.9553 6.16108C15.9005 6.15388 15.8412 6.14657 15.7787 6.13923C15.3502 6.0886 14.7674 6.03585 14.1982 6.03585C11.9113 6.03585 10.4165 7.42065 10.4165 9.92766L10.4158 12.1267L7.89756 12.1276L7.89678 12.1307L7.87439 12.1315V15.023H10.4165L10.4167 21.9968C5.6456 21.2386 1.99878 17.1088 1.99878 12.1276C1.99878 6.60811 6.47619 2.13373 11.9994 2.13373Z"></path>
@@ -171,7 +171,7 @@ export default defineComponent({
   padding: 1rem;
 
   .universal-logo {
-    width: 200px; // Increase width for a more prominent logo
+    width: 200px;
   }
 
   .socialMedia {
@@ -182,7 +182,7 @@ export default defineComponent({
       background: none;
       border: none;
       padding: 0;
-      width: 48px; // Ensures touch-friendly tap area
+      width: 48px;
       height: 48px;
     }
   }
