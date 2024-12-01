@@ -82,7 +82,7 @@
     </div>
 
     <div class="app-links">
-      <p class="app-links-title fw-bold text-white text-center">Download the app for exclusive deals and easy ordering.</p>
+      <p class="app-links-title fw-bold text-white">Download the app for exclusive deals and easy ordering.</p>
       <div class="app-images">
         <img class="app-image" :src="apple" alt="Apple App Store" />
         <img class="app-image" :src="google" alt="Google Play Store" />
@@ -177,10 +177,10 @@ export default defineComponent({
     width: 200px;
 
     @media (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
-      width: 175px;
+      width: 150px;
     }
   }
-
+ 
   .socialMedia {
     display: flex;
     justify-content: center;
@@ -192,6 +192,10 @@ export default defineComponent({
       width: 48px;
       height: 48px;
     }
+  }
+
+  @media (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
+    align-items: flex-start;
   }
 }
 
@@ -209,6 +213,10 @@ export default defineComponent({
   width: 100%;
   flex-direction: column;
   background-color: #162b75;
+
+  @media (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
+    margin-top: 1.5rem;
+  }
 
   .accordion-btn {
     display: flex;
@@ -246,6 +254,12 @@ export default defineComponent({
 
   .app-links-title {
     font-size: 0.9rem;
+    text-align: center;
+
+    @media (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
+      text-align: left;
+      padding-left: 0.5rem;
+    }
   }
 
   .app-images {
