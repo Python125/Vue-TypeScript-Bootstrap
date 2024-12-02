@@ -82,15 +82,15 @@
     </div>
 
     <div class="app-links">
-      <p class="app-links-title fw-bold text-white">Download the app for exclusive deals and easy ordering.</p>
-      <div class="app-images">
+      <p class="app-links-title fw-bold text-white mt-4 mb-1">Download the app for exclusive deals and easy ordering.</p>
+      <div class="app-images mb-3">
         <img class="app-image" :src="apple" alt="Apple App Store" />
         <img class="app-image" :src="google" alt="Google Play Store" />
       </div>
-      <p class="contact-info text-white">Need to get in touch? <a href="#" class="contact-link">Contact us</a> or <a href="mailto:support@example.com" class="contact-link">email</a> our Guest Services Coordinator.</p>
+      <p class="contact-info text-white mb-1">Need to get in touch? <a href="#" class="contact-link">Contact us</a> or <a href="mailto:support@example.com" class="contact-link">email</a> our Guest Services Coordinator.</p>
     </div>
 
-    <div class="language-container text-white px-3">
+    <div class="language-container text-white px-2">
       <div class="language-selection">
         <div class="language-text d-flex gap-2">
           <svg id="gds-svg-394" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false">
@@ -262,13 +262,17 @@ export default defineComponent({
   .app-images {
     display: flex;
     gap: 1rem;
-    padding: 0.5rem;
+    padding: 0.3rem;
+
+    @media (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
+      padding-left: 0.5rem;
+    }
   }
 
   .contact-info {
     font-size: 13px;
     font-weight: 400;
-    padding: 0.5rem;
+    padding-left: 0.5rem;
 
     .contact-link {
       font-weight: bold;
@@ -335,7 +339,8 @@ export default defineComponent({
 
 
     .link-item {
-      width: 28%;
+      font-size: 0.85rem;
+      width: 25%;
       text-align: left;
     }
 
@@ -354,6 +359,10 @@ export default defineComponent({
     line-height: 1.5;
     color: #ffffff;
     margin: 0;
+  }
+
+  @media (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
+    width: 60%;
   }
 }
 </style>
