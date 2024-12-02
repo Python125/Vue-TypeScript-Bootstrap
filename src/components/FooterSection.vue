@@ -90,7 +90,7 @@
       <p class="contact-info text-white">Need to get in touch? <a href="#" class="contact-link">Contact us</a> or <a href="mailto:support@example.com" class="contact-link">email</a> our Guest Services Coordinator.</p>
     </div>
 
-    <div class="language-container text-white px-4">
+    <div class="language-container text-white px-3">
       <div class="language-selection">
         <div class="language-text d-flex gap-2">
           <svg id="gds-svg-394" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false">
@@ -114,7 +114,7 @@
       <hr class="language-separator" />
     </div>
 
-    <div class="footer-links">
+    <div class="footer-container">
       <a href="#" class="link-item">Copyright & Trademark</a>
       <a href="#" class="link-item">Privacy Center</a>
       <a href="#" class="link-item">Ad Choices</a>
@@ -250,8 +250,6 @@ export default defineComponent({
 }
 
 .app-links {
-  margin-top: 1.5rem;
-
   .app-links-title {
     font-size: 0.9rem;
     text-align: center;
@@ -291,6 +289,8 @@ export default defineComponent({
     justify-content: space-between;
 
     .language-text {
+      display: flex;
+
       .language-label {
         font-size: 0.9rem; // Mobile-first size
         font-weight: 600;
@@ -303,9 +303,16 @@ export default defineComponent({
     border-top: 1px solid #ffffff;
     opacity: 1;
   }
+
+  @media (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
+    .language-selection {
+      justify-content: flex-end;
+      gap: 1rem;
+    }
+  }
 }
 
-.footer-links {
+.footer-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -320,6 +327,21 @@ export default defineComponent({
     color: white;
     display: flex;
     align-items: center;
+  }
+
+  @media (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 3rem;
+
+
+    .link-item {
+      width: 28%;
+      text-align: left;
+    }
+
+    margin-right: 10%;
   }
 }
 
