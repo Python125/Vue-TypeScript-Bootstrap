@@ -98,7 +98,7 @@
           </svg>
           <p class="language-label">English (US)</p>
         </div>
-        <svg id="gds-svg-598" width="16" height="11" viewBox="0 0 16 11" version="1.1" focusable="false" class="arrow-down mt-1">
+        <svg id="gds-svg-598" width="16" height="11" viewBox="0 0 16 11" version="1.1" focusable="false" class="arrow-down mb-3">
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g transform="translate(-1256.000000, -4877.000000)">
               <g transform="translate(1254.000000, 4872.000000)">
