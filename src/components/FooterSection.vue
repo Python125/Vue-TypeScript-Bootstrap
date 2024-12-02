@@ -114,7 +114,7 @@
       <hr class="language-separator" />
     </div>
 
-    <div class="footer-container">
+    <div class="footer-links">
       <a href="#" class="link-item">Copyright & Trademark</a>
       <a href="#" class="link-item">Privacy Center</a>
       <a href="#" class="link-item">Ad Choices</a>
@@ -200,11 +200,11 @@ export default defineComponent({
 }
 
 .logo-social-wrapper {
-
   @media (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 0.5rem;
   }
 }
 
@@ -212,7 +212,6 @@ export default defineComponent({
   display: flex;
   width: 100%;
   flex-direction: column;
-  background-color: #162b75;
 
   @media (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
     margin-top: 1.5rem;
@@ -229,7 +228,7 @@ export default defineComponent({
     font-weight: bold;
     color: white;
     gap: 0.5rem; // Small gap between title and arrow for balance
-    text-align: left; // Align text to the left
+    text-align: left;
 
     // Increase spacing between buttons
     margin-bottom: 8px;
@@ -281,7 +280,6 @@ export default defineComponent({
 
 .language-container {
   width: 100%;
-  background-color: #162b75;
 
   .language-selection {
     display: flex;
@@ -312,7 +310,7 @@ export default defineComponent({
   }
 }
 
-.footer-container {
+.footer-links {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
