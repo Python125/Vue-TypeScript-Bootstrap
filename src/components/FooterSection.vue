@@ -137,7 +137,7 @@
       <a href="#" class="link-item">UPRV Terms of Service</a>
     </div>
 
-    <div class="copyright text-white px-2">
+    <div class="copyright text-white px-2 mt-2">
       <p class="copyright-text">© 2024 Universal Studios. All rights reserved. <br /> Some imagery shown throughout our website does not represent current operational and safety guidelines.</p>
     </div>
   </div>
