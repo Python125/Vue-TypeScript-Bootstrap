@@ -1,17 +1,20 @@
 <template>
   <div class="background-image">
-    <Navbar />
+    <component :is="currentNavbar" />
     <router-view />
 
     <div v-if="swipeMenu">
       <p class="menu-swipe text-center text-white">
-        <span class="swipe-icon">👆</span> Swipe the image slider above to explore the full menu.
+        <span class="swipe-icon">👆</span> Swipe the image slider above to
+        explore the full menu.
       </p>
     </div>
 
     <div v-if="showAllergyInfo" class="sensitivity-info text-white">
       <div class="info-row">
-        <p class="note text-center text-white">Menu items and pricing are subject to change without notice</p>
+        <p class="note text-center text-white">
+          Menu items and pricing are subject to change without notice
+        </p>
         <p><span class="fw-bold">GS</span> - Gluten Sensitive</p>
         <p><span class="fw-bold">DS</span> - Dairy Sensitive</p>
         <p><span class="fw-bold">ES</span> - Egg Sensitive</p>
@@ -30,51 +33,67 @@
       </router-link>
     </div>
 
-    <FooterSection />
+    <!-- <FooterSection /> -->
   </div>
 </template>
 
 <script lang="ts">
-import Navbar from "./components/SmallScreenNavbar.vue";
-// SmallScreenNavbar
-import FooterSection from "./components/FooterSection.vue";
-import { computed } from "vue";
+import { defineComponent, ref, computed, onMounted, onBeforeUnmount } from "vue";
 import { useRoute } from "vue-router";
+import SmallScreenNavbar from "./components/SmallScreenNavbar.vue";
+import LargeScreenNavbar from "./components/LargeScreenNavbar.vue";
+import FooterSection from "./components/FooterSection.vue";
 
-export default {
+export default defineComponent({
   name: "App",
   components: {
-    Navbar,
+    SmallScreenNavbar,
+    LargeScreenNavbar,
     FooterSection,
   },
   setup() {
-    const route = useRoute(); // useRoute is a SPECIFIC function in Vue.js that returns the current route location
+    const route = useRoute();
+    const isLargeScreen = ref(window.innerWidth >= 1024);
 
-    // This is where I define where the slider instructions should be
-    const swipeMenu = computed(() => {
-      const routesWithswipeMenu = ["/breakfast", "/lunch", "/drinks"];
-      return routesWithswipeMenu.includes(route.path);
+    const handleResize = () => {
+      isLargeScreen.value = window.innerWidth >= 1024;
+    };
+
+    onMounted(() => {
+      window.addEventListener('resize', handleResize);
     });
 
-    // This is where I define where the allergy info should be
+    onBeforeUnmount(() => {
+      window.removeEventListener('resize', handleResize);
+    });
+
+    const currentNavbar = computed(() => {
+      return isLargeScreen.value ? 'LargeScreenNavbar' : 'SmallScreenNavbar';
+    });
+
+    const swipeMenu = computed(() => {
+      const routesWithSwipeMenu = ["/breakfast", "/lunch", "/drinks"];
+      return routesWithSwipeMenu.includes(route.path);
+    });
+
     const showAllergyInfo = computed(() => {
       const routesWithAllergyInfo = ["/breakfast", "/lunch", "/drinks"];
       return routesWithAllergyInfo.includes(route.path);
     });
 
-    // This is where I define where the Back button should appear
     const showBackButton = computed(() => {
       const routesWithBackButton = ["/breakfast", "/lunch", "/drinks"];
       return routesWithBackButton.includes(route.path);
     });
 
     return {
-      showBackButton,
-      showAllergyInfo,
+      currentNavbar,
       swipeMenu,
+      showAllergyInfo,
+      showBackButton
     };
   },
-};
+});
 </script>
 
 <style lang="scss">
