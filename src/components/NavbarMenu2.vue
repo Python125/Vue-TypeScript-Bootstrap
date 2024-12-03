@@ -3,9 +3,7 @@
     <div class="d-flex">
       <svg class="location-symbol" id="gds-svg-389" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false"><g transform="translate(2.000000, 2.000000)"><path fill="#ffffff" d="M10.2342823,11.2534599 C8.2334915,11.2534599 6.58857256,9.77461447 6.39086595,7.88453934 C6.37504943,7.75800712 6.37504943,7.62356663 6.37504943,7.4970344 C6.37504943,5.4250692 8.09905101,3.7485172 10.2421906,3.7485172 C12.3774219,3.7485172 14.1093318,5.4250692 14.1093318,7.4970344 C14.1093318,8.27204429 13.8641756,8.99960459 13.4450376,9.60063266 C12.7491103,10.5970739 11.570779,11.2534599 10.2342823,11.2534599 Z M10.2421906,0 C5.97172796,0 2.5,3.36101226 2.5,7.4970344 C2.5,9.83788059 3.67042309,12.605773 5.96381969,15.7216291 C7.62455516,17.9675761 9.26156584,19.5650455 9.32483195,19.6362198 C9.5778964,19.8734678 9.9100435,20 10.2421906,20 C10.5664294,20 10.8985765,19.881376 11.151641,19.6362198 C11.2228153,19.5650455 12.859826,17.9675761 14.5126532,15.7216291 C16.8139581,12.605773 17.9764729,9.83788059 17.9764729,7.4970344 C17.9764729,3.36101226 14.504745,0 10.2421906,0 Z"></path></g></svg>
       <div class="dropdown me-3 mt-1">
-        <button class="caret-btn text-white fw-bold dropdown-toggle ms-1" type="button" @click="toggleLocationDropdown">
-          Select Location
-        </button>
+        <button class="caret-btn text-white fw-bold dropdown-toggle ms-1" type="button" @click="toggleLocationDropdown">Select Location</button>
         <ul :class="['dropdown-menu', { show: isLocationDropdownOpen }]" v-if="isLocationDropdownOpen">
           <li v-for="(location, index) in locations" :key="index">
             <a class="dropdown-item" href="#">{{ location }}</a>
@@ -159,7 +157,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 .navigation-menu {
   padding: 0.5rem;
-  background: linear-gradient(#0368d9, #0070f0);
+  background-color: #0368d9;
 }
 
 .location-symbol {
@@ -228,7 +226,6 @@ hr {
 
 .universal-image {
   width: 110px;
-  margin-left: 36rem;
 
   @media only screen and (max-width: 1920px) {
     margin-left: 16rem;
@@ -251,116 +248,116 @@ hr {
   font-size: 14px;
 }
 
-.btn-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: left;
-  width: 170px;
-  padding: 14px;
-  padding-right: 60px;
-  padding-left: 60px;
-  color: inherit;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  transition: background-color 0.1s ease, color 0.1s ease;
+// .btn-link {
+//   display: inline-flex;
+//   align-items: center;
+//   justify-content: left;
+//   width: 170px;
+//   padding: 14px;
+//   padding-right: 60px;
+//   padding-left: 60px;
+//   color: inherit;
+//   background-color: transparent;
+//   background-repeat: no-repeat;
+//   transition: background-color 0.1s ease, color 0.1s ease;
 
-  &:hover {
-    background-color: #162b75;
-    color: white;
-  }
+//   &:hover {
+//     background-color: #162b75;
+//     color: white;
+//   }
 
-  &.ticket-btn {
-    margin-left: 43rem;
+//   &.ticket-btn {
+//     margin-left: 43rem;
 
-    background-size: 18.48px;
-    background-position: 40px center;
-    background-image: url(/src/assets/images/tickets-blue.png);
-    padding-right: 20px;
-    padding-left: 80px;
+//     background-size: 18.48px;
+//     background-position: 40px center;
+//     background-image: url(/src/assets/images/tickets-blue.png);
+//     padding-right: 20px;
+//     padding-left: 80px;
 
-    &:hover {
-      background-image: url(/src/assets/images/tickets-white.png);
-    }
+//     &:hover {
+//       background-image: url(/src/assets/images/tickets-white.png);
+//     }
 
-    @media only screen and (max-width: 1920px) {
-      margin-left: 20rem;
-    }
-  }
+//     @media only screen and (max-width: 1920px) {
+//       margin-left: 20rem;
+//     }
+//   }
 
-  &.express-btn {
-    background-size: 42.69px;
-    background-position: 25px center;
-    background-image: url(/src/assets/images/express-pass-blue.png);
-    padding-right: 20px;
-    padding-left: 80px;    
+//   &.express-btn {
+//     background-size: 42.69px;
+//     background-position: 25px center;
+//     background-image: url(/src/assets/images/express-pass-blue.png);
+//     padding-right: 20px;
+//     padding-left: 80px;    
 
-    &:hover {
-      background-image: url(/src/assets/images/express-pass-white.png);
-    }
-  }
+//     &:hover {
+//       background-image: url(/src/assets/images/express-pass-white.png);
+//     }
+//   }
 
-  &.deals-btn {
-    background-size: 15.34px;
-    background-position: 40px center;
-    background-image: url(/src/assets/images/deals-blue.png);
-    padding-right: 20px;
-    padding-left: 80px;
+//   &.deals-btn {
+//     background-size: 15.34px;
+//     background-position: 40px center;
+//     background-image: url(/src/assets/images/deals-blue.png);
+//     padding-right: 20px;
+//     padding-left: 80px;
 
-    &:hover {
-      background-image: url(/src/assets/images/deals-white.png);
-    }
-  }
+//     &:hover {
+//       background-image: url(/src/assets/images/deals-white.png);
+//     }
+//   }
 
-  &.hotels-btn {
-    background-size: 21.13px;
-    background-position: 40px center;
-    background-image: url(/src/assets/images/hotels-blue.png);
-    padding-right: 20px;
-    padding-left: 80px;
+//   &.hotels-btn {
+//     background-size: 21.13px;
+//     background-position: 40px center;
+//     background-image: url(/src/assets/images/hotels-blue.png);
+//     padding-right: 20px;
+//     padding-left: 80px;
 
-    &:hover {
-      background-image: url(/src/assets/images/hotels-white.png);
-    }
-  }
+//     &:hover {
+//       background-image: url(/src/assets/images/hotels-white.png);
+//     }
+//   }
 
-  &.annual-btn {
-    background-size: 29.11px;
-    background-position: 35px center;
-    background-image: url(/src/assets/images/annual-icon-blue.png);
-    padding-right: 20px;
-    padding-left: 80px;
+//   &.annual-btn {
+//     background-size: 29.11px;
+//     background-position: 35px center;
+//     background-image: url(/src/assets/images/annual-icon-blue.png);
+//     padding-right: 20px;
+//     padding-left: 80px;
 
-    &:hover {
-      background-image: url(/src/assets/images/annual-icon-white.png);
-    }
-  }
+//     &:hover {
+//       background-image: url(/src/assets/images/annual-icon-white.png);
+//     }
+//   }
 
-  &.vacation-btn {
-    background-size: 35.17px;
-    background-position: 25px center;
-    background-image: url(/src/assets/images/vacation-blue.png);
-    padding-right: 20px;
-    padding-left: 80px;
+//   &.vacation-btn {
+//     background-size: 35.17px;
+//     background-position: 25px center;
+//     background-image: url(/src/assets/images/vacation-blue.png);
+//     padding-right: 20px;
+//     padding-left: 80px;
 
-    &:hover {
-      background-image: url(/src/assets/images/vacation-white.png);
-    }
-  }
+//     &:hover {
+//       background-image: url(/src/assets/images/vacation-white.png);
+//     }
+//   }
 
-  &.merchandise-btn {
-    background-size: 23.77px;
-    background-position: 25px center;
-    background-image: url(/src/assets/images/merchandise-blue.png);
-    padding-right: 20px;
-    padding-left: 65px;
+//   &.merchandise-btn {
+//     background-size: 23.77px;
+//     background-position: 25px center;
+//     background-image: url(/src/assets/images/merchandise-blue.png);
+//     padding-right: 20px;
+//     padding-left: 65px;
 
-    &:hover {
-      background-image: url(/src/assets/images/merchandise-white.png);
-    }
-  }
+//     &:hover {
+//       background-image: url(/src/assets/images/merchandise-white.png);
+//     }
+//   }
 
-  @media only screen and (max-width: 430px) {
-    display: none;
-  }
-}
+//   @media only screen and (max-width: 430px) {
+//     display: none;
+//   }
+// }
 </style>

@@ -45,8 +45,29 @@
       </a>
     </div>
 
-    <div class="middle-navbar"></div>
-    <div class="bottom-navbar"></div>
+    <hr>
+
+    <div class="middle-navbar">
+      <a href="/" class="univeral-link">
+        <img :src="universalLogo" alt="Universal Orlando Logo" class="universal-image">
+      </a>
+      <a href="/" class="middlebar-links">Things to Do</a>
+      <a href="/" class="middlebar-links">Hotels & Packages</a>
+      <a href="/" class="middlebar-links">Tickets & Passes</a>
+      <a href="/" class="middlebar-links">Explore Parks</a>
+      <a href="/" class="middlebar-links">Plan Your Trip</a>
+      <a href="/" class="middlebar-links">Passholders</a>
+      <button class="browse-btn bg-white text-center">Browse All Products</button>
+    </div>
+  </div>
+  <div class="bottom-navbar bg-white">
+    <a class="btn-link ticket-btn text-decoration-none" href="/">Park Tickets</a>
+    <a class="btn-link express-btn text-decoration-none" href="/">Express Passes</a>
+    <a class="btn-link deals-btn text-decoration-none" href="/">Deals & Specials</a>
+    <a class="btn-link hotels-btn text-decoration-none" href="/">Hotels</a>
+    <a class="btn-link annual-btn text-decoration-none" href="/">Annual Passes</a>
+    <a class="btn-link vacation-btn text-decoration-none" href="/">Vacation Packages</a>
+    <a class="btn-link merchandise-btn text-decoration-none" href="/">Merchandise</a>
   </div>
 </template>
 
@@ -107,6 +128,8 @@ export default defineComponent({
       helpItems,
       languageOptions,
       toggleDropdown,
+
+      universalLogo: require("@/assets/universal-orlando-logo.png"),
     };
   },
 });
@@ -183,6 +206,138 @@ export default defineComponent({
 
     &:hover {
       fill: #ccc;
+    }
+  }
+}
+
+.middle-navbar {
+  display: flex;
+
+  .universal-image {
+    width: 100px;
+  }
+
+  .middlebar-links {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .browse-btn {
+    border: none;
+    color: #0368d9;
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    line-height: 2rem;
+  }
+}
+
+.bottom-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  .btn-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+    padding: 14px;
+    color: inherit;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    transition: background-color 0.1s ease, color 0.1s ease;
+
+    &:hover {
+      background-color: #162b75;
+      color: white;
+    }
+
+    &.ticket-btn {
+      background-size: 18.48px;
+      background-position: 35px;
+      background-image: url(/src/assets/images/tickets-blue.png);
+      padding-right: 10px;
+      padding-left: 70px;
+
+      &:hover {
+        background-image: url(/src/assets/images/tickets-white.png);
+      }
+    }
+
+    &.express-btn {
+      background-size: 42.69px;
+      background-position: 25px center;
+      background-image: url(/src/assets/images/express-pass-blue.png);
+      padding-right: 10px;
+      padding-left: 70px;
+
+      &:hover {
+        background-image: url(/src/assets/images/express-pass-white.png);
+      }
+    }
+
+    &.deals-btn {
+      background-size: 15.34px;
+      background-position: 40px center;
+      background-image: url(/src/assets/images/deals-blue.png);
+      padding-right: 10px;
+      padding-left: 70px;
+
+      &:hover {
+        background-image: url(/src/assets/images/deals-white.png);
+      }
+    }
+
+    &.hotels-btn {
+      background-size: 21.13px;
+      background-position: 40px center;
+      background-image: url(/src/assets/images/hotels-blue.png);
+      padding-right: 10px;
+      padding-left: 70px;
+
+      &:hover {
+        background-image: url(/src/assets/images/hotels-white.png);
+      }
+    }
+
+    &.annual-btn {
+      background-size: 29.11px;
+      background-position: 35px center;
+      background-image: url(/src/assets/images/annual-icon-blue.png);
+      padding-right: 10px;
+      padding-left: 70px;
+
+      &:hover {
+        background-image: url(/src/assets/images/annual-icon-white.png);
+      }
+    }
+
+    &.vacation-btn {
+      background-size: 35.17px;
+      background-position: 25px center;
+      background-image: url(/src/assets/images/vacation-blue.png);
+      padding-right: 10px;
+      padding-left: 70px;
+
+      &:hover {
+        background-image: url(/src/assets/images/vacation-white.png);
+      }
+    }
+
+    &.merchandise-btn {
+      background-size: 23.77px;
+      background-position: 25px center;
+      background-image: url(/src/assets/images/merchandise-blue.png);
+      padding-right: 10px;
+      padding-left: 60px;
+
+      &:hover {
+        background-image: url(/src/assets/images/merchandise-white.png);
+      }
     }
   }
 }
