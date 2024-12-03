@@ -124,7 +124,7 @@
 import { defineComponent, ref } from "vue";
 
 export default defineComponent({
-  name: "NavbarMenu",
+  name: "SmallScreenNavbar",
   setup() {
     const isSidebarOpen = ref(false);
 

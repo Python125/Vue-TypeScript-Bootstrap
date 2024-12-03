@@ -35,7 +35,8 @@
 </template>
 
 <script lang="ts">
-import Navbar from "./components/NavbarMenu.vue";
+import Navbar from "./components/SmallScreenNavbar.vue";
+// SmallScreenNavbar
 import FooterSection from "./components/FooterSection.vue";
 import { computed } from "vue";
 import { useRoute } from "vue-router";
