@@ -33,7 +33,7 @@
       </router-link>
     </div>
 
-    <!-- <FooterSection /> -->
+    <component :is="currentFooter" />
   </div>
 </template>
 
@@ -42,14 +42,16 @@ import { defineComponent, ref, computed, onMounted, onBeforeUnmount } from "vue"
 import { useRoute } from "vue-router";
 import SmallScreenNavbar from "./components/SmallScreenNavbar.vue";
 import LargeScreenNavbar from "./components/LargeScreenNavbar.vue";
-import FooterSection from "./components/FooterSection.vue";
+import SmallFooterSection from "./components/SmallFooterSection.vue";
+import LargeFooterSection from "./components/LargeFooterSection.vue";
 
 export default defineComponent({
   name: "App",
   components: {
     SmallScreenNavbar,
     LargeScreenNavbar,
-    FooterSection,
+    SmallFooterSection,
+    LargeFooterSection,
   },
   setup() {
     const route = useRoute();
@@ -71,6 +73,10 @@ export default defineComponent({
       return isLargeScreen.value ? 'LargeScreenNavbar' : 'SmallScreenNavbar';
     });
 
+    const currentFooter = computed(() => {
+      return isLargeScreen.value ? 'LargeFooterSection' : 'SmallFooterSection';
+    });
+
     const swipeMenu = computed(() => {
       const routesWithSwipeMenu = ["/breakfast", "/lunch", "/drinks"];
       return routesWithSwipeMenu.includes(route.path);
@@ -88,6 +94,7 @@ export default defineComponent({
 
     return {
       currentNavbar,
+      currentFooter,
       swipeMenu,
       showAllergyInfo,
       showBackButton
