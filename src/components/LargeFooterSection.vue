@@ -147,6 +147,8 @@
       </div>
     </div>
 
+    <div class="footer-categories text white"></div>
+
     <div class="app-links">
       <p class="app-links-title fw-bold text-white mt-4 mb-1">Download the app for exclusive deals and easy ordering.</p>
       <div class="app-images mb-3">
@@ -244,25 +246,32 @@ export default defineComponent({
     .socialMedia-links {
       background: none;
       border: none;
-      width: 48px;
-      height: 48px;
+      width: 43px;
+      height: 43px;
     }
   }
 }
 
 .footer-categories {
   display: flex;
-  justify-content: center;
   gap: 4rem;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  justify-content: space-evenly;
 
   h4 {
+    font-size: 1.125rem;
     font-weight: 900;
+    padding-left: 0.4rem;
   }
 
   li {
     list-style: none;
-    font-weight: bold;
-    line-height: 2.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: 0.0125rem;
+    padding: 6px;
 
     a {
       text-decoration: none;
