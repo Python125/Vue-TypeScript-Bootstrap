@@ -90,37 +90,34 @@
       <div class="footer-categories text white">
         <div class="footer-category">
           <h4>Destinations</h4>
-            <li><a href="/">Universal Orlando Resort</a></li>
-            <li><a href="/">Universal Studios Hollywood</a></li>
-            <li><a href="/">Universal Studios Japan</a></li>
-            <li><a href="/">Universal Beijing Resort</a></li>
-            <li><a href="/">Universal Studios Singapore</a></li>
+          <li><a href="/">Universal Orlando Resort</a></li>
+          <li><a href="/">Universal Studios Hollywood</a></li>
+          <li><a href="/">Universal Studios Japan</a></li>
+          <li><a href="/">Universal Beijing Resort</a></li>
+          <li><a href="/">Universal Studios Singapore</a></li>
         </div>
 
         <div class="footer-category">
           <h4>Tickets and Passes</h4>
-            <li><a href="/">Park Tickets</a></li>
-            <li><a href="/">Annual Passes</a></li>
-            <li><a href="/">Universal Express Passes</a></li>
-            <li><a href="/">Vacation Packages</a></li>
-            <li><a href="/">Group Vacations</a></li>
-            <li><a href="/">Military Sales</a></li>
+          <li><a href="/">Park Tickets</a></li>
+          <li><a href="/">Annual Passes</a></li>
+          <li><a href="/">Universal Express Passes</a></li>
+          <li><a href="/">Vacation Packages</a></li>
+          <li><a href="/">Group Vacations</a></li>
+          <li><a href="/">Military Sales</a></li>
         </div>
 
         <div class="footer-category">
           <h4>Events and Experiences</h4>
-            <li><a href="/">Seasonal Events</a></li>
-            <li><a href="/">Meetings and Events</a></li>
-            <li><a href="/">Weddings & Celebrations</a></li>
-            <li><a href="/">Youth & Education Programs</a></li>
-            <li><a href="/">Travel Agents</a></li>
+          <li><a href="/">Seasonal Events</a></li>
+          <li><a href="/">Meetings and Events</a></li>
+          <li><a href="/">Weddings & Celebrations</a></li>
+          <li><a href="/">Youth & Education Programs</a></li>
+          <li><a href="/">Travel Agents</a></li>
         </div>
-      </div>
-    </div>
 
-    <div class="footer-categories text white">
-      <div class="footer-category">
-        <h4>Beyond the Parks</h4>
+        <div class="footer-category">
+          <h4>Beyond the Parks</h4>
           <li><a href="/">Sign Up for Email Alerts</a></li>
           <li><a href="/">Discover Universal Blog</a></li>
           <li><a href="/">Shop Merchandise</a></li>
@@ -132,10 +129,10 @@
           <li><a href="/">Community Relations</a></li>
           <li><a href="/">Media Relations</a></li>
           <li><a href="/">Careers</a></li>
-      </div>
+        </div>
 
-      <div class="footer-category">
-        <h4>Help</h4>
+        <div class="footer-category">
+          <h4>Help</h4>
           <li><a href="/">Code of Conduct</a></li>
           <li><a href="/">Contact Us</a></li>
           <li><a href="/">FAQs</a></li>
@@ -144,10 +141,9 @@
           <li><a href="/">Rider Height Requirements</a></li>
           <li><a href="/">Policies & Restrictions</a></li>
           <li><a href="/">Rider Safety</a></li>
+        </div>
       </div>
     </div>
-
-    <div class="footer-categories text white"></div>
 
     <div class="app-links">
       <p class="app-links-title fw-bold text-white mt-4 mb-1">Download the app for exclusive deals and easy ordering.</p>
@@ -254,10 +250,10 @@ export default defineComponent({
 
 .footer-categories {
   display: flex;
+  flex-wrap: wrap;
   gap: 4rem;
   padding: 0.5rem;
   margin-left: 0.5rem;
-  justify-content: space-evenly;
 
   h4 {
     font-size: 1.125rem;
