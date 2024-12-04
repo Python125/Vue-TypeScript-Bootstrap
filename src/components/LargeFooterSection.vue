@@ -178,6 +178,12 @@
       <hr class="language-separator" />
     </div>
 
+    <div class=""></div>
+
+    <div class="copyright text-white px-2 mt-2">
+      <p class="copyright-text">© 2024 Universal Studios. All rights reserved. <br /> Some imagery shown throughout our website does not represent current operational and safety guidelines.</p>
+    </div>
+
     <div class="footer-links">
       <a href="#" class="link-item">Copyright & Trademark</a>
       <a href="#" class="link-item">Privacy Center</a>
@@ -199,10 +205,6 @@
       <a href="#" class="link-item">Terms of Service</a>
       <a href="#" class="link-item">Severe Weather Policy</a>
       <a href="#" class="link-item">UPRV Terms of Service</a>
-    </div>
-
-    <div class="copyright text-white px-2 mt-2">
-      <p class="copyright-text">© 2024 Universal Studios. All rights reserved. <br /> Some imagery shown throughout our website does not represent current operational and safety guidelines.</p>
     </div>
   </div>
 </template>
@@ -250,7 +252,7 @@ export default defineComponent({
   display: flex;
   justify-content: center;
   gap: 4rem;
-  
+
   // .footer-category {}
 
   h4 {
@@ -266,6 +268,88 @@ export default defineComponent({
       text-decoration: none;
       color: white;
     }
+  }
+}
+
+.app-links {
+  padding-left: 1.5rem;
+
+  .app-links-title {
+    text-align: left;
+  }
+
+  .app-images {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .contact-info {
+    font-size: 13px;
+    font-weight: 400;
+
+    .contact-link {
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.language-container {
+  width: 100%;
+
+  .language-selection {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-right: 1.5rem;
+
+    .language-text {
+      .language-label {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .language-separator {
+    border: none;
+    border-top: 1px solid #ffffff;
+    opacity: 1;
+  }
+}
+
+.copyright {
+  padding: 1rem 0;
+  text-align: left;
+  width: 25%;
+
+  .copyright-text {
+    font-size: 0.775rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    margin: 0;
+  }
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0.5rem;
+  font-weight: 600;
+  gap: 1rem;
+
+  .link-item {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: left;
   }
 }
 </style>
