@@ -179,11 +179,11 @@
     </div>
 
     <div class="d-flex">
-      <div class="copyright text-white px-2 mt-2">
+      <div class="copyright text-white px-2 mb-2">
         <p class="copyright-text">© 2024 Universal Studios. All rights reserved. <br /> Some imagery shown throughout our website does not represent current operational and safety guidelines.</p>
       </div>
 
-      <div class="footer-links">
+      <div class="footer-links mb-2">
         <a href="#" class="link-item">Copyright & Trademark</a>
         <a href="#" class="link-item">Privacy Center</a>
         <a href="#" class="link-item">Ad Choices</a>
@@ -321,9 +321,10 @@ export default defineComponent({
 }
 
 .copyright {
-  padding: 1rem 0;
+  padding: 1rem;
   text-align: left;
-  width: 25%;
+  width: 35%;
+  margin-left: 1rem;
 
   .copyright-text {
     font-size: 0.775rem;
@@ -337,11 +338,12 @@ export default defineComponent({
 .footer-links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: flex-end;
   width: 100%;
   padding: 0.5rem;
   font-weight: 600;
   gap: 1rem;
+  margin-right: 1rem;
 
   .link-item {
     font-size: 0.9rem;
