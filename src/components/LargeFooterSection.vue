@@ -131,7 +131,7 @@
           <li><a href="/">Careers</a></li>
         </div>
 
-        <div class="footer-category">
+        <div class="footer-category ms-4">
           <h4>Help</h4>
           <li><a href="/">Code of Conduct</a></li>
           <li><a href="/">Contact Us</a></li>
