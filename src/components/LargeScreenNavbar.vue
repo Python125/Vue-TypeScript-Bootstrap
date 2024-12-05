@@ -404,9 +404,7 @@ export default defineComponent({
     }
   }
 
-  // .location-dropdown {
-  //   margin-left: 0.5rem;
-  // }
+  // .location-dropdown {}
 
   .help-dropdown {
     margin-left: 10rem;
