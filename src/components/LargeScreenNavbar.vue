@@ -410,7 +410,7 @@ export default defineComponent({
     margin-left: 10rem;
 
     @media (min-width: 1366px) {
-      margin-left: 25rem;
+      margin-left: 30rem;
     }
   }
 
