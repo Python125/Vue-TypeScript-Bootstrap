@@ -409,7 +409,7 @@ export default defineComponent({
   .help-dropdown {
     margin-left: 10rem;
 
-    @media (min-width: 1366px) {
+    @media (min-width: 1200px) {
       margin-left: 25rem;
     }
   }
