@@ -83,7 +83,7 @@
           viewBox="0 0 16 11"
           version="1.1"
           focusable="false"
-          class="ms-1 mt-2"
+          class="mt-2"
         >
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g transform="translate(-1256.000000, -4877.000000)">
@@ -407,7 +407,7 @@ export default defineComponent({
   // .location-dropdown {}
 
   .help-dropdown {
-    margin-left: 10rem;
+    margin-left: 9rem;
 
     @media (min-width: 1100px) {
       margin-left: 30rem;
