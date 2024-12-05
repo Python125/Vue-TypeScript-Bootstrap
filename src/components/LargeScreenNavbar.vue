@@ -19,7 +19,7 @@
       </svg>
       <div class="dropdown location-dropdown">
         <div class="location-selection d-flex">
-          <div class="location-text d-flex gap-2">
+          <div class="location-text d-flex">
             <button
               class="caret-btn text-white"
               type="button"
@@ -66,7 +66,7 @@
       </div>
       <div class="dropdown help-dropdown d-flex">
         <div class="help-selection">
-          <div class="help-text gap-2">
+          <div class="help-text">
             <button
               class="caret-btn text-white"
               type="button"
@@ -112,8 +112,8 @@
         </ul>
       </div>
 
-      <a href="/" class="dropdown-link fw-bold text-white ms-3">Park Hours</a>
-      <a href="/" class="dropdown-link fw-bold text-white ms-1">Shop Merch</a>
+      <a href="/" class="dropdown-link fw-bold text-white ms-2">Park Hours</a>
+      <a href="/" class="dropdown-link fw-bold text-white">Shop Merch</a>
 
       <svg
         class="ms-2"
