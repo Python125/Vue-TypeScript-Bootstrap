@@ -362,7 +362,7 @@ export default defineComponent({
 .top-navbar {
   display: flex;
   align-items: center;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem;
 
   .location-symbol {
     margin-right: 0.5rem;
@@ -404,9 +404,9 @@ export default defineComponent({
     }
   }
 
-  .location-dropdown {
-    margin-left: 0.5rem;
-  }
+  // .location-dropdown {
+  //   margin-left: 0.5rem;
+  // }
 
   .help-dropdown {
     margin-left: 10rem;
