@@ -409,10 +409,10 @@ export default defineComponent({
   // .location-dropdown {}
 
   .help-dropdown {
-    margin-left: 10rem;
+    margin-left: auto;
 
     @media (min-width: 1200px) {
-      margin-left: auto;
+      // margin-left: auto;
       // margin-left: 5rem; // 25rem IS THE CORRECT NUMBER
     }
   }
@@ -432,16 +432,15 @@ export default defineComponent({
   }
 
   .park-link {
-    @media (min-width: 1200px) {
-      letter-spacing: 0.0125rem;
-      margin-left: 1rem;
-    }
+    margin-left: 1rem;
+
+    // @media (min-width: 1200px) {
+    // }
   }
 
   .navigation-border {
     color: #0368d9;
     border-left: 1px solid white;
-    padding-left: 1rem;
     // margin: 0.4rem -0.7rem 0.4rem 2.1rem;
   }
 
