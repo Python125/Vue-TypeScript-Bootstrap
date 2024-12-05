@@ -115,7 +115,6 @@
       <a href="/" class="dropdown-link fw-bold text-white">Shop Merch</a>
 
       <svg
-        class="ms-2"
         id="gds-svg-394"
         width="24"
         height="24"
