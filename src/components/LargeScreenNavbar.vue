@@ -35,6 +35,7 @@
             viewBox="0 0 16 11"
             version="1.1"
             focusable="false"
+            class="ms-1 mt-2"
           >
             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
               <g transform="translate(-1256.000000, -4877.000000)">
@@ -82,7 +83,7 @@
           viewBox="0 0 16 11"
           version="1.1"
           focusable="false"
-          class="me-2"
+          class="ms-1 mt-2"
         >
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g transform="translate(-1256.000000, -4877.000000)">
@@ -115,6 +116,7 @@
       <a href="/" class="dropdown-link fw-bold text-white">Shop Merch</a>
 
       <svg
+        class="ms-2"
         id="gds-svg-394"
         width="24"
         height="24"
@@ -155,7 +157,7 @@
           viewBox="0 0 16 11"
           version="1.1"
           focusable="false"
-          class=""
+          class="ms-1 mt-2"
         >
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g transform="translate(-1256.000000, -4877.000000)">
@@ -360,7 +362,7 @@ export default defineComponent({
 .top-navbar {
   display: flex;
   align-items: center;
-  padding-top: 0.75rem;
+  padding: 0.75rem;
 
   .location-symbol {
     margin-right: 0.5rem;
@@ -404,9 +406,9 @@ export default defineComponent({
 
   // .location-dropdown {}
 
-  // .help-dropdown {
-  //   margin-left: 7rem;
-  // }
+  .help-dropdown {
+    margin-left: 10rem;
+  }
 
   // .language-dropdown {}
 
