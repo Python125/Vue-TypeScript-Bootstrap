@@ -408,6 +408,10 @@ export default defineComponent({
 
   .help-dropdown {
     margin-left: 10rem;
+
+    @media (min-width: 1100px) {
+      margin-left: 30rem;
+    }
   }
 
   // .language-dropdown {}
@@ -453,9 +457,14 @@ export default defineComponent({
     color: #0368d9;
     border-radius: 25px;
     font-weight: 600;
-    padding: 0.5rem 1rem;
-    font-size: 14px;
+    padding: 0.375rem 1.125rem;
+    font-size: 0.875rem;
+    letter-spacing: 0.0125rem;
     line-height: 2rem;
+
+    @media (min-width: 1100px) {
+      margin-left: 9rem;
+    }
   }
 }
 
