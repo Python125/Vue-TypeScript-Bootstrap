@@ -35,7 +35,7 @@
             viewBox="0 0 16 11"
             version="1.1"
             focusable="false"
-            class="me-1"
+            class="ms-1 mt-2"
           >
             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
               <g transform="translate(-1256.000000, -4877.000000)">
@@ -83,7 +83,7 @@
           viewBox="0 0 16 11"
           version="1.1"
           focusable="false"
-          class="me-1"
+          class="ms-1 mt-2"
         >
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g transform="translate(-1256.000000, -4877.000000)">
@@ -112,10 +112,8 @@
         </ul>
       </div>
 
-      <a href="/" class="dropdown-link fw-bold text-white ms-2 me-3">Park Hours</a>
+      <a href="/" class="dropdown-link fw-bold text-white ms-2">Park Hours</a>
       <a href="/" class="dropdown-link fw-bold text-white">Shop Merch</a>
-
-      <div class="navigation-border">l</div>
 
       <svg
         class="ms-2"
@@ -159,7 +157,7 @@
           viewBox="0 0 16 11"
           version="1.1"
           focusable="false"
-          class="me-1"
+          class="ms-1 mt-2"
         >
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g transform="translate(-1256.000000, -4877.000000)">
@@ -410,10 +408,6 @@ export default defineComponent({
 
   .help-dropdown {
     margin-left: 10rem;
-
-    @media (min-width: 1100px) {
-      margin-left: 20rem;
-    }
   }
 
   // .language-dropdown {}
@@ -428,12 +422,6 @@ export default defineComponent({
     &:hover {
       text-decoration: underline;
     }
-  }
-
-  .navigation-border {
-    border-left: 1px solid white;
-    color: #0368d9;
-    
   }
 
   .nav-icon {
@@ -465,14 +453,9 @@ export default defineComponent({
     color: #0368d9;
     border-radius: 25px;
     font-weight: 600;
-    padding: 0.375rem 1.125rem;
-    font-size: 0.875rem;
-    letter-spacing: 0.0125rem;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
     line-height: 2rem;
-
-    @media (min-width: 1100px) {
-      margin-left: 10rem;
-    }
   }
 }
 
