@@ -463,7 +463,7 @@ export default defineComponent({
     line-height: 2rem;
 
     @media (min-width: 1100px) {
-      margin-left: 9rem;
+      margin-left: 10rem;
     }
   }
 }
