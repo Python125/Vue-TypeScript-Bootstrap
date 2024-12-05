@@ -72,96 +72,37 @@
             <button class="caret-btn text-white" type="button" @click="toggleDropdown('language')">English (US)</button>
           </div>
         </div>
-        <svg
-          id="gds-svg-598"
-          width="13"
-          height="11"
-          viewBox="0 0 16 11"
-          version="1.1"
-          focusable="false"
-          class="mt-1"
-        >
+        <svg id="gds-svg-598" width="13" height="11" viewBox="0 0 16 11" version="1.1" focusable="false" class="mt-1">
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g transform="translate(-1256.000000, -4877.000000)">
               <g transform="translate(1254.000000, 4872.000000)">
                 <circle cx="10" cy="10" r="10"></circle>
-                <g
-                  transform="translate(10.000000, 10.454545) rotate(90.000000) translate(-10.000000, -10.454545) translate(5.000000, 2.454545)"
-                  fill="#0368D9"
-                >
-                  <path
-                    fill="#ffffff"
-                    d="M0.191136012,15.0150334 C-0.0642242506,15.2408104 -0.0636359733,15.6063486 0.192449966,15.8314858 C0.448535906,16.056623 0.863144972,16.0561044 1.11850523,15.8303274 L10,7.97774631 L1.11718941,0.16851254 C0.861102437,-0.0566237496 0.446493373,-0.0561036216 0.191134145,0.169674278 C-0.0642250836,0.395452178 -0.0636351321,0.760990353 0.192451838,0.986126642 L8.14788573,7.98006649 L0.191136012,15.0150334 Z"
-                  ></path>
+                <g transform="translate(10.000000, 10.454545) rotate(90.000000) translate(-10.000000, -10.454545) translate(5.000000, 2.454545)" fill="#0368D9">
+                  <path fill="#ffffff" d="M0.191136012,15.0150334 C-0.0642242506,15.2408104 -0.0636359733,15.6063486 0.192449966,15.8314858 C0.448535906,16.056623 0.863144972,16.0561044 1.11850523,15.8303274 L10,7.97774631 L1.11718941,0.16851254 C0.861102437,-0.0566237496 0.446493373,-0.0561036216 0.191134145,0.169674278 C-0.0642250836,0.395452178 -0.0636351321,0.760990353 0.192451838,0.986126642 L8.14788573,7.98006649 L0.191136012,15.0150334 Z"></path>
                 </g>
               </g>
             </g>
           </g>
         </svg>
-        <ul
-          :class="['dropdown-menu', { show: isLanguageDropdownOpen }]"
-          v-if="isLanguageDropdownOpen"
-        >
+        <ul :class="['dropdown-menu', { show: isLanguageDropdownOpen }]" v-if="isLanguageDropdownOpen">
           <li v-for="(language, index) in languageOptions" :key="index">
             <a class="dropdown-item" href="#">{{ language }}</a>
           </li>
         </ul>
       </div>
       <a href="/">
-        <svg
-          class="nav-icon"
-          id="gds-svg-205"
-          fill="rgb(34, 34, 34)"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          version="1.1"
-          focusable="false"
-        >
-          <path
-            fill="#ffffff"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M6 21.0008V19C6 15.6865 8.6865 13 12 13C15.3135 13 18 15.6865 18 19V21.0008C20.4289 19.1764 22 16.2718 22 13C22 7.477 17.523 3 12 3C6.477 3 2 7.477 2 13C2 16.2718 3.57108 19.1764 6 21.0008ZM15 9C15 10.657 13.657 12 12 12C10.343 12 9 10.657 9 9C9 7.343 10.343 6 12 6C13.657 6 15 7.343 15 9Z"
-          ></path>
+        <svg class="nav-icon" id="gds-svg-205" fill="rgb(34, 34, 34)" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false">
+          <path fill="#ffffff" fill-rule="evenodd" clip-rule="evenodd" d="M6 21.0008V19C6 15.6865 8.6865 13 12 13C15.3135 13 18 15.6865 18 19V21.0008C20.4289 19.1764 22 16.2718 22 13C22 7.477 17.523 3 12 3C6.477 3 2 7.477 2 13C2 16.2718 3.57108 19.1764 6 21.0008ZM15 9C15 10.657 13.657 12 12 12C10.343 12 9 10.657 9 9C9 7.343 10.343 6 12 6C13.657 6 15 7.343 15 9Z"></path>
         </svg>
       </a>
       <a href="/">
-        <svg
-          class="nav-icon"
-          id="gds-svg-207"
-          fill="rgb(34, 34, 34)"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          version="1.1"
-          focusable="false"
-        >
-          <path
-            fill="#ffffff"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M11.1 3A8.1 8.1 0 0 0 3 11.1a8.1 8.1 0 0 0 8.1 8.1c1.913 0 3.67-.663 5.056-1.771l3.308 3.307.057.053a.9.9 0 0 0 1.215-1.325l-3.307-3.308a8.066 8.066 0 0 0 1.77-5.056A8.1 8.1 0 0 0 11.1 3Zm0 14.4a6.3 6.3 0 1 1 0-12.6 6.3 6.3 0 0 1 0 12.6Z"
-          ></path>
+        <svg class="nav-icon" id="gds-svg-207" fill="rgb(34, 34, 34)" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false">
+          <path fill="#ffffff" fill-rule="evenodd" clip-rule="evenodd" d="M11.1 3A8.1 8.1 0 0 0 3 11.1a8.1 8.1 0 0 0 8.1 8.1c1.913 0 3.67-.663 5.056-1.771l3.308 3.307.057.053a.9.9 0 0 0 1.215-1.325l-3.307-3.308a8.066 8.066 0 0 0 1.77-5.056A8.1 8.1 0 0 0 11.1 3Zm0 14.4a6.3 6.3 0 1 1 0-12.6 6.3 6.3 0 0 1 0 12.6Z"></path>
         </svg>
       </a>
       <a href="/">
-        <svg
-          class="nav-icon"
-          id="gds-svg-20 ms-3"
-          fill="rgb(34, 34, 34)"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          version="1.1"
-          focusable="false"
-        >
-          <path
-            fill="#ffffff"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M6.15 2.818A1 1 0 0 0 5.168 2H3a1 1 0 0 0-1 1l.003.075A1 1 0 0 0 3 4h1.335l2.253 12.182a1 1 0 0 0 .984.818h12.832a1 1 0 0 0 1-1l-.003-.075a1 1 0 0 0-.997-.925H8.403l-.185-1h12.186L22 6H6.739L6.15 2.818ZM9.51 22c1.106 0 2.003-.873 2.003-1.95 0-1.076-.897-1.948-2.003-1.948s-2.003.872-2.003 1.949c0 1.076.897 1.949 2.003 1.949Zm11.017-1.95c0 1.077-.897 1.95-2.003 1.95s-2.003-.873-2.003-1.95c0-1.076.897-1.948 2.003-1.948s2.003.872 2.003 1.949Z"
-          ></path>
+        <svg class="nav-icon" id="gds-svg-20 ms-3" fill="rgb(34, 34, 34)" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false">
+          <path fill="#ffffff" fill-rule="evenodd" clip-rule="evenodd" d="M6.15 2.818A1 1 0 0 0 5.168 2H3a1 1 0 0 0-1 1l.003.075A1 1 0 0 0 3 4h1.335l2.253 12.182a1 1 0 0 0 .984.818h12.832a1 1 0 0 0 1-1l-.003-.075a1 1 0 0 0-.997-.925H8.403l-.185-1h12.186L22 6H6.739L6.15 2.818ZM9.51 22c1.106 0 2.003-.873 2.003-1.95 0-1.076-.897-1.948-2.003-1.948s-2.003.872-2.003 1.949c0 1.076.897 1.949 2.003 1.949Zm11.017-1.95c0 1.077-.897 1.95-2.003 1.95s-2.003-.873-2.003-1.95c0-1.076.897-1.948 2.003-1.948s2.003.872 2.003 1.949Z"></path>
         </svg>
       </a>
     </div>
@@ -170,11 +111,7 @@
 
     <div class="middle-navbar p-2">
       <a href="/" class="univeral-link">
-        <img
-          :src="universalLogo"
-          alt="Universal Orlando Logo"
-          class="universal-image"
-        />
+        <img :src="universalLogo" alt="Universal Orlando Logo" class="universal-image" />
       </a>
       <a href="/" class="middlebar-links">Things to Do</a>
       <a href="/" class="middlebar-links">Hotels & Packages</a>
@@ -182,32 +119,18 @@
       <a href="/" class="middlebar-links">Explore Parks</a>
       <a href="/" class="middlebar-links">Plan Your Trip</a>
       <a href="/" class="middlebar-links">Passholders</a>
-      <button class="browse-btn bg-white text-center">
-        Browse All Products
-      </button>
+      <button class="browse-btn bg-white text-center">Browse All Products</button>
     </div>
   </div>
 
   <div class="bottom-navbar bg-white">
-    <a class="btn-link ticket-btn text-decoration-none" href="/"
-      >Park Tickets</a
-    >
-    <a class="btn-link express-btn text-decoration-none" href="/"
-      >Express Passes</a
-    >
-    <a class="btn-link deals-btn text-decoration-none" href="/"
-      >Deals & Specials</a
-    >
+    <a class="btn-link ticket-btn text-decoration-none" href="/">Park Tickets</a>
+    <a class="btn-link express-btn text-decoration-none" href="/">Express Passes</a>
+    <a class="btn-link deals-btn text-decoration-none" href="/">Deals & Specials</a>
     <a class="btn-link hotels-btn text-decoration-none" href="/">Hotels</a>
-    <a class="btn-link annual-btn text-decoration-none" href="/"
-      >Annual Passes</a
-    >
-    <a class="btn-link vacation-btn text-decoration-none" href="/"
-      >Vacation Packages</a
-    >
-    <a class="btn-link merchandise-btn text-decoration-none" href="/"
-      >Merchandise</a
-    >
+    <a class="btn-link annual-btn text-decoration-none" href="/">Annual Passes</a>
+    <a class="btn-link vacation-btn text-decoration-none" href="/">Vacation Packages</a>
+    <a class="btn-link merchandise-btn text-decoration-none" href="/">Merchandise</a>
   </div>
 </template>
 
@@ -348,9 +271,6 @@ export default defineComponent({
 
   .park-link {
     margin-left: 1rem;
-
-    // @media (min-width: 1200px) {
-    // }
   }
 
   .navigation-border {
