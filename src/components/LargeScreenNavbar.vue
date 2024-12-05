@@ -410,7 +410,7 @@ export default defineComponent({
     margin-left: 10rem;
 
     @media (min-width: 1200px) {
-      margin-left: 25rem;
+      margin-left: 15rem; // 25rem IS THE CORRECT NUMBER
     }
   }
 
