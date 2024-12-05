@@ -35,7 +35,7 @@
             viewBox="0 0 16 11"
             version="1.1"
             focusable="false"
-            class="me-1 mb-1"
+            class="me-1"
           >
             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
               <g transform="translate(-1256.000000, -4877.000000)">
@@ -83,7 +83,7 @@
           viewBox="0 0 16 11"
           version="1.1"
           focusable="false"
-          class="me-1 mb-1"
+          class="me-1"
         >
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g transform="translate(-1256.000000, -4877.000000)">
@@ -159,7 +159,7 @@
           viewBox="0 0 16 11"
           version="1.1"
           focusable="false"
-          class="me-1 mb-1"
+          class="me-1"
         >
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g transform="translate(-1256.000000, -4877.000000)">
