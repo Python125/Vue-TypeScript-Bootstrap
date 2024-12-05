@@ -410,11 +410,6 @@ export default defineComponent({
 
   .help-dropdown {
     margin-left: auto;
-
-    @media (min-width: 1200px) {
-      // margin-left: auto;
-      // margin-left: 5rem; // 25rem IS THE CORRECT NUMBER
-    }
   }
 
   // .language-dropdown {}
