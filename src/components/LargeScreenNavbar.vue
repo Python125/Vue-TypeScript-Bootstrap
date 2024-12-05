@@ -360,7 +360,7 @@ export default defineComponent({
 .top-navbar {
   display: flex;
   align-items: center;
-  padding: 0.75rem;
+  padding-top: 0.75rem;
 
   .location-symbol {
     margin-right: 0.5rem;
