@@ -470,7 +470,7 @@ export default defineComponent({
     font-weight: 600;
     padding: 0.5rem 1rem;
     font-size: 14px;
-    line-height: 2rem;
+    margin-left: auto;
   }
 }
 
