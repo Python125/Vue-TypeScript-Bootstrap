@@ -409,7 +409,7 @@ export default defineComponent({
   }
 
   .help-dropdown {
-    margin-left: 10rem;
+    margin-left: 9rem;
   }
 
   // .language-dropdown {}
