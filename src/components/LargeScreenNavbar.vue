@@ -112,7 +112,7 @@
         </ul>
       </div>
 
-      <a href="/" class="dropdown-link fw-bold text-white ms-2">Park Hours</a>
+      <a href="/" class="dropdown-link fw-bold text-white ms-2 me-3">Park Hours</a>
       <a href="/" class="dropdown-link fw-bold text-white">Shop Merch</a>
 
       <svg
