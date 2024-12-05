@@ -115,6 +115,8 @@
       <a href="/" class="dropdown-link fw-bold text-white ms-2 me-3">Park Hours</a>
       <a href="/" class="dropdown-link fw-bold text-white">Shop Merch</a>
 
+      <div class="navigation-border">l</div>
+
       <svg
         class="ms-2"
         id="gds-svg-394"
@@ -426,6 +428,12 @@ export default defineComponent({
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  .navigation-border {
+    border-left: 1px solid white;
+    color: #0368d9;
+    
   }
 
   .nav-icon {
