@@ -405,9 +405,9 @@ export default defineComponent({
 
   // .location-dropdown {}
 
-  .help-dropdown {
-    margin-left: 10rem;
-  }
+  // .help-dropdown {
+  //   margin-left: 7rem;
+  // }
 
   // .language-dropdown {}
 
