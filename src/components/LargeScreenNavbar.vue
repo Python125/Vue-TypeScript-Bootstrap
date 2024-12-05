@@ -83,7 +83,7 @@
           viewBox="0 0 16 11"
           version="1.1"
           focusable="false"
-          class="ms-1 mt-2"
+          class="mt-1"
         >
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g transform="translate(-1256.000000, -4877.000000)">
@@ -112,8 +112,10 @@
         </ul>
       </div>
 
-      <a href="/" class="dropdown-link fw-bold text-white ms-2">Park Hours</a>
-      <a href="/" class="dropdown-link fw-bold text-white">Shop Merch</a>
+      <a href="/" class="dropdown-link park-link fw-bold text-white">Park Hours</a>
+      <a href="/" class="dropdown-link shop-link fw-bold text-white">Shop Merch</a>
+
+      <div class="navigation-border">l</div>
 
       <svg
         class="ms-2"
@@ -157,7 +159,7 @@
           viewBox="0 0 16 11"
           version="1.1"
           focusable="false"
-          class="ms-1 mt-2"
+          class="mt-1"
         >
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g transform="translate(-1256.000000, -4877.000000)">
@@ -426,6 +428,20 @@ export default defineComponent({
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  .park-link {
+    @media (min-width: 1200px) {
+      letter-spacing: 0.0125rem;
+      margin-left: 1rem;
+    }
+  }
+
+  .navigation-border {
+    color: #0368d9;
+    border-left: 1px solid white;
+    padding-left: 1rem;
+    // margin: 0.4rem -0.7rem 0.4rem 2.1rem;
   }
 
   .nav-icon {
