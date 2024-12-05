@@ -147,7 +147,7 @@
             type="button"
             @click="toggleDropdown('language')"
           >
-            Language
+            English (US)
           </button>
         </div>
         <svg
