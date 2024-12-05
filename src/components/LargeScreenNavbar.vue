@@ -408,6 +408,10 @@ export default defineComponent({
 
   .help-dropdown {
     margin-left: 10rem;
+
+    @media (min-width: 1366px) {
+      margin-left: 25rem;
+    }
   }
 
   // .language-dropdown {}
