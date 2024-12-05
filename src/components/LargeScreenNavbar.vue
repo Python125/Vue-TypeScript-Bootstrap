@@ -405,11 +405,11 @@ export default defineComponent({
   }
 
   .location-dropdown {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
   }
 
   .help-dropdown {
-    margin-left: 9rem;
+    margin-left: 10rem;
   }
 
   // .language-dropdown {}
