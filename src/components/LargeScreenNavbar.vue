@@ -112,8 +112,12 @@
         </ul>
       </div>
 
-      <a href="/" class="dropdown-link park-link fw-bold text-white">Park Hours</a>
-      <a href="/" class="dropdown-link shop-link fw-bold text-white">Shop Merch</a>
+      <a href="/" class="dropdown-link park-link fw-bold text-white"
+        >Park Hours</a
+      >
+      <a href="/" class="dropdown-link shop-link fw-bold text-white"
+        >Shop Merch</a
+      >
 
       <div class="navigation-border">l</div>
 
