@@ -25,7 +25,7 @@
               type="button"
               @click="toggleDropdown('location')"
             >
-              Select Location
+              Universal Orlando Resort
             </button>
           </div>
           <svg
