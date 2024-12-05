@@ -265,6 +265,7 @@
       </button>
     </div>
   </div>
+
   <div class="bottom-navbar bg-white">
     <a class="btn-link ticket-btn text-decoration-none" href="/"
       >Park Tickets</a
@@ -464,7 +465,9 @@ export default defineComponent({
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  font-size: 12px;
+  color: #7d7d7d;
+  font-weight: 500;
 
   .btn-link {
     display: inline-flex;
@@ -485,7 +488,7 @@ export default defineComponent({
       background-size: 18.48px;
       background-position: 35px;
       background-image: url(/src/assets/images/tickets-blue.png);
-      padding-right: 10px;
+      padding-right: 5px;
       padding-left: 70px;
 
       &:hover {
@@ -497,8 +500,8 @@ export default defineComponent({
       background-size: 42.69px;
       background-position: 25px center;
       background-image: url(/src/assets/images/express-pass-blue.png);
-      padding-right: 10px;
-      padding-left: 70px;
+      padding-right: 5px;
+      padding-left: 75px;
 
       &:hover {
         background-image: url(/src/assets/images/express-pass-white.png);
@@ -509,8 +512,8 @@ export default defineComponent({
       background-size: 15.34px;
       background-position: 40px center;
       background-image: url(/src/assets/images/deals-blue.png);
-      padding-right: 10px;
-      padding-left: 70px;
+      padding-right: 5px;
+      padding-left: 65px;
 
       &:hover {
         background-image: url(/src/assets/images/deals-white.png);
@@ -521,7 +524,8 @@ export default defineComponent({
       background-size: 21.13px;
       background-position: 40px center;
       background-image: url(/src/assets/images/hotels-blue.png);
-      padding-right: 10px;
+      padding: 23px;
+      padding-right: 30px;
       padding-left: 70px;
 
       &:hover {
@@ -533,8 +537,8 @@ export default defineComponent({
       background-size: 29.11px;
       background-position: 35px center;
       background-image: url(/src/assets/images/annual-icon-blue.png);
-      padding-right: 10px;
-      padding-left: 70px;
+      padding-right: 5px;
+      padding-left: 75px;
 
       &:hover {
         background-image: url(/src/assets/images/annual-icon-white.png);
@@ -545,7 +549,7 @@ export default defineComponent({
       background-size: 35.17px;
       background-position: 25px center;
       background-image: url(/src/assets/images/vacation-blue.png);
-      padding-right: 10px;
+      padding-right: 1px;
       padding-left: 70px;
 
       &:hover {
@@ -557,7 +561,8 @@ export default defineComponent({
       background-size: 23.77px;
       background-position: 25px center;
       background-image: url(/src/assets/images/merchandise-blue.png);
-      padding-right: 10px;
+      padding: 23px;
+      padding-right: 25px;
       padding-left: 60px;
 
       &:hover {
