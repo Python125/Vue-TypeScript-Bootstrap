@@ -1,7 +1,8 @@
 <template>
   <div class="background-image">
     <component :is="currentNavbar" />
-    <router-view />
+    <component v-if="route.path === '/'" :is="currentHomePage" />
+    <router-view v-else />
 
     <div v-if="swipeMenu">
       <p class="menu-swipe text-center text-white">
@@ -27,23 +28,19 @@
       </div>
     </div>
 
-    <div v-if="showBackButton">
-      <router-link to="/">
-        <button class="back-btn">Back</button>
-      </router-link>
-    </div>
-
     <component :is="currentFooter" />
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed, onMounted, onBeforeUnmount } from "vue";
+import { defineComponent, ref, computed, onMounted, onBeforeUnmount, } from "vue";
 import { useRoute } from "vue-router";
 import SmallScreenNavbar from "./components/SmallScreenNavbar.vue";
 import LargeScreenNavbar from "./components/LargeScreenNavbar.vue";
 import SmallFooterSection from "./components/SmallFooterSection.vue";
 import LargeFooterSection from "./components/LargeFooterSection.vue";
+import SmallHomePage from "./pages/SmallHomePage.vue";
+import LargeHomePage from "./pages/LargeHomePage.vue";
 
 export default defineComponent({
   name: "App",
@@ -52,6 +49,8 @@ export default defineComponent({
     LargeScreenNavbar,
     SmallFooterSection,
     LargeFooterSection,
+    SmallHomePage,
+    LargeHomePage,
   },
   setup() {
     const route = useRoute();
@@ -62,19 +61,23 @@ export default defineComponent({
     };
 
     onMounted(() => {
-      window.addEventListener('resize', handleResize);
+      window.addEventListener("resize", handleResize);
     });
 
     onBeforeUnmount(() => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
+    });
+
+    const currentHomePage = computed(() => {
+      return isLargeScreen.value ? LargeHomePage : SmallHomePage;
     });
 
     const currentNavbar = computed(() => {
-      return isLargeScreen.value ? 'LargeScreenNavbar' : 'SmallScreenNavbar';
+      return isLargeScreen.value ? LargeScreenNavbar : SmallScreenNavbar;
     });
 
     const currentFooter = computed(() => {
-      return isLargeScreen.value ? 'LargeFooterSection' : 'SmallFooterSection';
+      return isLargeScreen.value ? LargeFooterSection : SmallFooterSection;
     });
 
     const swipeMenu = computed(() => {
@@ -93,11 +96,13 @@ export default defineComponent({
     });
 
     return {
+      route,
+      currentHomePage,
       currentNavbar,
       currentFooter,
       swipeMenu,
       showAllergyInfo,
-      showBackButton
+      showBackButton,
     };
   },
 });

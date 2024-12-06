@@ -1,11 +1,16 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import HomePage from "../pages/HomePage.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "home",
-    component: HomePage,
+    component: () => {
+      if (window.innerWidth >= 1024) {
+        return import("../pages/LargeHomePage.vue");
+      } else {
+        return import("../pages/SmallHomePage.vue");
+      }
+    },
   },
   {
     path: "/breakfast",
