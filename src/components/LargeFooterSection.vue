@@ -196,6 +196,10 @@ export default defineComponent({
 .logo-social-link-wrapper {
   padding: 1rem;
 
+  @media (min-width: 1920px) {
+    margin-left: 5rem;
+  }
+
   .universal-logo {
     width: 175px;
   }
@@ -224,6 +228,11 @@ export default defineComponent({
     gap: 3rem;
   }
 
+  @media (min-width: 1920px) {
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0.5rem;
+  }
+
   .destination-category {
     min-width: 250px;
     max-width: 350px;
@@ -237,7 +246,7 @@ export default defineComponent({
     ul {
       list-style: none;
       padding: 0;
-    }
+    }  
   }
 
   .ticket-category {
@@ -246,6 +255,10 @@ export default defineComponent({
 
     @media (min-width: 1100px) {
       margin-left: 1.5rem;
+    }
+
+    @media (min-width: 1920px) {
+      margin-left: 0.5rem;
     }
 
     h4 {
@@ -268,6 +281,10 @@ export default defineComponent({
       margin-left: 3.5rem;
     }
 
+    @media (min-width: 1920px) {
+      margin-left: 0.5rem;
+    }
+
     h4 {
       font-size: 1.125rem;
       font-weight: 900;
@@ -283,6 +300,10 @@ export default defineComponent({
   .park-category {
     min-width: 250px;
     max-width: 350px;
+
+    @media (min-width: 1920px) {
+      margin-left: 0.5rem;
+    }
 
     h4 {
       font-size: 1.125rem;
@@ -302,6 +323,10 @@ export default defineComponent({
 
     @media (min-width: 1100px) {
       margin-left: 1.5rem;
+    }
+
+    @media (min-width: 1920px) {
+      margin-left: 0.5rem;
     }
 
     h4 {
@@ -334,6 +359,10 @@ export default defineComponent({
 .app-links {
   padding-left: 1.5rem;
 
+  @media (min-width: 1920px) {
+    margin-left: 5rem;
+  }
+
   .app-links-title {
     text-align: left;
   }
@@ -365,6 +394,10 @@ export default defineComponent({
     gap: 1rem;
     margin-right: 1.5rem;
 
+    @media (min-width: 1920px) {
+      margin-right: 5rem;
+    }
+
     .language-text {
       .language-label {
         font-size: 1rem;
@@ -377,6 +410,11 @@ export default defineComponent({
     border: none;
     border-top: 1px solid #ffffff;
     opacity: 1;
+
+    @media (min-width: 1920px) {
+      margin-left: 5.5rem;
+      margin-right: 4.5rem;
+    }
   }
 }
 
@@ -385,6 +423,10 @@ export default defineComponent({
   text-align: left;
   width: 35%;
   margin-left: 1rem;
+
+  @media (min-width: 1920px) {
+    margin-left: 6rem;
+  }
 
   .copyright-text {
     font-size: 0.775rem;
