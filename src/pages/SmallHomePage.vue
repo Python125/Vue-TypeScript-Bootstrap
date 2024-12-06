@@ -12,7 +12,7 @@
       </div>
 
       <div class="text-white">
-        <h3 class="location-title">Location</h3>
+        <h3 class="location-title fw-bold">Location</h3>
       </div>
       <div class="universal-link text-white">
         The Wizarding World of Harry Potter™ - Diagon Alley™ in
@@ -213,6 +213,8 @@ export default /* class HomePage extends Vue */ {
 
 a {
   text-decoration: none;
+  color: #f08400;
+
   &:hover {
     text-decoration: underline;
   }
@@ -322,23 +324,23 @@ svg {
 
 .intro-summary {
   background-color: rgba(10, 10, 10, 0.8);
-  padding: 2rem 1rem;
-  margin-top: 5rem;
+  padding: 2rem 2rem;
+  margin-top: 2rem;
 
   @media (min-width: 768px) {
     padding: 3rem 5rem;
-    margin-top: 10rem;
+    margin-top: 2rem;
   }
 }
 
 .cauldron-heading {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 900;
   line-height: 2rem;
   margin-bottom: 1rem;
 
   @media (min-width: 768px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 2.5rem;
   }
 }
@@ -362,30 +364,11 @@ svg {
     text-align: center;
     margin-bottom: 2rem;
 
-    @media (min-width: 768px) {
-      margin-bottom: 0;
-    }
-
     .food-image {
       border-radius: 8px;
       width: 100%;
       max-width: 300px;
       margin-bottom: 1rem;
-    }
-
-    .food-link {
-      font-size: 1rem;
-      font-weight: bold;
-      color: #f08400;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-
-      @media (min-width: 768px) {
-        font-size: 1.25rem;
-      }
     }
   }
 }
