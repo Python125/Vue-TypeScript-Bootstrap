@@ -28,6 +28,12 @@
       </div>
     </div>
 
+    <div v-if="showBackButton">
+      <router-link to="/">
+        <button class="back-btn">Back</button>
+      </router-link>
+    </div>
+
     <component :is="currentFooter" />
   </div>
 </template>
