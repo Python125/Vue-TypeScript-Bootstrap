@@ -295,16 +295,19 @@ export default defineComponent({
   }
 
   .app-links-title {
+    font-size: 0.875rem;
     text-align: left;
   }
 
   .app-images {
     display: flex;
-    gap: 1rem;
+    gap: 8px;
+    margin-top: 8px;
+    margin-bottom: 16px;
   }
 
   .contact-info {
-    font-size: 13px;
+    font-size: 0.75rem;
     font-weight: 400;
 
     .contact-link {
@@ -331,7 +334,7 @@ export default defineComponent({
 
     .language-text {
       .language-label {
-        font-size: 1rem;
+        font-size: 0.875rem;
         font-weight: 600;
       }
     }
@@ -360,31 +363,40 @@ export default defineComponent({
   }
 
   .copyright-text {
-    font-size: 0.775rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #ffffff;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.0125rem;
+    line-height: 1.25rem;
+    text-transform: none;
+    color: white;
     margin: 0;
   }
 }
 
 .footer-links {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   width: 100%;
   padding: 0.5rem;
   font-weight: 600;
-  gap: 1rem;
+  gap: 16px;
   margin-right: 1rem;
 
   .link-item {
-    font-size: 0.9rem;
-    text-decoration: none;
     color: white;
-    display: flex;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.0125rem;
+    line-height: 2rem;
+    text-align: center;
+    text-shadow: none;
     align-items: center;
-    text-align: left;
+    text-decoration: none;
+    display: flex;
   }
 }
 </style>
