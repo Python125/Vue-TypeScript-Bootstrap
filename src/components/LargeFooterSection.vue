@@ -35,7 +35,7 @@
         </div>
       </div>
 
-      <div class="footer-categories text white">
+      <div class="footer-categories">
         <div class="destination-category">
           <h4>Destinations</h4>
           <ul>
@@ -201,7 +201,7 @@ export default defineComponent({
   }
 
   .universal-logo {
-    width: 175px;
+    width: 176px;
   }
 
   .socialMedia {
@@ -233,127 +233,74 @@ export default defineComponent({
     padding: 0.5rem;
   }
 
-  .destination-category {
-    min-width: 250px;
-    max-width: 350px;
-
-    h4 {
-      font-size: 1.125rem;
-      font-weight: 900;
-      padding-left: 0.4rem;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }  
+  h4 {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 0.0125rem;
+    line-height: 1.375rem;
+    text-transform: none;
+    padding: 0.375rem 0rem;
   }
 
-  .ticket-category {
-    min-width: 250px;
-    max-width: 350px;
-
-    @media (min-width: 1100px) {
-      margin-left: 1.5rem;
-    }
-
-    @media (min-width: 1920px) {
-      margin-left: 0.5rem;
-    }
-
-    h4 {
-      font-size: 1.125rem;
-      font-weight: 900;
-      padding-left: 0.4rem;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-  }
-
-  .event-category {
-    min-width: 250px;
-    max-width: 350px;
-
-    @media (min-width: 1100px) {
-      margin-left: 3.5rem;
-    }
-
-    @media (min-width: 1920px) {
-      margin-left: 0.5rem;
-    }
-
-    h4 {
-      font-size: 1.125rem;
-      font-weight: 900;
-      padding-left: 0.4rem;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-  }
-
-  .park-category {
-    min-width: 250px;
-    max-width: 350px;
-
-    @media (min-width: 1920px) {
-      margin-left: 0.5rem;
-    }
-
-    h4 {
-      font-size: 1.125rem;
-      font-weight: 900;
-      padding-left: 0.4rem;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-  }
-
-  .help-category {
-    min-width: 250px;
-    max-width: 350px;
-
-    @media (min-width: 1100px) {
-      margin-left: 1.5rem;
-    }
-
-    @media (min-width: 1920px) {
-      margin-left: 0.5rem;
-    }
-
-    h4 {
-      font-size: 1.125rem;
-      font-weight: 900;
-      padding-left: 0.4rem;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
+  ul {
+    list-style: none;
+    padding: 0;
   }
 
   li {
-    list-style: none;
+    cursor: pointer;
     font-size: 0.875rem;
+    font-style: normal;
     font-weight: 600;
-    line-height: 2rem;
     letter-spacing: 0.0125rem;
-    padding: 6px;
+    line-height: 2rem;
 
     a {
-      text-decoration: none;
       color: white;
+      text-align: center;
+      text-shadow: none;
+      text-decoration: none;
     }
   }
+
+  // .destination-category {}
+
+  // .ticket-category {
+  //   @media (min-width: 1100px) {
+  //     margin-left: 1.5rem;
+  //   }
+
+  //   @media (min-width: 1920px) {
+  //     margin-left: 0.5rem;
+  //   }
+  // }
+
+  // .event-category {
+  //   @media (min-width: 1100px) {
+  //     margin-left: 3.5rem;
+  //   }
+
+  //   @media (min-width: 1920px) {
+  //     margin-left: 0.5rem;
+  //   }
+  // }
+
+  // .park-category {
+  //   @media (min-width: 1920px) {
+  //     margin-left: 0.5rem;
+  //   }
+  // }
+
+  // .help-category {
+  //   @media (min-width: 1100px) {
+  //     margin-left: 1.5rem;
+  //   }
+
+  //   @media (min-width: 1920px) {
+  //     margin-left: 0.5rem;
+  //   }
+  // }
 }
 
 .app-links {
