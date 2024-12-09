@@ -201,6 +201,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 .navbar-container {
   background-color: #0368d9;
+  border-bottom: #0070f0;
   padding: 0.5rem 1rem;
 }
 
@@ -217,10 +218,14 @@ export default defineComponent({
     position: relative;
 
     .caret-btn {
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 600;
+      letter-spacing: 0.0125rem;
+      line-height: 1.5rem;
       background-color: transparent;
       border: none;
       color: #fff;
-      font-weight: bold;
       cursor: pointer;
     }
 
@@ -243,7 +248,7 @@ export default defineComponent({
         cursor: pointer;
 
         &:hover {
-          background-color: #f8f9fa;
+          background-color: #0368d9;
         }
       }
     }
@@ -258,11 +263,15 @@ export default defineComponent({
   // .language-dropdown {}
 
   .dropdown-link {
-    font-size: 1rem;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.0125rem;
+    line-height: 2rem;
+    text-align: center;
     text-decoration: none;
     color: #fff;
     margin-right: 1rem;
-    font-weight: bold;
 
     &:hover {
       text-decoration: underline;

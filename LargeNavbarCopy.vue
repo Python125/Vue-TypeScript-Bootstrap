@@ -243,7 +243,7 @@ export default defineComponent({
         cursor: pointer;
 
         &:hover {
-          background-color: #f8f9fa;
+          background-color: #0368d9;
         }
       }
     }
