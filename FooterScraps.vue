@@ -6,7 +6,6 @@
 
 <style lang="scss" scoped>
 // Small Footer
-
 .universal-logo {
   width: 171.92px;
   height: 96px;
@@ -17,7 +16,6 @@
 }
 
 // Large Footer
-
 .footer-categories {
   display: grid;
 
