@@ -58,7 +58,7 @@
       <a href="/" class="dropdown-link park-link fw-bold text-white">Park Hours</a>
       <a href="/" class="dropdown-link shop-link fw-bold text-white">Shop Merch</a>
 
-      <div class="navigation-border">l</div>
+      <div class="navigation-border"></div>
 
       <svg class="ms-2" id="gds-svg-394" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false">
         <g>
@@ -201,6 +201,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 .navbar-container {
   background-color: #0368d9;
+  border-bottom: #0070f0;
   padding: 0.5rem 1rem;
 }
 
@@ -208,6 +209,15 @@ export default defineComponent({
   display: flex;
   align-items: center;
   padding: 0.75rem;
+
+  @media (min-width: 1920px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #7d7d7d;
+    font-weight: 500;
+  }
 
   .location-symbol {
     margin-right: 0.5rem;
@@ -217,10 +227,14 @@ export default defineComponent({
     position: relative;
 
     .caret-btn {
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 600;
+      letter-spacing: 0.0125rem;
+      line-height: 1.5rem;
       background-color: transparent;
       border: none;
       color: #fff;
-      font-weight: bold;
       cursor: pointer;
     }
 
@@ -258,11 +272,15 @@ export default defineComponent({
   // .language-dropdown {}
 
   .dropdown-link {
-    font-size: 1rem;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.0125rem;
+    line-height: 2rem;
+    text-align: center;
     text-decoration: none;
     color: #fff;
     margin-right: 1rem;
-    font-weight: bold;
 
     &:hover {
       text-decoration: underline;
@@ -274,9 +292,13 @@ export default defineComponent({
   }
 
   .navigation-border {
-    color: #0368d9;
-    border-left: 1px solid white;
-    // margin: 0.4rem -0.7rem 0.4rem 2.1rem;
+    content: "";
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #e5effb;
+    display: block;
+    align-self: stretch;
+    padding: 8px 12px;
   }
 
   .nav-icon {
@@ -291,6 +313,8 @@ export default defineComponent({
 
 .middle-navbar {
   display: flex;
+  justify-content: center;
+  align-items: center;
 
   .universal-image {
     width: 100px;
