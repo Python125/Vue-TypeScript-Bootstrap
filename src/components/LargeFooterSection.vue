@@ -194,25 +194,39 @@ export default defineComponent({
 }
 
 .logo-social-link-wrapper {
+  justify-content: center;
   padding: 1rem;
+
+  @media (min-width: 1100px) {
+    justify-content: left;
+  }
 
   @media (min-width: 1920px) {
     margin-left: 5rem;
   }
 
   .universal-logo {
+    justify-content: center;
     width: 176px;
+    height: 98.27px;
   }
 
   .socialMedia {
     display: flex;
-    justify-content: left;
 
     .socialMedia-links {
+      align-items: center;
       background: none;
+      background-color: transparent;
       border: none;
-      width: 43px;
-      height: 43px;
+      cursor: pointer;
+      justify-content: center;
+      margin: 0;
+      min-width: 44px;
+      min-height: 44px;
+      overflow-anchor: none;
+      padding: 0;
+      position: relative;
     }
   }
 }
@@ -261,46 +275,12 @@ export default defineComponent({
       text-align: center;
       text-shadow: none;
       text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
-
-  // .destination-category {}
-
-  // .ticket-category {
-  //   @media (min-width: 1100px) {
-  //     margin-left: 1.5rem;
-  //   }
-
-  //   @media (min-width: 1920px) {
-  //     margin-left: 0.5rem;
-  //   }
-  // }
-
-  // .event-category {
-  //   @media (min-width: 1100px) {
-  //     margin-left: 3.5rem;
-  //   }
-
-  //   @media (min-width: 1920px) {
-  //     margin-left: 0.5rem;
-  //   }
-  // }
-
-  // .park-category {
-  //   @media (min-width: 1920px) {
-  //     margin-left: 0.5rem;
-  //   }
-  // }
-
-  // .help-category {
-  //   @media (min-width: 1100px) {
-  //     margin-left: 1.5rem;
-  //   }
-
-  //   @media (min-width: 1920px) {
-  //     margin-left: 0.5rem;
-  //   }
-  // }
 }
 
 .app-links {

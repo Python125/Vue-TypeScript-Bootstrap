@@ -174,11 +174,9 @@ export default defineComponent({
   padding: 1rem;
 
   .universal-logo {
-    width: 200px;
-
-    @media (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
-      width: 150px;
-    }
+    justify-content: center;
+    width: 171.92px;
+    height: 96px;
   }
  
   .socialMedia {
