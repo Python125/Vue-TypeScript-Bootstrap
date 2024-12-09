@@ -1,7 +1,7 @@
 <template>
   <div class="footer-container text-white">
     <div class="logo-social-link-wrapper d-flex">
-      <!-- <div class="logo-social-section">
+      <div class="logo-social-section">
         <div class="logo-container">
           <a href="/">
             <img class="universal-logo mt-1" :src="universalLogo" alt="Universal Logo" />
@@ -33,7 +33,7 @@
             </svg>
           </button>
         </div>
-      </div> -->
+      </div>
 
       <div class="footer-categories text white">
         <div class="footer-category">
