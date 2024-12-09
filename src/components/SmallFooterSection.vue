@@ -174,7 +174,6 @@ export default defineComponent({
   padding: 1rem;
 
   .universal-logo {
-    justify-content: center;
     width: 171.92px;
     height: 96px;
   }
