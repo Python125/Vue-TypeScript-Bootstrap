@@ -1,7 +1,7 @@
 <template>
   <div class="footer-container text-white">
     <div class="logo-social-link-wrapper d-flex">
-      <div class="logo-social-section">
+      <!-- <div class="logo-social-section">
         <div class="logo-container">
           <a href="/">
             <img class="universal-logo mt-1" :src="universalLogo" alt="Universal Logo" />
@@ -33,12 +33,12 @@
             </svg>
           </button>
         </div>
-      </div>
+      </div> -->
 
       <div class="footer-categories text white">
-        <div class="destination-category">
-          <h4>Destinations</h4>
-          <ul>
+        <div class="footer-category">
+          <h4 class="footer-title">Destinations</h4>
+          <ul class="category-links">
             <li><a href="/">Universal Orlando Resort</a></li>
             <li><a href="/">Universal Studios Hollywood</a></li>
             <li><a href="/">Universal Studios Japan</a></li>
@@ -47,9 +47,9 @@
           </ul>
         </div>
 
-        <div class="ticket-category">
-          <h4>Tickets and Passes</h4>
-          <ul>
+        <div class="footer-category">
+          <h4 class="footer-title">Tickets and Passes</h4>
+          <ul class="category-links">
             <li><a href="/">Park Tickets</a></li>
             <li><a href="/">Annual Passes</a></li>
             <li><a href="/">Universal Express Passes</a></li>
@@ -59,9 +59,9 @@
           </ul>
         </div>
 
-        <div class="event-category">
-          <h4>Events and Experiences</h4>
-          <ul>
+        <div class="footer-category">
+          <h4 class="footer-title">Events and Experiences</h4>
+          <ul class="category-links">
             <li><a href="/">Seasonal Events</a></li>
             <li><a href="/">Meetings and Events</a></li>
             <li><a href="/">Weddings & Celebrations</a></li>
@@ -70,9 +70,9 @@
           </ul>
         </div>
 
-        <div class="park-category">
-          <h4>Beyond the Parks</h4>
-          <ul>
+        <div class="footer-category">
+          <h4 class="footer-title">Beyond the Parks</h4>
+          <ul class="category-links">
             <li><a href="/">Sign Up for Email Alerts</a></li>
             <li><a href="/">Discover Universal Blog</a></li>
             <li><a href="/">Shop Merchandise</a></li>
@@ -87,9 +87,9 @@
           </ul>
         </div>
 
-        <div class="help-category">
-          <h4>Help</h4>
-          <ul>
+        <div class="footer-category">
+          <h4 class="footer-title">Help</h4>
+          <ul class="category-links">
             <li><a href="/">Code of Conduct</a></li>
             <li><a href="/">Contact Us</a></li>
             <li><a href="/">FAQs</a></li>
@@ -100,36 +100,78 @@
             <li><a href="/">Rider Safety</a></li>
           </ul>
         </div>
+
       </div>
     </div>
 
     <div class="app-links">
-      <p class="app-links-title fw-bold text-white mt-4 mb-1">Download the app for exclusive deals and easy ordering.</p>
+      <p class="app-links-title fw-bold text-white mt-4 mb-1">
+        Download the app for exclusive deals and easy ordering.
+      </p>
       <div class="app-images mb-3">
         <img class="app-image" :src="apple" alt="Apple App Store" />
         <img class="app-image" :src="google" alt="Google Play Store" />
       </div>
-      <p class="contact-info text-white mb-3">Need to get in touch? <a href="#" class="contact-link">Contact us</a> or<a href="mailto:support@example.com" class="contact-link">email</a> our Guest Services Coordinator.</p>
+      <p class="contact-info text-white mb-3">
+        Need to get in touch?
+        <a href="#" class="contact-link">Contact us</a> or<a
+          href="mailto:support@example.com"
+          class="contact-link"
+          >email</a
+        >
+        our Guest Services Coordinator.
+      </p>
     </div>
 
     <div class="language-container text-white px-2">
       <div class="language-selection">
         <div class="language-text d-flex gap-2 ms-2">
-          <svg id="gds-svg-394" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false">
+          <svg
+            id="gds-svg-394"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            version="1.1"
+            focusable="false"
+          >
             <g>
-              <path fill="#ffffff" fill-rule="evenodd" clip-rule="evenodd" d="M11.6919 20.4717C11.5919 20.7112 11.55 20.9274 11.55 21.0816C11.55 21.6457 11.9765 22 12.6371 22C13.1978 22 13.5157 21.7453 13.7156 21.1435L14.5105 19.0287H19.0206L19.8154 21.1587C20.0087 21.7534 20.3342 22 20.9196 22C21.5479 22 22 21.6215 22 21.0816C22 20.9049 21.9572 20.7265 21.8563 20.4717L18.3428 11.6735C18.0411 10.9247 17.5566 10.6 16.7617 10.6C15.9745 10.6 15.49 10.9399 15.1968 11.6807L11.6919 20.4717ZM16.7779 12.6996L18.4932 17.4538H15.0216L16.7198 12.6996H16.7779Z"></path>
-              <path fill="#ffffff" fill-rule="evenodd" clip-rule="evenodd" d="M10.2368 6.14171C10.2245 6.22053 10.2121 6.29194 10.1998 6.35779C12.2374 6.78438 13.4 8.09107 13.4 9.97274C13.4 12.5314 12.0789 14.2498 9.33237 14.35H9.33142C8.79995 14.35 8.42602 14.0032 8.4042 13.5256C8.4042 13.0118 8.72592 12.6538 9.20519 12.6538C11.3339 12.6538 11.7002 10.7174 11.5712 9.92173C11.3975 8.85338 10.9458 8.1226 9.80405 7.88612C9.35989 9.34304 8.5978 10.7434 7.72942 11.6958C7.76928 11.7895 7.81199 11.8887 7.86324 11.9954C7.90784 12.0835 7.96289 12.23 7.96289 12.4025C7.96289 12.7187 7.78826 12.9914 7.48077 13.1509C7.30804 13.2251 7.17138 13.2575 7.04895 13.2575C6.76708 13.2575 6.51653 13.1138 6.37418 12.8717C5.63961 13.3642 4.93067 13.5951 4.16384 13.5951C2.86933 13.5951 2 12.6455 2 11.2331C2 9.49977 3.21384 7.86572 5.18027 6.9374C5.17742 6.82612 5.17742 6.71298 5.17742 6.59613C5.17742 6.19642 5.18596 5.79765 5.19451 5.40443C4.56528 5.41371 3.87343 5.42298 3.20719 5.42298C2.66434 5.40443 2.34545 5.08449 2.34545 4.56886C2.34545 4.0894 2.68332 3.75369 3.16733 3.75369H3.85824H3.86394C4.32043 3.75369 4.79116 3.75369 5.26853 3.7472C5.28561 3.3716 5.30934 3.02383 5.33971 2.72893C5.38526 2.29213 5.73072 2 6.1986 2H6.26409C6.77752 2.0408 7.07268 2.32459 7.07268 2.76324V2.82816C7.04421 3.11843 7.02143 3.40499 7.0034 3.68506C8.71928 3.61087 10.1495 3.48475 11.3681 3.30298L11.5133 3.29927C11.9555 3.29927 12.282 3.5849 12.3456 4.02634L12.3494 4.16452C12.3494 4.60595 12.0533 4.91756 11.575 4.97969C10.2539 5.15311 8.72023 5.27367 6.89046 5.34508C6.88192 5.691 6.87433 6.03227 6.87338 6.37726C7.38776 6.2734 7.93442 6.21404 8.5048 6.1992C8.52662 6.09348 8.5456 5.99703 8.55984 5.9145C8.63292 5.53334 8.93472 5.29871 9.3485 5.29871C9.39026 5.29871 9.47567 5.29871 9.57248 5.3321C9.93976 5.35621 10.2368 5.66132 10.2368 6.06288V6.14171ZM8.12233 7.73774C7.87747 8.46666 7.53392 9.17426 7.12488 9.78912C7.00909 9.20857 6.93601 8.57888 6.90849 7.93342C7.15145 7.86479 7.56239 7.77298 8.12233 7.73774ZM4.2967 11.8859C3.91613 11.8859 3.72253 11.6448 3.72253 11.1691C3.72253 10.2778 4.31379 9.3551 5.28656 8.69573C5.37198 9.63053 5.53806 10.5245 5.76109 11.2599C5.07398 11.8015 4.5539 11.8859 4.2967 11.8859Z"></path>
+              <path
+                fill="#ffffff"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M11.6919 20.4717C11.5919 20.7112 11.55 20.9274 11.55 21.0816C11.55 21.6457 11.9765 22 12.6371 22C13.1978 22 13.5157 21.7453 13.7156 21.1435L14.5105 19.0287H19.0206L19.8154 21.1587C20.0087 21.7534 20.3342 22 20.9196 22C21.5479 22 22 21.6215 22 21.0816C22 20.9049 21.9572 20.7265 21.8563 20.4717L18.3428 11.6735C18.0411 10.9247 17.5566 10.6 16.7617 10.6C15.9745 10.6 15.49 10.9399 15.1968 11.6807L11.6919 20.4717ZM16.7779 12.6996L18.4932 17.4538H15.0216L16.7198 12.6996H16.7779Z"
+              ></path>
+              <path
+                fill="#ffffff"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.2368 6.14171C10.2245 6.22053 10.2121 6.29194 10.1998 6.35779C12.2374 6.78438 13.4 8.09107 13.4 9.97274C13.4 12.5314 12.0789 14.2498 9.33237 14.35H9.33142C8.79995 14.35 8.42602 14.0032 8.4042 13.5256C8.4042 13.0118 8.72592 12.6538 9.20519 12.6538C11.3339 12.6538 11.7002 10.7174 11.5712 9.92173C11.3975 8.85338 10.9458 8.1226 9.80405 7.88612C9.35989 9.34304 8.5978 10.7434 7.72942 11.6958C7.76928 11.7895 7.81199 11.8887 7.86324 11.9954C7.90784 12.0835 7.96289 12.23 7.96289 12.4025C7.96289 12.7187 7.78826 12.9914 7.48077 13.1509C7.30804 13.2251 7.17138 13.2575 7.04895 13.2575C6.76708 13.2575 6.51653 13.1138 6.37418 12.8717C5.63961 13.3642 4.93067 13.5951 4.16384 13.5951C2.86933 13.5951 2 12.6455 2 11.2331C2 9.49977 3.21384 7.86572 5.18027 6.9374C5.17742 6.82612 5.17742 6.71298 5.17742 6.59613C5.17742 6.19642 5.18596 5.79765 5.19451 5.40443C4.56528 5.41371 3.87343 5.42298 3.20719 5.42298C2.66434 5.40443 2.34545 5.08449 2.34545 4.56886C2.34545 4.0894 2.68332 3.75369 3.16733 3.75369H3.85824H3.86394C4.32043 3.75369 4.79116 3.75369 5.26853 3.7472C5.28561 3.3716 5.30934 3.02383 5.33971 2.72893C5.38526 2.29213 5.73072 2 6.1986 2H6.26409C6.77752 2.0408 7.07268 2.32459 7.07268 2.76324V2.82816C7.04421 3.11843 7.02143 3.40499 7.0034 3.68506C8.71928 3.61087 10.1495 3.48475 11.3681 3.30298L11.5133 3.29927C11.9555 3.29927 12.282 3.5849 12.3456 4.02634L12.3494 4.16452C12.3494 4.60595 12.0533 4.91756 11.575 4.97969C10.2539 5.15311 8.72023 5.27367 6.89046 5.34508C6.88192 5.691 6.87433 6.03227 6.87338 6.37726C7.38776 6.2734 7.93442 6.21404 8.5048 6.1992C8.52662 6.09348 8.5456 5.99703 8.55984 5.9145C8.63292 5.53334 8.93472 5.29871 9.3485 5.29871C9.39026 5.29871 9.47567 5.29871 9.57248 5.3321C9.93976 5.35621 10.2368 5.66132 10.2368 6.06288V6.14171ZM8.12233 7.73774C7.87747 8.46666 7.53392 9.17426 7.12488 9.78912C7.00909 9.20857 6.93601 8.57888 6.90849 7.93342C7.15145 7.86479 7.56239 7.77298 8.12233 7.73774ZM4.2967 11.8859C3.91613 11.8859 3.72253 11.6448 3.72253 11.1691C3.72253 10.2778 4.31379 9.3551 5.28656 8.69573C5.37198 9.63053 5.53806 10.5245 5.76109 11.2599C5.07398 11.8015 4.5539 11.8859 4.2967 11.8859Z"
+              ></path>
             </g>
           </svg>
           <p class="language-label">English (US)</p>
         </div>
-        <svg id="gds-svg-598" width="13" height="11" viewBox="0 0 16 11" version="1.1" focusable="false" class="arrow-down mb-3">
+        <svg
+          id="gds-svg-598"
+          width="13"
+          height="11"
+          viewBox="0 0 16 11"
+          version="1.1"
+          focusable="false"
+          class="arrow-down mb-3"
+        >
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g transform="translate(-1256.000000, -4877.000000)">
               <g transform="translate(1254.000000, 4872.000000)">
                 <circle cx="10" cy="10" r="10"></circle>
-                <g transform="translate(10.000000, 10.454545) rotate(90.000000) translate(-10.000000, -10.454545) translate(5.000000, 2.454545)" fill="#0368D9">
-                  <path fill="#ffffff" d="M0.191136012,15.0150334 C-0.0642242506,15.2408104 -0.0636359733,15.6063486 0.192449966,15.8314858 C0.448535906,16.056623 0.863144972,16.0561044 1.11850523,15.8303274 L10,7.97774631 L1.11718941,0.16851254 C0.861102437,-0.0566237496 0.446493373,-0.0561036216 0.191134145,0.169674278 C-0.0642250836,0.395452178 -0.0636351321,0.760990353 0.192451838,0.986126642 L8.14788573,7.98006649 L0.191136012,15.0150334 Z"></path>
+                <g
+                  transform="translate(10.000000, 10.454545) rotate(90.000000) translate(-10.000000, -10.454545) translate(5.000000, 2.454545)"
+                  fill="#0368D9"
+                >
+                  <path
+                    fill="#ffffff"
+                    d="M0.191136012,15.0150334 C-0.0642242506,15.2408104 -0.0636359733,15.6063486 0.192449966,15.8314858 C0.448535906,16.056623 0.863144972,16.0561044 1.11850523,15.8303274 L10,7.97774631 L1.11718941,0.16851254 C0.861102437,-0.0566237496 0.446493373,-0.0561036216 0.191134145,0.169674278 C-0.0642250836,0.395452178 -0.0636351321,0.760990353 0.192451838,0.986126642 L8.14788573,7.98006649 L0.191136012,15.0150334 Z"
+                  ></path>
                 </g>
               </g>
             </g>
@@ -155,12 +197,38 @@
         <a href="#" class="link-item">Privacy Policy</a>
 
         <a href="#" class="link-item d-flex">
-          <svg id="gds-svg-408" fill="rgb(34, 34, 34)" width="30" height="14" viewBox="0 0 30 12" aria-label="privacy" version="1.1" focusable="false" class="privacy">
+          <svg
+            id="gds-svg-408"
+            fill="rgb(34, 34, 34)"
+            width="30"
+            height="14"
+            viewBox="0 0 30 12"
+            aria-label="privacy"
+            version="1.1"
+            focusable="false"
+            class="privacy"
+          >
             <g>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.39998 12.8H14.2L17.3 1.20001H7.39998C4.19998 1.20001 1.59998 3.80001 1.59998 7.00001C1.59998 10.2 4.19998 12.8 7.39998 12.8Z" fill="white"></path>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M22.6 0H7.40002C3.50002 0 0.400024 3.1 0.400024 7C0.400024 10.9 3.50002 14 7.40002 14H22.6C26.5 14 29.6 10.9 29.6 7C29.6 3.1 26.4 0 22.6 0ZM1.60002 7C1.60002 3.8 4.20002 1.2 7.40002 1.2H17.3L14.2 12.8H7.40002C4.20002 12.8 1.60002 10.2 1.60002 7Z" fill="#0066FF"></path>
-              <path d="M24.6 3.99998C24.8 4.19998 24.8 4.59998 24.6 4.79998L22.5 6.99998L24.7 9.19998C24.9 9.39998 24.9 9.79998 24.7 9.99998C24.5 10.2 24.1 10.2 23.9 9.99998L21.7 7.79998L19.5 9.99998C19.3 10.2 18.9 10.2 18.7 9.99998C18.5 9.79998 18.5 9.39998 18.7 9.19998L20.8 6.99998L18.6 4.79998C18.4 4.59998 18.4 4.19998 18.6 3.99998C18.8 3.79998 19.2 3.79998 19.4 3.99998L21.6 6.19998L23.8 3.99998C24 3.79998 24.4 3.79998 24.6 3.99998Z" fill="white"></path>
-              <path d="M12.7 4.10001C12.9 4.30001 13 4.70001 12.8 4.90001L8.60003 9.80001C8.50003 9.90001 8.40003 10 8.30003 10C8.10003 10.1 7.80003 10.1 7.60003 9.90001L5.40003 7.70001C5.20003 7.50001 5.20003 7.10001 5.40003 6.90001C5.60003 6.70001 6.00003 6.70001 6.20003 6.90001L8.00003 8.60001L11.8 4.10001C12 3.90001 12.4 3.90001 12.7 4.10001Z" fill="#0066FF"></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.39998 12.8H14.2L17.3 1.20001H7.39998C4.19998 1.20001 1.59998 3.80001 1.59998 7.00001C1.59998 10.2 4.19998 12.8 7.39998 12.8Z"
+                fill="white"
+              ></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M22.6 0H7.40002C3.50002 0 0.400024 3.1 0.400024 7C0.400024 10.9 3.50002 14 7.40002 14H22.6C26.5 14 29.6 10.9 29.6 7C29.6 3.1 26.4 0 22.6 0ZM1.60002 7C1.60002 3.8 4.20002 1.2 7.40002 1.2H17.3L14.2 12.8H7.40002C4.20002 12.8 1.60002 10.2 1.60002 7Z"
+                fill="#0066FF"
+              ></path>
+              <path
+                d="M24.6 3.99998C24.8 4.19998 24.8 4.59998 24.6 4.79998L22.5 6.99998L24.7 9.19998C24.9 9.39998 24.9 9.79998 24.7 9.99998C24.5 10.2 24.1 10.2 23.9 9.99998L21.7 7.79998L19.5 9.99998C19.3 10.2 18.9 10.2 18.7 9.99998C18.5 9.79998 18.5 9.39998 18.7 9.19998L20.8 6.99998L18.6 4.79998C18.4 4.59998 18.4 4.19998 18.6 3.99998C18.8 3.79998 19.2 3.79998 19.4 3.99998L21.6 6.19998L23.8 3.99998C24 3.79998 24.4 3.79998 24.6 3.99998Z"
+                fill="white"
+              ></path>
+              <path
+                d="M12.7 4.10001C12.9 4.30001 13 4.70001 12.8 4.90001L8.60003 9.80001C8.50003 9.90001 8.40003 10 8.30003 10C8.10003 10.1 7.80003 10.1 7.60003 9.90001L5.40003 7.70001C5.20003 7.50001 5.20003 7.10001 5.40003 6.90001C5.60003 6.70001 6.00003 6.70001 6.20003 6.90001L8.00003 8.60001L11.8 4.10001C12 3.90001 12.4 3.90001 12.7 4.10001Z"
+                fill="#0066FF"
+              ></path>
             </g>
           </svg>
           <span class="ms-2">Your Privacy Choices</span>
@@ -230,42 +298,11 @@ export default defineComponent({
 
   @media (min-width: 1920px) {
     grid-template-columns: repeat(5, 1fr);
-    padding: 0.5rem;
   }
 
-  .destination-category {
+  .footer-category {
     min-width: 250px;
     max-width: 350px;
-
-    h4 {
-      font-size: 1.125rem;
-      font-weight: 900;
-      padding-left: 0.4rem;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }  
-  }
-
-  .ticket-category {
-    min-width: 250px;
-    max-width: 350px;
-
-    @media (min-width: 1100px) {
-      margin-left: 1.5rem;
-    }
-
-    @media (min-width: 1920px) {
-      margin-left: 0.5rem;
-    }
-
-    h4 {
-      font-size: 1.125rem;
-      font-weight: 900;
-      padding-left: 0.4rem;
-    }
 
     ul {
       list-style: none;
@@ -273,87 +310,62 @@ export default defineComponent({
     }
   }
 
-  .event-category {
-    min-width: 250px;
-    max-width: 350px;
-
-    @media (min-width: 1100px) {
-      margin-left: 3.5rem;
-    }
-
-    @media (min-width: 1920px) {
-      margin-left: 0.5rem;
-    }
-
-    h4 {
-      font-size: 1.125rem;
-      font-weight: 900;
-      padding-left: 0.4rem;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-  }
-
-  .park-category {
-    min-width: 250px;
-    max-width: 350px;
-
-    @media (min-width: 1920px) {
-      margin-left: 0.5rem;
-    }
-
-    h4 {
-      font-size: 1.125rem;
-      font-weight: 900;
-      padding-left: 0.4rem;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-  }
-
-  .help-category {
-    min-width: 250px;
-    max-width: 350px;
-
-    @media (min-width: 1100px) {
-      margin-left: 1.5rem;
-    }
-
-    @media (min-width: 1920px) {
-      margin-left: 0.5rem;
-    }
-
-    h4 {
-      font-size: 1.125rem;
-      font-weight: 900;
-      padding-left: 0.4rem;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-  }
-
-  li {
-    list-style: none;
-    font-size: 0.875rem;
-    font-weight: 600;
-    line-height: 2rem;
+  .footer-title {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 900;
     letter-spacing: 0.0125rem;
-    padding: 6px;
+    line-height: 1.375rem;
+    text-transform: none;
+    padding: 0.375rem 0rem;
+  }
 
-    a {
-      text-decoration: none;
-      color: white;
+  // .category-links {}
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
+
+  // .ticket-category {
+  //   @media (min-width: 1100px) {
+  //     margin-left: 1.5rem;
+  //   }
+
+  //   @media (min-width: 1920px) {
+  //     margin-left: 0.5rem;
+  //   }
+  // }
+
+  // .event-category {
+  //   @media (min-width: 1100px) {
+  //     margin-left: 3.5rem;
+  //   }
+
+  //   @media (min-width: 1920px) {
+  //     margin-left: 0.5rem;
+  //   }
+  // }
+
+  // .park-category {
+  //   @media (min-width: 1920px) {
+  //     margin-left: 0.5rem;
+  //   }
+  // }
+
+  // .help-category {
+  //   @media (min-width: 1100px) {
+  //     margin-left: 1.5rem;
+  //   }
+
+  //   @media (min-width: 1920px) {
+  //     margin-left: 0.5rem;
+  //   }
+  // }
 }
 
 .app-links {
