@@ -195,7 +195,8 @@ export default defineComponent({
 
 .logo-social-link-wrapper {
   justify-content: center;
-  padding: 1rem;
+  padding: 24px;
+  gap: 1rem;
 
   @media (min-width: 1100px) {
     justify-content: left;
@@ -234,12 +235,13 @@ export default defineComponent({
 .footer-categories {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  padding: 0.5rem;
+  width: 768px;
+  height: 840px;
 
   @media (min-width: 1100px) {
     margin-left: 1rem;
-    gap: 3rem;
+    width: 1110px;
+    height: 840px;
   }
 
   @media (min-width: 1920px) {
@@ -254,7 +256,7 @@ export default defineComponent({
     letter-spacing: 0.0125rem;
     line-height: 1.375rem;
     text-transform: none;
-    padding: 0.375rem 0rem;
+    padding: 6px 0px;
   }
 
   ul {
@@ -269,6 +271,8 @@ export default defineComponent({
     font-weight: 600;
     letter-spacing: 0.0125rem;
     line-height: 2rem;
+    width: 240px;
+    height: 44px;
 
     a {
       color: white;
