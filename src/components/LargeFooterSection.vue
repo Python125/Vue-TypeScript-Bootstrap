@@ -323,9 +323,17 @@ export default defineComponent({
   // .category-links {}
 
   a {
-    text-decoration: none;
     color: white;
-
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.0125rem;
+    line-height: 2rem;
+    text-align: center;
+    text-shadow: none;
+    text-decoration: none;
+    
     &:hover {
       text-decoration: underline;
     }
