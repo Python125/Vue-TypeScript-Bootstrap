@@ -248,7 +248,7 @@ export default defineComponent({
 
 .app-links {
   .app-links-title {
-    font-size: 0.9rem;
+    font-size: 14px;
     text-align: center;
 
     @media (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
