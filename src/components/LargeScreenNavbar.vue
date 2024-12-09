@@ -101,7 +101,7 @@
         </svg>
       </a>
       <a href="/">
-        <svg class="nav-icon" id="gds-svg-20 ms-3" fill="rgb(34, 34, 34)" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false">
+        <svg class="nav-icon cart-icon" id="gds-svg-20 ms-3" fill="rgb(34, 34, 34)" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false">
           <path fill="#ffffff" fill-rule="evenodd" clip-rule="evenodd" d="M6.15 2.818A1 1 0 0 0 5.168 2H3a1 1 0 0 0-1 1l.003.075A1 1 0 0 0 3 4h1.335l2.253 12.182a1 1 0 0 0 .984.818h12.832a1 1 0 0 0 1-1l-.003-.075a1 1 0 0 0-.997-.925H8.403l-.185-1h12.186L22 6H6.739L6.15 2.818ZM9.51 22c1.106 0 2.003-.873 2.003-1.95 0-1.076-.897-1.948-2.003-1.948s-2.003.872-2.003 1.949c0 1.076.897 1.949 2.003 1.949Zm11.017-1.95c0 1.077-.897 1.95-2.003 1.95s-2.003-.873-2.003-1.95c0-1.076.897-1.948 2.003-1.948s2.003.872 2.003 1.949Z"></path>
         </svg>
       </a>
@@ -203,6 +203,11 @@ export default defineComponent({
   background-color: #0368d9;
   border-bottom: #0070f0;
   padding: 0.5rem 1rem;
+
+  @media (min-width: 1920px) {
+    margin: auto 0;
+    padding: auto 0;
+  }
 }
 
 .top-navbar {
@@ -210,17 +215,13 @@ export default defineComponent({
   align-items: center;
   padding: 0.75rem;
 
-  @media (min-width: 1920px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    color: #7d7d7d;
-    font-weight: 500;
-  }
-
   .location-symbol {
     margin-right: 0.5rem;
+
+
+    @media (min-width: 1920px) {
+      margin-left: 16rem;
+    }
   }
 
   .dropdown {
@@ -267,6 +268,10 @@ export default defineComponent({
 
   .help-dropdown {
     margin-left: auto;
+
+    @media (min-width: 1920px) {
+      margin-right: 1rem;
+    }
   }
 
   // .language-dropdown {}
@@ -285,10 +290,18 @@ export default defineComponent({
     &:hover {
       text-decoration: underline;
     }
+
+    @media (min-width: 1920px) {
+      margin-right: 0.1rem;
+    }
   }
 
   .park-link {
     margin-left: 1rem;
+
+    @media (min-width: 1920px) {
+      margin-right: 2rem;
+    }    
   }
 
   .navigation-border {
@@ -299,6 +312,10 @@ export default defineComponent({
     display: block;
     align-self: stretch;
     padding: 8px 12px;
+  
+    @media (min-width: 1920px) {
+      margin-left: 2rem;
+    }
   }
 
   .nav-icon {
@@ -309,15 +326,24 @@ export default defineComponent({
       fill: #ccc;
     }
   }
+
+  .cart-icon {
+    margin-right: 16rem;
+  }
 }
 
 .middle-navbar {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 
   .universal-image {
     width: 100px;
+
+    @media (min-width: 1920px) {
+      margin-left: 16rem;
+    }
   }
 
   .middlebar-links {
@@ -325,6 +351,11 @@ export default defineComponent({
     color: white;
     text-decoration: none;
     font-weight: 600;
+
+    @media (min-width: 1920px) {
+      margin-left: 14px;
+      // margin-left: auto;
+    }
   }
 
   .browse-btn {
@@ -335,6 +366,10 @@ export default defineComponent({
     padding: 0.5rem 1rem;
     font-size: 14px;
     margin-left: auto;
+
+    @media (min-width: 1920px) {
+      margin-right: 16rem;
+    }
   }
 }
 
