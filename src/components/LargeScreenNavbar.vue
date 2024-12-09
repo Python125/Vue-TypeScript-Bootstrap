@@ -58,7 +58,7 @@
       <a href="/" class="dropdown-link park-link fw-bold text-white">Park Hours</a>
       <a href="/" class="dropdown-link shop-link fw-bold text-white">Shop Merch</a>
 
-      <div class="navigation-border">l</div>
+      <div class="navigation-border"></div>
 
       <svg class="ms-2" id="gds-svg-394" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false">
         <g>
@@ -210,6 +210,15 @@ export default defineComponent({
   align-items: center;
   padding: 0.75rem;
 
+  @media (min-width: 1920px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #7d7d7d;
+    font-weight: 500;
+  }
+
   .location-symbol {
     margin-right: 0.5rem;
   }
@@ -283,9 +292,13 @@ export default defineComponent({
   }
 
   .navigation-border {
-    color: #0368d9;
-    border-left: 1px solid white;
-    // margin: 0.4rem -0.7rem 0.4rem 2.1rem;
+    content: "";
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #e5effb;
+    display: block;
+    align-self: stretch;
+    padding: 8px 12px;
   }
 
   .nav-icon {
@@ -300,6 +313,8 @@ export default defineComponent({
 
 .middle-navbar {
   display: flex;
+  justify-content: center;
+  align-items: center;
 
   .universal-image {
     width: 100px;
