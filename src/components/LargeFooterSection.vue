@@ -246,7 +246,7 @@ export default defineComponent({
 
   @media (min-width: 1920px) {
     grid-template-columns: repeat(5, 1fr);
-    height: 660px;
+    height: 500px;
   }
 
   h4 {
