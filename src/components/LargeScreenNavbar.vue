@@ -124,12 +124,12 @@
   </div>
 
   <div class="bottom-navbar bg-white">
-    <a class="btn-link ticket-btn text-decoration-none" href="/">Park Tickets</a>
-    <a class="btn-link express-btn text-decoration-none" href="/">Express Passes</a>
-    <a class="btn-link deals-btn text-decoration-none" href="/">Deals & Specials</a>
+    <a class="btn-link ticket-btn text-decoration-none" href="/">Park <br> Tickets</a>
+    <a class="btn-link express-btn text-decoration-none" href="/">Express <br> Passes</a>
+    <a class="btn-link deals-btn text-decoration-none" href="/">Deals & <br> Specials</a>
     <a class="btn-link hotels-btn text-decoration-none" href="/">Hotels</a>
-    <a class="btn-link annual-btn text-decoration-none" href="/">Annual Passes</a>
-    <a class="btn-link vacation-btn text-decoration-none" href="/">Vacation Packages</a>
+    <a class="btn-link annual-btn text-decoration-none" href="/">Annual <br> Passes</a>
+    <a class="btn-link vacation-btn text-decoration-none" href="/">Vacation <br> Packages</a>
     <a class="btn-link merchandise-btn text-decoration-none" href="/">Merchandise</a>
   </div>
 </template>
@@ -328,7 +328,9 @@ export default defineComponent({
   }
 
   .cart-icon {
-    margin-right: 16rem;
+    @media (min-width: 1920px) {
+      margin-right: 16rem;
+    }
   }
 }
 
@@ -383,6 +385,7 @@ export default defineComponent({
 
   .btn-link {
     display: inline-flex;
+    justify-content: center;
     align-items: center;
     justify-content: left;
     padding: 14px;
@@ -400,8 +403,8 @@ export default defineComponent({
       background-size: 18.48px;
       background-position: 35px;
       background-image: url(/src/assets/images/tickets-blue.png);
-      padding-right: 5px;
-      padding-left: 70px;
+      padding-right: 30px;
+      padding-left: 60px;
 
       &:hover {
         background-image: url(/src/assets/images/tickets-white.png);
@@ -412,7 +415,7 @@ export default defineComponent({
       background-size: 42.69px;
       background-position: 25px center;
       background-image: url(/src/assets/images/express-pass-blue.png);
-      padding-right: 5px;
+      padding-right: 30px;
       padding-left: 75px;
 
       &:hover {
@@ -424,8 +427,8 @@ export default defineComponent({
       background-size: 15.34px;
       background-position: 40px center;
       background-image: url(/src/assets/images/deals-blue.png);
-      padding-right: 5px;
-      padding-left: 65px;
+      padding-right: 35px;
+      padding-left: 70px;
 
       &:hover {
         background-image: url(/src/assets/images/deals-white.png);
@@ -449,8 +452,8 @@ export default defineComponent({
       background-size: 29.11px;
       background-position: 35px center;
       background-image: url(/src/assets/images/annual-icon-blue.png);
-      padding-right: 5px;
-      padding-left: 75px;
+      padding-right: 35px;
+      padding-left: 70px;
 
       &:hover {
         background-image: url(/src/assets/images/annual-icon-white.png);
@@ -461,7 +464,7 @@ export default defineComponent({
       background-size: 35.17px;
       background-position: 25px center;
       background-image: url(/src/assets/images/vacation-blue.png);
-      padding-right: 1px;
+      padding-right: 35px;
       padding-left: 70px;
 
       &:hover {
@@ -474,8 +477,8 @@ export default defineComponent({
       background-position: 25px center;
       background-image: url(/src/assets/images/merchandise-blue.png);
       padding: 23px;
-      padding-right: 25px;
-      padding-left: 60px;
+      padding-right: 30px;
+      padding-left: 62px;
 
       &:hover {
         background-image: url(/src/assets/images/merchandise-white.png);
