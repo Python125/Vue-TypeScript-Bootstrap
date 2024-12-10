@@ -203,7 +203,7 @@ export default defineComponent({
   }
 
   @media (min-width: 1920px) {
-    margin-left: 5rem;
+    justify-content: center;
   }
 
   .universal-logo {
@@ -246,7 +246,6 @@ export default defineComponent({
 
   @media (min-width: 1920px) {
     grid-template-columns: repeat(5, 1fr);
-    padding: 0.5rem;
   }
 
   h4 {
@@ -257,11 +256,15 @@ export default defineComponent({
     line-height: 1.375rem;
     text-transform: none;
     padding: 6px 0px;
+
+    @media (min-width: 1920px) {
+      font-size: 1.120rem;
+    }
   }
 
   ul {
     list-style: none;
-    padding: 0;
+    padding: 0px;
   }
 
   li {
@@ -285,6 +288,18 @@ export default defineComponent({
       }
     }
   }
+
+  .event-category {
+    @media (min-width: 1920px) {
+      margin-right: 1rem;
+    }
+  }
+
+  .park-category {
+    @media (min-width: 1920px) {
+      margin-right: 1rem;
+    }
+  }  
 }
 
 .app-links {
