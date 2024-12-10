@@ -246,6 +246,7 @@ export default defineComponent({
 
   @media (min-width: 1920px) {
     grid-template-columns: repeat(5, 1fr);
+    height: 660px;
   }
 
   h4 {
@@ -306,7 +307,7 @@ export default defineComponent({
   padding-left: 1.5rem;
 
   @media (min-width: 1920px) {
-    margin-left: 5rem;
+    margin-left: 17rem;
   }
 
   .app-links-title {
@@ -344,7 +345,7 @@ export default defineComponent({
     margin-right: 1.5rem;
 
     @media (min-width: 1920px) {
-      margin-right: 5rem;
+      margin-right: 10rem;
     }
 
     .language-text {
@@ -361,8 +362,8 @@ export default defineComponent({
     opacity: 1;
 
     @media (min-width: 1920px) {
-      margin-left: 5.5rem;
-      margin-right: 4.5rem;
+      margin-left: 17rem;
+      margin-right: 9rem;
     }
   }
 }
@@ -374,7 +375,8 @@ export default defineComponent({
   margin-left: 1rem;
 
   @media (min-width: 1920px) {
-    margin-left: 6rem;
+    margin-left: 17.5rem;
+    margin-right: 16rem;
   }
 
   .copyright-text {
@@ -398,6 +400,11 @@ export default defineComponent({
   font-weight: 600;
   gap: 16px;
   margin-right: 1rem;
+
+  @media (min-width: 1920px) {
+    margin-left: 5rem;
+    margin-right: 9.5rem;
+  }
 
   .link-item {
     color: white;
