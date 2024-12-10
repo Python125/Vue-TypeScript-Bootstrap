@@ -334,6 +334,12 @@ export default defineComponent({
   }
 }
 
+hr {
+  @media screen and (min-width: 1920px) {
+    opacity: 0.1;
+  }
+}
+
 .middle-navbar {
   display: flex;
   justify-content: center;
@@ -393,6 +399,15 @@ export default defineComponent({
     background-color: transparent;
     background-repeat: no-repeat;
     transition: background-color 0.1s ease, color 0.1s ease;
+
+    @media (min-width: 1920px) {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 170px;
+    }
 
     &:hover {
       background-color: #162b75;
