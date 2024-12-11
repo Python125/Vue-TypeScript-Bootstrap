@@ -323,9 +323,8 @@ svg {
 }
 
 .intro-summary {
-  background-color: rgba(10, 10, 10, 0.8);
+  background-color: rgba(10, 10, 10, 0.9);
   padding: 2rem 2rem;
-  margin-top: 2rem;
 
   @media (min-width: 768px) {
     padding: 3rem 5rem;

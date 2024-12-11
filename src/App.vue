@@ -126,9 +126,10 @@ export default defineComponent({
   width: 100%;
   z-index: 0;
 
-  @media only screen and (max-width: 430px) {
-    height: 50%;
-  }
+  // @media only screen and (max-width: 430px) {
+  //   height: 50%;
+  //   width: 100%;
+  // }
 }
 
 .background-image::before {
@@ -138,11 +139,23 @@ export default defineComponent({
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: black;
-  // background-image: url("@/assets/leaky-cauldron-web.png");
-  background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
   z-index: -1;
+
+  @media only screen and (max-width: 430px) {
+    background-image: url("@/assets/leaky-cauldron-mobile.png");
+    background-size: contain;
+  }
+
+  // @media only screen and (min-width: 431px) and (max-width: 768px) {
+  //   background-image: url("@/assets/leaky-cauldron-.png");
+  //   background-size: contain;
+  // }
+
+  // @media only screen and (min-width: 769px) {
+  //   background-image: url("@/assets/leaky-cauldron-.png");
+  //   background-size: cover;
+  // }
 }
 
 .menu-swipe {
