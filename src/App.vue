@@ -142,20 +142,25 @@ export default defineComponent({
   background-repeat: no-repeat;
   z-index: -1;
 
-  @media only screen and (max-width: 430px) {
-    background-image: url("@/assets/leaky-cauldron-mobile.png");
+  @media only screen and (min-width: 430px) {
+    background-image: url("@/assets/leaky-cauldron-mobile-small.png");
     background-size: contain;
   }
 
-  // @media only screen and (min-width: 431px) and (max-width: 768px) {
-  //   background-image: url("@/assets/leaky-cauldron-.png");
-  //   background-size: contain;
-  // }
+  @media only screen and (min-width: 431px) and (max-width: 820px) {
+    background-image: url("@/assets/leaky-cauldron-tablet.png");
+    background-size: contain;
+  }
 
-  // @media only screen and (min-width: 769px) {
-  //   background-image: url("@/assets/leaky-cauldron-.png");
-  //   background-size: cover;
-  // }
+  @media only screen and (min-width: 821px) and (max-width: 1024px) {
+    background-image: url("@/assets/leaky-cauldron-tablet.png");
+    background-size: contain;
+  }
+
+  @media only screen and (min-width: 1025px) {
+    background-image: url("@/assets/leaky-cauldron-web.png");
+    background-size: contain;
+  }
 }
 
 .menu-swipe {

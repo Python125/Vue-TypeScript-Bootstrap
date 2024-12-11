@@ -244,12 +244,13 @@ a {
   margin-bottom: 0.5rem;
 
   @media (min-width: 768px) {
+    // background-color: rgba(10, 10, 10, 0.9);
+    padding: 0.5rem;
     font-size: 1.8rem;
   }
 }
 
 .dining-section {
-
 
   .dining-features {
     display: flex;
@@ -324,9 +325,14 @@ svg {
   background-color: rgba(10, 10, 10, 0.9);
   padding: 2rem 2rem;
 
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) and (max-width: 820px) {
     padding: 3rem 5rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
+  }
+
+  @media (min-width: 820px) {
+    padding: 3rem 5rem;
+    margin-top: 18rem;
   }
 }
 
