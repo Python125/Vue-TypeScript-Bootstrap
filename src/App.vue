@@ -142,7 +142,7 @@ export default defineComponent({
   background-repeat: no-repeat;
   z-index: -1;
 
-  @media only screen and (min-width: 430px) {
+  @media only screen and (max-width: 430px) {
     background-image: url("@/assets/leaky-cauldron-mobile-small.png");
     background-size: contain;
   }
