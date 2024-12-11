@@ -23,7 +23,7 @@
       <a href="/"><span class="map-link fw-bold">Explore Interactive Map</span></a>
       <div>
         <h3 class="park-title text-white fw-bold mt-4">Park Hours</h3>
-        <div class="park-hours text-white fw-light h6">
+        <div class="park-hours text-white fw-normal h6">
           Open Today | 9 am-7 pm
         </div>
         <a href="/"><span class="park-link fw-bold">All Park Hours</span></a>
