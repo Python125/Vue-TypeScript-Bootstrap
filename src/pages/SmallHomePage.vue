@@ -249,13 +249,11 @@ a {
 }
 
 .dining-section {
-  padding: 1rem;
-  margin-top: 1rem;
+
 
   .dining-features {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
     padding: 0;
     list-style: none;
 
