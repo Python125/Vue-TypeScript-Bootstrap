@@ -144,45 +144,37 @@ export default defineComponent({
   background-repeat: no-repeat;
   z-index: -1;
 
-  @media only screen and (max-width: 430px) and (orientation: portrait) {
+// MOBOILE PHONE PROTRAIT
+  @media only screen and (min-width: 430px) and (max-width: 655px) and (orientation: portrait) {
     background-image: url("@/assets/leaky-cauldron-mobile-portrait.png");
     background-size: contain;
   }
 
-  @media only screen and (max-width: 932px) and (orientation: landscape) {
+// SMALL AND MEDIUM TABLET PROTRAIT
+  @media only screen and (min-width: 655px) and (max-width: 768px) and (orientation: portrait) {
+    background-image: url("@/assets/leaky-cauldron-tablet-protrait.png");
+    background-size: contain;
+  }
+
+// LARGE TABLET PROTRAIT
+  @media only screen and (min-width: 769px) and (orientation: portrait) {
+    background-image: url("@/assets/leaky-cauldron-tablet-protrait.png");
+    background-size: contain;
+  }
+
+// MOBOILE PHONE LANDSCAPE
+  @media only screen and (min-width: 932px) and (max-width: 1024px) and (orientation: landscape) {
     background-image: url("@/assets/leaky-cauldron-mobile-landscape.png");
     background-size: contain;
   }
 
-  @media only screen and (min-width: 431px) and (max-width: 768px) and (orientation: portrait) {
-    background-image: url("@/assets/leaky-cauldron-tablet-protrait.png");
-    background-size: contain;
-  }
-
-  @media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
-    background-image: url("@/assets/leaky-cauldron-tablet-landscape.png");
-    background-size: contain;
-    margin-top: 15rem;
-  }
-
-  @media only screen and (min-width: 820px) and (max-width: 1024px) and (orientation: portrait) {
-    background-image: url("@/assets/leaky-cauldron-tablet-protrait.png");
-    background-size: contain;
-  }
-
-  @media only screen and (min-width: 1180px) and (max-width: 1024px) and (orientation: landscape) {
-    background-image: url("@/assets/leaky-cauldron-tablet-landscape.png");
-    background-size: contain;
-    margin-top: 14rem;
-  }
-
-  @media only screen and (min-width: 1025px) and (max-width: 1180px) and (orientation: landscape) {
-    background-image: url("@/assets/leaky-cauldron-tablet-landscape.png");
-    background-size: contain;
-    margin-top: 14rem;
-  }
-
+// TABLET LANDSCAPE
   @media only screen and (min-width: 1025px) {
+    background-image: url("@/assets/leaky-cauldron-tablet-protrait.png");
+    background-size: contain;
+  }
+
+  @media only screen and (min-width: 1920px) {
     background-image: url("@/assets/leaky-cauldron-web.png");
     background-size: contain;
   }
