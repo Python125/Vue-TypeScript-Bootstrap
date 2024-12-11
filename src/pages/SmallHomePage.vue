@@ -249,7 +249,6 @@ a {
   margin-bottom: 0.5rem;
 
   @media (min-width: 768px) {
-    // background-color: rgba(10, 10, 10, 0.9);
     padding: 0.5rem;
     font-size: 1.8rem;
   }

@@ -5,9 +5,7 @@
       Breakfast - served until 10:30 am daily
     </h3>
     <p class="mt-3 h4 text-center text-white">
-      <b><u>Allergen Note:</u></b> Please inform a manager or Chef's Assistant
-      prior to ordering if someone in your party requires special dietary
-      accommodations
+      <b><u>Allergen Note:</u></b> Please inform a manager or Chef's Assistant prior to ordering if someone in your party requires special dietary accommodations
     </p>
     <p class="fw-light text-center text-white p-3">Includes small beverage</p>
   </div>

@@ -3,8 +3,7 @@
   <div class="p-3">
     <h2 class="fw-bold text-white text-center">Beverage Menu</h2>
     <p class="p-3 h4 text-white text-center">
-      Allergen Note: Please inform a manager or Chef's Assistant prior to
-      ordering if someone in your party requires special dietary accommodations
+      Allergen Note: Please inform a manager or Chef's Assistant prior to ordering if someone in your party requires special dietary accommodations
     </p>
   </div>
 
@@ -73,7 +72,7 @@ export default defineComponent({
       },
       {
         name: "Pumpkin Juice™",
-        description: "Pumpkin Juice™ - $5.49", // COME BACK TO THIS LATER
+        description: "Pumpkin Juice™ - $5.49",
         image: require("@/assets/images/pumpkin-juice.png"),
       },
       {
@@ -90,22 +89,22 @@ export default defineComponent({
       },
       {
         name: "Iced Tea",
-        description: "Fountain Beverages (Iced Tea) - $4.49", // COME BACK TO THIS LATER
+        description: "Fountain Beverages (Iced Tea) - $4.49",
         image: require("@/assets/images/iced-tea.png"),
       },
       {
         name: "Lemonade",
-        description: "Fountain Beverages (Iced Tea) - $4.49", // COME BACK TO THIS LATER
+        description: "Fountain Beverages (Iced Tea) - $4.49",
         image: require("@/assets/images/lemonade.png"),
       },
       {
         name: "Cider",
-        description: "Fountain Beverages (Iced Tea) - $4.49", // COME BACK TO THIS LATER
+        description: "Fountain Beverages (Iced Tea) - $4.49",
         image: require("@/assets/images/cider.png"),
       },
       {
         name: "Gillywater",
-        description: "Gillywater - $6.00", // COME BACK TO THIS LATER
+        description: "Gillywater - $6.00",
         image: require("@/assets/images/gillywater.png"),
       },
       {

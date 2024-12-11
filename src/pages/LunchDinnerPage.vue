@@ -3,8 +3,7 @@
   <div class="p-3">
     <h2 class="fw-bold text-white text-center">Lunch and Dinner Menu</h2>
     <p class="p-3 h4 text-white text-center">
-      Allergen Note: Please inform a manager or Chef's Assistant prior to
-      ordering if someone in your party requires special dietary accommodations
+      Allergen Note: Please inform a manager or Chef's Assistant prior to ordering if someone in your party requires special dietary accommodations
     </p>
   </div>
 
