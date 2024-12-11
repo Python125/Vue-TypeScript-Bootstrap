@@ -458,6 +458,10 @@ a {
     text-align: center;
     margin-bottom: 2rem;
 
+    @media (min-width: 1920px) {
+      margin-top: 6rem;
+    }
+
     .food-image {
       border-radius: 8px;
       width: 100%;

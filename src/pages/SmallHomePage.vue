@@ -179,9 +179,14 @@ export default /* class HomePage extends Vue */ {
     .location-title,
     .park-title {
       font-size: 1rem;
+      margin-top: 1.5rem;
       
       @media (min-width: 768px) {
         font-size: 1.25rem;
+      }
+
+      @media (min-width: 932px) {
+        margin-top: 4rem;
       }
     }
 
