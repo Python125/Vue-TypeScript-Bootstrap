@@ -151,25 +151,25 @@ export default defineComponent({
   }
 
 // SMALL AND MEDIUM TABLET PROTRAIT
-  @media only screen and (min-width: 655px) and (max-width: 768px) and (orientation: portrait) {
+  @media only screen and (min-width: 768px) and (max-width: 820px) and (orientation: portrait) {
     background-image: url("@/assets/leaky-cauldron-tablet-protrait.png");
     background-size: contain;
   }
 
 // LARGE TABLET PROTRAIT
-  @media only screen and (min-width: 769px) and (orientation: portrait) {
+  @media only screen and (max-width: 1024px) and (orientation: portrait) {
     background-image: url("@/assets/leaky-cauldron-tablet-protrait.png");
     background-size: contain;
   }
 
 // MOBOILE PHONE LANDSCAPE
-  @media only screen and (max-width: 932px) and (orientation: landscape) {
+  @media only screen and (min-width: 932px) and (max-width: 1024px) and (orientation: landscape) {
     background-image: url("@/assets/leaky-cauldron-mobile-landscape.png");
     background-size: contain;
   }
 
 // TABLET LANDSCAPE
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (max-width: 1025px) {
     background-image: url("@/assets/leaky-cauldron-tablet-protrait.png");
     background-size: contain;
   }
