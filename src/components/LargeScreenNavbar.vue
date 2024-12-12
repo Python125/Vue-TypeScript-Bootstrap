@@ -265,8 +265,6 @@ export default defineComponent({
     }
   }
 
-  // .location-dropdown {}
-
   .help-dropdown {
     margin-left: auto;
 
@@ -274,8 +272,6 @@ export default defineComponent({
       margin-right: 1rem;
     }
   }
-
-  // .language-dropdown {}
 
   .dropdown-link {
     font-size: 0.875rem;

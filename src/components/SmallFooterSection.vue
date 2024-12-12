@@ -38,18 +38,11 @@
       <button class="accordion-btn" aria-expanded="false">
         <div class="accordion-title">Destinations</div>
         <span class="chevron">
-          <svg v-if="!isOpen" fill="#ffffff" stroke="currentColor" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false">
+          <svg id="gds-svg-264" fill="#ffffff" stroke="currentColor" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false">
             <path d="M3.397 9.527c.512.539 7.613 7.543 7.613 7.543.26.275.617.43.99.43.372 0 .729-.155.99-.43 0 0 7.1-7.004 7.615-7.543a1.565 1.565 0 0 1 0-2.08 1.331 1.331 0 0 1-.99-.447 1.33 1.33 0 0 0-.991.447l-6.623 6.57-6.622-6.57A1.331 1.331 0 0 1 4.389 7c-.377 0-.736.162-.992.447a1.56 1.56 0 0 1 0 2.08Z" fill-rule="evenodd"></path>
-          </svg>
-          <svg v-else fill="#ffffff" stroke="currentColor" width="24" height="24" viewBox="0 0 24 24" version="1.1" focusable="false">
-            <path d="M20.603 14.473c-.512-.539-7.613-7.543-7.613-7.543-.26-.275-.617-.43-.99-.43-.372 0-.729.155-.99.43 0 0-7.1 7.004-7.615 7.543a1.565 1.565 0 0 0 0 2.08 1.331 1.331 0 0 0 .99.447c.377 0 .736-.162.991-.447l6.623-6.57 6.622 6.57a1.331 1.331 0 0 0 .991.447c.377 0 .736-.162.992-.447a1.56 1.56 0 0 0 0-2.08Z" fill-rule="evenodd"></path>
           </svg>
         </span>
       </button>
-      <ul v-if="isOpen">
-        <li>Universal Orlando Resort</li>
-        <li>Universal Studios Hollywood</li>
-      </ul>
 
       <button class="accordion-btn">
         <div class="accordion-title">Tickets and Passes</div>
@@ -156,17 +149,10 @@ import { defineComponent } from "vue";
 export default defineComponent({
   setup() {
     return {
-      isOpen: false,
-    
       universalLogo: require("@/assets/universal-orlando-logo.png"),
       apple: require("@/assets/ma-appstore.png"),
       google: require("@/assets/ma-googleplay.png"),
     };
-  },
-  methods: {
-    toggleAccordion() {
-      this.isOpen = !this.isOpen;
-    }
   },
 });
 </script>
