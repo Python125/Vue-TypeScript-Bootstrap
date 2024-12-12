@@ -183,7 +183,6 @@
 export default /* class HomePage extends Vue */ {
   data() {
     return {
-      leakyCauldronLogo: require("@/assets/leaky-logo.png"),
       harryPotterLogo: require("@/assets/harry-potter-diagon-alley-logo.png"),
       breakfast: require("@/assets/images/english-breakfast.png"),
       lunch: require("@/assets/images/fish-and-chips.png"),
