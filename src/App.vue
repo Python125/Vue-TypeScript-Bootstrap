@@ -125,11 +125,6 @@ export default defineComponent({
   height: 100%;
   width: 100%;
   z-index: 0;
-
-  // @media only screen and (max-width: 430px) {
-  //   height: 50%;
-  //   width: 100%;
-  // }
 }
 
 .background-image::before {
@@ -150,17 +145,17 @@ export default defineComponent({
   }
 
   @media only screen and (min-width: 431px) and (max-width: 820px) {
-    background-image: url("@/assets/leaky-cauldron-tablet-protrait.png");
+    background-image: url("@/assets/leaky-cauldron-tablet-portrait.png");
     background-size: contain;
   }
 
   @media only screen and (min-width: 821px) and (max-width: 932px) {
-    background-image: url("@/assets/leaky-cauldron-tablet-protrait.png");
+    background-image: url("@/assets/leaky-cauldron-tablet-portrait.png");
     background-size: contain;
   }
 
   @media only screen and (min-width: 933px) and (max-width: 1024px) {
-    background-image: url("@/assets/leaky-cauldron-tablet-protrait.png");
+    background-image: url("@/assets/leaky-cauldron-tablet-portrait.png");
     background-size: contain;
   }
 }
