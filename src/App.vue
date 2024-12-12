@@ -163,6 +163,21 @@ export default defineComponent({
     background-image: url("@/assets/leaky-cauldron-tablet-portrait.png");
     background-size: contain;
   }
+
+  @media only screen and (min-width: 1367px) and (max-width: 1920px) {
+    background-image: url("@/assets/leaky-cauldron-web.png");
+    background-size: contain;
+  }
+
+  @media only screen and (min-width: 1921px) and (max-width: 2560px) {
+    background-image: url("@/assets/leaky-cauldron-web.png");
+    background-size: contain;
+  }
+
+  @media only screen and (min-width: 2561px) { 
+    background-image: url("@/assets/leaky-cauldron-web.png");
+    background-size: cover;
+  }
 }
 
 .menu-swipe {
