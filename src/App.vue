@@ -151,13 +151,13 @@ export default defineComponent({
   }
 
 // SMALL AND MEDIUM TABLET PROTRAIT
-  @media only screen and (min-width: 768px) and (max-width: 820px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 820px) and (orientation: portrait) {
     background-image: url("@/assets/leaky-cauldron-tablet-protrait.png");
     background-size: contain;
   }
 
 // LARGE TABLET PROTRAIT
-  @media only screen and (min-width: 769px) and (orientation: portrait) {
+  @media only screen and (max-width: 1024px) and (orientation: portrait) {
     background-image: url("@/assets/leaky-cauldron-tablet-protrait.png");
     background-size: contain;
   }
