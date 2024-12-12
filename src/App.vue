@@ -159,7 +159,7 @@ export default defineComponent({
     background-size: contain;
   }
 
-  @media only screen and (min-width: 1181px) {
+  @media only screen and (min-width: 1181px) and (max-width: 1366px) {
     background-image: url("@/assets/leaky-cauldron-tablet-portrait.png");
     background-size: contain;
   }
