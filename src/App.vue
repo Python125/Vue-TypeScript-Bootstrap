@@ -157,7 +157,7 @@ export default defineComponent({
   }
 
 // LARGE TABLET PROTRAIT
-  @media only screen and (max-width: 1024px) and (orientation: portrait) {
+  @media only screen and (min-width: 821px) and (orientation: portrait) {
     background-image: url("@/assets/leaky-cauldron-tablet-protrait.png");
     background-size: contain;
   }
