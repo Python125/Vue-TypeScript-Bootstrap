@@ -145,7 +145,7 @@ export default defineComponent({
   z-index: -1;
 
 // MOBOILE PHONE PROTRAIT
-  @media only screen and (min-width: 430px) and (max-width: 655px) and (orientation: portrait) {
+  @media only screen and (min-width: 340px) and (max-width: 430px) and (orientation: portrait) {
     background-image: url("@/assets/leaky-cauldron-mobile-portrait.png");
     background-size: contain;
   }
