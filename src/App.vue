@@ -140,44 +140,44 @@ export default defineComponent({
   right: 0;
   bottom: 0;
   background-image: url("@/assets/leaky-cauldron-web.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   z-index: -1;
 
-// MOBOILE PHONE PROTRAIT
-  @media only screen and (min-width: 340px) and (max-width: 430px) and (orientation: portrait) {
+  @media only screen and (min-width: 430px) {
     background-image: url("@/assets/leaky-cauldron-mobile-portrait.png");
     background-size: contain;
   }
 
-// SMALL AND MEDIUM TABLET PROTRAIT
-@media only screen and (min-width: 768px) and (max-width: 820px) and (orientation: portrait) {
-    background-image: url("@/assets/leaky-cauldron-tablet-protrait.png");
-    background-size: contain;
-  }
+  // @media only screen and (min-width: 340px) and (max-width: 430px) and (orientation: portrait) {
+  //   background-image: url("@/assets/leaky-cauldron-mobile-portrait.png");
+  //   background-size: contain;
+  // }
 
-// LARGE TABLET PROTRAIT
-  @media only screen and (min-width: 821px) and (orientation: portrait) {
-    background-image: url("@/assets/leaky-cauldron-tablet-protrait.png");
-    background-size: contain;
-  }
+  // @media only screen and (min-width: 768px) and (max-width: 820px) and (orientation: portrait) {
+  //   background-image: url("@/assets/leaky-cauldron-tablet-protrait.png");
+  //   background-size: contain;
+  // }
 
-// MOBOILE PHONE LANDSCAPE
-  @media only screen and (min-width: 932px) and (max-width: 1024px) and (orientation: landscape) {
-    background-image: url("@/assets/leaky-cauldron-mobile-landscape.png");
-    background-size: contain;
-  }
+  // @media only screen and (min-width: 821px) and (orientation: portrait) {
+  //   background-image: url("@/assets/leaky-cauldron-tablet-protrait.png");
+  //   background-size: contain;
+  // }
 
-// TABLET LANDSCAPE
-  @media only screen and (min-width: 1025px) {
-    background-image: url("@/assets/leaky-cauldron-tablet-protrait.png");
-    background-size: contain;
-  }
+  // @media only screen and (min-width: 932px) and (max-width: 1024px) and (orientation: landscape) {
+  //   background-image: url("@/assets/leaky-cauldron-mobile-landscape.png");
+  //   background-size: contain;
+  // }
 
-  @media only screen and (min-width: 1920px) {
-    background-image: url("@/assets/leaky-cauldron-web.png");
-    background-size: contain;
-  }
+  // @media only screen and (min-width: 1025px) {
+  //   background-image: url("@/assets/leaky-cauldron-tablet-protrait.png");
+  //   background-size: contain;
+  // }
+
+  // @media only screen and (min-width: 1920px) {
+  //   background-image: url("@/assets/leaky-cauldron-web.png");
+  //   background-size: contain;
+  // }
 }
 
 .menu-swipe {
