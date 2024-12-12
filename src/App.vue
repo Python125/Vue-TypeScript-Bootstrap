@@ -174,8 +174,8 @@ export default defineComponent({
     background-size: contain;
   }
 
-  @media only screen and (min-width: 2561px) { 
-    background-image: url("@/assets/leaky-cauldron-web.png");
+  @media only screen and (min-width: 2561px) {
+    background-image: url("@/assets/leaky-cauldron-web2.png");
     background-size: cover;
   }
 }
