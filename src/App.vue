@@ -163,7 +163,7 @@ export default defineComponent({
   }
 
 // MOBOILE PHONE LANDSCAPE
-  @media only screen and (min-width: 932px) and (max-width: 1024px) and (orientation: landscape) {
+  @media only screen and (max-width: 932px) and (orientation: landscape) {
     background-image: url("@/assets/leaky-cauldron-mobile-landscape.png");
     background-size: contain;
   }
