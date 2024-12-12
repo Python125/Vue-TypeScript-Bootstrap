@@ -1,6 +1,7 @@
 <template>
   <h1 class="restaurant text-white text-center">Leaky Cauldron™</h1>
-  <div class="p-3">
+  
+  <div class="breakfast-info mt-3">
     <h3 class="fw-bold text-center text-white">
       Breakfast - served until 10:30 am daily
     </h3>
@@ -150,6 +151,13 @@ export default defineComponent({
   font-weight: 900;
   padding: 1rem;
   font-size: 1.5rem;
+}
+
+.breakfast-info {
+  background-color: rgba(10, 10, 10, 0.8);
+  padding: 1rem;
+  margin: 0 auto;
+  width: 85%;
 }
 
 .menu-slider {

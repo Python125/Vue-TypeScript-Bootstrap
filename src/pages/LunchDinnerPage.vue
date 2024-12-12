@@ -1,6 +1,6 @@
 <template>
   <h1 class="restaurant text-white text-center">Leaky Cauldron™</h1>
-  <div class="p-3">
+  <div class="lunch-dinner-info mt-3">
     <h2 class="fw-bold text-white text-center">Lunch and Dinner Menu</h2>
     <p class="p-3 h4 text-white text-center">
       Allergen Note: Please inform a manager or Chef's Assistant prior to ordering if someone in your party requires special dietary accommodations
@@ -215,6 +215,13 @@ export default defineComponent({
   font-weight: 900;
   padding: 1rem;
   font-size: 1.5rem;
+}
+
+.lunch-dinner-info {
+  background-color: rgba(10, 10, 10, 0.8);
+  padding: 1rem;
+  margin: 0 auto;
+  width: 85%;
 }
 
 .menu-slider {
