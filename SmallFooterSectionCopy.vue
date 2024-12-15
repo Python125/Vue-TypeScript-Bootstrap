@@ -35,18 +35,6 @@
     </div>
 
     <div class="accordion-menu">
-      <button class="accordion">Destinations</button>
-      <div class="panel">
-        <p>This is the destinations section</p>
-      </div>
-
-      <button class="accordion">Tickets</button>
-      <div class="panel">
-        <p>This is the tickets section</p>
-      </div>
-    </div>
-
-    <!-- <div class="accordion-menu">
       <button class="accordion-btn" aria-expanded="false">
         <div class="accordion-title">Destinations</div>
         <span class="chevron">
@@ -91,7 +79,7 @@
           </svg>
         </span>
       </button>
-    </div> -->
+    </div>
 
     <div class="app-links">
       <p class="app-links-title fw-bold text-white mt-4 mb-1">Download the app for exclusive deals and easy ordering.</p>
@@ -210,69 +198,45 @@ export default defineComponent({
   }
 }
 
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
+.accordion-menu {
+  display: flex;
   width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
+  flex-direction: column;
 
-  &:hover {
-    background-color: #ccc;
+  @media (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
+    margin-top: 1.5rem;
   }
 
-  .panel {
-    padding: 0 18px;
-    display: none;
-    background-color: white;
-    overflow: hidden;
+  .accordion-btn {
+    display: flex;
+    justify-content: space-between; // Ensures space between text and arrow
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    gap: 0.5rem; // Small gap between title and arrow for balance
+    text-align: left;
+
+    // Increase spacing between buttons
+    margin-bottom: 8px;
+
+    &[aria-expanded="true"] .chevron {
+      transform: rotate(180deg); // Rotate chevron when expanded
+      transition: transform 0.3s ease-in-out; // Smooth transition
+    }
+  }
+
+  .accordion-title {
+    font-size: 1rem;
+  }
+
+  .chevron {
+    margin-left: auto;
   }
 }
-
-// .accordion-menu {
-//   display: flex;
-//   width: 100%;
-//   flex-direction: column;
-
-//   @media (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
-//     margin-top: 1.5rem;
-//   }
-
-//   .accordion-btn {
-//     display: flex;
-//     justify-content: space-between; // Ensures space between text and arrow
-//     align-items: center;
-//     background: none;
-//     border: none;
-//     padding: 0.5rem;
-//     font-size: 1rem;
-//     font-weight: bold;
-//     color: white;
-//     gap: 0.5rem; // Small gap between title and arrow for balance
-//     text-align: left;
-
-//     // Increase spacing between buttons
-//     margin-bottom: 8px;
-
-//     &[aria-expanded="true"] .chevron {
-//       transform: rotate(180deg); // Rotate chevron when expanded
-//       transition: transform 0.3s ease-in-out; // Smooth transition
-//     }
-//   }
-
-//   .accordion-title {
-//     font-size: 1rem;
-//   }
-
-//   .chevron {
-//     margin-left: auto;
-//   }
-// }
 
 .app-links {
   .app-links-title {
