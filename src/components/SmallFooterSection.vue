@@ -35,7 +35,7 @@
     </div>
 
     <div class="accordion-menu">
-      <button class="accordion">Destinations</button>
+      <button class="accordion-btn">Destinations</button>
       <div class="panel">
         <p>This is the destinations section</p>
       </div>
