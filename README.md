@@ -1,6 +1,6 @@
-<!-- ![Home-Page](/src/assets/home-page.png) -->
-
 This project is a digital mock-up of The Leaky Cauldron, the iconic pub and inn from the Harry Potter universe, designed to emulate a restaurant website where users can explore an interactive menu featuring traditional British food items, view breakfast, lunch, and dinner options, and discover various beverage offerings. Built with Vue.js, Bootstrap, SCSS, and TypeScript, it demonstrates a responsive, immersive restaurant layout. The main goal was to practice building a fully functional restaurant-style site using Vue.js, with Bootstrap for rapid layout, SCSS for modular styling, and TypeScript for type safety and improved code reliability.
+
+![Home-Page](/src/assets/home-screen.png)
 
 Experience the features of this project directly in the browser by visiting the live demo [here](https://kaleidoscopic-cocada-583d75.netlify.app/)
 
